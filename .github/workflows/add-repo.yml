@@ -1,0 +1,38 @@
+on:
+  workflow_dispatch:
+    inputs:
+      repoUrl:
+        description: 'URL for feedstock that will be added'
+        required: true
+        type: string
+
+jobs:
+  add-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fork repo
+        run: gh repo fork ${{ github.event.inputs.repoUrl }} --org anaconda-community --clone=false --default-branch-only
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+
+      - name: Add submodule
+        run: |
+          feedstock=${REPO:31}
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git fetch
+          git checkout FETCH_HEAD -- .gitmodules
+          git checkout -b $feedstock
+          git submodule add https://github.com/anaconda-community/$feedstock $feedstock
+          git commit -m "${feedstock}: adding new submodule"
+          git push --set-upstream origin $feedstock
+        env:
+          REPO: ${{ github.event.inputs.repoUrl }}
+
+      - name: Open PR
+        run: gh pr create --fill
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
