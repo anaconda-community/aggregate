@@ -1,3 +1,4 @@
+name: "Remove repo"
 on:
   workflow_dispatch:
     inputs:
@@ -5,6 +6,7 @@ on:
         description: 'Name of feedstock that will be removed'
         required: true
         type: string
+permissions: write-all
 
 jobs:
   remove-repo:

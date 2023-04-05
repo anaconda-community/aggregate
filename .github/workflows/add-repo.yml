@@ -1,3 +1,4 @@
+name: "Add repo"
 on:
   workflow_dispatch:
     inputs:
@@ -5,6 +6,7 @@ on:
         description: 'URL for feedstock that will be added'
         required: true
         type: string
+permissions: write-all
 
 jobs:
   add-repo:
