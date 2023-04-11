@@ -40,10 +40,11 @@ jobs:
       - name: Add submodule
         run: |
           feedstock=${REPO:31}
+          hash=$(git ls-remote https://github.com/anaconda-community/${feedstock}.git | head -n1 | awk '{print $1;}')
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git checkout -b $feedstock
-          abs aggregate add --branch main --commit HEAD --url https://github.com/anaconda-community/${feedstock}.git ${feedstock}
+          abs aggregate add --branch main --commit ${hash} --url https://github.com/anaconda-community/${feedstock}.git ${feedstock}
           git add manifest.yaml
           git commit -m "add ${feedstock}"
           git push --set-upstream origin $feedstock
