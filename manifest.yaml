@@ -1,0 +1,5 @@
+feedstocks:
+  7za-feedstock:
+    url:      https://github.com/anaconda-community/7za-feedstock
+    branch:   main
+    commit:   c66268e070b0474d17bb4422d12ddd64555ecd82
