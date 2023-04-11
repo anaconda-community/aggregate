@@ -22,4 +22,4 @@ For input use the repo name.
 
 Example: 7za-feedstock
 
-This will remove the forked repo from anaconda-community. TODO: This needs to update manifest to remove the entry.
+This will remove the forked repo from anaconda-community and create a PR that updates manifest

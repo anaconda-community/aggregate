@@ -12,17 +12,27 @@ jobs:
   remove-repo:
     runs-on: ubuntu-latest
     steps:
-#      - name: Checkout
-#        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
-#
-#      - name: Remove from manifest
-#        run: |
-#          echo "TBD"
-#
-#      - name: Open PR
-#        run: gh pr create --fill
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+
+      - name: Remove from manifest
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq -i 'del(.feedstocks.${{ github.event.inputs.feedstock }})' manifest.yaml
+
+      - name: Commit change
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git checkout -b ${{ github.event.inputs.feedstock }}
+          git add manifest.yaml
+          git commit -m "remove ${{ github.event.inputs.feedstock }}"
+          git push --set-upstream origin ${{ github.event.inputs.feedstock }}
+
+      - name: Open PR
+        run: gh pr create --fill
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Delete repo
         run: gh repo delete https://github.com/anaconda-community/${{ github.event.inputs.feedstock }} --yes
