@@ -1,0 +1,8 @@
+name: agg
+channels:
+  - distro-tooling
+  - conda-forge
+dependencies:
+  - python=3.9
+  - abs-cli
+  - abs-sdk
