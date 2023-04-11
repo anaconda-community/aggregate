@@ -3,3 +3,7 @@ feedstocks:
     url:      https://github.com/anaconda-community/7za-feedstock
     branch:   main
     commit:   c66268e070b0474d17bb4422d12ddd64555ecd82
+  7zip-feedstock:
+    url:      https://github.com/anaconda-community/7zip-feedstock
+    branch:   main
+    commit:   2a3de02f160a147de687de5658cc23bd52e3f7cf
