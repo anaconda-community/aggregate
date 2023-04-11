@@ -10,26 +10,42 @@ permissions: write-all
 
 jobs:
   add-repo:
+    defaults:
+      run:
+        shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
       - name: Fork repo
         run: gh repo fork ${{ github.event.inputs.repoUrl }} --org anaconda-community --clone=false --default-branch-only
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+
+      - uses: actions/cache@v2
+        with:
+          path: /usr/share/miniconda3/envs/agg
+          key: conda-${{ hashFiles('environment.yml') }}
+
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auth-activate-base: false
+          activate-environment: agg
+          channels: distro-tooling,conda-forge
+          python-version: 3.9
+          mamba-version: "*"
+          environment-file: environment.yml
 
       - name: Add submodule
         run: |
           feedstock=${REPO:31}
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git fetch
-          git checkout FETCH_HEAD -- .gitmodules
           git checkout -b $feedstock
-          git submodule add https://github.com/anaconda-community/$feedstock $feedstock
-          git commit -m "${feedstock}: adding new submodule"
+          abs aggregate add --branch main --commit HEAD --url https://github.com/anaconda-community/${feedstock}.git ${feedstock}
+          git add manifest.yaml
+          git commit -m "add ${feedstock}"
           git push --set-upstream origin $feedstock
         env:
           REPO: ${{ github.event.inputs.repoUrl }}
@@ -37,4 +53,4 @@ jobs:
       - name: Open PR
         run: gh pr create --fill
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
