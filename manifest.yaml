@@ -7,3 +7,7 @@ feedstocks:
     url:      https://github.com/anaconda-community/7zip-feedstock
     branch:   main
     commit:   2a3de02f160a147de687de5658cc23bd52e3f7cf
+  isort-feedstock:
+    url:      https://github.com/anaconda-community/isort-feedstock
+    branch:   main
+    commit:   d967b517eb3ba5ceba1f273db5ffc858ca1e430f
