@@ -44,7 +44,7 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git checkout -b $feedstock
-          abs aggregate add --branch main --commit ${hash} --url https://github.com/anaconda-community/${feedstock}.git ${feedstock}
+          abs aggregate add --branch main --commit ${hash} ${feedstock}
           git add manifest.yaml
           git commit -m "add ${feedstock}"
           git push --set-upstream origin $feedstock
