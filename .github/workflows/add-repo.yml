@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       repoUrl:
-        description: 'URL for feedstock that will be added'
+        description: 'URL for feedstock that will be added. To add multiple at once separate by a space'
         required: true
         type: string
 permissions: write-all
@@ -16,9 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fork repo
-        run: gh repo fork ${{ github.event.inputs.repoUrl }} --org anaconda-community --clone=false --default-branch-only
+        run: |
+          for repo in $REPO_LIST; do 
+            gh repo fork $repo --org anaconda-community --clone=false --default-branch-only
+          done
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          REPO_LIST: ${{ github.event.inputs.repoUrl }}
 
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
@@ -39,17 +43,20 @@ jobs:
 
       - name: Add submodule
         run: |
-          feedstock=${REPO:31}
-          hash=$(git ls-remote https://github.com/anaconda-community/${feedstock}.git | head -n1 | awk '{print $1;}')
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git checkout -b $feedstock
-          abs aggregate add --branch main --commit ${hash} ${feedstock}
+          branch=$(date +addfeedstocks%Y%m%d%H%M%S)
+          git checkout -b $branch
+          for repo in $REPO_LIST; do 
+            feedstock=${repo:31}
+            hash=$(git ls-remote https://github.com/anaconda-community/${feedstock}.git | head -n1 | awk '{print $1;}')          
+            abs aggregate add --branch main --commit ${hash} ${feedstock}
+          done
           git add manifest.yaml
-          git commit -m "add ${feedstock}"
-          git push --set-upstream origin $feedstock
+          git commit -m "add ${REPO_LIST}"
+          git push --set-upstream origin $branch
         env:
-          REPO: ${{ github.event.inputs.repoUrl }}
+          REPO_LIST: ${{ github.event.inputs.repoUrl }}
 
       - name: Open PR
         run: gh pr create --fill
