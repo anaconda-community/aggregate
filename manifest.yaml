@@ -23,3 +23,6 @@ feedstocks:
   pypy3.6-feedstock:
     branch:   main
     commit:   ef1ddd8059d168b72e7272b1a426c7e9299ea4f6
+  python_abi-feedstock:
+    branch:   main
+    commit:   da1a1ca3748011318b9ea9080862b24dad38035c
