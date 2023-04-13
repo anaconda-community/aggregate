@@ -5,6 +5,9 @@ feedstocks:
   7zip-feedstock:
     branch:   main
     commit:   2a3de02f160a147de687de5658cc23bd52e3f7cf
+  blas-feedstock:
+    branch:   main
+    commit:   44be55d4eb6cf7a1fd208d431c4af4907043208e
   bzip2-feedstock:
     branch:   main
     commit:   b457ee576d9b3f8596479af91cd42224e2e5f200
