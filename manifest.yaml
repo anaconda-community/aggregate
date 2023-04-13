@@ -17,3 +17,6 @@ feedstocks:
   numpy-feedstock:
     branch:   main
     commit:   0c871b5d6b4a05080e27c74238e98bb9d7dddd18
+  pypy3.6-feedstock:
+    branch:   main
+    commit:   ef1ddd8059d168b72e7272b1a426c7e9299ea4f6
