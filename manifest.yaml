@@ -14,6 +14,9 @@ feedstocks:
   isort-feedstock:
     branch:   main
     commit:   d967b517eb3ba5ceba1f273db5ffc858ca1e430f
+  lapack-feedstock:
+    branch:   main
+    commit:   530bac9d7a53b9b243cb178faade8947b8b130b6
   numpy-feedstock:
     branch:   main
     commit:   0c871b5d6b4a05080e27c74238e98bb9d7dddd18
