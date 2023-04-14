@@ -17,6 +17,9 @@ feedstocks:
   ctng-compilers-feedstock:
     branch:   main
     commit:   8118bec940e44fe5e58eddc45a2650fbdf4609e2
+  idna-feedstock:
+    branch:   main
+    commit:   66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
   isort-feedstock:
     branch:   main
     commit:   d967b517eb3ba5ceba1f273db5ffc858ca1e430f
