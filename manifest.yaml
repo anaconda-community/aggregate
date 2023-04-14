@@ -5,9 +5,6 @@ feedstocks:
   7zip-feedstock:
     branch: main
     commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
-  binutils-feedstock:
-    branch: main
-    commit: a4eea7a401f4a85a8ad8fae3600557858aca2397
   bzip2-feedstock:
     branch: main
     commit: b457ee576d9b3f8596479af91cd42224e2e5f200
