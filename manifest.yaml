@@ -1,37 +1,34 @@
 feedstocks:
   7za-feedstock:
-    branch:   main
-    commit:   c66268e070b0474d17bb4422d12ddd64555ecd82
+    branch: main
+    commit: c66268e070b0474d17bb4422d12ddd64555ecd82
   7zip-feedstock:
-    branch:   main
-    commit:   2a3de02f160a147de687de5658cc23bd52e3f7cf
+    branch: main
+    commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
   binutils-feedstock:
-    branch:   main
-    commit:   a4eea7a401f4a85a8ad8fae3600557858aca2397
+    branch: main
+    commit: a4eea7a401f4a85a8ad8fae3600557858aca2397
   blas-feedstock:
-    branch:   main
-    commit:   44be55d4eb6cf7a1fd208d431c4af4907043208e
+    branch: main
+    commit: 44be55d4eb6cf7a1fd208d431c4af4907043208e
   bzip2-feedstock:
-    branch:   main
-    commit:   b457ee576d9b3f8596479af91cd42224e2e5f200
-  ctng-compilers-feedstock:
-    branch:   main
-    commit:   8118bec940e44fe5e58eddc45a2650fbdf4609e2
+    branch: main
+    commit: b457ee576d9b3f8596479af91cd42224e2e5f200
   idna-feedstock:
-    branch:   main
-    commit:   66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
+    branch: main
+    commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
   isort-feedstock:
-    branch:   main
-    commit:   d967b517eb3ba5ceba1f273db5ffc858ca1e430f
+    branch: main
+    commit: d967b517eb3ba5ceba1f273db5ffc858ca1e430f
   lapack-feedstock:
-    branch:   main
-    commit:   530bac9d7a53b9b243cb178faade8947b8b130b6
+    branch: main
+    commit: 530bac9d7a53b9b243cb178faade8947b8b130b6
   numpy-feedstock:
-    branch:   main
-    commit:   0c871b5d6b4a05080e27c74238e98bb9d7dddd18
+    branch: main
+    commit: 0c871b5d6b4a05080e27c74238e98bb9d7dddd18
   pypy3.6-feedstock:
-    branch:   main
-    commit:   ef1ddd8059d168b72e7272b1a426c7e9299ea4f6
+    branch: main
+    commit: ef1ddd8059d168b72e7272b1a426c7e9299ea4f6
   python_abi-feedstock:
-    branch:   main
-    commit:   da1a1ca3748011318b9ea9080862b24dad38035c
+    branch: main
+    commit: da1a1ca3748011318b9ea9080862b24dad38035c
