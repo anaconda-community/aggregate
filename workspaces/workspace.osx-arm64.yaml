@@ -1,0 +1,6 @@
+aggregate_ref: main
+aggregate_repo: git@github.com:anaconda-community/aggregate.git
+channels: []
+recipes:
+- lapack-feedstock
+- numpy-feedstock
