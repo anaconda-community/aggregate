@@ -12,11 +12,10 @@ permissions: write-all
 
 env:
   ACTION: "Build on Prod-Community Manual Start"
-  REF: jloy/SIR-560-gha-community
+  BRANCH: main
   ARCH: linux-64
   ACTION_RUNNER: self-hosted-eks
   CONTAINER_RUNTIME: none
-  FLOWRUN_NAME: community-repo
 
 
 jobs:
@@ -27,6 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Start build
-        run: gh -R anaconda-distribution/rocket-platform workflow run "$ACTION" -r $REF -f feedstock=${{ github.event.inputs.feedstocks }} -f arch=$ARCH -f action_runner=$ACTION_RUNNER -f flowrun_name=$FLOWRUN_NAME -f container_runtime=$CONTAINER_RUNTIME
+        run: gh -R anaconda-distribution/rocket-platform workflow run "$ACTION" -f feedstock=${{ github.event.inputs.feedstocks }} -f arch=$ARCH -f action_runner=$ACTION_RUNNER -f container_runtime=$CONTAINER_RUNTIME -f branch=$BRANCH
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
