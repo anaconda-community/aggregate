@@ -1,0 +1,32 @@
+name: "Build feedstock"
+
+on:
+  workflow_dispatch:
+    inputs:
+      feedstocks:
+        description: 'Feedstocks to build in order, comma separated'
+        required: true
+        type: string
+
+permissions: write-all
+
+env:
+  ACTION: "Build on Prod-Community Manual Start"
+  REF: jloy/SIR-560-gha-community
+  ARCH: linux-64
+  ACTION_RUNNER: self-hosted-eks
+  CONTAINER_RUNTIME: none
+  FLOWRUN_NAME: community-repo
+
+
+jobs:
+  build:
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start build
+        run: gh -R anaconda-distribution/rocket-platform workflow run "$ACTION" -r $REF -f feedstock=${{ github.event.inputs.feedstocks }} -f arch=$ARCH -f action_runner=$ACTION_RUNNER -f flowrun_name=$FLOWRUN_NAME -f container_runtime=$CONTAINER_RUNTIME
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
