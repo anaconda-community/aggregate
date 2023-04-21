@@ -7,15 +7,38 @@ on:
         description: 'Feedstocks to build in order, comma separated'
         required: true
         type: string
+      arch:
+        description: 'Architecture to target'
+        default: "linux-64"
+        required: true
+        type: choice
+        options:
+          - linux-64
+      container_runtime:
+        description: 'The container runtime to use'
+        default: none
+        type: choice
+        options:
+          - docker
+          - podman
+          - none
+      branch:
+        description: 'Branch from anaconda-community/aggregate youd like to build from'
+        default: main
+        required: true
+      action_runner:
+        description: "The GitHub runner to use, only change when eks does not work"
+        default: "self-hosted-eks"
+        required: true
+        type: choice
+        options:
+          - "self-hosted-eks"
+          - "ubuntu-latest"
 
 permissions: write-all
 
 env:
   ACTION: "Build on Prod-Community Manual Start"
-  BRANCH: main
-  ARCH: linux-64
-  ACTION_RUNNER: self-hosted-eks
-  CONTAINER_RUNTIME: none
 
 
 jobs:
@@ -26,6 +49,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Start build
-        run: gh -R anaconda-distribution/rocket-platform workflow run "$ACTION" -f feedstock=${{ github.event.inputs.feedstocks }} -f arch=$ARCH -f action_runner=$ACTION_RUNNER -f container_runtime=$CONTAINER_RUNTIME -f branch=$BRANCH
+        run: gh -R anaconda-distribution/rocket-platform workflow run "$ACTION" -f feedstock=${{ inputs.feedstocks }} -f arch=${{ inputs.arch }} -f action_runner=${{ inputs.action_runner }} -f container_runtime=${{ inputs.container_runtime }} -f branch=${{ inputs.branch }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
