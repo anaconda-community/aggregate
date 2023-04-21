@@ -1,73 +1,76 @@
 feedstocks:
   7za-feedstock:
-    branch:   main
-    commit:   c66268e070b0474d17bb4422d12ddd64555ecd82
+    branch: main
+    commit: c66268e070b0474d17bb4422d12ddd64555ecd82
   7zip-feedstock:
-    branch:   main
-    commit:   2a3de02f160a147de687de5658cc23bd52e3f7cf
+    branch: main
+    commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
   boto3-feedstock:
-    branch:   main
-    commit:   29e34f98e410355038ada1f9f217de99527c6d92
+    branch: main
+    commit: 29e34f98e410355038ada1f9f217de99527c6d92
   botocore-feedstock:
-    branch:   main
-    commit:   959599fec0469dc08bf47971ed99bc542f2ee383
+    branch: main
+    commit: 959599fec0469dc08bf47971ed99bc542f2ee383
   brotlipy-feedstock:
-    branch:   main
-    commit:   3f434b421ffea2a2901e50e08df6c0cb129d2f8f
+    branch: main
+    commit: 3f434b421ffea2a2901e50e08df6c0cb129d2f8f
   bzip2-feedstock:
-    branch:   main
-    commit:   b457ee576d9b3f8596479af91cd42224e2e5f200
+    branch: main
+    commit: b457ee576d9b3f8596479af91cd42224e2e5f200
   certifi-feedstock:
-    branch:   main
-    commit:   e4717457773350f4b474acc25f3479bec00d60c8
+    branch: main
+    commit: e4717457773350f4b474acc25f3479bec00d60c8
   cffi-feedstock:
-    branch:   main
-    commit:   9d141942a5404542efc9ef2b584787885dadd31f
+    branch: main
+    commit: 9d141942a5404542efc9ef2b584787885dadd31f
   cryptography-feedstock:
-    branch:   main
-    commit:   e70d84149adf02d7482113fea612ea2211a4b10c
+    branch: main
+    commit: e70d84149adf02d7482113fea612ea2211a4b10c
   huggingface_hub-feedstock:
-    branch:   main
-    commit:   b3c28f622e20e1dc924e7f1a9b18ef3349791216
+    branch: main
+    commit: b3c28f622e20e1dc924e7f1a9b18ef3349791216
   idna-feedstock:
-    branch:   main
-    commit:   66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
+    branch: main
+    commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
   isort-feedstock:
-    branch:   main
-    commit:   d967b517eb3ba5ceba1f273db5ffc858ca1e430f
+    branch: main
+    commit: d967b517eb3ba5ceba1f273db5ffc858ca1e430f
   jmespath-feedstock:
-    branch:   main
-    commit:   6043a72de840e8ef3099ad11f6ea0a15be50e389
+    branch: main
+    commit: 6043a72de840e8ef3099ad11f6ea0a15be50e389
   lapack-feedstock:
-    branch:   main
-    commit:   ea070f43a481a76d076ecb59709ce1a3bdcc182a
+    branch: main
+    commit: ea070f43a481a76d076ecb59709ce1a3bdcc182a
   numpy-feedstock:
-    branch:   main
-    commit:   0c871b5d6b4a05080e27c74238e98bb9d7dddd18
+    branch: main
+    commit: 0c871b5d6b4a05080e27c74238e98bb9d7dddd18
   pycparser-feedstock:
-    branch:   main
-    commit:   da1bb2e0920083a120ee56db3674f469233d8d21
+    branch: main
+    commit: da1bb2e0920083a120ee56db3674f469233d8d21
   pyopenssl-feedstock:
-    branch:   main
-    commit:   bff90128ba7153b9058ca0eb12f9a42ea7a2c513
+    branch: main
+    commit: bff90128ba7153b9058ca0eb12f9a42ea7a2c513
   pypy3.6-feedstock:
-    branch:   main
-    commit:   ef1ddd8059d168b72e7272b1a426c7e9299ea4f6
+    branch: main
+    commit: ef1ddd8059d168b72e7272b1a426c7e9299ea4f6
   pysocks-feedstock:
-    branch:   main
-    commit:   b1b068113dbf052c02320de3d4b3e02aef014d4b
+    branch: main
+    commit: b1b068113dbf052c02320de3d4b3e02aef014d4b
   python-dateutil-feedstock:
-    branch:   main
-    commit:   0c6fb1e83060d55d4c2d6de6699c73036579af65
+    branch: main
+    commit: 0c6fb1e83060d55d4c2d6de6699c73036579af65
   python_abi-feedstock:
-    branch:   main
-    commit:   da1a1ca3748011318b9ea9080862b24dad38035c
+    branch: main
+    commit: da1a1ca3748011318b9ea9080862b24dad38035c
   s3transfer-feedstock:
-    branch:   main
-    commit:   00b7bdd490adfa1f8d80f07ee672863e444d20db
+    branch: main
+    commit: 00b7bdd490adfa1f8d80f07ee672863e444d20db
   six-feedstock:
-    branch:   main
-    commit:   72223a1cb193d2309b6434bb9ec806e0afcbca7c
+    branch: main
+    commit: 72223a1cb193d2309b6434bb9ec806e0afcbca7c
+  tomli-feedstock:
+    branch: main
+    commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
   urllib3-feedstock:
-    branch:   main
-    commit:   d6844acd9c374d04f3567e1dfb40511e3c4cb72a
+    branch: main
+    commit: d6844acd9c374d04f3567e1dfb40511e3c4cb72a
