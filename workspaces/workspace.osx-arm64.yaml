@@ -18,3 +18,4 @@ recipes:
 - botocore-feedstock
 - s3transfer-feedstock
 - boto3-feedstock
+- tomli-feedstock
