@@ -17,6 +17,9 @@ feedstocks:
   bzip2-feedstock:
     branch:   main
     commit:   b457ee576d9b3f8596479af91cd42224e2e5f200
+  certifi-feedstock:
+    branch:   main
+    commit:   e4717457773350f4b474acc25f3479bec00d60c8
   cffi-feedstock:
     branch:   main
     commit:   9d141942a5404542efc9ef2b584787885dadd31f
