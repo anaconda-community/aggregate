@@ -30,7 +30,7 @@ jobs:
           git push --set-upstream origin ${{ github.event.inputs.feedstock }}
 
       - name: Open PR
-        run: gh pr create --fill
+        run: gh pr create --fill --label "manifest-remove"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
