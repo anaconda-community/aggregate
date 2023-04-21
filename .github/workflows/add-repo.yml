@@ -2,14 +2,16 @@ name: "Add repo"
 on:
   workflow_dispatch:
     inputs:
-      repoUrl:
-        description: 'URL for feedstock that will be added. To add multiple at once separate by a space'
+      feedstocks:
+        description: 'Feedstocks that will be added. To add multiple at once separate comma'
         required: true
         type: string
 permissions: write-all
 
 jobs:
-  add-repo:
+  validate-input:
+    outputs:
+      feedstocks: ${{ steps.prune.outputs.feedstocks }}
     defaults:
       run:
         shell: bash -l {0}
@@ -17,39 +19,48 @@ jobs:
     steps:
       - name: Validate input
         run: |
-          for repo in $REPO_LIST; do 
+          for repo in ${REPO_LIST//,/ }; do 
             echo "Checking input $repo"
-            if [[ ! $repo =~ ^http.*conda-forge/[A-Za-z0-9_.-]+-feedstock$ ]]; then
-                echo "Invalid input $repo. Please enter repos of the form https://github.com/conda-forge/<library>-feedstock"
+            if [[ ! $repo =~ ^[A-Za-z0-9_.-]+-feedstock$ ]]; then
+                echo "Invalid input $repo. Please enter in of the form <library>-feedstock"
                 exit 1
             fi
           done
           echo "Valid input"
         env:
-          REPO_LIST: ${{ github.event.inputs.repoUrl }}
+          REPO_LIST: ${{ github.event.inputs.feedstocks }}
 
-      - name: Check if repo already exists
+      - name: Prune repos that already exists
+        id: prune
         run: |
           # Check gh is authenticated
           gh auth status >/dev/null || exit 1
-          for repo in $REPO_LIST; do
-            NEW_FEEDSTOCK=$(echo $repo | sed -r 's#^http.*conda-forge/([A-Za-z0-9_.-]+-feedstock)$#\1#')
+          addlist=""
+          for NEW_FEEDSTOCK in ${REPO_LIST//,/ }; do
             echo "Checking if anaconda-community/${NEW_FEEDSTOCK} already exists"
             # Check if the repo has already been forked
-            gh repo view anaconda-community/${NEW_FEEDSTOCK} > /dev/null && echo "anaconda-community/${NEW_FEEDSTOCK} already exists" && exit 1 || echo "anaconda-community/${NEW_FEEDSTOCK} does not exist"
+            gh repo view anaconda-community/${NEW_FEEDSTOCK} > /dev/null && echo "anaconda-community/${NEW_FEEDSTOCK} already exists" || addlist+="${NEW_FEEDSTOCK},"
           done
+          echo "feedstocks=$addlist" >> $GITHUB_OUTPUT
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPO_LIST: ${{ github.event.inputs.repoUrl }}
+          REPO_LIST: ${{ github.event.inputs.feedstocks }}
 
+  add-repo:
+    needs: validate-input
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    steps:
       - name: Fork repo
         run: |
-          for repo in $REPO_LIST; do
-            gh repo fork $repo --org anaconda-community --clone=false --default-branch-only
+          for repo in ${REPO_LIST//,/ }; do
+            gh repo fork https://github.com/conda-forge/$repo --org anaconda-community --clone=false --default-branch-only
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPO_LIST: ${{ github.event.inputs.repoUrl }}
+          REPO_LIST: ${{ needs.validate-input.outputs.feedstocks }}
 
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
@@ -74,17 +85,16 @@ jobs:
           git config user.email "<>"
           branch=$(date +addfeedstocks%Y%m%d%H%M%S)
           git checkout -b $branch
-          for repo in $REPO_LIST; do
-            feedstock=${repo:31}
-            hash=$(git ls-remote https://github.com/anaconda-community/${feedstock}.git | head -n1 | awk '{print $1;}')
-            abs aggregate add --branch main --commit ${hash} ${feedstock}
+          for repo in ${REPO_LIST//,/ }; do
+            hash=$(git ls-remote https://github.com/anaconda-community/${repo}.git | head -n1 | awk '{print $1;}')
+            abs aggregate add --branch main --commit ${hash} ${repo}
           done
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
           git commit -m "add ${REPO_LIST}"
           git push --set-upstream origin $branch
         env:
-          REPO_LIST: ${{ github.event.inputs.repoUrl }}
+          REPO_LIST: ${{ needs.validate-input.outputs.feedstocks }}
 
       - name: Open PR
         run: gh pr create --fill --label "manifest-add"

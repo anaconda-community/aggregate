@@ -3,8 +3,8 @@ name: "Build feedstock"
 on:
   workflow_dispatch:
     inputs:
-      feedstocks:
-        description: 'Feedstocks to build in order, comma separated'
+      package:
+        description: 'Package to build'
         required: true
         type: string
       arch:
@@ -42,13 +42,46 @@ env:
 
 
 jobs:
+  build-order:
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    outputs:
+      feedstocks: ${{ steps.build-order.outputs.feedstocks }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+
+      - uses: actions/cache@v2
+        with:
+          path: /usr/share/miniconda3/envs/agg
+          key: conda-${{ hashFiles('environment.yml') }}
+
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auth-activate-base: false
+          activate-environment: agg
+          channels: distro-tooling,conda-forge
+          python-version: 3.9
+          mamba-version: "*"
+          environment-file: environment.yml
+
+      - name: Get build order
+        id: build-order
+        run: |
+          python tools/find_deps.py -p ${{ inputs.package }} > output.log
+          feedstocks=$(tail -n 1 output.log)
+          echo "feedstocks=$feedstocks" >> $GITHUB_OUTPUT
+
   build:
+    needs: build-order
     defaults:
       run:
         shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
       - name: Start build
-        run: gh -R anaconda-distribution/rocket-platform workflow run "$ACTION" -f feedstock=${{ inputs.feedstocks }} -f arch=${{ inputs.arch }} -f action_runner=${{ inputs.action_runner }} -f container_runtime=${{ inputs.container_runtime }} -f branch=${{ inputs.branch }}
+        run: gh -R anaconda-distribution/rocket-platform workflow run "$ACTION" -f feedstock=${{ needs.build-order.outputs.feedstocks }} -f arch=${{ inputs.arch }} -f action_runner=${{ inputs.action_runner }} -f container_runtime=${{ inputs.container_runtime }} -f branch=${{ inputs.branch }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

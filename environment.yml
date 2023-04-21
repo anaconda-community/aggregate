@@ -6,4 +6,7 @@ dependencies:
   - python=3.9
   - abs-cli
   - abs-sdk
+  - pyyaml
+  - jinja2
+  - cachetools
   - yq
