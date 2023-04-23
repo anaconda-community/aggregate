@@ -2,9 +2,9 @@
 
 ## Add repo
 To add a new repo go to the 'Actions' tab in GitHub and select 'Add repo' action.
-For input we expect a conda-forge GitHub url. 
+For input use a conda-forge feedstock. Separate multiple feedstocks by comma
 
-Example: https://github.com/conda-forge/7za-feedstock
+Example: 7za-feedstock,7zip-feedstock
 
 This will fork the repo into anaconda-community org and create a PR that adds this feedstock to manifest
 
