@@ -9,9 +9,7 @@ on:
 permissions: write-all
 
 jobs:
-  validate-input:
-    outputs:
-      feedstocks: ${{ steps.prune.outputs.feedstocks }}
+  add-repo:
     defaults:
       run:
         shell: bash -l {0}
@@ -30,38 +28,6 @@ jobs:
         env:
           REPO_LIST: ${{ github.event.inputs.feedstocks }}
 
-      - name: Prune repos that already exists
-        id: prune
-        run: |
-          # Check gh is authenticated
-          gh auth status >/dev/null || exit 1
-          addlist=""
-          for NEW_FEEDSTOCK in ${REPO_LIST//,/ }; do
-            echo "Checking if anaconda-community/${NEW_FEEDSTOCK} already exists"
-            # Check if the repo has already been forked
-            gh repo view anaconda-community/${NEW_FEEDSTOCK} > /dev/null && echo "anaconda-community/${NEW_FEEDSTOCK} already exists" || addlist+="${NEW_FEEDSTOCK},"
-          done
-          echo "feedstocks=$addlist" >> $GITHUB_OUTPUT
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPO_LIST: ${{ github.event.inputs.feedstocks }}
-
-  add-repo:
-    needs: validate-input
-    defaults:
-      run:
-        shell: bash -l {0}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Fork repo
-        run: |
-          for repo in ${REPO_LIST//,/ }; do
-            gh repo fork https://github.com/conda-forge/$repo --org anaconda-community --clone=false --default-branch-only
-          done
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPO_LIST: ${{ needs.validate-input.outputs.feedstocks }}
-
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
 
@@ -79,7 +45,48 @@ jobs:
           mamba-version: "*"
           environment-file: environment.yml
 
+      - name: Get dependencies
+        id: deps
+        run: |
+          feedstocks=$REPO_LIST
+          for NEW_FEEDSTOCK in ${REPO_LIST//,/ }; do
+            package=${NEW_FEEDSTOCK%-feedstock*}
+            python tools/find_deps.py -p $package > output.log
+            feedstocks+=","
+            feedstocks+=$(tail -n 1 output.log)
+          done
+          echo "feedstocks=$feedstocks" >> $GITHUB_OUTPUT
+        env:
+          REPO_LIST: ${{ github.event.inputs.feedstocks }}
+
+      - name: Prune repos that already exists
+        id: prune
+        run: |
+          # Check gh is authenticated
+          gh auth status >/dev/null || exit 1
+          addlist=""
+          for NEW_FEEDSTOCK in ${REPO_LIST//,/ }; do
+            echo "Checking if anaconda-community/${NEW_FEEDSTOCK} already exists"
+            # Check if the repo has already been forked
+            gh repo view anaconda-community/${NEW_FEEDSTOCK} > /dev/null && echo "anaconda-community/${NEW_FEEDSTOCK} already exists" || addlist+="${NEW_FEEDSTOCK},"
+          done
+          echo "feedstocks=$addlist" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          REPO_LIST: ${{ steps.deps.outputs.feedstocks }}
+
+      - name: Fork repo
+        if: ${{ steps.prune.outputs.feedstocks != '' }}
+        run: |
+          for repo in ${REPO_LIST//,/ }; do
+            gh repo fork https://github.com/conda-forge/$repo --org anaconda-community --clone=false --default-branch-only
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          REPO_LIST: ${{ steps.prune.outputs.feedstocks }}
+
       - name: Add submodule
+        if: ${{ steps.prune.outputs.feedstocks != '' }}
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
@@ -94,9 +101,10 @@ jobs:
           git commit -m "add ${REPO_LIST}"
           git push --set-upstream origin $branch
         env:
-          REPO_LIST: ${{ needs.validate-input.outputs.feedstocks }}
+          REPO_LIST: ${{ steps.prune.outputs.feedstocks  }}
 
       - name: Open PR
+        if: ${{ steps.prune.outputs.feedstocks != '' }}
         run: gh pr create --fill --label "manifest-add"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
