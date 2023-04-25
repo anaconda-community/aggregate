@@ -1,0 +1,42 @@
+name: "PR build feedstock"
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - 'main'
+    paths:
+      - 'manifest.yaml'
+
+jobs:
+  find-feedstocks:
+    defaults:
+      run:
+        shell: bash -l {0}
+    outputs:
+      feedstocks: ${{ steps.feedstocks.outputs.feedstocks }}
+      branch:  ${{ steps.extract_branch.outputs.feedstocks }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+        with:
+          fetch-depth: 2
+
+      - name: Extract branch name
+        run: echo "branch=$(echo ${GITHUB_REF#refs/heads/})" >>$GITHUB_OUTPUT
+        id: extract_branch
+
+      - name: Get feedstocks
+        id: feedstocks
+        run: |
+          feedstocks=($(git diff HEAD^..HEAD --diff-filter=M | grep "+\s*.*-feedstock:" | sed -r 's#^\+[[:blank:]]+(.*-feedstock):$#\1#'))
+          printf -v joined '%s,' "${feedstocks[@]}"
+          echo "feedstocks=$joined" >>$GITHUB_OUTPUT
+
+  build:
+    needs: find-feedstocks
+    uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
+    with:
+      feedstock: ${{ needs.find-feedstocks.outputs.feedstocks }}
+      branch: ${{ needs.find-feedstocks.outputs.branch }}

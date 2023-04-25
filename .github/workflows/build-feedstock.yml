@@ -1,39 +1,28 @@
-name: "Build feedstock"
+name: "Build feedstocks"
 
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
-      package:
-        description: 'Package to build'
+      feedstock:
+        description: 'Feedstock to build'
         required: true
         type: string
       arch:
         description: 'Architecture to target'
         default: "linux-64"
-        required: true
-        type: choice
-        options:
-          - linux-64
+        type: string
       container_runtime:
         description: 'The container runtime to use'
         default: none
-        type: choice
-        options:
-          - docker
-          - podman
-          - none
+        type: string
       branch:
         description: 'Branch from anaconda-community/aggregate youd like to build from'
         default: main
-        required: true
+        type: string
       action_runner:
         description: "The GitHub runner to use, only change when eks does not work"
         default: "self-hosted-eks"
-        required: true
-        type: choice
-        options:
-          - "self-hosted-eks"
-          - "ubuntu-latest"
+        type: string
 
 permissions: write-all
 
@@ -70,7 +59,7 @@ jobs:
       - name: Get build order
         id: build-order
         run: |
-          python tools/find_deps.py -p ${{ inputs.package }} > output.log
+          python tools/find_deps.py -f ${{ inputs.feedstock }} > output.log
           feedstocks=$(tail -n 1 output.log)
           echo "feedstocks=$feedstocks" >> $GITHUB_OUTPUT
 
