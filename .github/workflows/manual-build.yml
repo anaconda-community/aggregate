@@ -1,0 +1,48 @@
+name: "Manual build feedstock"
+
+on:
+  workflow_dispatch:
+    inputs:
+      feedstock:
+        description: 'Feedstock to build'
+        required: true
+        type: string
+      arch:
+        description: 'Architecture to target'
+        default: "linux-64"
+        required: true
+        type: choice
+        options:
+          - linux-64
+      container_runtime:
+        description: 'The container runtime to use'
+        default: none
+        type: choice
+        options:
+          - docker
+          - podman
+          - none
+      branch:
+        description: 'Branch from anaconda-community/aggregate youd like to build from'
+        default: main
+        required: true
+      action_runner:
+        description: "The GitHub runner to use, only change when eks does not work"
+        default: "self-hosted-eks"
+        required: true
+        type: choice
+        options:
+          - "self-hosted-eks"
+          - "ubuntu-latest"
+
+permissions: write-all
+
+jobs:
+  build:
+    uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
+    with:
+      feedstock: ${{ inputs.feedstock }}
+      arch: ${{ inputs.arch }}
+      container_runtime: ${{ inputs.container_runtime }}
+      branch: ${{ inputs.branch }}
+      feedaction_runnerstock: ${{ inputs.action_runner }}

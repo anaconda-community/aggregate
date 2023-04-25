@@ -74,17 +74,26 @@ def read_requirements(data, name, section, attribute):
     return req
 
 
-@cached(cache)
 def is_recipe_available(pkg_name: str, lookup: bool):
     if pkg_name.startswith("ctng-compilers-"):
         return False, ""
-    url = f"{github_base_url}/conda-forge/{pkg_name}-feedstock/main/recipe/meta.yaml"
-    response = session.get(url, allow_redirects=False)
-    if response.status_code != 200:
-        if lookup:
-            return is_recipe_available(lookup_feedstock_name(pkg_name), False)
-        return False, ""
-    ordered_feedstocks[f"{pkg_name}-feedstock"] = url
+
+    # If we processed for this parent exit, otherwise move package in build order
+    if f"{pkg_name}-feedstock" in ordered_feedstocks.keys():
+        if ordered_feedstocks[f"{pkg_name}-feedstock"] == parent:
+            return False, ""
+        else:
+            ordered_feedstocks.pop(f"{pkg_name}-feedstock")
+    # If we haven't processed then lookup recipe
+    else:
+        url = f"{github_base_url}/conda-forge/{pkg_name}-feedstock/main/recipe/meta.yaml"
+        response = session.get(url, allow_redirects=False)
+        if response.status_code != 200:
+            if lookup:
+                return is_recipe_available(lookup_feedstock_name(pkg_name), False)
+            return False, ""
+
+    ordered_feedstocks[f"{pkg_name}-feedstock"] = parent
     return True, "main"
 
 
@@ -387,30 +396,15 @@ def create_parser() -> argparse.ArgumentParser:
     # Create parser for arguments and add arguments.
     parser = argparse.ArgumentParser(
         prog="check_avail",
-        description="This Python script generates a dependency tree for a specified package \
-                    found on the conda-forge channel by default. The tool inspects \
-                    the host and run dependencies required to build the package and checks for \
-                    the existence of these dependencies in the Anaconda main channel. This gives \
-                    the user an idea of how many missing or outdated dependencies there are, including their names.\n \n \
-                    Depending on the flags supplied, the output text will be colored. Here's what the \
-                    colors indicate:"
-        + " Dependency is present in the main channel (\u2713);"
-       
-        + " Dependency is not present in the main channel (!);"
-       
-        + " Dependency appears to be present on some architectures, but not all, \
-                    OR a newer version of the dependency is required (^);"
-       
-        + " Manual inspection of the dependency is required as it was not \
-                    possible to locate it's repo on conda-forge (?)."
+        description="This Python script generates an ordered list of feedstocks to build."
     )
     popt = parser.add_mutually_exclusive_group(required=True)
 
     popt.add_argument(
-        "-p",
-        "--package_name",
+        "-f",
+        "--feedstock_name",
         type=check_dep_name,
-        help="Package name available on conda-forge",
+        help="Feedstock name available on conda-forge. Should be a string, comma separated",
     )
     parser.add_argument(
         "-a",
@@ -458,9 +452,10 @@ check_manually = []
 session = requests.Session()
 rdata = {}
 ordered_feedstocks = dict()
+parent = ""
 
 
-def print_summary():
+def print_summary(package_name):
     global i
     print("\n\n########################## SUMMARY ##########################")
     if (len(missing_deps) + len(outdated_deps) + len(check_manually)) > 0:
@@ -484,7 +479,7 @@ def print_summary():
                 print("- " + i)
     else:
         print(
-            "All dependencies are available to build {} {}".format(args.package_name, version)
+            "All dependencies are available to build {} {}".format(package_name, version)
         )
 
 
@@ -494,12 +489,6 @@ if __name__ == "__main__":
     parser = create_parser()
     # Get the parsed arguments and get to work!
     args = parser.parse_args()
-
-    # Check if the package is accessible in the conda-forge channel
-    repo_avail, def_branch = is_recipe_available(args.package_name, True)
-    if not repo_avail:
-        print("unable to locate the {} package on conda-forge".format(args.package_name))
-        exit(1)
 
     # Prepare the list of requested archs
     archs = supportedArchs.copy()
@@ -513,12 +502,24 @@ if __name__ == "__main__":
                       list: {}".format(arch, supportedArchs))
                 exit(1)
 
-    # Inspect and draw package's dependencies
-    deps, version = get_deps(args.package_name, def_branch, archs, args.check_version_check_selector)
+    for feedstock in args.feedstock_name.split(","):
+        if feedstock == "":
+            continue
+        # Remove -feedstock
+        package_name = feedstock[:-10]
+        parent = package_name
+        # Check if the package is accessible in the conda-forge channel
+        repo_avail, def_branch = is_recipe_available(package_name, True)
+        if not repo_avail:
+            print("unable to locate the {} feedstock on conda-forge".format(package_name))
+            continue
 
-    print_level(deps, archs, " ", args.check_version_check_selector, args.expand_tree)
+        # Inspect and draw package's dependencies
+        deps, version = get_deps(package_name, def_branch, archs, args.check_version_check_selector)
 
-    # print_summary()
+        print_level(deps, archs, " ", args.check_version_check_selector, args.expand_tree)
+
+    # print_summary(package_name)
 
     feedstocks = ','.join(reversed(list(ordered_feedstocks.keys())))
     print(feedstocks)
