@@ -50,8 +50,7 @@ jobs:
         run: |
           feedstocks=$REPO_LIST
           for NEW_FEEDSTOCK in ${REPO_LIST//,/ }; do
-            package=${NEW_FEEDSTOCK%-feedstock*}
-            python tools/find_deps.py -p $package > output.log
+            python tools/find_deps.py -f $NEW_FEEDSTOCK > output.log
             feedstocks+=","
             feedstocks+=$(tail -n 1 output.log)
           done
