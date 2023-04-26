@@ -30,7 +30,10 @@ jobs:
       - name: Get feedstocks
         id: feedstocks
         run: |
+          # Get added feedstocks
           feedstocks=($(git diff HEAD^..HEAD --diff-filter=M | grep "+\s*.*-feedstock:" | sed -r 's#^\+[[:blank:]]+(.*-feedstock):$#\1#'))
+          # Get updated feedstocks
+          feedstocks+=($(git diff HEAD^..HEAD --diff-filter=M | grep -B 2 "\-\s*commit:" | grep "\s*.*-feedstock:" | sed -r 's#^[[:blank:]]+(.*-feedstock):$#\1#'))
           printf -v joined '%s,' "${feedstocks[@]}"
           echo "feedstocks=$joined" >>$GITHUB_OUTPUT
 
