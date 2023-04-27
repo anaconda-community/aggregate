@@ -45,6 +45,6 @@ jobs:
       arch: ${{ inputs.arch }}
       container_runtime: ${{ inputs.container_runtime }}
       branch: ${{ inputs.branch }}
-      feedaction_runnerstock: ${{ inputs.action_runner }}
+      action_runner: ${{ inputs.action_runner }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
