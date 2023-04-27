@@ -27,7 +27,6 @@ on:
       GH_TOKEN:
         description: 'Github Token'
         required: true
-        type: string
 
 permissions: write-all
 
