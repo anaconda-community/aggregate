@@ -74,3 +74,6 @@ feedstocks:
   urllib3-feedstock:
     branch: main
     commit: d6844acd9c374d04f3567e1dfb40511e3c4cb72a
+  wheel-feedstock:
+    branch: main
+    commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
