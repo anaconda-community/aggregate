@@ -80,6 +80,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           REPO_LIST: ${{ steps.prune.outputs.feedstocks }}
 
+      - name: View fork
+        if: ${{ steps.prune.outputs.feedstocks != '' }}
+        run: |
+          for repo in ${REPO_LIST//,/ }; do
+            gh repo view anaconda-community/$repo > /dev/null
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          REPO_LIST: ${{ steps.prune.outputs.feedstocks }}
+
       - name: Add submodule
         if: ${{ steps.prune.outputs.feedstocks != '' }}
         run: |
