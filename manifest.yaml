@@ -77,3 +77,6 @@ feedstocks:
   wheel-feedstock:
     branch: main
     commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
+  zipp-feedstock:
+    branch: main
+    commit: 5f6d9be431801864a7e4c9aceb4367338581293a
