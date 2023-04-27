@@ -25,3 +25,7 @@ For input use the repo name.
 Example: `7za-feedstock`
 
 This will remove the forked repo from anaconda-community and create a PR that removes feedstock from manifest.yaml.
+
+## Build
+Whenever a PR is opened or merged where manifest.yaml has been updated the file will be parsed and additions to it will
+trigger a new build.
