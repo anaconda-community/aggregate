@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       feedstocks:
-        description: 'Feedstocks that will be added. To add multiple at once separate comma'
+        description: 'Feedstocks that will be added. To add multiple at once separate by comma'
         required: true
         type: string
 permissions: write-all
@@ -47,13 +47,9 @@ jobs:
 
       - name: Get dependencies
         id: deps
-        run: |
-          feedstocks=$REPO_LIST
-          for NEW_FEEDSTOCK in ${REPO_LIST//,/ }; do
-            python tools/find_deps.py -f $NEW_FEEDSTOCK > output.log
-            feedstocks+=","
-            feedstocks+=$(tail -n 1 output.log)
-          done
+        run: |          
+          python tools/find_deps.py -f ${{ github.event.inputs.feedstocks }} > output.log
+          feedstocks+=$(tail -n 1 output.log)
           echo "feedstocks=$feedstocks" >> $GITHUB_OUTPUT
         env:
           REPO_LIST: ${{ github.event.inputs.feedstocks }}

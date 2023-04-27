@@ -17,7 +17,7 @@ jobs:
         shell: bash -l {0}
     outputs:
       feedstocks: ${{ steps.feedstocks.outputs.feedstocks }}
-      branch:  ${{ steps.extract_branch.outputs.feedstocks }}
+      branch:  ${{ steps.extract_branch.outputs.branch }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -45,3 +45,5 @@ jobs:
     with:
       feedstock: ${{ needs.find-feedstocks.outputs.feedstocks }}
       branch: ${{ needs.find-feedstocks.outputs.branch }}
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}

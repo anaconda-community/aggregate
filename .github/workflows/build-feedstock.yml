@@ -23,6 +23,11 @@ on:
         description: "The GitHub runner to use, only change when eks does not work"
         default: "self-hosted-eks"
         type: string
+    secrets:
+      GH_TOKEN:
+        description: 'Github Token'
+        required: true
+        type: string
 
 permissions: write-all
 
