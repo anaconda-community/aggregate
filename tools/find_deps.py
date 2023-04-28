@@ -18,6 +18,30 @@ cache: Cache = LRUCache(maxsize=1000)
 
 warnings.simplefilter("ignore")
 
+supported_archs = [
+    "linux-64",
+    "linux-ppc64le",
+    "linux-aarch64",
+    "linux-s390x",
+    "osx-64",
+    "osx-arm64",
+    "win-64",
+    "noarch",
+]
+github_base_url = "https://raw.githubusercontent.com"
+username = os.getenv("GIT_USERNAME")
+token = os.getenv("GIT_TOKEN")
+avail_pkg = []
+unavail_pkg = []
+
+missing_deps = []
+outdated_deps = []
+check_manually = []
+session = requests.Session()
+rdata = {}
+ordered_feedstocks = dict()
+parent = ""
+
 
 def ver_in_range(verCand, verRange):
     inRange = True
@@ -78,12 +102,9 @@ def is_recipe_available(pkg_name: str, lookup: bool):
     if pkg_name.startswith("ctng-compilers-"):
         return False, ""
 
-    # If we processed for this parent exit, otherwise move package in build order
+    # We already verified recipe, just move package in build order
     if f"{pkg_name}-feedstock" in ordered_feedstocks.keys():
-        if ordered_feedstocks[f"{pkg_name}-feedstock"] == parent:
-            return False, ""
-        else:
-            ordered_feedstocks.pop(f"{pkg_name}-feedstock")
+        ordered_feedstocks.pop(f"{pkg_name}-feedstock")
     # If we haven't processed then lookup recipe
     else:
         url = f"{github_base_url}/conda-forge/{pkg_name}-feedstock/main/recipe/meta.yaml"
@@ -92,7 +113,6 @@ def is_recipe_available(pkg_name: str, lookup: bool):
             if lookup:
                 return is_recipe_available(lookup_feedstock_name(pkg_name), False)
             return False, ""
-
     ordered_feedstocks[f"{pkg_name}-feedstock"] = parent
     return True, "main"
 
@@ -148,7 +168,6 @@ def get_deps(name, branch, archs, check_version_check_selector):
             for dep in deps_collection:
                 if dep not in deps_dict and isinstance(dep, str):
                     deps_dict[dep] = []
-
     return deps_dict, get_requirements(data, name, "package", "version")
 
 
@@ -239,13 +258,13 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
 
         # Check if dependency is available and populate availability arrays
         # print("Checking " + dep)
+        repo_avail, def_branch = is_recipe_available(dep, True)
         if dep in avail_pkg:
             pkg_avail = True
         elif "conda" in dep:
             repo_avail = False
         else:
             if dep not in unavail_pkg:
-                repo_avail, def_branch = is_recipe_available(dep, True)
                 # conda forge sometimes uses '-' as a separator while we use '_', and vice versa. Check:
                 if not repo_avail:
                     repo_avail, dep, def_branch = guess_feedstock_name(dep, "-", "-")
@@ -258,26 +277,26 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
                     if repo_avail:
                         constrLine += " (subpackage of " + dep + "-feedstock)"
 
-                if repo_avail:
-                    pkg_avail = is_recipe_available(dep, True)
-                    if pkg_avail:
-                        avail_pkg.append(dep)
-                        depsOfdep, version = get_deps(
-                            dep,
-                            def_branch,
-                            archSupportDep,
-                            check_version_check_selector,
-                        )
-                        print_level(
-                            depsOfdep,
-                            archSupportDep,
-                            prefix2,
-                            check_version_check_selector,
-                            expand_tree,
-                        )
-                    else:
-                        unavail_pkg.append(dep)
-                        unavail_pkg.append(def_branch)
+        if repo_avail:
+            pkg_avail = is_recipe_available(dep, True)
+            if pkg_avail:
+                avail_pkg.append(dep)
+                depsOfdep, version = get_deps(
+                    dep,
+                    def_branch,
+                    archSupportDep,
+                    check_version_check_selector,
+                )
+                print_level(
+                    depsOfdep,
+                    archSupportDep,
+                    prefix2,
+                    check_version_check_selector,
+                    expand_tree,
+                )
+            else:
+                unavail_pkg.append(dep)
+                unavail_pkg.append(def_branch)
 
         # Take into account (if specified) version range and (if specified) arch selectors:
         if check_version_check_selector:
@@ -430,31 +449,6 @@ def create_parser() -> argparse.ArgumentParser:
     return parser
 
 
-supportedArchs = [
-    "linux-64",
-    "linux-ppc64le",
-    "linux-aarch64",
-    "linux-s390x",
-    "osx-64",
-    "osx-arm64",
-    "win-64",
-    "noarch",
-]
-github_base_url = "https://raw.githubusercontent.com"
-username = os.getenv("GIT_USERNAME")
-token = os.getenv("GIT_TOKEN")
-avail_pkg = []
-unavail_pkg = []
-
-missing_deps = []
-outdated_deps = []
-check_manually = []
-session = requests.Session()
-rdata = {}
-ordered_feedstocks = dict()
-parent = ""
-
-
 def print_summary(package_name):
     global i
     print("\n\n########################## SUMMARY ##########################")
@@ -491,15 +485,15 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Prepare the list of requested archs
-    archs = supportedArchs.copy()
+    archs = supported_archs.copy()
     if args.archs:
         archs = []
         for arch in args.archs.split():
-            if arch in supportedArchs:
+            if arch in supported_archs:
                 archs.append(arch)
             else:
                 print("{} arch is not supported. Please use the names from the \
-                      list: {}".format(arch, supportedArchs))
+                      list: {}".format(arch, supported_archs))
                 exit(1)
 
     for feedstock in args.feedstock_name.split(","):
