@@ -44,6 +44,9 @@ feedstocks:
   charset-normalizer-feedstock:
     branch: main
     commit: 6ddc2cb6f7b5ea0708c992b324133bce146520c2
+  colorama-feedstock:
+    branch: main
+    commit: 220ddab258ee802a2420457746e1557e196881bd
   cryptography-feedstock:
     branch: main
     commit: e70d84149adf02d7482113fea612ea2211a4b10c
