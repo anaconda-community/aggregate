@@ -74,6 +74,9 @@ feedstocks:
   isort-feedstock:
     branch: main
     commit: d967b517eb3ba5ceba1f273db5ffc858ca1e430f
+  jinja2-feedstock:
+    branch: main
+    commit: 4a7f23595edf6db945fc51afb86151bf47a19ee9
   jmespath-feedstock:
     branch: main
     commit: 6043a72de840e8ef3099ad11f6ea0a15be50e389
@@ -83,6 +86,9 @@ feedstocks:
   libprotobuf-feedstock:
     branch: main
     commit: a2b38e3077de05fe7b71e8d58a73935ecd0891ea
+  markupsafe-feedstock:
+    branch: main
+    commit: e4ad072f63fcc0e01d04898ec466edaa431b7269
   multidict-feedstock:
     branch: main
     commit: ae58730f27aa29216d882cf92edf6f8bcd18232c
