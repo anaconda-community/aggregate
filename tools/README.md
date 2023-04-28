@@ -14,3 +14,11 @@ To install, create a new conda environment and install:
 To run provide feedstock name
 
 `python find_deps.py -f urllib3-feedstock`
+
+### Issues
+* This is considered a temporary solution to get a build order
+* Architecture is ignored
+* Version is ignored - always looks for latest
+* Nothing is being done to detect a circular dependency - this will likely crash if it occurs
+* Using recipes from conda-forge
+* Not a graph, just prints an ordered list
