@@ -5,6 +5,21 @@ feedstocks:
   7zip-feedstock:
     branch: main
     commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
+  aiohttp-feedstock:
+    branch: main
+    commit: 66bfa4f3f915731461ec9b66a3ebbafaf3bd5372
+  aiosignal-feedstock:
+    branch: main
+    commit: 49d78be8c23a443a1f669225bffb882b51148369
+  async-timeout-feedstock:
+    branch: main
+    commit: 402a764275fc8ae746b10184a0c871a01663df4a
+  asynctest-feedstock:
+    branch: main
+    commit: 97b9ba3a37d8bb59f8044c5597b9be828c6bc35a
+  attrs-feedstock:
+    branch: main
+    commit: 02e49813916c95cb3dd32d05bd2589373e2d676f
   boto3-feedstock:
     branch: main
     commit: 29e34f98e410355038ada1f9f217de99527c6d92
@@ -17,6 +32,9 @@ feedstocks:
   bzip2-feedstock:
     branch: main
     commit: b457ee576d9b3f8596479af91cd42224e2e5f200
+  cachetools-feedstock:
+    branch: main
+    commit: a9fc0f4b6690d58907e1f21900551b3504562cb7
   certifi-feedstock:
     branch: main
     commit: e4717457773350f4b474acc25f3479bec00d60c8
@@ -29,12 +47,27 @@ feedstocks:
   cryptography-feedstock:
     branch: main
     commit: e70d84149adf02d7482113fea612ea2211a4b10c
+  frozenlist-feedstock:
+    branch: main
+    commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
+  google-api-core-feedstock:
+    branch: main
+    commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
+  google-auth-feedstock:
+    branch: main
+    commit: 950a2e17573f43bcf1ca4080e0ef76c75a5886b9
+  googleapis-common-protos-feedstock:
+    branch: main
+    commit: d67b8741ffa433d88f2d4a05363ae7f9f834de5b
   huggingface_hub-feedstock:
     branch: main
     commit: b3c28f622e20e1dc924e7f1a9b18ef3349791216
   idna-feedstock:
     branch: main
     commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
+  idna_ssl-feedstock:
+    branch: main
+    commit: 6a6a33791c0374f2071d9df8a6b225070bd526ea
   isort-feedstock:
     branch: main
     commit: d967b517eb3ba5ceba1f273db5ffc858ca1e430f
@@ -44,9 +77,24 @@ feedstocks:
   lapack-feedstock:
     branch: main
     commit: ea070f43a481a76d076ecb59709ce1a3bdcc182a
+  libprotobuf-feedstock:
+    branch: main
+    commit: a2b38e3077de05fe7b71e8d58a73935ecd0891ea
+  multidict-feedstock:
+    branch: main
+    commit: ae58730f27aa29216d882cf92edf6f8bcd18232c
   numpy-feedstock:
     branch: main
     commit: 0c871b5d6b4a05080e27c74238e98bb9d7dddd18
+  protobuf-feedstock:
+    branch: main
+    commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
+  pyasn1-feedstock:
+    branch: main
+    commit: 93ee5e0332c7f62d840ad63accea81fe9bf1cf36
+  pyasn1-modules-feedstock:
+    branch: main
+    commit: bc2a4ed0b42f845d26ccba2a807f31d2eb0ddcf0
   pycparser-feedstock:
     branch: main
     commit: da1bb2e0920083a120ee56db3674f469233d8d21
@@ -65,24 +113,42 @@ feedstocks:
   python_abi-feedstock:
     branch: main
     commit: da1a1ca3748011318b9ea9080862b24dad38035c
+  pyu2f-feedstock:
+    branch: main
+    commit: 3f84b07414dbfb3a25d6d10028295051042f9aaa
   requests-feedstock:
     branch: main
     commit: d27fb9bba8a9cb4477d274fa2a18a3a7309f4584
+  rsa-feedstock:
+    branch: main
+    commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
   s3transfer-feedstock:
     branch: main
     commit: 00b7bdd490adfa1f8d80f07ee672863e444d20db
+  setuptools-feedstock:
+    branch: main
+    commit: 3d1c73c2de420f6101b4d32468a6c3b51468d84b
   six-feedstock:
     branch: main
     commit: 72223a1cb193d2309b6434bb9ec806e0afcbca7c
   tomli-feedstock:
     branch: main
     commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
+  typing_extensions-feedstock:
+    branch: main
+    commit: f97fea64bed562e6a10484a6ac6f8ff387f021f6
+  ucrt-feedstock:
+    branch: main
+    commit: 9017aa988beb5c9503657a56b223bd05691d0047
   urllib3-feedstock:
     branch: main
     commit: d6844acd9c374d04f3567e1dfb40511e3c4cb72a
   wheel-feedstock:
     branch: main
     commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
+  yarl-feedstock:
+    branch: main
+    commit: 97ba168ef78ad3c6637bf75a1180fe34c9fb4dea
   zipp-feedstock:
     branch: main
     commit: 5f6d9be431801864a7e4c9aceb4367338581293a
