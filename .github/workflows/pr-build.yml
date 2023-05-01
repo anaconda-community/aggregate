@@ -17,7 +17,7 @@ jobs:
         shell: bash -l {0}
     outputs:
       feedstocks: ${{ steps.feedstocks.outputs.feedstocks }}
-      branch:  ${{ steps.extract_branch.outputs.branch }}
+      branch:  ${{ steps.branch-name.outputs.current_branch }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,9 +25,9 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Extract branch name
-        run: echo "branch=$(echo ${GITHUB_REF#refs/heads/})" >>$GITHUB_OUTPUT
-        id: extract_branch
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v6
 
       - name: Get feedstocks
         id: feedstocks
