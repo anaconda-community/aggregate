@@ -83,6 +83,9 @@ feedstocks:
   lapack-feedstock:
     branch: main
     commit: ea070f43a481a76d076ecb59709ce1a3bdcc182a
+  libffi-feedstock:
+    branch: main
+    commit: 0447f3e6c89dd24d484aa69084e029f973ba7f6d
   libprotobuf-feedstock:
     branch: main
     commit: a2b38e3077de05fe7b71e8d58a73935ecd0891ea
