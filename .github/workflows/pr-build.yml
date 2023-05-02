@@ -44,6 +44,6 @@ jobs:
     uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
     with:
       feedstock: ${{ needs.find-feedstocks.outputs.feedstocks }}
-      branch: ${{ needs.find-feedstocks.outputs.branch }}
+      branch: ${{ github.event.pull_request.merged && 'main' || needs.find-feedstocks.outputs.branch }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
