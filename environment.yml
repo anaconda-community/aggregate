@@ -10,3 +10,4 @@ dependencies:
   - jinja2
   - cachetools
   - yq
+  - boto3
