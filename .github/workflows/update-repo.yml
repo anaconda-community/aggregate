@@ -37,7 +37,8 @@ jobs:
           mamba-version: "*"
           environment-file: environment.yml
 
-      - name: Add submodule
+      - name: Update manifest
+        id: manifest
         run: |
           hash=$(git ls-remote https://github.com/anaconda-community/${REPO}.git | head -n1 | awk '{print $1;}')
           git config user.name "GitHub Actions Bot"
@@ -45,12 +46,12 @@ jobs:
           git checkout -b $feedstock
           abs aggregate add --branch main --commit ${hash} ${REPO}
           git add manifest.yaml
-          git commit -m "update ${feedstock}"
-          git push --set-upstream origin $feedstock
+          git commit -m "update ${feedstock}" && git push --set-upstream origin $feedstock && echo "createpr=true" >> $GITHUB_OUTPUT
         env:
           REPO: ${{ github.event.inputs.repo }}
 
       - name: Open PR
+        if: ${{ steps.manifest.outputs.createpr == 'true' }}
         run: gh pr create --fill
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

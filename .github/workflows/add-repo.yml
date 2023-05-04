@@ -90,9 +90,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           REPO_LIST: ${{ steps.prune.outputs.feedstocks }}
 
-      - name: Add submodule
-        if: ${{ steps.prune.outputs.feedstocks != '' }}
-        run: |
+      - name: Update manifest
+        id: manifest
+        run: |          
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           branch=$(date +addfeedstocks%Y%m%d%H%M%S)
@@ -103,13 +103,12 @@ jobs:
           done
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "add ${REPO_LIST}"
-          git push --set-upstream origin $branch
+          git commit -m "add ${REPO_LIST}" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT
         env:
-          REPO_LIST: ${{ steps.prune.outputs.feedstocks  }}
+          REPO_LIST: ${{ steps.deps.outputs.feedstocks  }}
 
       - name: Open PR
-        if: ${{ steps.prune.outputs.feedstocks != '' }}
+        if: ${{ steps.manifest.outputs.createpr == 'true' }}
         run: gh pr create --fill --label "manifest-add"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
