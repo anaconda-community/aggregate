@@ -365,6 +365,12 @@ feedstocks:
   urllib3-feedstock:
     branch: main
     commit: d6844acd9c374d04f3567e1dfb40511e3c4cb72a
+  webencodings-feedstock:
+    branch: main
+    commit: 045d9b752ad89b777f0bd6b2a6dfb46924a0a449
+  websocket-client-feedstock:
+    branch: main
+    commit: 371351d85870f547ab94dafbae10d4465c945390
   wheel-feedstock:
     branch: main
     commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
