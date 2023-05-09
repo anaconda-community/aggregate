@@ -251,6 +251,12 @@ feedstocks:
   pydantic-feedstock:
     branch: main
     commit: 2753fe10a717a64a00935c9a22f11f42d7f92f9f
+  pygments-feedstock:
+    branch: main
+    commit: 58c278d72111861767540b83cebd623c0016fb7e
+  pyjwt-feedstock:
+    branch: main
+    commit: c2f7d8372f73acfb265aaa8d304a3b253503944d
   pyopenssl-feedstock:
     branch: main
     commit: bff90128ba7153b9058ca0eb12f9a42ea7a2c513
