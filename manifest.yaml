@@ -191,6 +191,9 @@ feedstocks:
   markupsafe-feedstock:
     branch: main
     commit: e4ad072f63fcc0e01d04898ec466edaa431b7269
+  matplotlib-feedstock:
+    branch: main
+    commit: a71b069344e21c63c2c4de27041881c128395de3
   more-itertools-feedstock:
     branch: main
     commit: b7ac4188bd256196d4366c175a1b1ef4fb0d9933
@@ -269,6 +272,9 @@ feedstocks:
   pypy3.6-feedstock:
     branch: main
     commit: ef1ddd8059d168b72e7272b1a426c7e9299ea4f6
+  pyqt-feedstock:
+    branch: main
+    commit: 3e8b3aab5e6f8fdbacdf3e6e4b7cdf87874e1769
   pysocks-feedstock:
     branch: main
     commit: b1b068113dbf052c02320de3d4b3e02aef014d4b
@@ -311,6 +317,9 @@ feedstocks:
   tomli-feedstock:
     branch: main
     commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
+  tornado-feedstock:
+    branch: main
+    commit: b309690ac6cdbaf468dd125b33b8d9968dd8c803
   typing_extensions-feedstock:
     branch: main
     commit: f97fea64bed562e6a10484a6ac6f8ff387f021f6
