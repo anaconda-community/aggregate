@@ -29,6 +29,9 @@ feedstocks:
   backoff-feedstock:
     branch: main
     commit: 0bbeb5afb679ceedeb7e9625d4c1e6022dfdb9fe
+  beautifulsoup4-feedstock:
+    branch: main
+    commit: d8878c5415dfe19f2e9dd3c247a420f4a4da4d93
   boto3-feedstock:
     branch: main
     commit: 29e34f98e410355038ada1f9f217de99527c6d92
