@@ -356,6 +356,9 @@ feedstocks:
   tornado-feedstock:
     branch: main
     commit: b309690ac6cdbaf468dd125b33b8d9968dd8c803
+  tqdm-feedstock:
+    branch: main
+    commit: 63821b6e8e7b01b4e058bffbff38d4ad4dda11e2
   typing_extensions-feedstock:
     branch: main
     commit: f97fea64bed562e6a10484a6ac6f8ff387f021f6
