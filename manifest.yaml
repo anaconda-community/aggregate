@@ -95,6 +95,9 @@ feedstocks:
   et-xmlfile-feedstock:
     branch: main
     commit: d3390f84b061870bee072f62a6545ce90eb60de8
+  exceptiongroup-feedstock:
+    branch: main
+    commit: 62be579804682d62e6e52dc129de71c448d23f02
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
