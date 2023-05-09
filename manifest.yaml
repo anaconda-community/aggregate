@@ -188,6 +188,9 @@ feedstocks:
   markupsafe-feedstock:
     branch: main
     commit: e4ad072f63fcc0e01d04898ec466edaa431b7269
+  more-itertools-feedstock:
+    branch: main
+    commit: b7ac4188bd256196d4366c175a1b1ef4fb0d9933
   multidict-feedstock:
     branch: main
     commit: ae58730f27aa29216d882cf92edf6f8bcd18232c
