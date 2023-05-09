@@ -287,6 +287,9 @@ feedstocks:
   pyu2f-feedstock:
     branch: main
     commit: 3f84b07414dbfb3a25d6d10028295051042f9aaa
+  pyyaml-feedstock:
+    branch: main
+    commit: b39fdf325bfc1fac172a4974c7f3a8fb878b1e29
   requests-feedstock:
     branch: main
     commit: d27fb9bba8a9cb4477d274fa2a18a3a7309f4584
@@ -323,6 +326,9 @@ feedstocks:
   wrapt-feedstock:
     branch: main
     commit: 8aef76851db4d566bd4ff854aa96f30db1bb6732
+  yaml-feedstock:
+    branch: main
+    commit: 8975f7bf41ce66a7d22ac443d7bc865fa78b4c66
   yarl-feedstock:
     branch: main
     commit: 97ba168ef78ad3c6637bf75a1180fe34c9fb4dea
