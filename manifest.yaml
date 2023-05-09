@@ -170,6 +170,9 @@ feedstocks:
   joblib-feedstock:
     branch: main
     commit: e936dac7369198eed167bfdfc085453417d739e7
+  kiwisolver-feedstock:
+    branch: main
+    commit: 916c52ac53fc0867b65f459733ccbfa3e68d491e
   lapack-feedstock:
     branch: main
     commit: ea070f43a481a76d076ecb59709ce1a3bdcc182a
