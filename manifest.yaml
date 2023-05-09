@@ -158,6 +158,9 @@ feedstocks:
   isort-feedstock:
     branch: main
     commit: d967b517eb3ba5ceba1f273db5ffc858ca1e430f
+  itsdangerous-feedstock:
+    branch: main
+    commit: 8e8bce747cef2409fcc8ee491c929471690699c2
   jinja2-feedstock:
     branch: main
     commit: 4a7f23595edf6db945fc51afb86151bf47a19ee9
