@@ -212,6 +212,9 @@ feedstocks:
   packaging-feedstock:
     branch: main
     commit: 40ab28643408ae5d73486b79c2d4430fc88146ae
+  pandas-feedstock:
+    branch: main
+    commit: 6eb13eb0074953d9f10d7607a31c782be1cee131
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
@@ -239,9 +242,15 @@ feedstocks:
   python-dateutil-feedstock:
     branch: main
     commit: 0c6fb1e83060d55d4c2d6de6699c73036579af65
+  python-tzdata-feedstock:
+    branch: main
+    commit: 570684e7254ed5ae2e2a99e2df8665c5329517c9
   python_abi-feedstock:
     branch: main
     commit: da1a1ca3748011318b9ea9080862b24dad38035c
+  pytz-feedstock:
+    branch: main
+    commit: 6858901b0993e9a7584ed24c676068c03468e44a
   pyu2f-feedstock:
     branch: main
     commit: 3f84b07414dbfb3a25d6d10028295051042f9aaa
