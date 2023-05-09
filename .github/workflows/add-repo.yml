@@ -88,18 +88,23 @@ jobs:
 
       - name: Update manifest
         id: manifest
-        run: |          
+        run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           branch=$(date +addfeedstocks%Y%m%d%H%M%S)
           git checkout -b $branch
           for repo in ${REPO_LIST//,/ }; do
+            until git ls-remote https://github.com/anaconda-community/${repo}.git &> /dev/null
+            do
+              echo "Waiting on repo..."
+              sleep 1
+            done
             hash=$(git ls-remote https://github.com/anaconda-community/${repo}.git | head -n1 | awk '{print $1;}')
             abs aggregate add --branch main --commit ${hash} ${repo}
           done
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "add ${REPO_LIST}" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT
+          git commit -m "add ${REPO_LIST}" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT || echo "createpr=false" >> $GITHUB_OUTPUT
         env:
           REPO_LIST: ${{ steps.deps.outputs.feedstocks  }}
 
