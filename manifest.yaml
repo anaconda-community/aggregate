@@ -88,10 +88,13 @@ feedstocks:
     commit: eecfd7b85de63983f552d639eb7d1c9847d874c1
   distlib-feedstock:
     branch: main
-    commit: b98a407f1ff07db1e28a032fefa46877eb089397    
+    commit: b98a407f1ff07db1e28a032fefa46877eb089397
   docutils-feedstock:
     branch: main
-    commit: cfdd0e7bf56b6a0331e2f542ada3dd5404ef554e  
+    commit: cfdd0e7bf56b6a0331e2f542ada3dd5404ef554e
+  et-xmlfile-feedstock:
+    branch: main
+    commit: d3390f84b061870bee072f62a6545ce90eb60de8
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
@@ -137,6 +140,9 @@ feedstocks:
   libprotobuf-feedstock:
     branch: main
     commit: a2b38e3077de05fe7b71e8d58a73935ecd0891ea
+  lxml-feedstock:
+    branch: main
+    commit: b5850d45ecadd3ac705fbd29ed8350f1b904527c
   markupsafe-feedstock:
     branch: main
     commit: e4ad072f63fcc0e01d04898ec466edaa431b7269
