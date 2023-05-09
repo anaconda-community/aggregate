@@ -149,6 +149,9 @@ feedstocks:
   importlib_resources-feedstock:
     branch: main
     commit: 2e1001891ddf4406ae0694885047a5309852b643
+  iniconfig-feedstock:
+    branch: main
+    commit: 45e8aa5e8dd9442194f7a1acc3be0906a322ca54
   isodate-feedstock:
     branch: main
     commit: cdbcc75372ee4b925876f85fe9612495d9838915
