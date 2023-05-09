@@ -74,6 +74,9 @@ feedstocks:
   cryptography-feedstock:
     branch: main
     commit: e70d84149adf02d7482113fea612ea2211a4b10c
+  cycler-feedstock:
+    branch: main
+    commit: 39ce1d4eb2340d2fbaf658c37e95eab9bad0dd17
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
