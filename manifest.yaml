@@ -257,6 +257,9 @@ feedstocks:
   pyjwt-feedstock:
     branch: main
     commit: c2f7d8372f73acfb265aaa8d304a3b253503944d
+  pymysql-feedstock:
+    branch: main
+    commit: 5e1781ad98dc052d7a4c0e130a5a193e9361cd5b
   pyopenssl-feedstock:
     branch: main
     commit: bff90128ba7153b9058ca0eb12f9a42ea7a2c513
