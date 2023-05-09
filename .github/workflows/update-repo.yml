@@ -23,19 +23,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
 
-      - uses: actions/cache@v2
+      - name: Create Conda environment
+        uses: mamba-org/provision-with-micromamba@main
         with:
-          path: /usr/share/miniconda3/envs/agg
-          key: conda-${{ hashFiles('environment.yml') }}
-
-      - uses: conda-incubator/setup-miniconda@v2
-        with:
-          auth-activate-base: false
-          activate-environment: agg
-          channels: distro-tooling,conda-forge
-          python-version: 3.9
-          mamba-version: "*"
           environment-file: environment.yml
+          environment-name: agg
+          cache-downloads: true
+          cache-env: true
+          extra-specs: |
+            python=3.9
 
       - name: Update manifest
         id: manifest
