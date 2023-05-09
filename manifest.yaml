@@ -248,6 +248,9 @@ feedstocks:
   pycparser-feedstock:
     branch: main
     commit: da1bb2e0920083a120ee56db3674f469233d8d21
+  pydantic-feedstock:
+    branch: main
+    commit: 2753fe10a717a64a00935c9a22f11f42d7f92f9f
   pyopenssl-feedstock:
     branch: main
     commit: bff90128ba7153b9058ca0eb12f9a42ea7a2c513
