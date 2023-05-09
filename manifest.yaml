@@ -335,6 +335,12 @@ feedstocks:
   soupsieve-feedstock:
     branch: main
     commit: 0f1095f9d5ee5cdd7b7b154ade5c7fea2cc826f2
+  sqlalchemy-feedstock:
+    branch: main
+    commit: 25a29744a429d8d3547d5304b0a518ed118c0459
+  sqlparse-feedstock:
+    branch: main
+    commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
   tomli-feedstock:
     branch: main
     commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
