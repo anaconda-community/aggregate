@@ -317,6 +317,9 @@ feedstocks:
   scipy-feedstock:
     branch: main
     commit: 1cb2d28ad746de4ee696757fbfc402c909db6ba4
+  scramp-feedstock:
+    branch: main
+    commit: 0594ed0d7fb0ac6f02045f417a810f611c3a8b48
   setuptools-feedstock:
     branch: main
     commit: 3d1c73c2de420f6101b4d32468a6c3b51468d84b
