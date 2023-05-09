@@ -236,6 +236,9 @@ feedstocks:
   pluggy-feedstock:
     branch: main
     commit: a49afaca22f3face3554c628a61636b6c036913e
+  pooch-feedstock:
+    branch: main
+    commit: 6abb037a216ec739995be40183c25622576b8305
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
@@ -311,6 +314,9 @@ feedstocks:
   s3transfer-feedstock:
     branch: main
     commit: 00b7bdd490adfa1f8d80f07ee672863e444d20db
+  scipy-feedstock:
+    branch: main
+    commit: 1cb2d28ad746de4ee696757fbfc402c909db6ba4
   setuptools-feedstock:
     branch: main
     commit: 3d1c73c2de420f6101b4d32468a6c3b51468d84b
