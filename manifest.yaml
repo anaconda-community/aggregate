@@ -209,6 +209,9 @@ feedstocks:
   openpyxl-feedstock:
     branch: main
     commit: 46dc3bbb5654e3a0c25426d4c5b1ea6afb01bc0d
+  packaging-feedstock:
+    branch: main
+    commit: 40ab28643408ae5d73486b79c2d4430fc88146ae
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
