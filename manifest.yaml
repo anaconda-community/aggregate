@@ -239,6 +239,9 @@ feedstocks:
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
+  psutil-feedstock:
+    branch: main
+    commit: a74ba844fe00c420fe3c3569c23288b4cc30cb09
   ptyprocess-feedstock:
     branch: main
     commit: 26ba3462f47bbde4bf7220c89e6f5dc7a6733e54
