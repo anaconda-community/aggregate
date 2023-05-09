@@ -101,6 +101,9 @@ feedstocks:
   filelock-feedstock:
     branch: main
     commit: 90cbc23db693e884b777589012f4cfd08ab11b5f
+  filesystem-spec-feedstock:
+    branch: main
+    commit: 78218c95ca1cdf8379f2d682f682b1ea6d44c92b
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
