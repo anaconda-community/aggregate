@@ -215,6 +215,9 @@ feedstocks:
   pandas-feedstock:
     branch: main
     commit: 6eb13eb0074953d9f10d7607a31c782be1cee131
+  pathspec-feedstock:
+    branch: main
+    commit: 858f85ab95730ae77da6706ef5c461031e5f87b8
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
