@@ -221,6 +221,12 @@ feedstocks:
   pexpect-feedstock:
     branch: main
     commit: 4458139c5f4aff6e40148b339b38cebdd2acaad8
+  pillow-feedstock:
+    branch: main
+    commit: d01feb0c2ecd99a525c72de1357d79e7eaf950ed
+  pip-feedstock:
+    branch: main
+    commit: d08a3ca454ccfc9fc47a2541b7ba7088e90ddfab
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
