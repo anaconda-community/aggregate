@@ -197,6 +197,9 @@ feedstocks:
   multidict-feedstock:
     branch: main
     commit: ae58730f27aa29216d882cf92edf6f8bcd18232c
+  mypy_extensions-feedstock:
+    branch: main
+    commit: d45f15c17a71974f388b69d3a854fc5c5d2a2b18
   numpy-feedstock:
     branch: main
     commit: 0c871b5d6b4a05080e27c74238e98bb9d7dddd18
