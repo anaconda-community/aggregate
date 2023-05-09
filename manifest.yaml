@@ -107,6 +107,9 @@ feedstocks:
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
+  future-feedstock:
+    branch: main
+    commit: 7e5c0044955e53e02f81393159f0396b27383ea8
   google-api-core-feedstock:
     branch: main
     commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
