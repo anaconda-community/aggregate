@@ -86,9 +86,12 @@ feedstocks:
   deprecated-feedstock:
     branch: main
     commit: eecfd7b85de63983f552d639eb7d1c9847d874c1
+  distlib-feedstock:
+    branch: main
+    commit: b98a407f1ff07db1e28a032fefa46877eb089397    
   docutils-feedstock:
     branch: main
-    commit: cfdd0e7bf56b6a0331e2f542ada3dd5404ef554e
+    commit: cfdd0e7bf56b6a0331e2f542ada3dd5404ef554e  
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
