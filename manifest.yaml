@@ -110,6 +110,12 @@ feedstocks:
   future-feedstock:
     branch: main
     commit: 7e5c0044955e53e02f81393159f0396b27383ea8
+  gitdb-feedstock:
+    branch: main
+    commit: 14ed9f06d53b29fd49f88ab6a78c998b2a907f21
+  gitpython-feedstock:
+    branch: main
+    commit: 6e31157d7ac2e585c2d498c45df9a04afca00071
   google-api-core-feedstock:
     branch: main
     commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
@@ -209,6 +215,9 @@ feedstocks:
   six-feedstock:
     branch: main
     commit: 72223a1cb193d2309b6434bb9ec806e0afcbca7c
+  smmap-feedstock:
+    branch: main
+    commit: 88c59b7fb8e9b9eee8a07bf6e21702a53b7cd0c9
   tomli-feedstock:
     branch: main
     commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
