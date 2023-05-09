@@ -23,6 +23,9 @@ feedstocks:
   attrs-feedstock:
     branch: main
     commit: 02e49813916c95cb3dd32d05bd2589373e2d676f
+  azure-common-feedstock:
+    branch: main
+    commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
   boto3-feedstock:
     branch: main
     commit: 29e34f98e410355038ada1f9f217de99527c6d92
