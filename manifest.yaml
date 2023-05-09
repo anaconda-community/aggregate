@@ -80,6 +80,9 @@ feedstocks:
   cython-feedstock:
     branch: main
     commit: 3c86e7858e94d08a991bfca6a01c6c56777bb745
+  decorator-feedstock:
+    branch: main
+    commit: ea7ffb7f1cc8c1dec47f4c3e2cd1a0ae196cbf81
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
