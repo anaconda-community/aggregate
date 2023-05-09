@@ -329,6 +329,12 @@ feedstocks:
   smmap-feedstock:
     branch: main
     commit: 88c59b7fb8e9b9eee8a07bf6e21702a53b7cd0c9
+  sniffio-feedstock:
+    branch: main
+    commit: afeb1e0bc5239e4dc8ac5d3f9b384b7d56133bb7
+  soupsieve-feedstock:
+    branch: main
+    commit: 0f1095f9d5ee5cdd7b7b154ade5c7fea2cc826f2
   tomli-feedstock:
     branch: main
     commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
