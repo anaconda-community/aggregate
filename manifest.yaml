@@ -347,6 +347,9 @@ feedstocks:
   termcolor-feedstock:
     branch: main
     commit: cd13a788f542d8fb8cbe08625183bbab70751b34
+  toml-feedstock:
+    branch: main
+    commit: 9c0fd5506d874e55290f09961751c59e0227f838
   tomli-feedstock:
     branch: main
     commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
