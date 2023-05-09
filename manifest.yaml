@@ -167,6 +167,9 @@ feedstocks:
   jmespath-feedstock:
     branch: main
     commit: 6043a72de840e8ef3099ad11f6ea0a15be50e389
+  joblib-feedstock:
+    branch: main
+    commit: e936dac7369198eed167bfdfc085453417d739e7
   lapack-feedstock:
     branch: main
     commit: ea070f43a481a76d076ecb59709ce1a3bdcc182a
