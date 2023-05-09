@@ -2,7 +2,7 @@ name: "PR build feedstock"
 
 on:
   pull_request:
-    types: [opened, reopened, closed, synchronize]
+    types: [closed]
     branches:
       - 'main'
     paths:
@@ -11,7 +11,7 @@ on:
 jobs:
   find-feedstocks:
     # Run for merged or updated PRs
-    if: ${{ github.event.pull_request.merged }} || ${{ github.event.action }} != 'closed'
+    if: ${{ github.event.pull_request.merged }}
     defaults:
       run:
         shell: bash -l {0}
