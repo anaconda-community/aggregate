@@ -341,6 +341,12 @@ feedstocks:
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
+  tabulate-feedstock:
+    branch: main
+    commit: d40aebbb81d068841bdddafd80162298e9446b05
+  termcolor-feedstock:
+    branch: main
+    commit: cd13a788f542d8fb8cbe08625183bbab70751b34
   tomli-feedstock:
     branch: main
     commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
