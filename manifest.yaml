@@ -77,6 +77,9 @@ feedstocks:
   cycler-feedstock:
     branch: main
     commit: 39ce1d4eb2340d2fbaf658c37e95eab9bad0dd17
+  cython-feedstock:
+    branch: main
+    commit: 3c86e7858e94d08a991bfca6a01c6c56777bb745
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
