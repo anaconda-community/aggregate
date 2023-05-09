@@ -53,6 +53,9 @@ feedstocks:
   cffi-feedstock:
     branch: main
     commit: 9d141942a5404542efc9ef2b584787885dadd31f
+  chardet-feedstock:
+    branch: main
+    commit: d7d88d20007b141531df3746af27239e396a6395
   charset-normalizer-feedstock:
     branch: main
     commit: 6ddc2cb6f7b5ea0708c992b324133bce146520c2
