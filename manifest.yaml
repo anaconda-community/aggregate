@@ -227,6 +227,12 @@ feedstocks:
   pip-feedstock:
     branch: main
     commit: d08a3ca454ccfc9fc47a2541b7ba7088e90ddfab
+  platformdirs-feedstock:
+    branch: main
+    commit: 9d13df4761eb6c00865a8192c784473576735dd0
+  pluggy-feedstock:
+    branch: main
+    commit: a49afaca22f3face3554c628a61636b6c036913e
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
