@@ -143,6 +143,9 @@ feedstocks:
   idna_ssl-feedstock:
     branch: main
     commit: 6a6a33791c0374f2071d9df8a6b225070bd526ea
+  importlib_metadata-feedstock:
+    branch: main
+    commit: 692c8f10dc36df59935b719183a6440d9f9d9b1c
   isodate-feedstock:
     branch: main
     commit: cdbcc75372ee4b925876f85fe9612495d9838915
