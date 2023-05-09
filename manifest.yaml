@@ -188,6 +188,9 @@ feedstocks:
   markupsafe-feedstock:
     branch: main
     commit: e4ad072f63fcc0e01d04898ec466edaa431b7269
+  more-itertools-feedstock:
+    branch: main
+    commit: b7ac4188bd256196d4366c175a1b1ef4fb0d9933
   msgpack-python-feedstock:
     branch: main
     commit: 38caf3a7f65a2d1d9285a28f02f2a0e8f302e060
