@@ -62,6 +62,9 @@ feedstocks:
   click-feedstock:
     branch: main
     commit: 9a87e0f3ed6e15ba710c7824b3b8071c1ddc85b3
+  cloudpickle-feedstock:
+    branch: main
+    commit: 73f5d154a4aad63608ca5f483db5730f0b2f51f1
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
