@@ -374,6 +374,9 @@ feedstocks:
   websocket-client-feedstock:
     branch: main
     commit: 371351d85870f547ab94dafbae10d4465c945390
+  werkzeug-feedstock:
+    branch: main
+    commit: 17be5811b4d5c582744177ad37598de8903b9130
   wheel-feedstock:
     branch: main
     commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
