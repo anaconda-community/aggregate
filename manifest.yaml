@@ -62,6 +62,9 @@ feedstocks:
   googleapis-common-protos-feedstock:
     branch: main
     commit: d67b8741ffa433d88f2d4a05363ae7f9f834de5b
+  h11-feedstock:
+    branch: main
+    commit: 2c26e10479fa2782ea64208b9bfa1548996d1f4c
   huggingface_hub-feedstock:
     branch: main
     commit: b3c28f622e20e1dc924e7f1a9b18ef3349791216
