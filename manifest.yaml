@@ -218,9 +218,15 @@ feedstocks:
   pathspec-feedstock:
     branch: main
     commit: 858f85ab95730ae77da6706ef5c461031e5f87b8
+  pexpect-feedstock:
+    branch: main
+    commit: 4458139c5f4aff6e40148b339b38cebdd2acaad8
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
+  ptyprocess-feedstock:
+    branch: main
+    commit: 26ba3462f47bbde4bf7220c89e6f5dc7a6733e54
   pyasn1-feedstock:
     branch: main
     commit: 93ee5e0332c7f62d840ad63accea81fe9bf1cf36
