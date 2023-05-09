@@ -131,6 +131,9 @@ feedstocks:
   h11-feedstock:
     branch: main
     commit: 2c26e10479fa2782ea64208b9bfa1548996d1f4c
+  httplib2-feedstock:
+    branch: main
+    commit: 99c80281635020bc8eae527af9d2aca7e199ce67
   huggingface_hub-feedstock:
     branch: main
     commit: b3c28f622e20e1dc924e7f1a9b18ef3349791216
@@ -188,6 +191,9 @@ feedstocks:
   pyopenssl-feedstock:
     branch: main
     commit: bff90128ba7153b9058ca0eb12f9a42ea7a2c513
+  pyparsing-feedstock:
+    branch: main
+    commit: b2ea8c20e2942effdff03200ccb43c91bfb856c5
   pypy3.6-feedstock:
     branch: main
     commit: ef1ddd8059d168b72e7272b1a426c7e9299ea4f6
