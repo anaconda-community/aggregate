@@ -83,6 +83,9 @@ feedstocks:
   decorator-feedstock:
     branch: main
     commit: ea7ffb7f1cc8c1dec47f4c3e2cd1a0ae196cbf81
+  deprecated-feedstock:
+    branch: main
+    commit: eecfd7b85de63983f552d639eb7d1c9847d874c1
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
@@ -197,6 +200,9 @@ feedstocks:
   wheel-feedstock:
     branch: main
     commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
+  wrapt-feedstock:
+    branch: main
+    commit: 8aef76851db4d566bd4ff854aa96f30db1bb6732
   yarl-feedstock:
     branch: main
     commit: 97ba168ef78ad3c6637bf75a1180fe34c9fb4dea
