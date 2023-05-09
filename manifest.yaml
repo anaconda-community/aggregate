@@ -146,6 +146,9 @@ feedstocks:
   importlib_metadata-feedstock:
     branch: main
     commit: 692c8f10dc36df59935b719183a6440d9f9d9b1c
+  importlib_resources-feedstock:
+    branch: main
+    commit: 2e1001891ddf4406ae0694885047a5309852b643
   isodate-feedstock:
     branch: main
     commit: cdbcc75372ee4b925876f85fe9612495d9838915
