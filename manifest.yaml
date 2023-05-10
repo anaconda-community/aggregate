@@ -170,6 +170,9 @@ feedstocks:
   google-cloud-storage-feedstock:
     branch: main
     commit: eb7f207505b4aa5598fca7e72ead837f391351d9
+  google-resumable-media-feedstock:
+    branch: main
+    commit: 5cf34b4d9378364f4179ba08e74dfa5b4899a0a8
   googleapis-common-protos-feedstock:
     branch: main
     commit: d67b8741ffa433d88f2d4a05363ae7f9f834de5b
