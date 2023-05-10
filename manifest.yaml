@@ -395,6 +395,9 @@ feedstocks:
   pysocks-feedstock:
     branch: main
     commit: b1b068113dbf052c02320de3d4b3e02aef014d4b
+  pytest-feedstock:
+    branch: main
+    commit: 1b362b17b9f355ab31f5bf571c28862b8c037ce8
   python-dateutil-feedstock:
     branch: main
     commit: 0c6fb1e83060d55d4c2d6de6699c73036579af65
