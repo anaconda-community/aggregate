@@ -290,6 +290,9 @@ feedstocks:
   pandas-feedstock:
     branch: main
     commit: 6eb13eb0074953d9f10d7607a31c782be1cee131
+  paramiko-feedstock:
+    branch: main
+    commit: 7548607b57a12aebe59ac086097c1b36c0c14537
   patch-feedstock:
     branch: main
     commit: f0db8c515e6d0ce04e3fe527f9a3ead8cc53ea6b
