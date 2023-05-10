@@ -389,6 +389,9 @@ feedstocks:
   pyqt-feedstock:
     branch: main
     commit: 3e8b3aab5e6f8fdbacdf3e6e4b7cdf87874e1769
+  pyrsistent-feedstock:
+    branch: main
+    commit: 04965172095c191f58e185d822b1e059f05cd1b4
   pysocks-feedstock:
     branch: main
     commit: b1b068113dbf052c02320de3d4b3e02aef014d4b
