@@ -332,6 +332,12 @@ feedstocks:
   ptyprocess-feedstock:
     branch: main
     commit: 26ba3462f47bbde4bf7220c89e6f5dc7a6733e54
+  py-feedstock:
+    branch: main
+    commit: 90b4dff46ff7c8a545ed211e287700ce185bb5dd
+  py4j-feedstock:
+    branch: main
+    commit: 0506e44471a30bf811167651676508a5cc6bb9f9
   pyasn1-feedstock:
     branch: main
     commit: 93ee5e0332c7f62d840ad63accea81fe9bf1cf36
