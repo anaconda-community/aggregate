@@ -152,6 +152,9 @@ feedstocks:
   gitpython-feedstock:
     branch: main
     commit: 6e31157d7ac2e585c2d498c45df9a04afca00071
+  gnuconfig-feedstock:
+    branch: main
+    commit: 0d7c0b184ea79032af77ef131022d1fa275b8dbd
   google-api-core-feedstock:
     branch: main
     commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
@@ -371,6 +374,9 @@ feedstocks:
   pymysql-feedstock:
     branch: main
     commit: 5e1781ad98dc052d7a4c0e130a5a193e9361cd5b
+  pynacl-feedstock:
+    branch: main
+    commit: 5016e060495fa5d729e1455b6cdd92dc1764fe4e
   pyopenssl-feedstock:
     branch: main
     commit: bff90128ba7153b9058ca0eb12f9a42ea7a2c513
