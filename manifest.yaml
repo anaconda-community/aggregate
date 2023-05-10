@@ -347,6 +347,9 @@ feedstocks:
   pyasn1-modules-feedstock:
     branch: main
     commit: bc2a4ed0b42f845d26ccba2a807f31d2eb0ddcf0
+  pycaret-feedstock:
+    branch: main
+    commit: c1e5bd5c2a3e50e6babc15f14c971517395f43c8
   pycparser-feedstock:
     branch: main
     commit: da1bb2e0920083a120ee56db3674f469233d8d21
