@@ -161,6 +161,15 @@ feedstocks:
   google-auth-oauthlib-feedstock:
     branch: main
     commit: 20ab1b2e04a0ed248eb6e843eabee00d047243c4
+  google-cloud-bigquery-feedstock:
+    branch: main
+    commit: 891ae4a4e4ecd6ca456dfa8c9ccd158e0758072e
+  google-cloud-core-feedstock:
+    branch: main
+    commit: dcb3448abff9b675670de51cfa59350123b0a49b
+  google-cloud-storage-feedstock:
+    branch: main
+    commit: eb7f207505b4aa5598fca7e72ead837f391351d9
   googleapis-common-protos-feedstock:
     branch: main
     commit: d67b8741ffa433d88f2d4a05363ae7f9f834de5b
