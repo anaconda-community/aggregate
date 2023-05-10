@@ -5,6 +5,9 @@ feedstocks:
   7zip-feedstock:
     branch: main
     commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
+  aiobotocore-feedstock:
+    branch: main
+    commit: 3b8aff2bfc88151ff60ff850c2081366c23d529a
   aiohttp-feedstock:
     branch: main
     commit: 66bfa4f3f915731461ec9b66a3ebbafaf3bd5372
