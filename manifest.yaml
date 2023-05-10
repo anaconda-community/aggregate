@@ -350,9 +350,15 @@ feedstocks:
   pycaret-feedstock:
     branch: main
     commit: c1e5bd5c2a3e50e6babc15f14c971517395f43c8
+  pycodestyle-feedstock:
+    branch: main
+    commit: fc71ae5dbd7881e52e8ae57597df590ecfa1abc6
   pycparser-feedstock:
     branch: main
     commit: da1bb2e0920083a120ee56db3674f469233d8d21
+  pycryptodomex-feedstock:
+    branch: main
+    commit: 518655a57c6353c6cd448e51f2698c36d5fb9029
   pydantic-feedstock:
     branch: main
     commit: 2753fe10a717a64a00935c9a22f11f42d7f92f9f
