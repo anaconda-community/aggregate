@@ -50,6 +50,9 @@ feedstocks:
   botocore-feedstock:
     branch: main
     commit: 959599fec0469dc08bf47971ed99bc542f2ee383
+  brotli-feedstock:
+    branch: main
+    commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
   brotlipy-feedstock:
     branch: main
     commit: 3f434b421ffea2a2901e50e08df6c0cb129d2f8f
@@ -77,6 +80,9 @@ feedstocks:
   cloudpickle-feedstock:
     branch: main
     commit: 73f5d154a4aad63608ca5f483db5730f0b2f51f1
+  cmake-feedstock:
+    branch: main
+    commit: 315b2bbf76bc660b758e4dc551dacdde244e167b
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -221,6 +227,9 @@ feedstocks:
   mypy_extensions-feedstock:
     branch: main
     commit: d45f15c17a71974f388b69d3a854fc5c5d2a2b18
+  ninja-feedstock:
+    branch: main
+    commit: f86489f63fdf770cab894eac489334009c9bca0f
   numpy-feedstock:
     branch: main
     commit: 0c871b5d6b4a05080e27c74238e98bb9d7dddd18
