@@ -14,6 +14,9 @@ feedstocks:
   aiosignal-feedstock:
     branch: main
     commit: 49d78be8c23a443a1f669225bffb882b51148369
+  arrow-cpp-feedstock:
+    branch: main
+    commit: 44bb2a5666b3c124319c433ce7f8e5dfd85f707f
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
