@@ -431,6 +431,9 @@ feedstocks:
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
+  s3fs-feedstock:
+    branch: main
+    commit: c5a50c505cacba3452f53b0b58ba013a59fecaf8
   s3transfer-feedstock:
     branch: main
     commit: 00b7bdd490adfa1f8d80f07ee672863e444d20db
