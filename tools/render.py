@@ -18,7 +18,7 @@ def ignore_undefined(undefined: set) -> set:
     return undefined - ignore
 
 
-def render_template(template, no_output=False):
+def render_template(template, data, no_output=False):
     """
     Render the meta.yaml using Jinja2: return YAML data
     This uses conda-build's jinja context to prevent failures for special conda-build
@@ -29,7 +29,7 @@ def render_template(template, no_output=False):
         return ""
 
     try:
-        rendered = template.render()
+        rendered = template.render(data)
     except TypeError:
         print(f"NoneType template")
         return ""
@@ -37,7 +37,7 @@ def render_template(template, no_output=False):
     return rendered
 
 
-def load_template_string(data, no_output=False):
+def load_template_string(data, env_string, no_output=False):
     env = Environment(undefined=UndefinedNeverFail)
-    template = env.from_string(data)
-    return render_template(template, no_output=no_output)
+    template = env.from_string(env_string)
+    return render_template(template, data, no_output=no_output)

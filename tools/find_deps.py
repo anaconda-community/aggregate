@@ -125,8 +125,8 @@ def raw_text_load(name, branch):
         print(f"Could not find feedstock at {url}")
         print(f"Error [{response.status_code}]: {response.reason}")
         return ""
-    data = response.text
-    template = load_template_string(data)
+    env_string = response.text
+    template = load_template_string({'target_platform': 'linux-64'}, env_string)
     return template
 
 
@@ -136,7 +136,7 @@ def get_deps(name, branch, archs, check_version_check_selector):
         return {}, "0"
     data = yaml.load(template, Loader=yaml.SafeLoader)
     # Get collection of required dependencies (may not be unique)
-    deps_collection = read_requirements(data, name, "requirements", "run")
+    deps_collection = read_requirements(data, name, "requirements", "build")
 
     deps_dict = {}
     if len(deps_collection) > 0:
