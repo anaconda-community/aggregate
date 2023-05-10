@@ -317,6 +317,12 @@ feedstocks:
   pooch-feedstock:
     branch: main
     commit: 6abb037a216ec739995be40183c25622576b8305
+  portalocker-feedstock:
+    branch: main
+    commit: c18900fd7e825f0d68d49ddf5439a65a9c534476
+  proto-plus-feedstock:
+    branch: main
+    commit: 5c8076f47d0e254c8544d032062b52e2e9f115dc
   protobuf-feedstock:
     branch: main
     commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
