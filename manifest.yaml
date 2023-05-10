@@ -227,6 +227,9 @@ feedstocks:
   joblib-feedstock:
     branch: main
     commit: e936dac7369198eed167bfdfc085453417d739e7
+  jsonschema-feedstock:
+    branch: main
+    commit: 53dd991af34d42526ddc300cd20d43b6418d8c92
   kiwisolver-feedstock:
     branch: main
     commit: 916c52ac53fc0867b65f459733ccbfa3e68d491e
