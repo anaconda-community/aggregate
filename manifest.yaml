@@ -32,6 +32,9 @@ feedstocks:
   azure-core-feedstock:
     branch: main
     commit: d39b7ef1397416eb9f31206e8db6cef6b3b72c9c
+  azure-storage-blob-feedstock:
+    branch: main
+    commit: a2d2b83529bd395182470ad9fcc67eb8e11ae004
   backoff-feedstock:
     branch: main
     commit: 0bbeb5afb679ceedeb7e9625d4c1e6022dfdb9fe
