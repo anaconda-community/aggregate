@@ -71,6 +71,9 @@ feedstocks:
   coverage-feedstock:
     branch: main
     commit: 8697892f059eb0b37183bafee56e99d9c1b766d4
+  cross-python-feedstock:
+    branch: main
+    commit: 33a2d8f45aea8cf778bd365f925a5cb4d4e69ae3
   cryptography-feedstock:
     branch: main
     commit: e70d84149adf02d7482113fea612ea2211a4b10c
