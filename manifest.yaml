@@ -485,6 +485,9 @@ feedstocks:
   typing_extensions-feedstock:
     branch: main
     commit: f97fea64bed562e6a10484a6ac6f8ff387f021f6
+  tzlocal-feedstock:
+    branch: main
+    commit: 3d12aca9a5a3df960844c95ea0958a55844f8885
   ucrt-feedstock:
     branch: main
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
