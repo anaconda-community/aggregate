@@ -108,7 +108,10 @@ def is_recipe_available(pkg_name: str, lookup: bool):
     # If we haven't processed then lookup recipe
     else:
         url = f"{github_base_url}/conda-forge/{pkg_name}-feedstock/main/recipe/meta.yaml"
-        response = session.get(url, allow_redirects=False)
+        try:
+            response = session.get(url, allow_redirects=False)
+        except:
+            return False, ""
         if response.status_code != 200:
             if lookup:
                 return is_recipe_available(lookup_feedstock_name(pkg_name), False)
@@ -130,44 +133,24 @@ def raw_text_load(name, branch):
     return template
 
 
-def get_deps(name, branch, archs, check_version_check_selector):
-    template = raw_text_load(name, branch)
-    if template == "":
+@cached(cache)
+def get_deps(name, branch):
+    print(f"Getting deps for {name}")
+    try:
+        template = raw_text_load(name, branch)
+        if template == "":
+            return {}, "0"
+        data = yaml.load(template, Loader=yaml.SafeLoader)
+    except:
         return {}, "0"
-    data = yaml.load(template, Loader=yaml.SafeLoader)
     # Get collection of required dependencies (may not be unique)
     deps_collection = read_requirements(data, name, "requirements", "build")
 
     deps_dict = {}
     if len(deps_collection) > 0:
-        if check_version_check_selector:
-            # Process selectors, e.g. # [osx and linux]
-            # Process txt as yaml does not include commets.
-            # Find the line from which to start the search first
-            doSearch = False
-            template_splitlines = template.splitlines()
-            for index, line in enumerate(template_splitlines):
-                if "name" in line and line.split()[-1] == name:
-                    doSearch = True
-                if doSearch and "requirements:" in line:
-                    break
-
-            # Do the search of each dependency and evaluate the arch-specific selector.
-            for dep in deps_collection:
-                dep = dep.lower()
-                if dep not in deps_dict and isinstance(dep, str):
-                    for lineIndex in range(index, len(template_splitlines)):
-                        line = template_splitlines[lineIndex]
-                        if dep.split()[0] in line.split():
-                            expression = ""
-                            if len(line.split("# [")) > 1:
-                                expression = re.findall("\[(.*?)\]", line)[0]
-                            deps_dict[dep] = evaluate_arch_selector(archs, expression)
-                            break
-        else:
-            for dep in deps_collection:
-                if dep not in deps_dict and isinstance(dep, str):
-                    deps_dict[dep] = []
+        for dep in deps_collection:
+            if dep not in deps_dict and isinstance(dep, str):
+                deps_dict[dep] = []
     return deps_dict, get_requirements(data, name, "package", "version")
 
 
@@ -193,14 +176,17 @@ def guess_feedstock_name(dep, separator, checksep):
 
 @cached(cache)
 def lookup_feedstock_name(dep):
-    deplist = list(dep)
-    url = f"{github_base_url}/conda-forge/feedstock-outputs/main/outputs/{deplist[0]}/{deplist[1]}/{deplist[2]}/{dep}.json"
-    response = session.get(url, allow_redirects=False)
-    if response.status_code != 200:
-        print(f"Could not find feedstock at {url}")
-        print(f"Error [{response.status_code}]: {response.reason}")
+    try:
+        deplist = list(dep)
+        url = f"{github_base_url}/conda-forge/feedstock-outputs/main/outputs/{deplist[0]}/{deplist[1]}/{deplist[2]}/{dep}.json"
+        response = session.get(url, allow_redirects=False)
+        if response.status_code != 200:
+            print(f"Could not find feedstock at {url}")
+            print(f"Error [{response.status_code}]: {response.reason}")
+            return ""
+        return json.loads(response.text)["feedstocks"][0]
+    except:
         return ""
-    return json.loads(response.text)["feedstocks"][0]
 
 
 def scan_arch(dep, ver_range, rdata):
@@ -240,6 +226,20 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
         if dep.startswith("ctng-compilers-"):
             continue
         if dep.startswith("_"):
+            continue
+        if dep.startswith("cross-python"):
+            continue
+        if dep.__eq__("make"):
+            continue
+        if dep.__eq__("help2man"):
+            continue
+        if dep.__eq__("autoconf"):
+            continue
+        if dep.__eq__("automake"):
+            continue
+        if dep.__eq__("m4"):
+            continue
+        if dep.__eq__("libtool"):
             continue
 
         # Construct line:
@@ -283,9 +283,7 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
                 avail_pkg.append(dep)
                 depsOfdep, version = get_deps(
                     dep,
-                    def_branch,
-                    archSupportDep,
-                    check_version_check_selector,
+                    def_branch
                 )
                 print_level(
                     depsOfdep,
@@ -369,7 +367,7 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
             if repo_avail:
                 def_branch = unavail_pkg[unavail_pkg.index(dep) + 1]
                 depsOfdep, version = get_deps(
-                    dep, def_branch, archSupportDep, check_version_check_selector
+                    dep, def_branch
                 )
                 if ver_range and check_version_check_selector:
                     if not ver_in_range(version, ver_range):
@@ -509,7 +507,7 @@ if __name__ == "__main__":
             continue
 
         # Inspect and draw package's dependencies
-        deps, version = get_deps(package_name, def_branch, archs, args.check_version_check_selector)
+        deps, version = get_deps(package_name, def_branch)
 
         print_level(deps, archs, " ", args.check_version_check_selector, args.expand_tree)
 
