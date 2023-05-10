@@ -275,6 +275,12 @@ feedstocks:
   numpy-feedstock:
     branch: main
     commit: 0c871b5d6b4a05080e27c74238e98bb9d7dddd18
+  oauthlib-feedstock:
+    branch: main
+    commit: 3e818e786e6514b3c9d6bdacdf50b8d037994793
+  openai-feedstock:
+    branch: main
+    commit: 7dce00ed7bb4c3e15423ba921f9428cf8dea80ed
   openpyxl-feedstock:
     branch: main
     commit: 46dc3bbb5654e3a0c25426d4c5b1ea6afb01bc0d
