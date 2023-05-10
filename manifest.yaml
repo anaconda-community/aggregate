@@ -494,6 +494,9 @@ feedstocks:
   urllib3-feedstock:
     branch: main
     commit: d6844acd9c374d04f3567e1dfb40511e3c4cb72a
+  virtualenv-feedstock:
+    branch: main
+    commit: 2fb5343e51a31fdced295dc026d6a10f166c891b
   wcwidth-feedstock:
     branch: main
     commit: 39b72c69231e5cc9896e07f7b1f6e4d31c5e2f32
