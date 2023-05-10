@@ -254,9 +254,15 @@ feedstocks:
   more-itertools-feedstock:
     branch: main
     commit: b7ac4188bd256196d4366c175a1b1ef4fb0d9933
+  msal-feedstock:
+    branch: main
+    commit: 2c3b67f0bc323341627d68dd998b05f3f4e3d426
   msgpack-python-feedstock:
     branch: main
     commit: 38caf3a7f65a2d1d9285a28f02f2a0e8f302e060
+  msrest-feedstock:
+    branch: main
+    commit: fe1dfb49f3071952a24e172a4d133609f3681d41
   multidict-feedstock:
     branch: main
     commit: ae58730f27aa29216d882cf92edf6f8bcd18232c
