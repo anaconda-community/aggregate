@@ -134,6 +134,9 @@ feedstocks:
   filesystem-spec-feedstock:
     branch: main
     commit: 78218c95ca1cdf8379f2d682f682b1ea6d44c92b
+  flask-feedstock:
+    branch: main
+    commit: fe78f8210cab49d4d5a3bbcb6e1d09cda151b205
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
