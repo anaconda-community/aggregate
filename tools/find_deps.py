@@ -98,6 +98,7 @@ def read_requirements(data, name, section, attribute):
     return req
 
 
+@cached(cache)
 def is_recipe_available(pkg_name: str, lookup: bool):
     if pkg_name.startswith("ctng-compilers-"):
         return False, ""
@@ -135,7 +136,6 @@ def raw_text_load(name, branch):
 
 @cached(cache)
 def get_deps(name, branch):
-    print(f"Getting deps for {name}")
     try:
         template = raw_text_load(name, branch)
         if template == "":
@@ -215,6 +215,9 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
             comment_prefix = "\n" + prefix + "│   "
         constrLine = prefix + br
 
+        if len(constrLine) >= 50:
+            continue
+
         # Derive dependency's actual name and version range
         dep = key.split()
         ver_range = ""
@@ -240,6 +243,10 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
         if dep.__eq__("m4"):
             continue
         if dep.__eq__("libtool"):
+            continue
+        if dep.__eq__("m2-patch"):
+            continue
+        if dep.__eq__("patch"):
             continue
 
         # Construct line:
