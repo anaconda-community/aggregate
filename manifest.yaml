@@ -152,9 +152,15 @@ feedstocks:
   google-api-core-feedstock:
     branch: main
     commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
+  google-api-python-client-feedstock:
+    branch: main
+    commit: 5b8da373d6afcf1fcb99b3a1896d31d6eb1c3d0b
   google-auth-feedstock:
     branch: main
     commit: 950a2e17573f43bcf1ca4080e0ef76c75a5886b9
+  google-auth-oauthlib-feedstock:
+    branch: main
+    commit: 20ab1b2e04a0ed248eb6e843eabee00d047243c4
   googleapis-common-protos-feedstock:
     branch: main
     commit: d67b8741ffa433d88f2d4a05363ae7f9f834de5b
