@@ -38,6 +38,9 @@ feedstocks:
   backoff-feedstock:
     branch: main
     commit: 0bbeb5afb679ceedeb7e9625d4c1e6022dfdb9fe
+  bcrypt-feedstock:
+    branch: main
+    commit: 628ef60f24549eaa92af0020da511d761ee56a49
   beautifulsoup4-feedstock:
     branch: main
     commit: d8878c5415dfe19f2e9dd3c247a420f4a4da4d93
@@ -230,6 +233,9 @@ feedstocks:
   pandas-feedstock:
     branch: main
     commit: 6eb13eb0074953d9f10d7607a31c782be1cee131
+  patch-feedstock:
+    branch: main
+    commit: f0db8c515e6d0ce04e3fe527f9a3ead8cc53ea6b
   pathspec-feedstock:
     branch: main
     commit: 858f85ab95730ae77da6706ef5c461031e5f87b8
