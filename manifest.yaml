@@ -410,6 +410,12 @@ feedstocks:
   requests-feedstock:
     branch: main
     commit: d27fb9bba8a9cb4477d274fa2a18a3a7309f4584
+  requests-oauthlib-feedstock:
+    branch: main
+    commit: 273407bb273e3470c4f9213083723ebd559fa2fd
+  requests-toolbelt-feedstock:
+    branch: main
+    commit: 75fa7e435b32ca8c5a488acec6aa8d0523b51d38
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
