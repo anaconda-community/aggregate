@@ -113,6 +113,9 @@ feedstocks:
   distlib-feedstock:
     branch: main
     commit: b98a407f1ff07db1e28a032fefa46877eb089397
+  docker-feedstock:
+    branch: main
+    commit: eb5762e85723d158fd48d5b24934e69ed15645e0
   docutils-feedstock:
     branch: main
     commit: cfdd0e7bf56b6a0331e2f542ada3dd5404ef554e
