@@ -29,6 +29,9 @@ feedstocks:
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
+  azure-core-feedstock:
+    branch: main
+    commit: d39b7ef1397416eb9f31206e8db6cef6b3b72c9c
   backoff-feedstock:
     branch: main
     commit: 0bbeb5afb679ceedeb7e9625d4c1e6022dfdb9fe
