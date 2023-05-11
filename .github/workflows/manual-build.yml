@@ -16,7 +16,7 @@ on:
           - linux-64
       container_runtime:
         description: 'The container runtime to use'
-        default: "docker"
+        default: none
         type: choice
         options:
           - docker
