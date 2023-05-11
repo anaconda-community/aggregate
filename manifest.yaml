@@ -410,6 +410,9 @@ feedstocks:
   portalocker-feedstock:
     branch: main
     commit: c18900fd7e825f0d68d49ddf5439a65a9c534476
+  ppmac-feedstock:
+    branch: main
+    commit: f66a0d16c9ddc3520b3c8bd20ae582e084181587
   pprofile-feedstock:
     branch: main
     commit: 92ad55e39f2966d6f45adaead57499c91429edcd
