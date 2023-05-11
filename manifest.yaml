@@ -29,6 +29,9 @@ feedstocks:
   attrs-feedstock:
     branch: main
     commit: 02e49813916c95cb3dd32d05bd2589373e2d676f
+  autotools_clang_conda-feedstock:
+    branch: main
+    commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   awscli-feedstock:
     branch: main
     commit: ebf9c5b5f75fc5171e0abc07cfdf70a43046f4ad
@@ -278,6 +281,9 @@ feedstocks:
   huggingface_hub-feedstock:
     branch: main
     commit: b3c28f622e20e1dc924e7f1a9b18ef3349791216
+  icu-feedstock:
+    branch: main
+    commit: a0a0f0ecbc8aa5b9bace02edef860439df179df6
   idna-feedstock:
     branch: main
     commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
@@ -380,6 +386,12 @@ feedstocks:
   libxcb-feedstock:
     branch: main
     commit: 2ee845e795260839f3b44afefae0ca4ef5850523
+  libxml2-feedstock:
+    branch: main
+    commit: c023a9c6554a53e65265a2ae4af8063ff631b379
+  lld-feedstock:
+    branch: main
+    commit: 556b429160d16b416f30f7967954294e0cfd4c4c
   llvmdev-feedstock:
     branch: main
     commit: 2977f18493a7062562036fe588e021dac22a0da6
