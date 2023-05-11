@@ -437,6 +437,9 @@ feedstocks:
   pyyaml-feedstock:
     branch: main
     commit: b39fdf325bfc1fac172a4974c7f3a8fb878b1e29
+  redis-feedstock:
+    branch: main
+    commit: e202b7a00d629d91ddd62d31980480bb975f1070
   regex-feedstock:
     branch: main
     commit: e587e2cac34d105b99fb68fb62cfded54ddaef40
