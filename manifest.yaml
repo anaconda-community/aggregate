@@ -92,6 +92,9 @@ feedstocks:
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
+  community-integration-test-feedstock:
+    branch: main
+    commit: 220ddab258ee802a2420457746e1557e196881bd
   coverage-feedstock:
     branch: main
     commit: 8697892f059eb0b37183bafee56e99d9c1b766d4
