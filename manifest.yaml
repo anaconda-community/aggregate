@@ -371,6 +371,9 @@ feedstocks:
   openai-feedstock:
     branch: main
     commit: 7dce00ed7bb4c3e15423ba921f9428cf8dea80ed
+  openmp-feedstock:
+    branch: main
+    commit: bbeb4cad0809e471aab0cadc9ed6354a65523256
   openpyxl-feedstock:
     branch: main
     commit: 46dc3bbb5654e3a0c25426d4c5b1ea6afb01bc0d
