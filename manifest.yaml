@@ -77,6 +77,9 @@ feedstocks:
   cachetools-feedstock:
     branch: main
     commit: a9fc0f4b6690d58907e1f21900551b3504562cb7
+  calver-feedstock:
+    branch: main
+    commit: b80c1f3754f451bb993bb0ac29bf550f0f8e4095
   certifi-feedstock:
     branch: main
     commit: e4717457773350f4b474acc25f3479bec00d60c8
@@ -149,6 +152,9 @@ feedstocks:
   docutils-feedstock:
     branch: main
     commit: cfdd0e7bf56b6a0331e2f542ada3dd5404ef554e
+  editables-feedstock:
+    branch: main
+    commit: b96f8cc94fcaf4a5e35e9e83e0122fb22d68ac43
   et-xmlfile-feedstock:
     branch: main
     commit: d3390f84b061870bee072f62a6545ce90eb60de8
@@ -173,6 +179,9 @@ feedstocks:
   flask-feedstock:
     branch: main
     commit: fe78f8210cab49d4d5a3bbcb6e1d09cda151b205
+  flit-feedstock:
+    branch: main
+    commit: 2ed331599ab29fba4e4f8d300a3aeed40a8c57a4
   frozenlist-feedstock:
     branch: main
     commit: a3b109056a0cea1c13d792bff5c8d275973ad21c
@@ -233,6 +242,12 @@ feedstocks:
   h11-feedstock:
     branch: main
     commit: 2c26e10479fa2782ea64208b9bfa1548996d1f4c
+  hatch-vcs-feedstock:
+    branch: main
+    commit: dbcf7fc7766da0cde548a39a68065b7eeeb8d134
+  hatchling-feedstock:
+    branch: main
+    commit: 5621ff0a44cd755ce295366486b13d76a897b405
   httplib2-feedstock:
     branch: main
     commit: 99c80281635020bc8eae527af9d2aca7e199ce67
@@ -530,6 +545,9 @@ feedstocks:
   setuptools-feedstock:
     branch: main
     commit: 3d1c73c2de420f6101b4d32468a6c3b51468d84b
+  setuptools_scm-feedstock:
+    branch: main
+    commit: d870dcba7f9faef9642515be773bb98840254876
   six-feedstock:
     branch: main
     commit: 72223a1cb193d2309b6434bb9ec806e0afcbca7c
@@ -566,12 +584,18 @@ feedstocks:
   tomli-feedstock:
     branch: main
     commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
+  tomli-w-feedstock:
+    branch: main
+    commit: 1367061e1ca8275fca42272ebcc4b147759c3e23
   tornado-feedstock:
     branch: main
     commit: b309690ac6cdbaf468dd125b33b8d9968dd8c803
   tqdm-feedstock:
     branch: main
     commit: 63821b6e8e7b01b4e058bffbff38d4ad4dda11e2
+  trove-classifiers-feedstock:
+    branch: main
+    commit: 5a918c794bb95399c735a1b0050d54b3752f6b50
   typing_extensions-feedstock:
     branch: main
     commit: f97fea64bed562e6a10484a6ac6f8ff387f021f6
