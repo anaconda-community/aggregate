@@ -470,6 +470,9 @@ feedstocks:
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
+  streamlit-feedstock:
+    branch: main
+    commit: db53350fa4c33ba8947d5f1cfa40e0813da6b72d
   tabulate-feedstock:
     branch: main
     commit: d40aebbb81d068841bdddafd80162298e9446b05
