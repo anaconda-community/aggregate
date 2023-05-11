@@ -442,9 +442,14 @@ def create_parser() -> argparse.ArgumentParser:
         prog="check_avail",
         description="This Python script generates an ordered list of feedstocks to build."
     )
-    popt = parser.add_mutually_exclusive_group(required=True)
-
-    popt.add_argument(
+    # popt = parser.add_mutually_exclusive_group(required=True)
+    parser.add_argument(
+        "-m",
+        "--manifest",
+        default=False,
+        help="Set to True to get all feedstocks in manifest"
+    )
+    parser.add_argument(
         "-f",
         "--feedstock_name",
         type=check_dep_name,
@@ -474,32 +479,11 @@ def create_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def print_summary(package_name):
-    global i
-    print("\n\n########################## SUMMARY ##########################")
-    if (len(missing_deps) + len(outdated_deps) + len(check_manually)) > 0:
-        if len(missing_deps) > 0:
-            print("Missing dependencies:")
-            for i in reversed(missing_deps):
-                print("- " + i)
+def get_manifest_feedstocks():
+    with open('manifest.yaml') as f:
+        my_list = yaml.safe_load(f)
 
-        if len(outdated_deps) > 0:
-            print(
-                "\nDependencies that either need to be updated or rebuild for requested archs:"
-            )
-            for i in reversed(outdated_deps):
-                print("- " + i)
-
-        if len(check_manually) > 0:
-            print(
-                "\nDependencies that require manual attention as their repos could not be located:"
-            )
-            for i in reversed(check_manually):
-                print("- " + i)
-    else:
-        print(
-            "All dependencies are available to build {} {}".format(package_name, version)
-        )
+    return ','.join(my_list['feedstocks'])
 
 
 # Start the program.
@@ -521,7 +505,12 @@ if __name__ == "__main__":
                       list: {}".format(arch, supported_archs))
                 exit(1)
 
-    for feedstock in args.feedstock_name.split(","):
+    if args.manifest:
+        to_process = get_manifest_feedstocks().split(",")
+    else:
+        to_process = args.feedstock_name.split(",")
+
+    for feedstock in to_process:
         if feedstock == "":
             continue
         # Remove -feedstock

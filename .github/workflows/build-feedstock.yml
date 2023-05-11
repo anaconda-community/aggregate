@@ -23,6 +23,10 @@ on:
         description: "The GitHub runner to use, only change when eks does not work"
         default: "self-hosted-eks"
         type: string
+      manifest:
+        description: "Flag to run build for entire manifest"
+        default: "False"
+        type: string
     secrets:
       GH_TOKEN:
         description: 'Github Token'
@@ -59,7 +63,7 @@ jobs:
       - name: Get build order
         id: build-order
         run: |
-          python tools/find_deps.py -f ${{ inputs.feedstock }} > output.log
+          python tools/find_deps.py -f ${{ inputs.feedstock }} -m ${{ inputs.manifest }} > output.log
           feedstocks=$(tail -n 1 output.log)
           echo "feedstocks=$feedstocks" >> $GITHUB_OUTPUT
 
