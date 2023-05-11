@@ -317,6 +317,9 @@ feedstocks:
   pip-feedstock:
     branch: main
     commit: d08a3ca454ccfc9fc47a2541b7ba7088e90ddfab
+  pkg-config-feedstock:
+    branch: main
+    commit: c7a98e5797cd5147bc72e45bf7bba3a31f0262af
   platformdirs-feedstock:
     branch: main
     commit: 9d13df4761eb6c00865a8192c784473576735dd0
@@ -494,6 +497,9 @@ feedstocks:
   ucrt-feedstock:
     branch: main
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
+  unzip-feedstock:
+    branch: main
+    commit: 5100fb98823ccd67630393f6f7aabeaacfa9b49b
   urllib3-feedstock:
     branch: main
     commit: d6844acd9c374d04f3567e1dfb40511e3c4cb72a
