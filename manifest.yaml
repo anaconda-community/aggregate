@@ -347,6 +347,9 @@ feedstocks:
   portalocker-feedstock:
     branch: main
     commit: c18900fd7e825f0d68d49ddf5439a65a9c534476
+  pprofile-feedstock:
+    branch: main
+    commit: 92ad55e39f2966d6f45adaead57499c91429edcd
   proto-plus-feedstock:
     branch: main
     commit: 5c8076f47d0e254c8544d032062b52e2e9f115dc
