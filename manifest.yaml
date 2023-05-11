@@ -476,6 +476,9 @@ feedstocks:
   sniffio-feedstock:
     branch: main
     commit: afeb1e0bc5239e4dc8ac5d3f9b384b7d56133bb7
+  snowflake-connector-python-feedstock:
+    branch: main
+    commit: fad0d06a2cf7dc71a2f2082382649fa372ba2efc
   soupsieve-feedstock:
     branch: main
     commit: 0f1095f9d5ee5cdd7b7b154ade5c7fea2cc826f2
