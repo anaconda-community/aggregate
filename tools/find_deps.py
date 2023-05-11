@@ -264,6 +264,10 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
             continue
         if dep.startswith("automake"):
             continue
+        if dep.__eq__("setuptools"):
+            continue
+        if dep.__eq__("wheel"):
+            continue
 
         # Construct line:
         constrLine += dep
