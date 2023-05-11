@@ -34,6 +34,11 @@ on:
         options:
           - "self-hosted-eks"
           - "ubuntu-latest"
+      manifest:
+        description: "Flag to build entire manifest"
+        default: False
+        required: true
+        type: string
 
 permissions: write-all
 
@@ -46,5 +51,6 @@ jobs:
       container_runtime: ${{ inputs.container_runtime }}
       branch: ${{ inputs.branch }}
       action_runner: ${{ inputs.action_runner }}
+      manifest: ${{ inputs.manifest }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
