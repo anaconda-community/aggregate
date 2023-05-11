@@ -44,6 +44,9 @@ feedstocks:
   backoff-feedstock:
     branch: main
     commit: 0bbeb5afb679ceedeb7e9625d4c1e6022dfdb9fe
+  backtrace-feedstock:
+    branch: main
+    commit: 8f2901620d3360f5310c70e4da96f33220c8c0fe
   bcrypt-feedstock:
     branch: main
     commit: 628ef60f24549eaa92af0020da511d761ee56a49
