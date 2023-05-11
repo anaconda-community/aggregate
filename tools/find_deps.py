@@ -130,7 +130,7 @@ def raw_text_load(name, branch):
         print(f"Error [{response.status_code}]: {response.reason}")
         return ""
     env_string = response.text
-    template = load_template_string({'target_platform': 'linux-64'}, env_string)
+    template = load_template_string({'target_platform': 'linux-64', 'ctng_target_platform': 'linux-64'}, env_string)
     return template
 
 
@@ -234,6 +234,8 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
             continue
         if dep.startswith("cross-python"):
             continue
+        if dep.startswith("m2"):
+            continue
         if dep.__eq__("make"):
             continue
         if dep.__eq__("help2man"):
@@ -249,6 +251,14 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
         if dep.__eq__("m2-patch"):
             continue
         if dep.__eq__("patch"):
+            continue
+        if dep.__eq__("vs2015_runtime"):
+            continue
+        if dep.__eq__("posix"):
+            continue
+        if dep.__eq__("crt-git"):
+            continue
+        if dep.startswith("automake"):
             continue
 
         # Construct line:
