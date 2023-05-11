@@ -80,6 +80,9 @@ feedstocks:
   charset-normalizer-feedstock:
     branch: main
     commit: 6ddc2cb6f7b5ea0708c992b324133bce146520c2
+  clangdev-feedstock:
+    branch: main
+    commit: 28ccb4f7dd6e23f709c53f3e8cef3b4f21c9f643
   click-feedstock:
     branch: main
     commit: 9a87e0f3ed6e15ba710c7824b3b8071c1ddc85b3
@@ -245,12 +248,18 @@ feedstocks:
   lapack-feedstock:
     branch: main
     commit: ea070f43a481a76d076ecb59709ce1a3bdcc182a
+  libcxx-feedstock:
+    branch: main
+    commit: 602fc94f8b99455d2aca0446c404a08e900808fe
   libffi-feedstock:
     branch: main
     commit: 0447f3e6c89dd24d484aa69084e029f973ba7f6d
   libprotobuf-feedstock:
     branch: main
     commit: a2b38e3077de05fe7b71e8d58a73935ecd0891ea
+  llvmdev-feedstock:
+    branch: main
+    commit: 2977f18493a7062562036fe588e021dac22a0da6
   lxml-feedstock:
     branch: main
     commit: b5850d45ecadd3ac705fbd29ed8350f1b904527c
@@ -260,6 +269,9 @@ feedstocks:
   matplotlib-feedstock:
     branch: main
     commit: a71b069344e21c63c2c4de27041881c128395de3
+  meson-python-feedstock:
+    branch: main
+    commit: 11522852fba606a7f46559b6a8179cae6ad5f4ed
   more-itertools-feedstock:
     branch: main
     commit: b7ac4188bd256196d4366c175a1b1ef4fb0d9933
@@ -356,6 +368,9 @@ feedstocks:
   pyasn1-modules-feedstock:
     branch: main
     commit: bc2a4ed0b42f845d26ccba2a807f31d2eb0ddcf0
+  pybind11-feedstock:
+    branch: main
+    commit: 87dda71aebb831759c6d9f454ac1618e24e31551
   pycaret-feedstock:
     branch: main
     commit: c1e5bd5c2a3e50e6babc15f14c971517395f43c8
