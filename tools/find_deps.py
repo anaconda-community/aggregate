@@ -144,7 +144,9 @@ def get_deps(name, branch):
     except:
         return {}, "0"
     # Get collection of required dependencies (may not be unique)
-    deps_collection = read_requirements(data, name, "requirements", "build")
+    deps_collection = read_requirements(data, name, "requirements", "build") \
+                      + read_requirements(data, name, "requirements", "run") \
+                      + read_requirements(data, name, "requirements", "host")
 
     deps_dict = {}
     if len(deps_collection) > 0:
