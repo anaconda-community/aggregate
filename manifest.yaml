@@ -56,6 +56,9 @@ feedstocks:
   binutils-feedstock:
     branch: main
     commit: a4eea7a401f4a85a8ad8fae3600557858aca2397
+  blas-feedstock:
+    branch: main
+    commit: 44be55d4eb6cf7a1fd208d431c4af4907043208e
   boto3-feedstock:
     branch: main
     commit: 29e34f98e410355038ada1f9f217de99527c6d92
