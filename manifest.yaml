@@ -161,6 +161,9 @@ feedstocks:
   expat-feedstock:
     branch: main
     commit: ad055e3aaea632237c7b4755f28fa3ee57913540
+  file-feedstock:
+    branch: main
+    commit: 1c421ffcd4dc371acb580ec2e5051bd1dd54fa4f
   filelock-feedstock:
     branch: main
     commit: 90cbc23db693e884b777589012f4cfd08ab11b5f
