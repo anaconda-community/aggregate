@@ -223,6 +223,8 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
         ver_range = ""
         if len(dep) > 1:
             ver_range = dep[1]
+        if len(dep) == 0:
+            continue
         dep = dep[0]
         if dep.__eq__("python"):
             continue
