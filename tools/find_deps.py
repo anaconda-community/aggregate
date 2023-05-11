@@ -167,6 +167,8 @@ def guess_feedstock_name(dep, separator, checksep):
         if repo_avail:
             # Found the repo! Now need to check if the package is mentioned here
             data = yaml.load(raw_text_load(partOfPKG, def_branch), Loader=yaml.SafeLoader)
+            if data is None:
+                continue
             for out in data.get("outputs", {}):
                 # Try both combinations
                 if str(out.get("name", {})) == dep:
