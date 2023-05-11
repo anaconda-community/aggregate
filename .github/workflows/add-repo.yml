@@ -104,7 +104,7 @@ jobs:
           done
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "add ${REPO_LIST}" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT || echo "createpr=false" >> $GITHUB_OUTPUT
+          git commit -m "add ${{ github.event.inputs.feedstocks }}" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT || echo "createpr=false" >> $GITHUB_OUTPUT
         env:
           REPO_LIST: ${{ steps.deps.outputs.feedstocks  }}
 
