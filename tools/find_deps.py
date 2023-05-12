@@ -166,8 +166,12 @@ def guess_feedstock_name(dep, separator, checksep):
         repo_avail, def_branch = is_recipe_available(partOfPKG, True)
         if repo_avail:
             # Found the repo! Now need to check if the package is mentioned here
-            data = yaml.load(raw_text_load(partOfPKG, def_branch), Loader=yaml.SafeLoader)
-            if data is None:
+            try:
+                data = yaml.load(raw_text_load(partOfPKG, def_branch), Loader=yaml.SafeLoader)
+                if data is None:
+                    continue
+            except:
+                print(f"Error loading yaml for {partOfPKG}")
                 continue
             for out in data.get("outputs", {}):
                 # Try both combinations
@@ -267,6 +271,8 @@ def print_level(deps, archSupport, prefix, check_version_check_selector, expand_
         if dep.__eq__("setuptools"):
             continue
         if dep.__eq__("wheel"):
+            continue
+        if dep.__eq__("autotools_clang_conda"):
             continue
 
         # Construct line:
