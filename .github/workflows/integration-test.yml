@@ -46,14 +46,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
   build:
-    defaults:
-      run:
-        shell: bash -l {0}
-    runs-on: ubuntu-latest
     uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
     with:
       feedstock: community-integration-test-feedstock
       arch: linux-64
       branch: community-integration-test-branch
-    env:
+    secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
