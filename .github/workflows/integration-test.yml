@@ -40,7 +40,7 @@ jobs:
           git config user.email "<>"
           git checkout -b community-integration-test-branch
           git pull --rebase
-          abs aggregate add --branch community-integration-test-branch --commit ${hash} community-integration-test-feedstock
+          abs aggregate add --branch main --commit ${hash} community-integration-test-feedstock
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
           git commit -m "update community-integration-test-feedstock" && git push --set-upstream origin community-integration-test-branch
