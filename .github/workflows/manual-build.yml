@@ -39,6 +39,10 @@ on:
         default: False
         required: true
         type: string
+      add_deps:
+        description: "Flag to add dependencies"
+        default: "True"
+        type: string
 
 permissions: write-all
 
@@ -52,5 +56,6 @@ jobs:
       branch: ${{ inputs.branch }}
       action_runner: ${{ inputs.action_runner }}
       manifest: ${{ inputs.manifest }}
+      add_deps: ${{ inputs.add_deps }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
