@@ -1,0 +1,59 @@
+#  Test flow:
+#
+#  1. anaconda-community/community-integration-test-feedstock test action updates recipe to increment build number
+#       and calls this workflow from its github action
+#  2. This workflow updates manifest on a branch to the latest community-integration-test-feedstock
+#       commit and calls build workflow with branch information
+#  3. anaconda-community/community-integration-test-feedstock test action tries to conda install
+#       based on build number it writes
+name: Integration Test
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  update-manifest:
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+
+      - name: Create Conda environment with abs
+        uses: mamba-org/provision-with-micromamba@main
+        with:
+          environment-file: false
+          environment-name: integration-test
+          cache-downloads: true
+          log-level: warning
+          channels: conda-forge,distro-tooling
+          extra-specs: |                        
+            abs-cli
+
+      - name: Update manifest
+        id: manifest
+        run: |
+          hash=$(git ls-remote https://github.com/anaconda-community/community-integration-test-feedstock.git | head -n1 | awk '{print $1;}')
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git checkout -b community-integration-test-branch
+          abs aggregate add --branch community-integration-test-branch --commit ${hash} community-integration-test-feedstock
+          git add manifest.yaml
+          git commit -m "update community-integration-test-feedstock" && git push --set-upstream origin community-integration-test-branch
+        secrets:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+  build:
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
+    with:
+      feedstock: community-integration-test-feedstock
+      arch: linux-64
+      branch: community-integration-test-branch
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
