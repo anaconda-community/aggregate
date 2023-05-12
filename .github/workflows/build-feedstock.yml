@@ -31,6 +31,10 @@ on:
         description: "Flag to add dependencies"
         default: "True"
         type: string
+      skip_published:
+        description: "Flag to skip published"
+        default: "False"
+        type: string
     secrets:
       GH_TOKEN:
         description: 'Github Token'
@@ -69,7 +73,7 @@ jobs:
         run: |
           if [[ ${{ inputs.add_deps }} == "True" ]]
           then
-            python tools/find_deps.py -f ${{ inputs.feedstock }} -m ${{ inputs.manifest }} > output.log
+            python tools/find_deps.py -f ${{ inputs.feedstock }} -m ${{ inputs.manifest }} -s ${{ inputs.skip_published }} > output.log
             feedstocks=$(tail -n 1 output.log)
           else
             feedstocks=${{ inputs.feedstock }}

@@ -77,6 +77,15 @@ def ver_in_range(verCand, verRange):
     return inRange
 
 
+def get_published():
+    r = requests.get('https://staging.continuum.io/community/dev/noarch/repodata.json')
+    my_list = yaml.safe_load(r.content)
+    published = dict()
+    for x in my_list['packages']:
+        published[re.sub(r'-\d+\.\d+.*\.tar\.bz2', '', x)] = 'yes'
+    return published
+
+
 def get_requirements(data, name, section, attribute):
     if str(data.get("package", {}).get("name", {})) != name and attribute != "version":
         for out in data.get("outputs", {}):
@@ -456,6 +465,12 @@ def create_parser() -> argparse.ArgumentParser:
         help="Set to True to get all feedstocks in manifest"
     )
     parser.add_argument(
+        "-s",
+        "--skip_published",
+        default=False,
+        help="Set to True to skip published feedstocks"
+    )
+    parser.add_argument(
         "-f",
         "--feedstock_name",
         type=check_dep_name,
@@ -534,6 +549,12 @@ if __name__ == "__main__":
         print_level(deps, archs, " ", args.check_version_check_selector, args.expand_tree)
 
     # print_summary(package_name)
+    ordered_feedstocks.pop("wheel-feedstock", "")
+    ordered_feedstocks.pop("setuptools-feedstock", "")
+
+    if args.skip_published:
+        for key in get_published():
+            ordered_feedstocks.pop(f"{key}-feedstock", '')
 
     feedstocks = ','.join(reversed(list(ordered_feedstocks.keys())))
     print(feedstocks)
