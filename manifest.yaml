@@ -179,6 +179,9 @@ feedstocks:
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
+  colorlover-feedstock:
+    branch: main
+    commit: 3d2713e57fead5294efd512dca117eef190af1af
   comm-feedstock:
     branch: main
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
