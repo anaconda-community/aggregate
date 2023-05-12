@@ -189,7 +189,7 @@ feedstocks:
     branch: main
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
-    branch: community-integration-test-branch
+    branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
   confection-feedstock:
     branch: main
