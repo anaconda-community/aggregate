@@ -31,6 +31,7 @@ jobs:
           channels: conda-forge,distro-tooling
           extra-specs: |                        
             abs-cli
+            yq
 
       - name: Update manifest
         id: manifest
