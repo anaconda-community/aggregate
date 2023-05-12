@@ -46,6 +46,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
   build:
+    needs: [update-manifest]
     uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
     with:
       feedstock: community-integration-test-feedstock
