@@ -461,13 +461,13 @@ def create_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "-m",
         "--manifest",
-        default=False,
+        default="False",
         help="Set to True to get all feedstocks in manifest"
     )
     parser.add_argument(
         "-s",
         "--skip_published",
-        default=False,
+        default="False",
         help="Set to True to skip published feedstocks"
     )
     parser.add_argument(
@@ -526,7 +526,7 @@ if __name__ == "__main__":
                       list: {}".format(arch, supported_archs))
                 exit(1)
 
-    if args.manifest:
+    if args.manifest.__eq__("True"):
         to_process = get_manifest_feedstocks().split(",")
     else:
         to_process = args.feedstock_name.split(",")
@@ -552,7 +552,7 @@ if __name__ == "__main__":
     ordered_feedstocks.pop("wheel-feedstock", "")
     ordered_feedstocks.pop("setuptools-feedstock", "")
 
-    if args.skip_published:
+    if args.skip_published.__eq__("True"):
         for key in get_published():
             ordered_feedstocks.pop(f"{key}-feedstock", '')
 
