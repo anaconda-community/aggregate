@@ -5,6 +5,9 @@ feedstocks:
   7zip-feedstock:
     branch: main
     commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
+  _openmp_mutex-feedstock:
+    branch: main
+    commit: 6eccb26198876864a8f7675d75d2499643028be4
   aiobotocore-feedstock:
     branch: main
     commit: 3b8aff2bfc88151ff60ff850c2081366c23d529a
