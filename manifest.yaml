@@ -191,6 +191,9 @@ feedstocks:
   community-integration-test-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
+  compilers-feedstock:
+    branch: main
+    commit: c4865f325ba752842f7ea21470abde447f7f1062
   confection-feedstock:
     branch: main
     commit: 1432208df64cb02ecb78f24b282c4effefd82e8e
