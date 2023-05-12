@@ -29,3 +29,15 @@ This will remove the forked repo from anaconda-community and create a PR that re
 ## Build
 Whenever a PR is opened or merged where manifest.yaml has been updated the file will be parsed and additions to it will
 trigger a new build.
+
+## Integration test
+
+To run the integration test locally, 
+- install [Act](https://github.com/nektos/act)
+- configure act to use a runner 
+- create a github personal access token and put in a `.env` file
+
+Run update-manifest job:
+```
+act -j update-manifest -W .github/workflows/integration-test.yml -s GITHUB_TOKEN
+```
