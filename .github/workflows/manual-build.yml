@@ -43,6 +43,10 @@ on:
         description: "Flag to add dependencies"
         default: "True"
         type: string
+      skip_published:
+        description: "Flag to skip published"
+        default: "False"
+        type: string
 
 permissions: write-all
 
@@ -57,5 +61,6 @@ jobs:
       action_runner: ${{ inputs.action_runner }}
       manifest: ${{ inputs.manifest }}
       add_deps: ${{ inputs.add_deps }}
+      skip_published: ${{ inputs.skip_published }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}

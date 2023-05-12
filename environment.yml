@@ -11,3 +11,4 @@ dependencies:
   - cachetools
   - yq
   - boto3
+  - requests
