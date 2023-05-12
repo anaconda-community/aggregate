@@ -158,6 +158,9 @@ feedstocks:
   charset-normalizer-feedstock:
     branch: main
     commit: 6ddc2cb6f7b5ea0708c992b324133bce146520c2
+  chart-studio-feedstock:
+    branch: main
+    commit: 70e8cc88c74a366e9642c39ff21a32c04b76e1f4
   clangdev-feedstock:
     branch: main
     commit: 28ccb4f7dd6e23f709c53f3e8cef3b4f21c9f643
@@ -1115,6 +1118,9 @@ feedstocks:
   requests-toolbelt-feedstock:
     branch: main
     commit: 75fa7e435b32ca8c5a488acec6aa8d0523b51d38
+  retrying-feedstock:
+    branch: main
+    commit: fa5752c507a8c415056713e30d85cace5e977c4b
   rhash-feedstock:
     branch: main
     commit: 83cb7a8caca2c51ae0c09fc0f2f8541532dfba5d
@@ -1241,6 +1247,9 @@ feedstocks:
   tangled-up-in-unicode-feedstock:
     branch: main
     commit: 596d05a7a720fb18ae3aa0c393ad4bf076d1918d
+  tapi-feedstock:
+    branch: main
+    commit: 7e578b1aa3e1b9d6cc2b23c0bc86b2bc3017a08a
   tbb-feedstock:
     branch: main
     commit: 738274f894b5b92ba1a0fd421cf0d89c726d8e8f
