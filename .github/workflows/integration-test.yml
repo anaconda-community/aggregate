@@ -54,5 +54,6 @@ jobs:
       feedstock: community-integration-test-feedstock
       arch: linux-64
       branch: community-integration-test-branch
+      add_deps: "False"
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
