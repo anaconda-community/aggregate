@@ -38,12 +38,11 @@ jobs:
           hash=$(git ls-remote https://github.com/anaconda-community/community-integration-test-feedstock.git | head -n1 | awk '{print $1;}')
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git checkout -b community-integration-test-branch
-          git pull --rebase
+          git checkout -b community-integration-test-branch          
           abs aggregate add --branch main --commit ${hash} community-integration-test-feedstock
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "update community-integration-test-feedstock" && git push --set-upstream origin community-integration-test-branch
+          git commit -m "update community-integration-test-feedstock" && git push --set-upstream origin community-integration-test-branch --force
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
