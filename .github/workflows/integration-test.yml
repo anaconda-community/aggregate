@@ -42,7 +42,7 @@ jobs:
           abs aggregate add --branch community-integration-test-branch --commit ${hash} community-integration-test-feedstock
           git add manifest.yaml
           git commit -m "update community-integration-test-feedstock" && git push --set-upstream origin community-integration-test-branch
-        secrets:
+        env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
   build:
@@ -55,5 +55,5 @@ jobs:
       feedstock: community-integration-test-feedstock
       arch: linux-64
       branch: community-integration-test-branch
-    secrets:
+    env:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
