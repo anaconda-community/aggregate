@@ -242,6 +242,9 @@ feedstocks:
   cryptography-feedstock:
     branch: main
     commit: e70d84149adf02d7482113fea612ea2211a4b10c
+  ctng-compiler-activation-feedstock:
+    branch: main
+    commit: 18cd92d2bb2c46171faa43e96b8a3ce9b04499ab
   ctng-compilers-feedstock:
     branch: main
     commit: 8118bec940e44fe5e58eddc45a2650fbdf4609e2
@@ -1262,6 +1265,9 @@ feedstocks:
   shapely-feedstock:
     branch: main
     commit: 6498fd6867c0c8015bae053cb5bf8dd8395bf06e
+  shellcheck-feedstock:
+    branch: main
+    commit: 85d51813a19bd1130ca3a6f143927c14b7c679f4
   shellingham-feedstock:
     branch: main
     commit: 74e0aaa1382721024f454dfc5962434e74dafcd0
@@ -1313,6 +1319,9 @@ feedstocks:
   srsly-feedstock:
     branch: main
     commit: c1afd76d1ea84a98495050b3e83197d45f784311
+  stack-feedstock:
+    branch: main
+    commit: 32b7c84b35d50de2a832c582b00ce4e8c8a807ad
   stack_data-feedstock:
     branch: main
     commit: fdf71c03a399fcc1714b720b698d5df97421d8a7
