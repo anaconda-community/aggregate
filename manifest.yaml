@@ -8,6 +8,9 @@ feedstocks:
   _openmp_mutex-feedstock:
     branch: main
     commit: 6eccb26198876864a8f7675d75d2499643028be4
+  abseil-cpp-feedstock:
+    branch: main
+    commit: ae3b94a40ed6eafc116de7f3f9cd9a0ec0f774e7
   aiobotocore-feedstock:
     branch: main
     commit: 3b8aff2bfc88151ff60ff850c2081366c23d529a
@@ -587,6 +590,9 @@ feedstocks:
   jom-feedstock:
     branch: main
     commit: b34030cbe144416022201f46c1a17e1dc1723852
+  jsoncpp-feedstock:
+    branch: main
+    commit: f4740ae20ded9a654fbd17bb47a392e4129b5f0c
   jsonschema-feedstock:
     branch: main
     commit: 53dd991af34d42526ddc300cd20d43b6418d8c92
