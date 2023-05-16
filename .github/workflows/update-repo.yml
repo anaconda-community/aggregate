@@ -39,11 +39,11 @@ jobs:
           hash=$(git ls-remote https://github.com/anaconda-community/${REPO}.git | head -n1 | awk '{print $1;}')
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git checkout -b $feedstock
+          git checkout -b $REPO
           abs aggregate add --branch main --commit ${hash} ${REPO}
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "update ${feedstock}" && git push --set-upstream origin $feedstock && echo "createpr=true" >> $GITHUB_OUTPUT
+          git commit -m "update ${REPO}" && git push --set-upstream origin $REPO && echo "createpr=true" >> $GITHUB_OUTPUT
         env:
           REPO: ${{ github.event.inputs.repo }}
 
