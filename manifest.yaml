@@ -937,7 +937,7 @@ feedstocks:
     commit: d01feb0c2ecd99a525c72de1357d79e7eaf950ed
   pip-feedstock:
     branch: main
-    commit: ac6a210648f9929a6778524c32725c8b95e72ef2
+    commit: d08a3ca454ccfc9fc47a2541b7ba7088e90ddfab
   pixman-feedstock:
     branch: main
     commit: 8e52c1d2d35e611376c21e79bdaca54c5524ca05
