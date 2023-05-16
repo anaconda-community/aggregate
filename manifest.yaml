@@ -59,6 +59,45 @@ feedstocks:
   autotools_clang_conda-feedstock:
     branch: main
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
+  aws-c-auth-feedstock:
+    branch: main
+    commit: 2e0e9c799441ad496f3102c99a0499fa235563c6
+  aws-c-cal-feedstock:
+    branch: main
+    commit: 1497da5cf97527897e4cfce645b0ef26b5abc66d
+  aws-c-common-feedstock:
+    branch: main
+    commit: 48d9db68d768ded143c26779dbb5b61094e80949
+  aws-c-compression-feedstock:
+    branch: main
+    commit: 249b88cfd51b64af67aaa2e094e22c42ba80bc28
+  aws-c-event-stream-feedstock:
+    branch: main
+    commit: 4696903524b69f325696b18ed5ad1ac67c4400ac
+  aws-c-http-feedstock:
+    branch: main
+    commit: b599f8e8a73cf23eb761825b30050127a78693f0
+  aws-c-io-feedstock:
+    branch: main
+    commit: 803d8fe16e7efc5dcce597f19a01b09cd83d0911
+  aws-c-mqtt-feedstock:
+    branch: main
+    commit: 3702e8a7eef3ffbb1d65cc82cba89ac061aaa189
+  aws-c-s3-feedstock:
+    branch: main
+    commit: 65806c2fedb369f0f366dc2d8697766d117c968b
+  aws-c-sdkutils-feedstock:
+    branch: main
+    commit: d6f20148485b9a73a976e732de279f5d056b08fd
+  aws-checksums-feedstock:
+    branch: main
+    commit: c9bacf09bfc0d36b166b24d9432b8b38b477ec3c
+  aws-crt-cpp-feedstock:
+    branch: main
+    commit: 194dcb79398500d5753e360692317e73fe9d00e7
+  aws-sdk-cpp-feedstock:
+    branch: main
+    commit: af9d9aa93a2ee4f0ba3097115618fe16194a8e0a
   awscli-feedstock:
     branch: main
     commit: ebf9c5b5f75fc5171e0abc07cfdf70a43046f4ad
@@ -113,6 +152,9 @@ feedstocks:
   blosc-feedstock:
     branch: main
     commit: 02a89a0583e3f4ddb8fbc80464c10d19b2bc6cb8
+  boost-cpp-feedstock:
+    branch: main
+    commit: 699cfb6ec3488da8586833b1500b69133f052b6f
   boruta_py-feedstock:
     branch: main
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
@@ -407,6 +449,9 @@ feedstocks:
   gettext-feedstock:
     branch: main
     commit: 34eda0495a7eeb98f1644199382664dffb2e8e30
+  gflags-feedstock:
+    branch: main
+    commit: e6cef7d12c9c824869353a7773c51c40494b49bb
   giflib-feedstock:
     branch: main
     commit: b4db34a6d8033974016ace3ae15e02138e298f36
@@ -422,6 +467,9 @@ feedstocks:
   glib-feedstock:
     branch: main
     commit: fe101f89a555d14a86669881932bef852bc1938b
+  glog-feedstock:
+    branch: main
+    commit: 4e8358cb4ca22c7e947e88956facd2fd64beab29
   gmp-feedstock:
     branch: main
     commit: 2ac5f7d526fc16dd31617c1306f64337704369ca
@@ -455,6 +503,9 @@ feedstocks:
   google-cloud-core-feedstock:
     branch: main
     commit: dcb3448abff9b675670de51cfa59350123b0a49b
+  google-cloud-cpp-feedstock:
+    branch: main
+    commit: 082417000c1aaa1e0453121da23c9aaa3d1ea703
   google-cloud-storage-feedstock:
     branch: main
     commit: eb7f207505b4aa5598fca7e72ead837f391351d9
@@ -476,6 +527,9 @@ feedstocks:
   greenlet-feedstock:
     branch: main
     commit: 8deb30e52ac98f97f3eef98e9b28411576b1f44e
+  grpc-cpp-feedstock:
+    branch: main
+    commit: 6d4933a4e16c1644595950c4162a44a169e6da65
   grpcio-feedstock:
     branch: main
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
@@ -698,6 +752,9 @@ feedstocks:
   libtiff-feedstock:
     branch: main
     commit: 71d9aed594f75ff20fab614a43f44ca6c70312c9
+  libutf8proc-feedstock:
+    branch: main
+    commit: 0b335864ad79cfe7bab307fa49e392c52873b657
   libuuid-feedstock:
     branch: main
     commit: 1c123652436e22ba6ded28448627e0d2c3af2665
@@ -836,6 +893,9 @@ feedstocks:
   ninja-feedstock:
     branch: main
     commit: f86489f63fdf770cab894eac489334009c9bca0f
+  nlohmann_json-feedstock:
+    branch: main
+    commit: eec7c26e7eb20ff7a70f46ba2f5ef331100af9ac
   nltk-feedstock:
     branch: main
     commit: c7e6148db52f30c63954ab9438e2a97edd4c0a68
@@ -875,6 +935,9 @@ feedstocks:
   openssl-feedstock:
     branch: main
     commit: 62d2673cfad80eef4100b6ccc46667751751fec0
+  orc-feedstock:
+    branch: main
+    commit: e701edc4b74b08ced2e2694be3dd0124e699a51c
   oscrypto-feedstock:
     branch: main
     commit: 32f4f58bca54c93107c39ca546232dfef1661cd5
@@ -893,6 +956,9 @@ feedstocks:
   paramiko-feedstock:
     branch: main
     commit: 7548607b57a12aebe59ac086097c1b36c0c14537
+  parquet-cpp-feedstock:
+    branch: main
+    commit: ad81f5772fee734541acd641cd64b4bde316d8f9
   parso-feedstock:
     branch: main
     commit: 9900219b147e3338c364a49ca27639e5449df045
@@ -1178,6 +1244,12 @@ feedstocks:
   rapidfuzz-feedstock:
     branch: main
     commit: a17b0a3acb616062285e07f7ec65cd592d3771c1
+  rapidjson-feedstock:
+    branch: main
+    commit: f817ee26dbd3e7c670abe62b8dd756549e2c6eef
+  re2-feedstock:
+    branch: main
+    commit: 02137f258317b7b549d08ef7179ae6f971926b5d
   readline-feedstock:
     branch: main
     commit: 2d0cd3a6c22f07fad9bbb0116cdde9c72470b856
@@ -1211,6 +1283,9 @@ feedstocks:
   ruby-feedstock:
     branch: main
     commit: ada08b152f27db3033b1725a74403658f30299ac
+  s2n-feedstock:
+    branch: main
+    commit: 0063b9fdf51f27b3b9e0a3f90738cde4b2b046a5
   s3fs-feedstock:
     branch: main
     commit: c5a50c505cacba3452f53b0b58ba013a59fecaf8
@@ -1361,6 +1436,9 @@ feedstocks:
   threadpoolctl-feedstock:
     branch: main
     commit: bf079d8fc6532c6295813966ec6efab02024146d
+  thrift-cpp-feedstock:
+    branch: main
+    commit: 19c8040f15d930fe94dcea1438cd254467ab6580
   tifffile-feedstock:
     branch: main
     commit: dcfb720fd102753f9dbb7666c346af17e7f04de3
@@ -1418,6 +1496,9 @@ feedstocks:
   ucrt-feedstock:
     branch: main
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
+  ucx-split-feedstock:
+    branch: main
+    commit: ff36caaf5c1c7cbdfcd67745af78daafec088e50
   umap-learn-feedstock:
     branch: main
     commit: a1655c93f198e65ad2ee2a38089ef5fc04b563ae
