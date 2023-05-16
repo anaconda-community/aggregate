@@ -228,3 +228,15 @@ zip_keys:
     - numpy
 zstd:
   - 1.5.2
+# conda_build_config_additions
+cuda_compiler_version:
+  - None
+
+libblas:
+  - 3.9 *netlib
+libcblas:
+  - 3.9 *netlib
+liblapack:
+  - 3.9 *netlib
+liblapacke:
+  - 3.9 *netlib
