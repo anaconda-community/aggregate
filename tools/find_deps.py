@@ -87,13 +87,10 @@ def get_published():
 
 
 def get_requirements(data, name, section, attribute):
-    if str(data.get("package", {}).get("name", {})) != name and attribute != "version":
+    reqs = data.get(section, {}).get(attribute, [])
+    if section == "requirements":
         for out in data.get("outputs", {}):
-            if str(out.get("name", {})) == name:
-                reqs = out.get(section, {}).get(attribute, [])
-                break
-    else:
-        reqs = data.get(section, {}).get(attribute, [])
+            reqs = reqs + out.get(section, {}).get(attribute, [])
     return reqs
 
 
