@@ -1255,7 +1255,7 @@ feedstocks:
     commit: 157180e9961f485e4384ea08110c5670b54ed066
   setuptools-feedstock:
     branch: main
-    commit: d66508b8b40b86f9769352883091e9979aac2953
+    commit: 3d1c73c2de420f6101b4d32468a6c3b51468d84b
   setuptools-rust-feedstock:
     branch: main
     commit: a0b45b8eff30a6cee0d0f54f6f4ccf484c8a6401
