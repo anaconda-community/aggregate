@@ -1,11 +1,8 @@
 name: "Update repo"
 on:
-  workflow_dispatch:
-    inputs:
-      repo:
-        description: 'Repo name of feedstock to update'
-        required: true
-        type: string
+  schedule:
+    - cron: 0 12 * * *
+  workflow_dispatch: {}
 permissions: write-all
 
 jobs:
@@ -15,11 +12,6 @@ jobs:
         shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
-      - name: Sync fork
-        run: gh repo sync anaconda-community/${{ github.event.inputs.repo }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
 
@@ -33,19 +25,41 @@ jobs:
           extra-specs: |
             python=3.9
 
+      - name: Get feedstocks
+        id: feedstocks
+        run: |
+          echo "feedstocks=$(yq '(.feedstocks | keys | join(","))' manifest.yaml | sed 's/"//g')" >> $GITHUB_OUTPUT            
+
+      - name: Sync forks
+        run: |          
+          for feedstock in ${FEEDSTOCKS//,/ }; do
+            parent=$(gh repo view anaconda-community/$feedstock --json parent | yq '.parent')
+            if [[ $parent != "null" ]]; then
+              gh repo sync anaconda-community/$feedstock
+            fi
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          FEEDSTOCKS: ${{ steps.feedstocks.outputs.feedstocks }}
+
       - name: Update manifest
         id: manifest
         run: |
-          hash=$(git ls-remote https://github.com/anaconda-community/${REPO}.git | head -n1 | awk '{print $1;}')
+          branch=$(date +updatefeedstocks%Y%m%d%H%M%S)
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git checkout -b $REPO
-          abs aggregate add --branch main --commit ${hash} ${REPO}
+          git checkout -b $branch
+          
+          for feedstock in ${FEEDSTOCKS//,/ }; do
+            hash=$(git ls-remote https://github.com/anaconda-community/${feedstock}.git | head -n1 | awk '{print $1;}')            
+            abs aggregate add --branch main --commit ${hash} ${feedstock}
+          done
+          
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "update ${REPO}" && git push --set-upstream origin $REPO && echo "createpr=true" >> $GITHUB_OUTPUT
+          git commit -m "update feedstocks" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT
         env:
-          REPO: ${{ github.event.inputs.repo }}
+          FEEDSTOCKS: ${{ steps.feedstocks.outputs.feedstocks }}
 
       - name: Open PR
         if: ${{ steps.manifest.outputs.createpr == 'true' }}
