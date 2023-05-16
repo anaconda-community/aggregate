@@ -166,7 +166,7 @@ feedstocks:
     commit: caedc9c8dce631cfd69994966ed203bec9318b9a
   certifi-feedstock:
     branch: main
-    commit: e4717457773350f4b474acc25f3479bec00d60c8
+    commit: 8ed59d7346c3fb18776f6f49a8e5487d451589e6
   cffi-feedstock:
     branch: main
     commit: 9d141942a5404542efc9ef2b584787885dadd31f
