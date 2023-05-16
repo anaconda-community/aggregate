@@ -41,6 +41,7 @@ jobs:
           git config user.email "<>"
           git checkout -b $feedstock
           abs aggregate add --branch main --commit ${hash} ${REPO}
+          yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
           git commit -m "update ${feedstock}" && git push --set-upstream origin $feedstock && echo "createpr=true" >> $GITHUB_OUTPUT
         env:
