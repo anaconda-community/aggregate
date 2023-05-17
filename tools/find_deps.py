@@ -12,7 +12,6 @@ import yaml
 from cachetools import Cache, LRUCache, cached
 from pkg_resources import parse_version
 from render import load_template_string
-from selector_support import evaluate_arch_selector
 
 cache: Cache = LRUCache(maxsize=1000)
 
@@ -27,6 +26,9 @@ supported_archs = [
     "osx-arm64",
     "win-64",
     "noarch",
+]
+excluded_packages = [
+    "openblas","ice","gdal","arrow","boost","llvm","gcc","python","numpy","protobuf","abseil","thrift","hdf5","netcdf"
 ]
 github_base_url = "https://raw.githubusercontent.com"
 username = os.getenv("GIT_USERNAME")
@@ -142,6 +144,9 @@ def raw_text_load(name, branch):
 
 @cached(cache)
 def get_deps(name, branch):
+    pinned = get_pinned_packages()
+    if name in pinned:
+        return {}, "0"
     try:
         template = raw_text_load(name, branch)
         if template == "":
@@ -157,7 +162,7 @@ def get_deps(name, branch):
     deps_dict = {}
     if len(deps_collection) > 0:
         for dep in deps_collection:
-            if dep not in deps_dict and isinstance(dep, str):
+            if dep not in deps_dict and isinstance(dep, str) and dep not in pinned:
                 deps_dict[dep] = []
     return deps_dict, get_requirements(data, name, "package", "version")
 
@@ -502,6 +507,17 @@ def get_manifest_feedstocks():
         my_list = yaml.safe_load(f)
 
     return ','.join(my_list['feedstocks'])
+
+
+@cached(cache)
+def get_pinned_packages():
+    with open('conda_build_config.yaml') as f:
+        my_list = yaml.safe_load(f)
+
+    for p in excluded_packages:
+        my_list[p] = ""
+
+    return ','.join(my_list)
 
 
 # Start the program.
