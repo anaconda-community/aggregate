@@ -43,7 +43,6 @@ jobs:
           branch=$(date +removefeedstocks%Y%m%d%H%M%S)
           git checkout -b $branch
           git add manifest.yaml
-          yq --yaml-output --in-place . manifest.yaml
           git commit -m "remove ${{ github.event.inputs.feedstocks }}" && git push --set-upstream origin $branch && gh pr create --fill --label "manifest-remove"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
