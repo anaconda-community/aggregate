@@ -2,8 +2,8 @@ name: "Remove repo"
 on:
   workflow_dispatch:
     inputs:
-      feedstock:
-        description: 'Name of feedstock that will be removed'
+      feedstocks:
+        description: 'Name of feedstock that will be removed, to remove multiple separate by comma'
         required: true
         type: string
 permissions: write-all
@@ -15,26 +15,40 @@ jobs:
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
 
-      - name: Remove from manifest
-        uses: mikefarah/yq@master
+      - name: Create Conda environment
+        uses: mamba-org/provision-with-micromamba@main
         with:
-          cmd: yq -i 'del(.feedstocks.${{ github.event.inputs.feedstock }})' manifest.yaml
+          environment-file: environment.yml
+          environment-name: agg
+          cache-downloads: true
+          cache-env: true
+          extra-specs: |
+            python=3.9
+
+      - name: Remove from manifest
+        run: |
+          for repo in ${REPO_LIST//,/ }; do
+            yq -i 'del(.feedstocks.$repo)' manifest.yaml
+          done
+        env:
+          REPO_LIST: ${{ github.event.inputs.feedstocks }}
 
       - name: Commit change
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git checkout -b ${{ github.event.inputs.feedstock }}
+          branch=$(date +removefeedstocks%Y%m%d%H%M%S)
+          git checkout -b $branch
           git add manifest.yaml
-          git commit -m "remove ${{ github.event.inputs.feedstock }}"
-          git push --set-upstream origin ${{ github.event.inputs.feedstock }}
-
-      - name: Open PR
-        run: gh pr create --fill --label "manifest-remove"
+          yq --yaml-output --in-place . manifest.yaml
+          git commit -m "remove ${{ github.event.inputs.feedstocks }}" && git push --set-upstream origin $branch && gh pr create --fill --label "manifest-remove"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Delete repo
-        run: gh repo delete https://github.com/anaconda-community/${{ github.event.inputs.feedstock }} --yes
+        run: |
+          for repo in ${REPO_LIST//,/ }; do
+            gh repo delete https://github.com/anaconda-community/$repo --yes
+          done
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          REPO_LIST: ${{ github.event.inputs.feedstocks }}
