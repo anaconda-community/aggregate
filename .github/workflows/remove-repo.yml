@@ -31,7 +31,7 @@ jobs:
       - name: Remove from manifest
         run: |
           for repo in ${REPO_LIST//,/ }; do
-            yq -i 'del(.feedstocks.$repo)' manifest.yaml
+            yq -i -y 'del(.feedstocks."'"$repo"'")' manifest.yaml
           done
         env:
           REPO_LIST: ${{ github.event.inputs.feedstocks }}
