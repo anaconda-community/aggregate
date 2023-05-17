@@ -54,3 +54,4 @@ jobs:
           done
         env:
           REPO_LIST: ${{ github.event.inputs.feedstocks }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
