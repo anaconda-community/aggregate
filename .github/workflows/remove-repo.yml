@@ -10,6 +10,9 @@ permissions: write-all
 
 jobs:
   remove-repo:
+    defaults:
+      run:
+        shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
