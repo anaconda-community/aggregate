@@ -33,7 +33,8 @@ jobs:
           log-level: warning
           channels: conda-forge,distro-tooling
           extra-specs: |
-            yq    
+            abs-cli
+            yq
 
       - name: Get build number
         id: build_number
@@ -53,18 +54,6 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
-
-      - name: Create Conda environment with abs
-        uses: mamba-org/provision-with-micromamba@main
-        with:
-          environment-file: false
-          environment-name: integration-test
-          cache-downloads: true
-          log-level: warning
-          channels: conda-forge,distro-tooling
-          extra-specs: |                        
-            abs-cli
-            yq
 
       - name: Update manifest
         id: manifest
