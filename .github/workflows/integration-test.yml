@@ -1,23 +1,55 @@
 #  Test flow:
 #
-#  1. anaconda-community/community-integration-test-feedstock test action updates recipe to increment build number
-#       and calls this workflow from its github action
-#  2. This workflow updates manifest on a branch to the latest community-integration-test-feedstock
+#  1. Updates recipe in anaconda-community/community-integration-test-feedstock to increment build number
+#  2. Updates manifest on a branch to the latest community-integration-test-feedstock
 #       commit and calls build workflow with branch information
-#  3. anaconda-community/community-integration-test-feedstock test action tries to conda install
-#       based on build number it writes
+#  3. Poll repodata.json for the package with the build number
+#  4. Conda install the package
+#  5. Send results to datadog
 name: Integration Test
 
 on:
   workflow_dispatch: {}
 
 jobs:
-  update-manifest:
+  integration-test:
     defaults:
       run:
         shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Community-Integration-Test-Feedstock Repo
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+        with:
+          repository: anaconda-community/community-integration-test-feedstock
+
+      - name: Create Conda environment with abs
+        uses: mamba-org/provision-with-micromamba@main
+        with:
+          environment-file: false
+          environment-name: integration-test
+          cache-downloads: true
+          log-level: warning
+          channels: conda-forge,distro-tooling
+          extra-specs: |
+            yq    
+
+      - name: Get build number
+        id: build_number
+        run: |          
+          value=$(yq '.build.number' recipe/meta.yaml)
+          ((value++))
+          echo "result=$value" >> $GITHUB_OUTPUT          
+
+      - name: Update recipe
+        id: recipe
+        run: |          
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"          
+          yq -i '.build.number = ${{ steps.build_number.outputs.result }}' recipe/meta.yaml
+          git add recipe/meta.yaml
+          git commit -m "update build number" && git push --set-upstream origin main --force             
+
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
 
@@ -47,13 +79,41 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-  build:
-    needs: [update-manifest]
-    uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
-    with:
-      feedstock: community-integration-test-feedstock
-      arch: linux-64
-      branch: community-integration-test-branch
-      add_deps: "False"
-    secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Build
+        run: |
+          gh secret set GH_TOKEN --body "$GITHUB_TOKEN"
+          gh -R anaconda-community/aggregate workflow run "Build feedstocks" \
+            -f feedstock=community-integration-test-feedstock \
+            -f arch=linux-64 \
+            -f branch=community-integration-test-branch \
+            -f add_deps="False"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Poll Repodata.json
+        id: poll_repodata
+        run: |
+          timeout=1800  # 30 minutes
+          start_time=$(date +%s)
+          while true; do
+            current_time=$(date +%s)
+            elapsed_time=$((current_time - start_time))
+
+            # Make HTTP request and check value change condition
+            response=$(curl -s https://staging.continuum.io/community/dev/noarch/repodata.json)            
+            package=$(echo "$response" | jq -r '.packages."community-integration-test-0.4.6-pyhd3eb1b0_${{ steps.build_number.outputs.result }}.tar.bz2"')
+            if [[ "$package" != "null" ]]; then
+              echo "Found package in repodata.json: $package"
+              break
+            fi
+
+            # Check if timeout reached
+            if [[ $elapsed_time -gt $timeout ]]; then
+              echo "Timeout reached, did not detect package: community-integration-test-0.4.6-pyhd3eb1b0_${{ steps.build_number.outputs.result }}.tar.bz2 within 30 minutes."
+              echo "Repodata: $response"
+              echo "Package: $package"
+              exit 1
+            fi
+
+            sleep 60  # Wait for 1 minute before polling again
+          done
