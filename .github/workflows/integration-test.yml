@@ -114,26 +114,28 @@ jobs:
           done
 
       - name: Send Integration Test Failed Metric
-        uses: datadog/datadog-action@v1
+        uses: masci/datadog@v1
         if: steps.poll_repodata.outputs.repodata_result == 'not_found'
         with:
-          api_key: ${{ secrets.DATADOG_API_KEY }}
-          metric_name: 'integration_test_failed'
-          metric_value: 1
-          tags: |
-            @github.org:anaconda-community
-            @evt.action:integration_test
-            package_name:${{ steps.poll_repodata.outputs.repodata_package }}
+          api-key: ${{ secrets.DATADOG_API_KEY }}
+          metrics: |
+            - type: "count"
+              name: "integration.test.failed.count"
+              value: 1.0
+              tags:          
+                - "@github.org:anaconda-community"                
+                - "package-name:${{ steps.poll_repodata.outputs.repodata_package }}"
 
 
       - name: Send Integration Test Success Metric
-        uses: datadog/datadog-action@v1
+        uses: masci/datadog@v1
         if: steps.poll_repodata.outputs.repodata_result == 'found'
         with:
-          api_key: ${{ secrets.DATADOG_API_KEY }}
-          metric_name: 'integration_test_succeeded'
-          metric_value: 1
-          tags: |
-            @github.org:anaconda-community
-            @evt.action:integration_test
-            package_name:${{ steps.poll_repodata.outputs.repodata_package }}
+          api-key: ${{ secrets.DATADOG_API_KEY }}
+          metrics: |
+            - type: "count"
+              name: "integration.test.success.count"
+              value: 1.0
+              tags:          
+                - "@github.org:anaconda-community"                
+                - "package-name:${{ steps.poll_repodata.outputs.repodata_package }}"
