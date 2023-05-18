@@ -72,7 +72,7 @@ jobs:
       - name: Build
         run: |
           gh secret set GH_TOKEN --body "$GITHUB_TOKEN"
-          gh -R anaconda-community/aggregate workflow run "Build feedstocks" \
+          gh -R anaconda-community/aggregate workflow run "Manual build feedstock" \
             -f feedstock=community-integration-test-feedstock \
             -f arch=linux-64 \
             -f branch=community-integration-test-branch \
