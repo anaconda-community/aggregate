@@ -93,6 +93,7 @@ jobs:
             package_name=community-integration-test-0.4.6-pyhd3eb1b0_${{ steps.build_number.outputs.result }}.tar.bz2
             response=$(curl -s https://staging.continuum.io/community/dev/noarch/repodata.json)            
             repo_package=$(echo "$response" | jq -r ".packages.\"${package_name}\"")
+          
             if [[ "$repo_package" != "null" ]]; then
               echo "Found package in repodata.json: $repo_package"
               echo "repodata_result=found" >> $GITHUB_OUTPUT
@@ -107,7 +108,7 @@ jobs:
               echo "Package: $package"
               echo "repodata_result=not_found" >> $GITHUB_OUTPUT
               echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
-              exit 1
+              break
             fi
 
             sleep 60  # Wait for 1 minute before polling again
