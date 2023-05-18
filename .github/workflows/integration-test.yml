@@ -115,7 +115,7 @@ jobs:
 
       - name: Send Integration Test Failed Metric
         uses: datadog/datadog-action@v1
-        if: ${{ steps.poll_repodata.outputs.repodata_result == "not_found" }}
+        if: steps.poll_repodata.outputs.repodata_result == 'not_found'
         with:
           api_key: ${{ secrets.DATADOG_API_KEY }}
           metric_name: 'integration_test_failed'
@@ -128,7 +128,7 @@ jobs:
 
       - name: Send Integration Test Success Metric
         uses: datadog/datadog-action@v1
-        if: ${{ steps.poll_repodata.outputs.repodata_result == "found" }}
+        if: steps.poll_repodata.outputs.repodata_result == 'found'
         with:
           api_key: ${{ secrets.DATADOG_API_KEY }}
           metric_name: 'integration_test_succeeded'
