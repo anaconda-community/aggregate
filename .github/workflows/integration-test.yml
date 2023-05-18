@@ -89,21 +89,51 @@ jobs:
             current_time=$(date +%s)
             elapsed_time=$((current_time - start_time))
 
-            # Make HTTP request and check value change condition
+            # check repodata.json
+            package_name=community-integration-test-0.4.6-pyhd3eb1b0_${{ steps.build_number.outputs.result }}.tar.bz2
             response=$(curl -s https://staging.continuum.io/community/dev/noarch/repodata.json)            
-            package=$(echo "$response" | jq -r '.packages."community-integration-test-0.4.6-pyhd3eb1b0_${{ steps.build_number.outputs.result }}.tar.bz2"')
-            if [[ "$package" != "null" ]]; then
-              echo "Found package in repodata.json: $package"
+            repo_package=$(echo "$response" | jq -r ".packages.\"${package_name}\"")
+            if [[ "$repo_package" != "null" ]]; then
+              echo "Found package in repodata.json: $repo_package"
+              echo "repodata_result=found" >> $GITHUB_OUTPUT
+              echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               break
             fi
 
             # Check if timeout reached
             if [[ $elapsed_time -gt $timeout ]]; then
-              echo "Timeout reached, did not detect package: community-integration-test-0.4.6-pyhd3eb1b0_${{ steps.build_number.outputs.result }}.tar.bz2 within 30 minutes."
+              echo "Timeout reached, did not detect package: ${package_name} within 30 minutes."
               echo "Repodata: $response"
               echo "Package: $package"
+              echo "repodata_result=not_found" >> $GITHUB_OUTPUT
+              echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               exit 1
             fi
 
             sleep 60  # Wait for 1 minute before polling again
           done
+
+      - name: Send Integration Test Failed Metric
+        uses: datadog/datadog-action@v1
+        if: ${{ steps.poll_repodata.outputs.repodata_result == "not_found" }}
+        with:
+          api_key: ${{ secrets.DATADOG_API_KEY }}
+          metric_name: 'integration_test_failed'
+          metric_value: 1
+          tags: |
+            @github.org:anaconda-community
+            @evt.action:integration_test
+            package_name:${{ steps.poll_repodata.outputs.repodata_package }}
+
+
+      - name: Send Integration Test Success Metric
+        uses: datadog/datadog-action@v1
+        if: ${{ steps.poll_repodata.outputs.repodata_result == "found" }}
+        with:
+          api_key: ${{ secrets.DATADOG_API_KEY }}
+          metric_name: 'integration_test_succeeded'
+          metric_value: 1
+          tags: |
+            @github.org:anaconda-community
+            @evt.action:integration_test
+            package_name:${{ steps.poll_repodata.outputs.repodata_package }}
