@@ -22,6 +22,7 @@ jobs:
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
         with:
           repository: anaconda-community/community-integration-test-feedstock
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Create Conda environment with abs
         uses: mamba-org/provision-with-micromamba@main
