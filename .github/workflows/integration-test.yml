@@ -105,9 +105,9 @@ jobs:
 
             # Check if timeout reached
             if [[ $elapsed_time -gt $timeout ]]; then
-              echo "Timeout reached, did not detect package: ${package_name} within 30 minutes."
-              echo "Repodata: $response"
-              echo "Package: $package"
+              echo "Timeout reached, did not detect package: ${package_name} within 10 minutes."
+              echo "Looking for: $package_name"
+              echo "Package result: $repo_package"              
               echo "repodata_result=not_found" >> $GITHUB_OUTPUT
               echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               break
