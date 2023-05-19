@@ -98,7 +98,7 @@ jobs:
           
             if [[ "$repo_package" != "null" ]]; then
               echo "Found package in repodata.json: $repo_package"
-              echo "repodata_result_metric=integration.test.success.count" >> $GITHUB_OUTPUT
+              echo "result_metric=integration.test.success.count" >> $GITHUB_OUTPUT
               echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               break
             fi
@@ -108,7 +108,7 @@ jobs:
               echo "Timeout reached, did not detect package: ${package_name} within 10 minutes."
               echo "Looking for: $package_name"
               echo "Package result: $repo_package"              
-              echo "repodata_result_metric=integration.test.failed.count" >> $GITHUB_OUTPUT
+              echo "result_metric=integration.test.failed.count" >> $GITHUB_OUTPUT
               echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               break
             fi
