@@ -919,7 +919,7 @@ feedstocks:
     commit: d01feb0c2ecd99a525c72de1357d79e7eaf950ed
   pip-feedstock:
     branch: main
-    commit: d08a3ca454ccfc9fc47a2541b7ba7088e90ddfab
+    commit: c498ccf21404081613bb177cb8f84d83a7b5eb47
   pkg-config-feedstock:
     branch: main
     commit: c7a98e5797cd5147bc72e45bf7bba3a31f0262af
