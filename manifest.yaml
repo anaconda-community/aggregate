@@ -100,7 +100,7 @@ feedstocks:
     commit: af9d9aa93a2ee4f0ba3097115618fe16194a8e0a
   awscli-feedstock:
     branch: main
-    commit: deb2534d77de1fd053666af9169c7655f4ae7912
+    commit: 9cfc7579d5629ac2a4e114751746c95d3162da0a
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -160,10 +160,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 3b99e78944f3f824a07b508eec6cbfeeac1590ad
+    commit: 385326d8a129ccc8a223eea4ed6de78e92d2fe85
   botocore-feedstock:
     branch: main
-    commit: eb74c61182331489bf4a2cbe979fc54a06290311
+    commit: b8b43f3c1fdac66c0fd9809fcac4a60af56a81d1
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -232,7 +232,7 @@ feedstocks:
     commit: 73f5d154a4aad63608ca5f483db5730f0b2f51f1
   cmake-feedstock:
     branch: main
-    commit: 315b2bbf76bc660b758e4dc551dacdde244e167b
+    commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
     commit: e7ab23f5d5f68554fd065eaf0819e46357fceb69
@@ -247,7 +247,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 8bd481d706cb7e17e31b121fb8dc06b80018e35e
+    commit: e73adfcf3450e04219db4b718f1d5a7a6fc4ca64
   compilers-feedstock:
     branch: main
     commit: c4865f325ba752842f7ea21470abde447f7f1062
@@ -664,7 +664,7 @@ feedstocks:
     commit: 0719a0c0de0df55018bb3dae0c704767852e9285
   libcxx-feedstock:
     branch: main
-    commit: 152dc4dbc88fecc295acb978fc6104cd9ec8d231
+    commit: caf6520636370fd1a518b9661527c1bdfa5e5e5d
   libdeflate-feedstock:
     branch: main
     commit: 0fe2dae60489ecfc10cc31476fb6329e7f2d558c
@@ -724,7 +724,7 @@ feedstocks:
     commit: 10a981f59e12b9e353cd4df9fb2c535cb5921213
   llvmlite-feedstock:
     branch: main
-    commit: e47a9dd82473a5260a48fdc2ba3b9a51f2964e3b
+    commit: d55145a03314c586fbabe698d7d6b6a8f0e8a4be
   locket-feedstock:
     branch: main
     commit: 5f046cd18b9f6b2e8fe0220a4bf58f44064fef52
@@ -772,7 +772,7 @@ feedstocks:
     commit: 9d735c3ef5293c0ec3ec7a7b26c51b0b03ed3d6a
   mlflow-feedstock:
     branch: main
-    commit: 69780994fc65172fe4a7dd85cfd55807b2cda9ad
+    commit: e0f47211a636b69d9ad66337f0323785ad11db9a
   mlxtend-feedstock:
     branch: main
     commit: 2e3d657e2b01f143d07c214d7f3fab6b32de891f
@@ -838,7 +838,7 @@ feedstocks:
     commit: a3a258f497558cfc86c709cb72c9d9cae17ae2a8
   numba-feedstock:
     branch: main
-    commit: bb388f421196a082bc0a4e140a1ccf417befbdda
+    commit: 13e5825ff0e84178a252f8b832abf1c0d523b14f
   numexpr-feedstock:
     branch: main
     commit: 635de0ed2c75e2256733266ae3ef4eeccad5f386
@@ -958,7 +958,7 @@ feedstocks:
     commit: c18900fd7e825f0d68d49ddf5439a65a9c534476
   postgresql-feedstock:
     branch: main
-    commit: 7d083f5799f5cae2e5ac3ef32540c1871c16461e
+    commit: 176b047276b7419c9d368f4fac31c2a8c8c4bd78
   ppmac-feedstock:
     branch: main
     commit: f66a0d16c9ddc3520b3c8bd20ae582e084181587
@@ -1291,7 +1291,7 @@ feedstocks:
     commit: 277368b46aaf09bff4c242d2ce8dfa7beaccee86
   sqlalchemy-feedstock:
     branch: main
-    commit: 0a47d39c89c43bfe0d44abc729484fe2c82419ea
+    commit: 16c5469e647b90f45e946e3be3e3322aa539cefa
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
