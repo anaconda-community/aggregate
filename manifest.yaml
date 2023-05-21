@@ -106,7 +106,7 @@ feedstocks:
     commit: af9d9aa93a2ee4f0ba3097115618fe16194a8e0a
   awscli-feedstock:
     branch: main
-    commit: 9cfc7579d5629ac2a4e114751746c95d3162da0a
+    commit: 031795e65ab8ac97a16962aae306cb76df331f24
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -169,10 +169,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 385326d8a129ccc8a223eea4ed6de78e92d2fe85
+    commit: e498bd305d9f205fc9c244cccdfa1a856a697339
   botocore-feedstock:
     branch: main
-    commit: b8b43f3c1fdac66c0fd9809fcac4a60af56a81d1
+    commit: 1509b8bd43ce2a57a4ee1c0af7c0c3ea2259c83a
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -262,7 +262,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: e73adfcf3450e04219db4b718f1d5a7a6fc4ca64
+    commit: 19765231f8926726d00c440a6a9c04c6909cf7c5
   compilers-feedstock:
     branch: main
     commit: c4865f325ba752842f7ea21470abde447f7f1062
@@ -1078,7 +1078,7 @@ feedstocks:
     commit: da1bb2e0920083a120ee56db3674f469233d8d21
   pycryptodomex-feedstock:
     branch: main
-    commit: 518655a57c6353c6cd448e51f2698c36d5fb9029
+    commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
     commit: 2753fe10a717a64a00935c9a22f11f42d7f92f9f
@@ -1363,7 +1363,7 @@ feedstocks:
     commit: 277368b46aaf09bff4c242d2ce8dfa7beaccee86
   sqlalchemy-feedstock:
     branch: main
-    commit: 16c5469e647b90f45e946e3be3e3322aa539cefa
+    commit: b8199b02a6f851ad1f24379879ccb1e80c64bbea
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
@@ -1486,7 +1486,7 @@ feedstocks:
     commit: ff36caaf5c1c7cbdfcd67745af78daafec088e50
   umap-learn-feedstock:
     branch: main
-    commit: a1655c93f198e65ad2ee2a38089ef5fc04b563ae
+    commit: 8a7b7634cb4f72a7966ba454119944de420b7479
   unzip-feedstock:
     branch: main
     commit: 5100fb98823ccd67630393f6f7aabeaacfa9b49b
@@ -1600,7 +1600,7 @@ feedstocks:
     commit: 4230dff3ba4487fac09496b36f6695b7e9c07cc7
   xorg-libx11-feedstock:
     branch: main
-    commit: 67d591c31b0c0a184872ac722d0fdc268cf4880c
+    commit: a5890541ee541cc4cb976fc87944a161932bcbef
   xorg-libxau-feedstock:
     branch: main
     commit: 383befc64cd57272fca900afe9ba1be7d6bbeb84
