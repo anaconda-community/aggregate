@@ -262,7 +262,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 884a3038df26c25f0f7525010931c0de330707a6
+    commit: 4395e49ed08393bbd7ab742de146cb5c90dd7c8b
   compilers-feedstock:
     branch: main
     commit: c4865f325ba752842f7ea21470abde447f7f1062
@@ -541,7 +541,7 @@ feedstocks:
     commit: 2c26e10479fa2782ea64208b9bfa1548996d1f4c
   hatch-fancy-pypi-readme-feedstock:
     branch: main
-    commit: a496289d8dd220b54d116afbb1d6af0835f90d2b
+    commit: 7ad703f99406292de8d0111655f989ba2fb3de64
   hatch-vcs-feedstock:
     branch: main
     commit: dbcf7fc7766da0cde548a39a68065b7eeeb8d134
@@ -889,7 +889,7 @@ feedstocks:
     commit: 3e818e786e6514b3c9d6bdacdf50b8d037994793
   openai-feedstock:
     branch: main
-    commit: 7dce00ed7bb4c3e15423ba921f9428cf8dea80ed
+    commit: 80dfc79325d1d7125bfa22fe49def301b0238933
   openmp-feedstock:
     branch: main
     commit: 96c351aa6493a5a834d5c0f1379af86145444975
@@ -1222,7 +1222,7 @@ feedstocks:
     commit: e587e2cac34d105b99fb68fb62cfded54ddaef40
   requests-feedstock:
     branch: main
-    commit: d27fb9bba8a9cb4477d274fa2a18a3a7309f4584
+    commit: 435b91c49a0a88c30205464f24da14810f9a2c51
   requests-oauthlib-feedstock:
     branch: main
     commit: 273407bb273e3470c4f9213083723ebd559fa2fd
@@ -1552,7 +1552,7 @@ feedstocks:
     commit: 5e9bc62b7d91cafed0e3fea6d7e03b71748041f2
   wordcloud-feedstock:
     branch: main
-    commit: a8fe9360c40e1f9dab7decf1db2ced491f557d59
+    commit: 03d73c5e20766b64cb2cb2aae51d606041e73628
   wrapt-feedstock:
     branch: main
     commit: 8aef76851db4d566bd4ff854aa96f30db1bb6732
