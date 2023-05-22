@@ -33,8 +33,9 @@ jobs:
           cache-downloads: true
           log-level: warning
           condarc: | 
-            - conda-forge
-            - distro-tooling
+            channels:
+              - conda-forge
+              - distro-tooling
           create-args: >-
             abs-cli
             yq
