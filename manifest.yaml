@@ -106,7 +106,7 @@ feedstocks:
     commit: af9d9aa93a2ee4f0ba3097115618fe16194a8e0a
   awscli-feedstock:
     branch: main
-    commit: 9cfc7579d5629ac2a4e114751746c95d3162da0a
+    commit: 031795e65ab8ac97a16962aae306cb76df331f24
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -169,10 +169,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 385326d8a129ccc8a223eea4ed6de78e92d2fe85
+    commit: e498bd305d9f205fc9c244cccdfa1a856a697339
   botocore-feedstock:
     branch: main
-    commit: b8b43f3c1fdac66c0fd9809fcac4a60af56a81d1
+    commit: 1509b8bd43ce2a57a4ee1c0af7c0c3ea2259c83a
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -262,7 +262,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: e73adfcf3450e04219db4b718f1d5a7a6fc4ca64
+    commit: 884a3038df26c25f0f7525010931c0de330707a6
   compilers-feedstock:
     branch: main
     commit: c4865f325ba752842f7ea21470abde447f7f1062
@@ -748,7 +748,7 @@ feedstocks:
     commit: 2ee845e795260839f3b44afefae0ca4ef5850523
   libxkbcommon-feedstock:
     branch: main
-    commit: c2cb2f7d2490b984217065e19a1f1fefc5f0501a
+    commit: 281415ac487ca06941a19ad5ed7c16db93bf9e66
   libzopfli-feedstock:
     branch: main
     commit: b7167f74aef52160e9374aa16423944a59be1e8a
@@ -961,7 +961,7 @@ feedstocks:
     commit: ea6130d1ab39b437711dcbebf7e873396b8e1ffa
   pillow-feedstock:
     branch: main
-    commit: d01feb0c2ecd99a525c72de1357d79e7eaf950ed
+    commit: e388bfb620ab47d29bfa1d36fe53be9aace9bee2
   pip-feedstock:
     branch: main
     commit: d08a3ca454ccfc9fc47a2541b7ba7088e90ddfab
@@ -1078,7 +1078,7 @@ feedstocks:
     commit: da1bb2e0920083a120ee56db3674f469233d8d21
   pycryptodomex-feedstock:
     branch: main
-    commit: 518655a57c6353c6cd448e51f2698c36d5fb9029
+    commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
     commit: 2753fe10a717a64a00935c9a22f11f42d7f92f9f
@@ -1198,7 +1198,7 @@ feedstocks:
     commit: 6b20e43e44c9e38091e99333ecebcc4a00aad260
   qt-main-feedstock:
     branch: main
-    commit: 1f4e0e494c19b1f0898b61646b831813b3b14b23
+    commit: 18541460e76a39dd1d31d89ab198c289d432963e
   querystring_parser-feedstock:
     branch: main
     commit: 3de5ee7a282d0c8769dab4c652f124872926d831
@@ -1363,7 +1363,7 @@ feedstocks:
     commit: 277368b46aaf09bff4c242d2ce8dfa7beaccee86
   sqlalchemy-feedstock:
     branch: main
-    commit: 16c5469e647b90f45e946e3be3e3322aa539cefa
+    commit: b8199b02a6f851ad1f24379879ccb1e80c64bbea
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
@@ -1486,7 +1486,7 @@ feedstocks:
     commit: ff36caaf5c1c7cbdfcd67745af78daafec088e50
   umap-learn-feedstock:
     branch: main
-    commit: a1655c93f198e65ad2ee2a38089ef5fc04b563ae
+    commit: 8a7b7634cb4f72a7966ba454119944de420b7479
   unzip-feedstock:
     branch: main
     commit: 5100fb98823ccd67630393f6f7aabeaacfa9b49b
@@ -1540,7 +1540,7 @@ feedstocks:
     commit: 045d9b752ad89b777f0bd6b2a6dfb46924a0a449
   websocket-client-feedstock:
     branch: main
-    commit: 371351d85870f547ab94dafbae10d4465c945390
+    commit: 116c72910d21abe85d639d49f7c5b21a34edf2b0
   werkzeug-feedstock:
     branch: main
     commit: 17be5811b4d5c582744177ad37598de8903b9130
@@ -1564,19 +1564,19 @@ feedstocks:
     commit: 448af2aca7ff5a16eaa3d5b5b4cfb5d2339759ac
   xcb-util-feedstock:
     branch: main
-    commit: e50dbc13d2922373ae120c068bcc0052c453ee8b
+    commit: 56504c6ed8262a1cc9082c2d327a745adc550ac0
   xcb-util-image-feedstock:
     branch: main
-    commit: e09688650502acf2b7807a40ac46da76177cc8cd
+    commit: a6d946c8bdf268f8b694dae108defdd7277831e4
   xcb-util-keysyms-feedstock:
     branch: main
-    commit: 8d5009133af95aa10f97152e930cb7fcdf4e229c
+    commit: b835045c9a631ed8b3b011208d6410aa029277d5
   xcb-util-renderutil-feedstock:
     branch: main
-    commit: 49d2768f756c16129b8b6d1c2fd5c660903896aa
+    commit: ac6cb87a69dd20162924ad2c788e64529e3459c5
   xcb-util-wm-feedstock:
     branch: main
-    commit: 82a04060b5bbb948074f3d0e6efee79daa45420d
+    commit: 9562a98868918aaa77746ed3b5d00592ae7aeed4
   xkeyboard-config-feedstock:
     branch: main
     commit: d3bbcf01a88cfaa2453f66bd0fafb9d52193ffa4
@@ -1600,10 +1600,10 @@ feedstocks:
     commit: 4230dff3ba4487fac09496b36f6695b7e9c07cc7
   xorg-libx11-feedstock:
     branch: main
-    commit: 67d591c31b0c0a184872ac722d0fdc268cf4880c
+    commit: a5890541ee541cc4cb976fc87944a161932bcbef
   xorg-libxau-feedstock:
     branch: main
-    commit: 383befc64cd57272fca900afe9ba1be7d6bbeb84
+    commit: fbff32f931f844fd5f2bf623671368a3749c8356
   xorg-libxdamage-feedstock:
     branch: main
     commit: f3135b2a4c108d477310d2771cc1b39fe7850445
