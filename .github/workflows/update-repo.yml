@@ -28,7 +28,8 @@ jobs:
       - name: Get feedstocks
         id: feedstocks
         run: |
-          echo "feedstocks=$(yq '(.feedstocks | keys | join(","))' manifest.yaml | sed 's/"//g')" >> $GITHUB_OUTPUT            
+          echo "feedstocks=$(yq '(.feedstocks | keys | join(","))' manifest.yaml | sed 's/"//g')" >> $GITHUB_OUTPUT  
+          echo "feedstock_count=$(yq '(.feedstocks | keys | length)' manifest.yaml)" >> $GITHUB_OUTPUT
 
       - name: Sync forks
         run: |          
@@ -66,3 +67,14 @@ jobs:
         run: gh pr create --fill
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Update Feedstock Metric
+        uses: masci/datadog@v1
+        with:
+          api-key: ${{ secrets.DATADOG_API_KEY }}
+          metrics: |
+            - type: "count"
+              name: "community.repo.feedstock.count"
+              value: ${{ steps.feedstocks.outputs.feedstock_count }}
+              tags:          
+                - "@github.org:anaconda-community"                
