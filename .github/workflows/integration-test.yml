@@ -98,7 +98,7 @@ jobs:
           
             if [[ "$repo_package" != "null" ]]; then
               echo "Found package in repodata.json: $repo_package"
-              echo "result_metric=integration.test.success.count" >> $GITHUB_OUTPUT
+              echo "test_result=success" >> $GITHUB_OUTPUT
               echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               break
             fi
@@ -108,7 +108,7 @@ jobs:
               echo "Timeout reached, did not detect package: ${package_name} within 10 minutes."
               echo "Looking for: $package_name"
               echo "Package result: $repo_package"              
-              echo "result_metric=integration.test.failed.count" >> $GITHUB_OUTPUT
+              echo "test_result=error" >> $GITHUB_OUTPUT
               echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               break
             fi
@@ -120,10 +120,11 @@ jobs:
         uses: masci/datadog@v1
         with:
           api-key: ${{ secrets.DATADOG_API_KEY }}
-          metrics: |
-            - type: "count"
-              name: "${{ steps.poll_repodata.outputs.result_metric }}"
-              value: 1.0
-              tags:          
+          events: |
+            - title: "Community Repo Integration Test"
+              text: "Test ${{ steps.poll_repodata.outputs.test_result }}"
+              alert_type: "${{ steps.poll_repodata.outputs.test_result }}"
+              host: ${{ github.repository_owner }}
+              tags:
                 - "@github.org:anaconda-community"                
                 - "package-name:${{ steps.poll_repodata.outputs.repodata_package }}"
