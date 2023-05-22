@@ -71,7 +71,7 @@ jobs:
       - name: Get build order
         id: build-order
         run: |
-          if [[ ${{ inputs.add_deps }} ]]
+          if ${{ inputs.add_deps }}
           then
             python tools/find_deps.py -f ${{ inputs.feedstock }} -m ${{ inputs.manifest }} -s ${{ inputs.skip_published }} > output.log
             feedstocks=$(tail -n 1 output.log)
