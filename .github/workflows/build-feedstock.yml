@@ -25,16 +25,16 @@ on:
         type: string
       manifest:
         description: "Flag to run build for entire manifest"
-        default: "False"
-        type: string
+        default: false
+        type: boolean
       add_deps:
         description: "Flag to add dependencies"
-        default: "True"
-        type: string
+        default: false
+        type: boolean
       skip_published:
         description: "Flag to skip published"
-        default: "False"
-        type: string
+        default: false
+        type: boolean
     secrets:
       GH_TOKEN:
         description: 'Github Token'
@@ -71,7 +71,7 @@ jobs:
       - name: Get build order
         id: build-order
         run: |
-          if [[ ${{ inputs.add_deps }} == "True" ]]
+          if [[ ${{ inputs.add_deps }} ]]
           then
             python tools/find_deps.py -f ${{ inputs.feedstock }} -m ${{ inputs.manifest }} -s ${{ inputs.skip_published }} > output.log
             feedstocks=$(tail -n 1 output.log)
