@@ -131,7 +131,7 @@ jobs:
         env:
           ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
 
-      - name: Send Integration Test Metric
+      - name: Send Integration Test Event
         uses: masci/datadog@v1
         with:
           api-key: ${{ secrets.DATADOG_API_KEY }}
