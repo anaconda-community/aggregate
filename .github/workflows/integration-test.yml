@@ -27,14 +27,15 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Create Conda environment with abs
-        uses: mamba-org/provision-with-micromamba@main
+        uses: mamba-org/setup-micromamba@3c96c0c27676490c63c18bc81f5c51895ac3e0e6 #v16
         with:
-          environment-file: false
           environment-name: integration-test
           cache-downloads: true
           log-level: warning
-          channels: conda-forge,distro-tooling
-          extra-specs: |
+          condarc: | 
+            - conda-forge
+            - distro-tooling
+          create-args: >-
             abs-cli
             yq
 
