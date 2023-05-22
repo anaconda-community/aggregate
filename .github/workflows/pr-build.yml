@@ -2,7 +2,7 @@ name: "PR build feedstock"
 
 on:
   pull_request:
-    types: [closed]
+    types: [closed, opened, reopened, synchronize]
     branches:
       - 'main'
     paths:
