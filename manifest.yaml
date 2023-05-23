@@ -169,10 +169,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: e498bd305d9f205fc9c244cccdfa1a856a697339
+    commit: 9ae290691f84f28c12c5b2d14a959386fe1c83bf
   botocore-feedstock:
     branch: main
-    commit: 1509b8bd43ce2a57a4ee1c0af7c0c3ea2259c83a
+    commit: 19376906df8913f3781c6a04ab40467a08452800
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -262,7 +262,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 4395e49ed08393bbd7ab742de146cb5c90dd7c8b
+    commit: 53493f16855600a887fc04ec9f5d17a171446bac
   compilers-feedstock:
     branch: main
     commit: c4865f325ba752842f7ea21470abde447f7f1062
@@ -1453,7 +1453,7 @@ feedstocks:
     commit: 3fc0324055783951de8353524dd288df19ec780d
   trove-classifiers-feedstock:
     branch: main
-    commit: 5a918c794bb95399c735a1b0050d54b3752f6b50
+    commit: 154efa53d68be7345719483c430efcea836d2b9f
   typeguard-feedstock:
     branch: main
     commit: 921c528f27657d3c9fa72c1057362130bdfb8de0
