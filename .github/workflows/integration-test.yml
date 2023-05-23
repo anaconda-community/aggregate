@@ -80,7 +80,7 @@ jobs:
             -f feedstock=community-integration-test-feedstock \
             -f arch=linux-64 \
             -f branch=community-integration-test-branch \
-            -f add_deps="False"
+            -f add_deps=false
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
