@@ -106,7 +106,7 @@ feedstocks:
     commit: af9d9aa93a2ee4f0ba3097115618fe16194a8e0a
   awscli-feedstock:
     branch: main
-    commit: 031795e65ab8ac97a16962aae306cb76df331f24
+    commit: a60a50f19ce1a9ded99d100842230244d30309fa
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -262,7 +262,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 53493f16855600a887fc04ec9f5d17a171446bac
+    commit: fdcad93f4547314d6fab06b30a8fa4a6276e880d
   compilers-feedstock:
     branch: main
     commit: c4865f325ba752842f7ea21470abde447f7f1062
@@ -304,7 +304,7 @@ feedstocks:
     commit: acb329186b934fcf832de24c2a6445a304cc2c8c
   curl-feedstock:
     branch: main
-    commit: 787b79a915f5f055dd7ebe2c0650a4a69b5d2eb0
+    commit: e9be4acd8303852241785e7faabe00a4c9523b22
   cycler-feedstock:
     branch: main
     commit: 39ce1d4eb2340d2fbaf658c37e95eab9bad0dd17
@@ -757,7 +757,7 @@ feedstocks:
     commit: 3b571f0a94809af0e188fb4395b618118bbc6f48
   linux-sysroot-feedstock:
     branch: main
-    commit: dd0fee5e8aca60f112dc872a1caac9ab0a0b5cda
+    commit: 6b2306dea0e904367f32dcd37a72f5d0cbfdd92b
   lld-feedstock:
     branch: main
     commit: 10a981f59e12b9e353cd4df9fb2c535cb5921213
@@ -1027,7 +1027,7 @@ feedstocks:
     commit: 5c8076f47d0e254c8544d032062b52e2e9f115dc
   protobuf-feedstock:
     branch: main
-    commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
+    commit: 9792f63b808a3b7226468c623d734a4bae972b32
   psutil-feedstock:
     branch: main
     commit: a74ba844fe00c420fe3c3569c23288b4cc30cb09
@@ -1468,7 +1468,7 @@ feedstocks:
     commit: ab352adedc793b165cbb276a7bfc00fffc22fb13
   typing_extensions-feedstock:
     branch: main
-    commit: f97fea64bed562e6a10484a6ac6f8ff387f021f6
+    commit: ab87f9dccde10582085783650577dd41019afc93
   tzcode-feedstock:
     branch: main
     commit: 0c92a2770f0c9c2b00c7c129b94cebb9745d1ac8
