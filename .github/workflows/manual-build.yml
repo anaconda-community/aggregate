@@ -36,17 +36,19 @@ on:
           - "ubuntu-latest"
       manifest:
         description: "Flag to build entire manifest"
-        default: False
+        default: false
         required: true
-        type: string
+        type: boolean
       add_deps:
         description: "Flag to add dependencies"
-        default: "True"
-        type: string
+        default: false
+        type: boolean
+        required: true
       skip_published:
         description: "Flag to skip published"
-        default: "False"
-        type: string
+        default: false
+        type: boolean
+        required: true
 
 permissions: write-all
 
