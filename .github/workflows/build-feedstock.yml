@@ -88,6 +88,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Start build
+        if: needs.build-order.outputs.feedstocks != ''
         run: gh -R anaconda-distribution/rocket-platform workflow run "$ACTION" -f feedstock=${{ needs.build-order.outputs.feedstocks }} -f arch=${{ inputs.arch }} -f action_runner=${{ inputs.action_runner }} -f container_runtime=${{ inputs.container_runtime }} -f branch=${{ inputs.branch }} -f use_pinned=true
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
