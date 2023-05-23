@@ -44,9 +44,6 @@ feedstocks:
   arrow-cpp-feedstock:
     branch: main
     commit: 44bb2a5666b3c124319c433ce7f8e5dfd85f707f
-  arrow-feedstock:
-    branch: main
-    commit: 0eb91aaaf0ccfa1ffa9993910051278d376e088c
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
@@ -233,9 +230,6 @@ feedstocks:
   chart-studio-feedstock:
     branch: main
     commit: 70e8cc88c74a366e9642c39ff21a32c04b76e1f4
-  clangdev-feedstock:
-    branch: main
-    commit: d2e99d434ac4192ad14aa5cf7e8e062da038c071
   cleo-feedstock:
     branch: main
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
@@ -761,9 +755,6 @@ feedstocks:
   lld-feedstock:
     branch: main
     commit: 10a981f59e12b9e353cd4df9fb2c535cb5921213
-  llvmdev-feedstock:
-    branch: main
-    commit: 1803166fdf0a35cf83b72a403739919beca2a403
   llvmlite-feedstock:
     branch: main
     commit: d55145a03314c586fbabe698d7d6b6a8f0e8a4be
@@ -1025,9 +1016,6 @@ feedstocks:
   proto-plus-feedstock:
     branch: main
     commit: 5c8076f47d0e254c8544d032062b52e2e9f115dc
-  protobuf-feedstock:
-    branch: main
-    commit: bd7dc1e77a9284e8aad26c6f02753797499a764f
   psutil-feedstock:
     branch: main
     commit: a74ba844fe00c420fe3c3569c23288b4cc30cb09
@@ -1667,9 +1655,6 @@ feedstocks:
   zipp-feedstock:
     branch: main
     commit: 5f6d9be431801864a7e4c9aceb4367338581293a
-  zlib-feedstock:
-    branch: main
-    commit: 924be933eb01c9921639383e636a078a872eca71
   zlib-ng-feedstock:
     branch: main
     commit: 49504f890cfa4d74363d5fad2a19a7fcac701eea
