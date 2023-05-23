@@ -1,0 +1,94 @@
+# Read repodata.json
+# For every package, check whether the sbom artifact is there in:
+#  https://repo.anaconda.cloud/repo/t/<anaconda cloud token>/community_testing/sboms/index.json
+#
+# and has a valid sbom definition:
+#  https://repo.anaconda.cloud/repo/t/<anaconda cloud token>/community_testing/sboms/<package_name>-<package_version>-<package_build_string>.<package_ext>.spdx.json
+#
+
+name: "SBOM artifact check"
+on:
+  schedule:
+    - cron: 0 */6 * * *
+  workflow_dispatch: {}
+permissions: write-all
+
+jobs:
+  artifact-check:
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+
+      - name: Create Conda environment
+        uses: mamba-org/provision-with-micromamba@main
+        with:
+          environment-file: environment.yml
+          environment-name: agg
+          cache-downloads: true
+          cache-env: true
+          extra-specs: |
+            python=3.9
+
+      - name: Get repodata packages
+        id: repodata_packages
+        run: |
+          repodata=$(curl -s https://staging.continuum.io/community/dev/noarch/repodata.json)
+          repodata_packages=$(echo "$repodata" | yq '.packages | keys | join(",")')
+          echo "repodata_packages=$repodata_packages" >> $GITHUB_OUTPUT          
+
+      - name: Get sbom index paths
+        id: sbom_index_paths
+        run: |          
+          sbom_data=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/sboms/index.json)
+          sbom_index_paths=$(echo "$sbom_data" | yq '.paths | keys | join(",")') 
+          echo "sbom_index_paths=$sbom_index_paths" >> $GITHUB_OUTPUT
+        env:
+          ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
+
+      - name: Match Packages Index
+        id: match_packages
+        run: |
+          not_found_packages=()
+          for repo_package in ${REPODATA_PACKAGES//,/ }; do
+          
+            not_found=1
+          
+            # TODO: should not just check the index but also each path
+            for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
+          
+              # package name should be the path minus the .spdx.json extension
+              sbom_package=${sbom_index_path:0:-10}
+          
+              if [[ "$repo_package" == "$sbom_package" ]];
+                not_found=0
+                break;
+              fi 
+            done
+          
+            if [[ not_found == 1 ]]; then
+              not_found_packages+=("$repo_package")
+            fi
+          done
+          
+          not_found_packages_str=$(IFS=,; echo "${not_found_packages[*]}")
+          echo "not_found_packages=$not_found_packages_str" >> $GITHUB_OUTPUT
+        env:
+          REPODATA_PACKAGES: ${{ steps.repodata_packages.outputs.repodata_packages }}
+          SBOM_INDEX_PATHS: ${{ steps.sbom_index_paths.outputs.sbom_index_paths }}
+
+      - name: Send SBOM Not Found Event
+        uses: masci/datadog@v1
+        if: ${{ steps.match_packages.outputs.not_found_packages }} != ""
+        with:
+          api-key: ${{ secrets.DATADOG_API_KEY }}
+          events: |
+            - title: "Community Repo SBOM Not Found"
+              text: "The SBOM path was not found for repodata packages: ${{ steps.match_packages.outputs.not_found_packages }}"
+              alert_type: "error"
+              host: ${{ github.repository_owner }}
+              tags:
+                - "@github.org:anaconda-community"
