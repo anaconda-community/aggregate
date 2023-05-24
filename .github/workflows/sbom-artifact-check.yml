@@ -64,7 +64,7 @@ jobs:
             for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
           
               # package name should be the path minus the .spdx.json extension
-              sbom_package=${sbom_index_path:0:-10}
+              sbom_package=${sbom_index_path%.spdx.json}
           
               if [[ "$repo_package" == "$sbom_package" ]]; then
                 not_found=0
@@ -72,10 +72,10 @@ jobs:
               fi 
             done
           
-            if [[ not_found == 1 ]]; then
+            if [[ $not_found == 1 ]]; then
               not_found_packages+=("$repo_package")
             fi
-          done
+          done                  
           
           not_found_packages_str=$(IFS=,; echo "${not_found_packages[*]}")
           echo "not_found_packages=$not_found_packages_str" >> $GITHUB_OUTPUT
