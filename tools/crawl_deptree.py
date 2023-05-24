@@ -122,7 +122,9 @@ def include_dependency(dep):
     return not (dep == "python" or
                 dep.startswith("ctng-compilers-") or
                 dep.startswith("_") or
+                dep.startswith("r-") or
                 dep == "None" or
+                len(dep) < 3 or
                 dep in get_pinned_packages())
 
 
@@ -174,7 +176,7 @@ if __name__ == "__main__":
         # Want only things with metadata as the dependencies of the current feedstock
         # However, we also don't need to process anything already visited
         deps = {lookup_feedstock_name(d): get_metadata(d) for d in extract_deps(metadata, package_name)}
-        dependency_feedstocks = {f"{d}-feedstock": metadata for d, metadata in deps.items() if metadata is not None}
+        dependency_feedstocks = {f"{d}-feedstock": metadata for d, metadata in deps.items() if metadata is not None and len(d) > 0}
         dependency_map[feedstock] = set(dependency_feedstocks.keys())
         to_process.extend([(d, metadata) for d, metadata in dependency_feedstocks.items() if d not in dependency_map])
 
