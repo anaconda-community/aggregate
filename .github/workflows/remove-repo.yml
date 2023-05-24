@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
 
       - name: Create Conda environment
-        uses: mamba-org/provision-with-micromamba@main
+        uses: mamba-org/setup-micromamba@main
         with:
           environment-file: environment.yml
           environment-name: agg
