@@ -65,8 +65,11 @@ jobs:
             # TODO: should not just check the index but also each path
             for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
           
-              # package name should be the path minus the .spdx.json extension
-              sbom_package=${sbom_index_path%.spdx.json}
+              # remove anaconda_SBOM_noarch_ prefix from path
+              sbom_package=${sbom_index_path/#anaconda_SBOM_noarch_}
+
+              # remove the .spdx.json extension
+              sbom_package=${sbom_package%.spdx.json}
           
               if [[ "$repo_package" == "$sbom_package" ]]; then
                 not_found=0
