@@ -34,19 +34,9 @@ on:
         options:
           - "self-hosted-eks"
           - "ubuntu-latest"
-      manifest:
-        description: "Flag to build entire manifest"
-        default: false
-        required: true
-        type: boolean
       add_deps:
         description: "Flag to add dependencies"
-        default: false
-        type: boolean
-        required: true
-      skip_published:
-        description: "Flag to skip published"
-        default: false
+        default: true
         type: boolean
         required: true
 
@@ -61,8 +51,6 @@ jobs:
       container_runtime: ${{ inputs.container_runtime }}
       branch: ${{ inputs.branch }}
       action_runner: ${{ inputs.action_runner }}
-      manifest: ${{ inputs.manifest }}
       add_deps: ${{ inputs.add_deps }}
-      skip_published: ${{ inputs.skip_published }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}

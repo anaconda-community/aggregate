@@ -11,7 +11,7 @@ import requests
 import yaml
 from cachetools import Cache, LRUCache, cached
 from pkg_resources import parse_version
-from render import load_template_string
+from render import render
 
 cache: Cache = LRUCache(maxsize=1000)
 
@@ -130,16 +130,16 @@ def is_recipe_available(pkg_name: str, lookup: bool):
 
 
 @cached(cache)
-def raw_text_load(name, branch):
+def raw_text_load(name, branch, lookup):
     url = f"{github_base_url}/conda-forge/{name}-feedstock/{branch}/recipe/meta.yaml"
     response = session.get(url, allow_redirects=False)
     if response.status_code != 200:
-        print(f"Could not find feedstock at {url}")
+        if lookup:
+            return raw_text_load(lookup_feedstock_name(name), branch, False)
         print(f"Error [{response.status_code}]: {response.reason}")
         return ""
     env_string = response.text
-    template = load_template_string({'target_platform': 'linux-64', 'ctng_target_platform': 'linux-64'}, env_string)
-    return template
+    return render(env_string, {'target_platform': 'linux-64', 'ctng_target_platform': 'linux-64'})
 
 
 @cached(cache)
@@ -148,10 +148,9 @@ def get_deps(name, branch):
     if name in pinned:
         return {}, "0"
     try:
-        template = raw_text_load(name, branch)
-        if template == "":
+        data = raw_text_load(name, branch, True)
+        if data == "":
             return {}, "0"
-        data = yaml.load(template, Loader=yaml.SafeLoader)
     except:
         return {}, "0"
     # Get collection of required dependencies (may not be unique)
@@ -178,7 +177,7 @@ def guess_feedstock_name(dep, separator, checksep):
         if repo_avail:
             # Found the repo! Now need to check if the package is mentioned here
             try:
-                data = yaml.load(raw_text_load(partOfPKG, def_branch), Loader=yaml.SafeLoader)
+                data = raw_text_load(partOfPKG, def_branch, True)
                 if data is None:
                     continue
             except:
