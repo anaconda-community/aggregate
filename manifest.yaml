@@ -5,9 +5,6 @@ feedstocks:
   7zip-feedstock:
     branch: main
     commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
-  _openmp_mutex-feedstock:
-    branch: main
-    commit: 6eccb26198876864a8f7675d75d2499643028be4
   abseil-cpp-feedstock:
     branch: main
     commit: ae3b94a40ed6eafc116de7f3f9cd9a0ec0f774e7
@@ -41,9 +38,6 @@ feedstocks:
   arm-variant-feedstock:
     branch: main
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
-  arrow-cpp-feedstock:
-    branch: main
-    commit: 9a85508569682b31ddc042cf35a24b9d12e70e4d
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
