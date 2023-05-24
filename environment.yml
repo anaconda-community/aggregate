@@ -12,3 +12,4 @@ dependencies:
   - yq
   - boto3
   - requests
+  - pydantic
