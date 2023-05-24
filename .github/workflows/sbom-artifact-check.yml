@@ -40,9 +40,9 @@ jobs:
         id: repodata_packages
         run: |
           repodata=$(curl -s https://staging.continuum.io/community/dev/noarch/repodata.json)
-          repodata_packages=$(echo "$repodata" | yq '.packages | keys | join(",")')          
-          echo "repodata_packages=$repodata_packages" >> $GITHUB_OUTPUT          
-          echo "repodata_packages_count=$(echo "$repodata" | yq '.packages | keys | length)'" >> $GITHUB_OUTPUT
+          repodata_packages=$(echo "$repodata" | yq '.packages | keys | join(",")')
+          echo "repodata_packages=$repodata_packages" >> $GITHUB_OUTPUT
+          echo "repodata_packages_count=$(echo "$repodata" | yq '.packages | keys | length')" >> $GITHUB_OUTPUT
 
       - name: Get sbom index paths
         id: sbom_index_paths
@@ -50,7 +50,7 @@ jobs:
           sbom_data=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/sboms/index.json)
           sbom_index_paths=$(echo "$sbom_data" | yq '.paths | keys | join(",")') 
           echo "sbom_index_paths=$sbom_index_paths" >> $GITHUB_OUTPUT
-          echo "sbom_index_paths_count=$(echo "$sbom_data" | yq '.paths | keys | length)'" >> $GITHUB_OUTPUT
+          echo "sbom_index_paths_count=$(echo "$sbom_data" | yq '.paths | keys | length')" >> $GITHUB_OUTPUT
         env:
           ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
 
