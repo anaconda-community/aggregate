@@ -28,7 +28,8 @@ def get_requirements(data, name, section, attribute):
     reqs = data.get(section, {}).get(attribute, [])
     if section == "requirements":
         for out in data.get("outputs", {}):
-            reqs = reqs + out.get(section, {}).get(attribute, [])
+            if out.get("name","") == name:
+                reqs = reqs + out.get(section, {}).get(attribute, [])
     return reqs
 
 
