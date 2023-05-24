@@ -767,6 +767,9 @@ feedstocks:
   lzip-feedstock:
     branch: main
     commit: 6c0ff9005ca8d7f61b2a46736d5091dc89af09c0
+  make-feedstock:
+    branch: main
+    commit: e7a27bd02ed34f63fe503ef8075eed38a42aad84
   mako-feedstock:
     branch: main
     commit: d3dfcf27cbf4cb1147502330db4b4c5880fcfc46
@@ -1142,6 +1145,9 @@ feedstocks:
   python-tzdata-feedstock:
     branch: main
     commit: 570684e7254ed5ae2e2a99e2df8665c5329517c9
+  python-xxhash-feedstock:
+    branch: main
+    commit: 19054f1c2228e2094363c74ed801a18dda5c86f2
   python_abi-feedstock:
     branch: main
     commit: da1a1ca3748011318b9ea9080862b24dad38035c
@@ -1625,6 +1631,9 @@ feedstocks:
   xsimd-feedstock:
     branch: main
     commit: 0146d3af479b7d924e8ec8a0e7fb44826d2f2df8
+  xxhash-feedstock:
+    branch: main
+    commit: bfaae6b6675c21acee98588747205cbdd57dc741
   xz-feedstock:
     branch: main
     commit: 0d1084422b26392f22e9205318808a45230ff836
