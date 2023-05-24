@@ -24,14 +24,17 @@ jobs:
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
 
       - name: Create Conda environment
-        uses: mamba-org/provision-with-micromamba@main
+        uses: mamba-org/setup-micromamba@5d5dbebd87f7b9358c403c7a66651fa92b310105 #v1.4.1
         with:
-          environment-file: environment.yml
-          environment-name: agg
+          environment-name: sbom-artifact-check
           cache-downloads: true
-          cache-env: true
-          extra-specs: |
+          log-level: warning
+          condarc: |
+            channels:
+              - conda-forge
+          create-args: >-
             python=3.9
+            yq                  
 
       - name: Get repodata packages
         id: repodata_packages
@@ -63,7 +66,7 @@ jobs:
               # package name should be the path minus the .spdx.json extension
               sbom_package=${sbom_index_path:0:-10}
           
-              if [[ "$repo_package" == "$sbom_package" ]];
+              if [[ "$repo_package" == "$sbom_package" ]]; then
                 not_found=0
                 break;
               fi 
