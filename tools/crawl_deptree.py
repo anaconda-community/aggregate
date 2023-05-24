@@ -13,7 +13,9 @@ from cachetools import Cache, LRUCache, cached
 import sort
 from render import render
 
-cache: Cache = LRUCache(maxsize=1000)
+metadata_cache: Cache = LRUCache(maxsize=1000)
+feedstock_cache: Cache = LRUCache(maxsize=1000)
+
 
 warnings.simplefilter("ignore")
 
@@ -52,8 +54,11 @@ def get_location_by_lookup(pkg_name):
 location_probes = [get_default_location, get_location_by_lookup]
 
 
-@cached(cache)
+@cached(metadata_cache)
 def get_metadata(pkg_name: str):
+    if not include_dependency(pkg_name):
+        return None
+
     for location_provider in location_probes:
         for url in location_provider(pkg_name):
             response = session.get(url, allow_redirects=False)
@@ -72,14 +77,17 @@ def extract_deps(data, name):
     return set(filter(include_dependency, dependencies))
 
 
+@cached(feedstock_cache)
 def lookup_feedstock_name(dep):
+    if len(dep) < 3:
+        return ""
     url = f"{github_base_url}/conda-forge/feedstock-outputs/main/outputs/{dep[0]}/{dep[1]}/{dep[2]}/{dep}.json"
     response = session.get(url, allow_redirects=False)
     if response.status_code != 200:
         print(f"Could not find feedstock at {url}")
         print(f"Error [{response.status_code}]: {response.reason}")
         return ""
-    return response.json()["feedstocks"]
+    return response.json()["feedstocks"][0]
 
 
 def check_dep_name(value):
@@ -114,6 +122,7 @@ def include_dependency(dep):
     return not (dep == "python" or
                 dep.startswith("ctng-compilers-") or
                 dep.startswith("_") or
+                dep == "None" or
                 dep in get_pinned_packages())
 
 
@@ -132,7 +141,7 @@ def filter_map(f, source):
     return filter(lambda item: f(item[0], item[1]), source.items())
 
 
-@cached(cache)
+@cached(metadata_cache)
 def get_pinned_packages():
     with open('conda_build_config.yaml') as f:
         my_list = yaml.safe_load(f)
@@ -164,7 +173,7 @@ if __name__ == "__main__":
         # deps = extract_deps(metadata, package_name)
         # Want only things with metadata as the dependencies of the current feedstock
         # However, we also don't need to process anything already visited
-        deps = {d: get_metadata(d) for d in extract_deps(metadata, package_name)}
+        deps = {lookup_feedstock_name(d): get_metadata(d) for d in extract_deps(metadata, package_name)}
         dependency_feedstocks = {f"{d}-feedstock": metadata for d, metadata in deps.items() if metadata is not None}
         dependency_map[feedstock] = set(dependency_feedstocks.keys())
         to_process.extend([(d, metadata) for d, metadata in dependency_feedstocks.items() if d not in dependency_map])
