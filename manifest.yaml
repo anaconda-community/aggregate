@@ -97,7 +97,7 @@ feedstocks:
     commit: af9d9aa93a2ee4f0ba3097115618fe16194a8e0a
   awscli-feedstock:
     branch: main
-    commit: 76309e4415370e8561dd0b6e1ba4c38d0af7db3e
+    commit: e779c9d71f3c33a577b0f155c6551ab7617b59fe
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -160,10 +160,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 43f836c9a6e8769d693e16e1545533fd61926adf
+    commit: c088e49dcf7deabdffab228154526772ccb8311e
   botocore-feedstock:
     branch: main
-    commit: ebcfd15d5d4f3d3013c1258007d3485f0563ef75
+    commit: 4a7fa52bc994ad15b0a75650c87e04eb283072fe
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -466,7 +466,7 @@ feedstocks:
     commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
   google-api-python-client-feedstock:
     branch: main
-    commit: 5b8da373d6afcf1fcb99b3a1896d31d6eb1c3d0b
+    commit: d1b5ac1589c3b61ab55b0f2fff0fc72ed01db42f
   google-auth-feedstock:
     branch: main
     commit: 4ae97f02eaf0f7e59119fffc5ad200ae284be1dd
@@ -1003,7 +1003,7 @@ feedstocks:
     commit: cf43bf42296e3659df86e2dbca679d85d28af382
   prometheus_client-feedstock:
     branch: main
-    commit: 8ca94eff53daaf63149887dfa41833a58e2caaf1
+    commit: fda4c0cacd661fa9a0c582247805538877f3834b
   prometheus_flask_exporter-feedstock:
     branch: main
     commit: 40f4793868eeda4dbdd6f5985ce62b634cab72d5
@@ -1288,7 +1288,7 @@ feedstocks:
     commit: ca2e6c5d2d871d1889226cef3fe1a2d4e2a868b0
   sentencepiece-feedstock:
     branch: main
-    commit: 579603777f576e2b59643367b8694338c0131c6d
+    commit: 7179a6e2ec0217bc98091cd12aeefdc5c0a146ac
   sentry-sdk-feedstock:
     branch: main
     commit: ba75c36d910421ac9a935321cafe5f6ae905d528
