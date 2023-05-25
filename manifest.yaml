@@ -250,7 +250,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: bb2c0b56b6ab55bb43071812be9bcefd3113556a
+    commit: fe055bf5243da235a03fd0ed209c29f79165cd02
   compilers-feedstock:
     branch: main
     commit: c4865f325ba752842f7ea21470abde447f7f1062
@@ -304,7 +304,7 @@ feedstocks:
     commit: 2095b6a691b64883f85d9b90e21106a8b51c2003
   cython-feedstock:
     branch: main
-    commit: 3c86e7858e94d08a991bfca6a01c6c56777bb745
+    commit: 46ad38520db88f31ed0e29e38b31974be7749d1f
   cytoolz-feedstock:
     branch: main
     commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
@@ -1264,7 +1264,7 @@ feedstocks:
     commit: 4ecab237e05c3d0b70894f82a7d8b074ce842863
   scikit-learn-feedstock:
     branch: main
-    commit: d113c4f487a3b1f368b403bab8ce22b7ac40b4f6
+    commit: c234a183928211d501ebb5f5300f6d2849547f5b
   scikit-plot-feedstock:
     branch: main
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
