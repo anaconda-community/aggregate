@@ -146,7 +146,8 @@ def filter_map(f, source):
 
 @cached(metadata_cache)
 def get_pinned_packages():
-    with open('conda_build_config.yaml') as f:
+    # We don't want to include any packages that are pinned by anacondarecipes
+    with open('conda_build_config_anacondarecipes.yaml') as f:
         my_list = yaml.safe_load(f)
 
     for p in excluded_packages:
