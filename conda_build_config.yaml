@@ -92,7 +92,7 @@ channel_targets:
   - defaults
 cdt_name: # [linux]
   - amzn2 # [linux and aarch64]
-docker_image:
+docker_image: # [os.environ.get(BUILD_PLATFORM, ).startswith(linux-)]
   - undefined
 zip_keys:
   - - python
