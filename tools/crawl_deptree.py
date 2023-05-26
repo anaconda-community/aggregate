@@ -20,7 +20,7 @@ feedstock_cache: Cache = LRUCache(maxsize=1000)
 warnings.simplefilter("ignore")
 
 excluded_packages = [
-    "openblas","ice","gdal","arrow","boost","llvm","gcc","python","numpy","protobuf","abseil","thrift","hdf5","netcdf"
+    "openblas","ice","gdal","arrow","boost","llvm","gcc","python","numpy","protobuf","abseil","thrift","hdf5","netcdf","libblas","libcblas","liblapack","liblapacke"
 ]
 
 
