@@ -163,7 +163,7 @@ feedstocks:
     commit: c088e49dcf7deabdffab228154526772ccb8311e
   botocore-feedstock:
     branch: main
-    commit: 4a7fa52bc994ad15b0a75650c87e04eb283072fe
+    commit: e1630fd446543d3c5528a623d11a153224f16b97
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -250,7 +250,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: bb2c0b56b6ab55bb43071812be9bcefd3113556a
+    commit: fe055bf5243da235a03fd0ed209c29f79165cd02
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -307,7 +307,7 @@ feedstocks:
     commit: 2095b6a691b64883f85d9b90e21106a8b51c2003
   cython-feedstock:
     branch: main
-    commit: 3c86e7858e94d08a991bfca6a01c6c56777bb745
+    commit: 46ad38520db88f31ed0e29e38b31974be7749d1f
   cytoolz-feedstock:
     branch: main
     commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
@@ -1267,7 +1267,7 @@ feedstocks:
     commit: 4ecab237e05c3d0b70894f82a7d8b074ce842863
   scikit-learn-feedstock:
     branch: main
-    commit: d113c4f487a3b1f368b403bab8ce22b7ac40b4f6
+    commit: c234a183928211d501ebb5f5300f6d2849547f5b
   scikit-plot-feedstock:
     branch: main
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
@@ -1459,7 +1459,7 @@ feedstocks:
     commit: ab352adedc793b165cbb276a7bfc00fffc22fb13
   typing_extensions-feedstock:
     branch: main
-    commit: 0dde3f6b59a73cd0c0ae286b79cd6691ce0b6976
+    commit: c4ab14d5ce94af8b204bdd2c7f652e92f17945fa
   tzcode-feedstock:
     branch: main
     commit: 0c92a2770f0c9c2b00c7c129b94cebb9745d1ac8
