@@ -38,5 +38,6 @@ act -j update-manifest -W .github/workflows/integration-test.yml -s GITHUB_TOKEN
 ```
 
 ## Pinned packages
-We maintain a list of pinned packages in `conda_build_config.yaml` that we sync from AnacondaRecipes. Feedstocks for these packages should not be included in community repo.
-To support additional pinnings for community repo we have a file `conda_build_config_additions.yaml` that will be appended to `conda_build_config.yaml` when the `sync-pinnings` workflow is run
+We maintain a list of pinned packages in `conda_build_config.yaml` that we sync from AnacondaRecipes and conda-forge/conda-forge-pinning-feedstock. 
+Feedstocks for packages in AnacondaRecipes conda_build_config should not be included in community repo.
+To support additional pinnings for community repo we have a file `conda_build_config_community.yaml` that will be merged with `conda_build_config.yaml` when the `sync-pinnings` workflow is run
