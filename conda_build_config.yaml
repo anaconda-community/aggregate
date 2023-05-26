@@ -158,13 +158,9 @@ pin_run_as_build:
 
 # blas
 libblas:
-  - x.x
 libcblas:
-  - x.x
 liblapack:
-  - x.x
 liblapacke:
-  - x.x
 blas_impl:
   - mkl # [x86 or x86_64]
   - openblas # [not win]
