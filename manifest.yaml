@@ -97,7 +97,7 @@ feedstocks:
     commit: af9d9aa93a2ee4f0ba3097115618fe16194a8e0a
   awscli-feedstock:
     branch: main
-    commit: e779c9d71f3c33a577b0f155c6551ab7617b59fe
+    commit: ecaa6e8dada18293e6217a4016aa06aa7319b24f
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -160,10 +160,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: c088e49dcf7deabdffab228154526772ccb8311e
+    commit: f8b5d08b4bf7d1d8cb6398d7951aac907e85bbe2
   botocore-feedstock:
     branch: main
-    commit: 4a7fa52bc994ad15b0a75650c87e04eb283072fe
+    commit: e1630fd446543d3c5528a623d11a153224f16b97
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -250,7 +250,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: bb2c0b56b6ab55bb43071812be9bcefd3113556a
+    commit: c01fb6bdd32a82a7353d38a3b58fd68984a68df9
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -307,7 +307,7 @@ feedstocks:
     commit: 2095b6a691b64883f85d9b90e21106a8b51c2003
   cython-feedstock:
     branch: main
-    commit: 3c86e7858e94d08a991bfca6a01c6c56777bb745
+    commit: 46ad38520db88f31ed0e29e38b31974be7749d1f
   cytoolz-feedstock:
     branch: main
     commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
@@ -472,7 +472,7 @@ feedstocks:
     commit: d1b5ac1589c3b61ab55b0f2fff0fc72ed01db42f
   google-auth-feedstock:
     branch: main
-    commit: 4ae97f02eaf0f7e59119fffc5ad200ae284be1dd
+    commit: af5cdf00147c0d68285ddff717a39ac332b64845
   google-auth-httplib2-feedstock:
     branch: main
     commit: bf6c5bc776ce9c8535a5bba78320dc37757c1989
@@ -796,7 +796,7 @@ feedstocks:
     commit: ce41356cd3c7f92146180f9ba9f3244f08429f2b
   meson-feedstock:
     branch: main
-    commit: ee6902c41f42fcc344e32f3cfb47b2e22331257a
+    commit: 6de6a81f8a9c8fddc0687340202c6036d39c00ae
   meson-python-feedstock:
     branch: main
     commit: 11522852fba606a7f46559b6a8179cae6ad5f4ed
@@ -907,7 +907,7 @@ feedstocks:
     commit: ccef613ac1442168d4813be68302d2c8867b1f6d
   paramiko-feedstock:
     branch: main
-    commit: 7548607b57a12aebe59ac086097c1b36c0c14537
+    commit: 46560023f2d8997a387073ebd5893fb28ac11762
   parquet-cpp-feedstock:
     branch: main
     commit: ad81f5772fee734541acd641cd64b4bde316d8f9
@@ -1267,7 +1267,7 @@ feedstocks:
     commit: 4ecab237e05c3d0b70894f82a7d8b074ce842863
   scikit-learn-feedstock:
     branch: main
-    commit: d113c4f487a3b1f368b403bab8ce22b7ac40b4f6
+    commit: c234a183928211d501ebb5f5300f6d2849547f5b
   scikit-plot-feedstock:
     branch: main
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
@@ -1339,7 +1339,7 @@ feedstocks:
     commit: afeb1e0bc5239e4dc8ac5d3f9b384b7d56133bb7
   snowflake-connector-python-feedstock:
     branch: main
-    commit: ac9440e934c68734462c6c96a8f9c0445eac050e
+    commit: 82ccd1e2776a97d7d34aa66394c8bea74eecf107
   soupsieve-feedstock:
     branch: main
     commit: 0f1095f9d5ee5cdd7b7b154ade5c7fea2cc826f2
@@ -1459,7 +1459,7 @@ feedstocks:
     commit: ab352adedc793b165cbb276a7bfc00fffc22fb13
   typing_extensions-feedstock:
     branch: main
-    commit: 0dde3f6b59a73cd0c0ae286b79cd6691ce0b6976
+    commit: c4ab14d5ce94af8b204bdd2c7f652e92f17945fa
   tzcode-feedstock:
     branch: main
     commit: 0c92a2770f0c9c2b00c7c129b94cebb9745d1ac8
