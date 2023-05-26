@@ -1,9 +1,8 @@
 name: "Sync pinnings"
-# Don't want to run daily yet, but might be best option in future
-#on:
-#  schedule:
-#    - cron: 0 0 * * *
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: 0 0 * * *
+  workflow_dispatch: {}
 
 jobs:
   sync-pinnings:
@@ -32,15 +31,16 @@ jobs:
 
       - name: Check-in change
         run: |
+            branch=$(date +pinnings%Y%m%d%H%M%S)
             git config user.name "GitHub Actions Bot"
             git config user.email "<>"
-            git checkout -b pinnings
+            git checkout -b $branch
             mv anacondarecipes/conda_build_config.yaml conda_build_config_anacondarecipes.yaml
             mv conda-forge/recipe/conda_build_config.yaml conda_build_config_conda-forge.yaml
             echo "${{ steps.merged_pinnings.outputs.result }}" > conda_build_config.yaml
             git add conda_build_config.yaml
             git add conda_build_config_anacondarecipes.yaml
             git add conda_build_config_conda-forge.yaml
-            git commit -m "Update conda_build_config.yaml" && git push --set-upstream origin pinnings && gh pr create --fill --label pinnings || echo "No changes"
+            git commit -m "Update conda_build_config.yaml" && git push --set-upstream origin $branch && gh pr create --fill --label pinnings || echo "No changes"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
