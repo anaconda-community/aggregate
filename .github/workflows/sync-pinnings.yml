@@ -23,11 +23,20 @@ jobs:
           repository: conda-forge/conda-forge-pinning-feedstock
           path: conda-forge
 
-      - name: Merge pinnings
+      - name: Merge AnacondaRecipes with conda-forge pinnings
         id: merged_pinnings
         uses: mikefarah/yq@master
         with:
           cmd: yq '. *= load("anacondarecipes/conda_build_config.yaml")' conda-forge/recipe/conda_build_config.yaml
+
+      - name: Create merged_config
+        run: echo "${{ steps.merged_pinnings.outputs.result }}" > merged_config.yaml
+
+      - name: Merge with community pinnings
+        id: merged_community
+        uses: mikefarh/yq@master
+        with:
+          cmd: yq '. *= load("conda_build_config_community.yaml")' merged_config.yaml
 
       - name: Check-in change
         run: |
@@ -37,7 +46,7 @@ jobs:
             git checkout -b $branch
             mv anacondarecipes/conda_build_config.yaml conda_build_config_anacondarecipes.yaml
             mv conda-forge/recipe/conda_build_config.yaml conda_build_config_conda-forge.yaml
-            echo "${{ steps.merged_pinnings.outputs.result }}" > conda_build_config.yaml
+            echo "${{ steps.merged_community.outputs.result }}" > conda_build_config.yaml
             git add conda_build_config.yaml
             git add conda_build_config_anacondarecipes.yaml
             git add conda_build_config_conda-forge.yaml
