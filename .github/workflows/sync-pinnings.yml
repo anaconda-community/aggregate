@@ -34,7 +34,7 @@ jobs:
 
       - name: Merge with community pinnings
         id: merged_community
-        uses: mikefarh/yq@master
+        uses: mikefarah/yq@master
         with:
           cmd: yq '. *= load("conda_build_config_community.yaml")' merged_config.yaml
 
