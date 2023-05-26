@@ -28,12 +28,26 @@ m2w64_fortran_compiler: # [win]
   - m2w64-toolchain # [win]
 cuda_compiler:
   - None
+  - nvcc # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - nvcc # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - nvcc # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - nvcc # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
 cuda_compiler_version:
   - None
+  - 10.2 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - 11.0 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - 11.1 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - 11.2 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
 cuda_compiler_version_min:
-  - None
+  - None # [osx]
+  - 10.2 # [linux64 or win64]
+  - 11.2 # [linux and (ppc64le or aarch64)]
 cudnn:
   - undefined
+  - 7 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
 _libgcc_mutex:
   - 0.1 conda_forge
 #
@@ -68,7 +82,7 @@ target_goexe:
   # [unix]
   - .exe # [win]
 target_gobin:
-  - '/bin/' # [unix]
+  - '${PREFIX}/bin/' # [unix]
   - '%PREFIX%\bin\' # [win]
 # Rust Compiler Options
 rust_compiler:
@@ -92,8 +106,15 @@ channel_targets:
   - defaults
 cdt_name: # [linux]
   - amzn2 # [linux and aarch64]
-docker_image:
-  - undefined
+docker_image: # [os.environ.get("BUILD_PLATFORM", "").startswith("linux-")]
+  - quay.io/condaforge/linux-anvil-cos7-x86_64 # [os.environ.get("BUILD_PLATFORM") == "linux-64"]
+  - quay.io/condaforge/linux-anvil-aarch64 # [os.environ.get("BUILD_PLATFORM") == "linux-aarch64"]
+  - quay.io/condaforge/linux-anvil-ppc64le # [os.environ.get("BUILD_PLATFORM") == "linux-ppc64le"]
+  - quay.io/condaforge/linux-anvil-armv7l # [os.environ.get("BUILD_PLATFORM") == "linux-armv7l"]
+  - quay.io/condaforge/linux-anvil-cos7-cuda:10.2 # [linux64 and os.environ.get("CF_CUDA_ENABLED", "False") == "True" and os.environ.get("BUILD_PLATFORM") == "linux-64"]
+  - quay.io/condaforge/linux-anvil-cuda:11.0 # [linux64 and os.environ.get("CF_CUDA_ENABLED", "False") == "True" and os.environ.get("BUILD_PLATFORM") == "linux-64"]
+  - quay.io/condaforge/linux-anvil-cuda:11.1 # [linux64 and os.environ.get("CF_CUDA_ENABLED", "False") == "True" and os.environ.get("BUILD_PLATFORM") == "linux-64"]
+  - quay.io/condaforge/linux-anvil-cuda:11.2 # [linux64 and os.environ.get("CF_CUDA_ENABLED", "False") == "True" and os.environ.get("BUILD_PLATFORM") == "linux-64"]
 zip_keys:
   - - python
     - numpy
@@ -600,8 +621,8 @@ pybind11_abi:
 python:
   - 3.8
   - 3.9
-  - 3.10
-  - 3.11
+  - "3.10"
+  - "3.11"
 python_impl:
   - cpython
 pytorch:
@@ -626,7 +647,7 @@ readline:
   - 8.0 # [not ((linux and aarch64) or (osx and arm64))]
   - 8.1 # [(linux and aarch64) or (osx and arm64)]
 rocksdb:
-  - 6.10
+  - "6.10"
 root_base:
   - 6.26.10
 ruby:
