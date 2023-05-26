@@ -28,6 +28,11 @@ jobs:
         with:
           cmd: yq '. *= load("anacondarecipes/conda_build_config.yaml")' conda-forge/recipe/conda_build_config.yaml -i
 
+      - name: Merge community with conda-forge pinnings
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq '. *= load("conda_build_config_community.yaml")' conda-forge/recipe/conda_build_config.yaml -i
+
       - name: Check-in change
         run: |
             branch=$(date +pinnings%Y%m%d%H%M%S)

@@ -1,0 +1,8 @@
+libblas:
+  - x.x
+libcblas:
+  - x.x
+liblapack:
+  - x.x
+liblapacke:
+  - x.x
