@@ -58,7 +58,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: 2e0e9c799441ad496f3102c99a0499fa235563c6
+    commit: 63573746a4804d60854c2b30a2333405ce109e0c
   aws-c-cal-feedstock:
     branch: main
     commit: 1236f75d7b3f9711c14c533d33131bbf31cc4fcd
@@ -70,16 +70,16 @@ feedstocks:
     commit: 1b205f9331a67347751d71c2fcff6210eb1ad581
   aws-c-event-stream-feedstock:
     branch: main
-    commit: ee8d6f5b096ae695cee7d6136ad4bf5e4be1eba2
+    commit: 7c4be64e3e34c67671f57f376aadbb8dfe47dc2c
   aws-c-http-feedstock:
     branch: main
-    commit: f07576adf0eee011ec2ea957e831510d8ea79016
+    commit: 132560dff9a271972709b561ad3de5531d343acf
   aws-c-io-feedstock:
     branch: main
     commit: bcc40458e024d0c3e8b51ffdb9c3ec93c4d66ab6
   aws-c-mqtt-feedstock:
     branch: main
-    commit: 8b9f9fbd7667e632c75b0cc82bcee60e855267c9
+    commit: 0886f622409748447f4d4498640cf0fba66c3fa1
   aws-c-s3-feedstock:
     branch: main
     commit: 65806c2fedb369f0f366dc2d8697766d117c968b
@@ -178,7 +178,7 @@ feedstocks:
     commit: 18dfc2795d7355c659d162819b6eae6a00730592
   c-blosc2-feedstock:
     branch: main
-    commit: c8dccc8ca6f51cc47905480193213370c511af48
+    commit: ca23a7f9041cce11afaedc20addfa30f70c2ad4d
   c99-to-c89-feedstock:
     branch: main
     commit: f1bc59c385801259e94817a84ed1113fb522740e
@@ -250,7 +250,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: eb54c0c1ab8aa217bf6e1db0c1b20c44902e53ac
+    commit: b29e1f1bc674344c61627f297a3a101e1f3b988d
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
