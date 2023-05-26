@@ -16,16 +16,31 @@ jobs:
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
         with:
           repository: AnacondaRecipes/aggregate
-          path: aggregate
+          path: anacondarecipes
+
+      - name: Checkout conda-forge/conda-forge-pinning-feedstock
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+        with:
+          repository: conda-forge/conda-forge-pinning-feedstock
+          path: conda-forge
+
+      - name: Merge pinnings
+        id: merged_pinnings
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq '. *= load("anacondarecipes/conda_build_config.yaml")' conda-forge/recipe/conda_build_config.yaml
 
       - name: Check-in change
         run: |
             git config user.name "GitHub Actions Bot"
             git config user.email "<>"
             git checkout -b pinnings
-            mv aggregate/conda_build_config.yaml conda_build_config.yaml
-            cat conda_build_config_additions.yaml >> conda_build_config.yaml            
+            mv anacondarecipes/conda_build_config.yaml conda_build_config_anacondarecipes.yaml
+            mv conda-forge/recipe/conda_build_config.yaml conda_build_config_conda-forge.yaml
+            echo "${{ steps.merged_pinnings.outputs.result }}" > conda_build_config.yaml
             git add conda_build_config.yaml
+            git add conda_build_config_anacondarecipes.yaml
+            git add conda_build_config_conda-forge.yaml
             git commit -m "Update conda_build_config.yaml" && git push --set-upstream origin pinnings && gh pr create --fill --label pinnings || echo "No changes"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
