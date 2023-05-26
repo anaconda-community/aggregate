@@ -42,8 +42,12 @@ jobs:
   build:
     needs: find-feedstocks
     uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
+    strategy:
+      matrix:
+        arch: [ "linux-64" ]
     with:
       feedstock: ${{ needs.find-feedstocks.outputs.feedstocks }}
       branch: ${{ github.event.pull_request.merged && 'main' || needs.find-feedstocks.outputs.branch }}
+      arch: ${{ matrix.arch }}
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
