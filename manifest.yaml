@@ -58,7 +58,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: 63573746a4804d60854c2b30a2333405ce109e0c
+    commit: a463604c8c95e76d0a022ee13d1c271f2f48a71f
   aws-c-cal-feedstock:
     branch: main
     commit: 1236f75d7b3f9711c14c533d33131bbf31cc4fcd
@@ -79,10 +79,10 @@ feedstocks:
     commit: bcc40458e024d0c3e8b51ffdb9c3ec93c4d66ab6
   aws-c-mqtt-feedstock:
     branch: main
-    commit: 0886f622409748447f4d4498640cf0fba66c3fa1
+    commit: f2c7471e7e9f7e2916dc6b646bbc6bf9991f7e67
   aws-c-s3-feedstock:
     branch: main
-    commit: 65806c2fedb369f0f366dc2d8697766d117c968b
+    commit: c56a23c9c34666430747c9ea6f44db600d6e58da
   aws-c-sdkutils-feedstock:
     branch: main
     commit: a4b5b2e77f48e718aa76af9180131f3d3ec86a29
@@ -91,7 +91,7 @@ feedstocks:
     commit: 45a5bc8ca3924c7c3202b89171f4a01819aec447
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 194dcb79398500d5753e360692317e73fe9d00e7
+    commit: 89caf3fce7955b512035aca650804b10a73f7b31
   aws-sdk-cpp-feedstock:
     branch: main
     commit: af9d9aa93a2ee4f0ba3097115618fe16194a8e0a
@@ -163,7 +163,7 @@ feedstocks:
     commit: f8b5d08b4bf7d1d8cb6398d7951aac907e85bbe2
   botocore-feedstock:
     branch: main
-    commit: e1630fd446543d3c5528a623d11a153224f16b97
+    commit: 10615d1c363ad8fd8961def270b6d49f8d8f66c7
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -313,7 +313,7 @@ feedstocks:
     commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
   dask-core-feedstock:
     branch: main
-    commit: 16458ed01700568dbd34642cca69e990518e9972
+    commit: 531ddf94761ec9990d1a8cc2c1e0481919f9ac99
   databricks-cli-feedstock:
     branch: main
     commit: 7497d9b49fdb970f477b36c68acbe0dd72f66cc5
@@ -1444,7 +1444,7 @@ feedstocks:
     commit: 3fc0324055783951de8353524dd288df19ec780d
   trove-classifiers-feedstock:
     branch: main
-    commit: 154efa53d68be7345719483c430efcea836d2b9f
+    commit: 167761450e2656a12abd5f5ed5ad6b2d810230a6
   typeguard-feedstock:
     branch: main
     commit: 921c528f27657d3c9fa72c1057362130bdfb8de0
