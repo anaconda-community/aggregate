@@ -212,7 +212,7 @@ aws_c_sdkutils:
 aws_checksums:
   - 0.1.14
 aws_crt_cpp:
-  - 0.20.1
+  - 0.20.2
 aws_sdk_cpp:
   - 1.10.57
 boost:
@@ -638,7 +638,7 @@ qt6_main:
 qtkeychain:
   - '0.14'
 re2:
-  - 2023.02.02
+  - 2023.03.02
 readline:
   - 8.0 # [not ((linux and aarch64) or (osx and arm64))]
   - 8.1 # [(linux and aarch64) or (osx and arm64)]
