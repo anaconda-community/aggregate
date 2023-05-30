@@ -38,6 +38,9 @@ feedstocks:
   appdirs-feedstock:
     branch: main
     commit: 19684228443c9529229493cb924f829e5998eff6
+  argon2-cffi-bindings-feedstock:
+    branch: main
+    commit: 46687a062ec98d286358b8aea83da4e657bc598f
   argon2_cffi-feedstock:
     branch: main
     commit: fedede16477488ee597786e35088b9e3a01a9862
@@ -185,6 +188,9 @@ feedstocks:
   botocore-feedstock:
     branch: main
     commit: 10615d1c363ad8fd8961def270b6d49f8d8f66c7
+  branca-feedstock:
+    branch: main
+    commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
   brotli-feedstock:
     branch: main
     commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
@@ -245,12 +251,21 @@ feedstocks:
   chart-studio-feedstock:
     branch: main
     commit: 70e8cc88c74a366e9642c39ff21a32c04b76e1f4
+  clangdev-feedstock:
+    branch: main
+    commit: d2e99d434ac4192ad14aa5cf7e8e062da038c071
   cleo-feedstock:
     branch: main
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
   click-feedstock:
     branch: main
     commit: 9a87e0f3ed6e15ba710c7824b3b8071c1ddc85b3
+  click-plugins-feedstock:
+    branch: main
+    commit: 6fc732ff59b51ed7fe37ac65bfdc15850406423b
+  cligj-feedstock:
+    branch: main
+    commit: 7a050a444a025e248b293f1cb8b83f2d7aff14b9
   cloudpickle-feedstock:
     branch: main
     commit: 73f5d154a4aad63608ca5f483db5730f0b2f51f1
@@ -302,6 +317,9 @@ feedstocks:
   cross-python-feedstock:
     branch: main
     commit: 33a2d8f45aea8cf778bd365f925a5cb4d4e69ae3
+  crossenv-feedstock:
+    branch: main
+    commit: 0a43467fca2aa9374e85b19744628a8c5e0694d9
   cryptography-feedstock:
     branch: main
     commit: e70d84149adf02d7482113fea612ea2211a4b10c
@@ -428,6 +446,9 @@ feedstocks:
   filesystem-spec-feedstock:
     branch: main
     commit: 78218c95ca1cdf8379f2d682f682b1ea6d44c92b
+  fiona-feedstock:
+    branch: main
+    commit: fb612980dbd815523cda336f6c40814eaf2764b9
   flask-feedstock:
     branch: main
     commit: fe78f8210cab49d4d5a3bbcb6e1d09cda151b205
@@ -440,6 +461,9 @@ feedstocks:
   flit-scm-feedstock:
     branch: main
     commit: 7a03a4851cbbe305cfedc10b4ff09201171d842f
+  folium-feedstock:
+    branch: main
+    commit: 58ee6f51108abf8604ed675d494ed7d7b0b164e3
   fqdn-feedstock:
     branch: main
     commit: 04dfb34e6d9cfd9c126b1a4199f6396849e8a275
@@ -842,6 +866,9 @@ feedstocks:
   libsodium-feedstock:
     branch: main
     commit: 7e5cfefbb8669cdc471e854f977ab0ba3e8faf5b
+  libspatialindex-feedstock:
+    branch: main
+    commit: 9cab8fa5bb73d071c02a3e6d1c6625624780aba5
   libssh2-feedstock:
     branch: main
     commit: 80d6c199192af5851531fc7754c3b71b0347b7b2
@@ -914,6 +941,9 @@ feedstocks:
   mako-feedstock:
     branch: main
     commit: d3dfcf27cbf4cb1147502330db4b4c5880fcfc46
+  mapclassify-feedstock:
+    branch: main
+    commit: 11f01eb8929ce6c6f8d1d2ace7813a40d8701eb5
   markdown-feedstock:
     branch: main
     commit: 258b25c3493842e9a4b98c9e2f9a8e918ea5eec5
@@ -974,6 +1004,9 @@ feedstocks:
   multiprocess-feedstock:
     branch: main
     commit: 314bf455097221373efdba558a516fedea40ba19
+  munch-feedstock:
+    branch: main
+    commit: d7fc438f43a75e6160156e079a2133203c8d0990
   murmurhash-feedstock:
     branch: main
     commit: 055cb456dbf01d45a700a9977b8c81ab3e13bdc6
@@ -1154,6 +1187,9 @@ feedstocks:
   pooch-feedstock:
     branch: main
     commit: 6abb037a216ec739995be40183c25622576b8305
+  popt-feedstock:
+    branch: main
+    commit: cdac27839348127e9c471b0e7942d2554e94369e
   portalocker-feedstock:
     branch: main
     commit: c18900fd7e825f0d68d49ddf5439a65a9c534476
@@ -1424,6 +1460,12 @@ feedstocks:
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
+  rsync-feedstock:
+    branch: main
+    commit: c60589e7c2dbe450bab0ffaa5433d53bc75053ff
+  rtree-feedstock:
+    branch: main
+    commit: f703261e2daf6c54bfc99fcf663565fa0b542e8d
   ruby-feedstock:
     branch: main
     commit: ada08b152f27db3033b1725a74403658f30299ac
@@ -1523,6 +1565,9 @@ feedstocks:
   snowflake-connector-python-feedstock:
     branch: main
     commit: 82ccd1e2776a97d7d34aa66394c8bea74eecf107
+  sortedcontainers-feedstock:
+    branch: main
+    commit: 04ea352d08abb3d4c3e3e46b01d2a5a86f6fc74a
   soupsieve-feedstock:
     branch: main
     commit: 0f1095f9d5ee5cdd7b7b154ade5c7fea2cc826f2
@@ -1838,6 +1883,9 @@ feedstocks:
   xxhash-feedstock:
     branch: main
     commit: bfaae6b6675c21acee98588747205cbdd57dc741
+  xyzservices-feedstock:
+    branch: main
+    commit: 53bf3827becec8f89c2d852581e52e3665f6cf34
   xz-feedstock:
     branch: main
     commit: 0d1084422b26392f22e9205318808a45230ff836
