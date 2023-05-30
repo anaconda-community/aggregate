@@ -106,6 +106,7 @@ jobs:
               host: ${{ github.repository_owner }}
               tags:
                 - "@github.org:anaconda-community"
+                - architecture: ${{ matrix.architecture }}
 
       - name: Send SBOM Metrics
         uses: masci/datadog@v1
