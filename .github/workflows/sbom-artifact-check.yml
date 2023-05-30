@@ -101,7 +101,7 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
             - title: "Community Repo SBOM Not Found"
-              text: "The SBOM path was not found for repodata packages: ${{ steps.match_packages.outputs.not_found_packages }}"
+              text: "The SBOM path was not found for repodata packages: ${{ steps.match_packages.outputs.not_found_packages }} with architecture: ${{ matrix.architecture }}"
               alert_type: "error"
               host: ${{ github.repository_owner }}
               tags:
@@ -113,19 +113,19 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           metrics: |
             - type: "count"
-              name: "community.repo.packages.count"
+              name: "community.repo.${{ matrix.architecture }}.packages.count"
               value: ${{ steps.repodata_packages.outputs.repodata_packages_count }}
               tags:          
                 - "@github.org:anaconda-community"
             
             - type: "count"
-              name: "community.repo.sbom.paths.count"
+              name: "community.repo.${{ matrix.architecture }}.sbom.paths.count"
               value: ${{ steps.sbom_index_paths.outputs.sbom_index_paths_count }}
               tags:          
                 - "@github.org:anaconda-community"
             
             - type: "count"
-              name: "community.repo.sbom.not_found_packages.count"
+              name: "community.repo.${{ matrix.architecture }}.sbom.not_found_packages.count"
               value: ${{ steps.match_packages.outputs.not_found_packages_count }}
               tags:          
                 - "@github.org:anaconda-community"
