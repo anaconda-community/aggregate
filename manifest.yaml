@@ -268,7 +268,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: df2290cf6f04b3ba52a38b5fcdf497288608bd69
+    commit: f8e5cefa2166f8e0697c9699ec1c0998f59cbef6
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -781,7 +781,7 @@ feedstocks:
     commit: 50871498708ed94dccf8b468dbb41cc3d18a7233
   libhwloc-feedstock:
     branch: main
-    commit: 22d419660c9058232201cab36b9343b04a8c8490
+    commit: 20a0620f67bcb4cf7ec922f953cbf6437139c785
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -1129,7 +1129,7 @@ feedstocks:
     commit: 26ba3462f47bbde4bf7220c89e6f5dc7a6733e54
   pulseaudio-feedstock:
     branch: main
-    commit: 25b37fe694d1652af82d7d5920fc2c17a61907a4
+    commit: 2c559c031414bab61d17baff19f7eb229e0d7a81
   pure_eval-feedstock:
     branch: main
     commit: b6aac8da83571c39d67bb61a21941ecfdb82cb4c
