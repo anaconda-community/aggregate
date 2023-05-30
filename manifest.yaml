@@ -758,6 +758,9 @@ feedstocks:
   libaec-feedstock:
     branch: main
     commit: 7a377a303cde31a48bba66335f1bcb45135c1dda
+  libatomic_ops-feedstock:
+    branch: main
+    commit: a9c0821f3cd353daac0261dba569f03df75b4cbf
   libavif-feedstock:
     branch: main
     commit: d89e70524d10e66c82273df27522cb6e712be0aa
