@@ -28,7 +28,7 @@ feedstocks:
     commit: 5e3529ff65eceeb6bc27c1e5deb0bc583923b53c
   altair-feedstock:
     branch: main
-    commit: 4ac1ff5bde1c11c314a0939804d5d9c1b852483a
+    commit: 326d024fd1c9d6501ff41bbaa0ddfb7e82a62d7c
   aom-feedstock:
     branch: main
     commit: 9239ada5b6381f4d0b029b61391726b20fee30f6
@@ -250,7 +250,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: cc6ba486d132c67d8cd6df945026077d3d6a87c2
+    commit: cc978215f3de9f429003887961f7f8c408973b90
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -268,7 +268,7 @@ feedstocks:
     commit: 0cf0fa69eeb83ca7106ba174c4fbaca4ff5c37b6
   coverage-feedstock:
     branch: main
-    commit: 18411ee7f4fded108749686f53aa88bce6acb800
+    commit: d7b5560fbf5dca5efbe8a8340a5fb51421a112bd
   cppy-feedstock:
     branch: main
     commit: 7e9cdb203b8d4ec3e8028e76841bb6474c25e8f5
@@ -979,13 +979,13 @@ feedstocks:
     commit: f7dd26a2707378a72c13d42cbd5738fbca833b6b
   poetry-core-feedstock:
     branch: main
-    commit: ad75df7c9fb73a2628f280f77836dc16e66e40d1
+    commit: 3c6ec7c81123d86ab371eee8150fb578b3ab4a1b
   poetry-feedstock:
     branch: main
-    commit: 7b7ed34ce62355a74a476e54e1a18e18d14d9067
+    commit: 69b9573bb64bcd1d8915928c26b4638f5d6d8dd3
   poetry-plugin-export-feedstock:
     branch: main
-    commit: c6438db6f926db93fabc66d37638f7d40749cb3a
+    commit: 93cf7b82d39a5ca34a840a5d024605dbc68d50cc
   pooch-feedstock:
     branch: main
     commit: 6abb037a216ec739995be40183c25622576b8305
@@ -1207,7 +1207,7 @@ feedstocks:
     commit: e202b7a00d629d91ddd62d31980480bb975f1070
   redis-py-feedstock:
     branch: main
-    commit: 95f298f8c22bd4163cee7dfdce768bf48feba321
+    commit: 11502c44cd1d58279e20a7f95ef8a1ea1ea1cc6c
   regex-feedstock:
     branch: main
     commit: e587e2cac34d105b99fb68fb62cfded54ddaef40
@@ -1363,7 +1363,7 @@ feedstocks:
     commit: c1afd76d1ea84a98495050b3e83197d45f784311
   stack-feedstock:
     branch: main
-    commit: 32b7c84b35d50de2a832c582b00ce4e8c8a807ad
+    commit: 1a5d7daef12b0fdb4e747790f9cc42a384307cd6
   stack_data-feedstock:
     branch: main
     commit: fdf71c03a399fcc1714b720b698d5df97421d8a7
