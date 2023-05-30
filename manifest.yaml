@@ -28,7 +28,7 @@ feedstocks:
     commit: 5e3529ff65eceeb6bc27c1e5deb0bc583923b53c
   altair-feedstock:
     branch: main
-    commit: 4ac1ff5bde1c11c314a0939804d5d9c1b852483a
+    commit: 326d024fd1c9d6501ff41bbaa0ddfb7e82a62d7c
   anyio-feedstock:
     branch: main
     commit: 9e80b552cc1c41ce996dfd3bc3e48a9d5870aa0c
@@ -262,7 +262,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: cc6ba486d132c67d8cd6df945026077d3d6a87c2
+    commit: df2290cf6f04b3ba52a38b5fcdf497288608bd69
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -283,7 +283,7 @@ feedstocks:
     commit: 0cf0fa69eeb83ca7106ba174c4fbaca4ff5c37b6
   coverage-feedstock:
     branch: main
-    commit: 18411ee7f4fded108749686f53aa88bce6acb800
+    commit: d7b5560fbf5dca5efbe8a8340a5fb51421a112bd
   cppy-feedstock:
     branch: main
     commit: 7e9cdb203b8d4ec3e8028e76841bb6474c25e8f5
@@ -310,7 +310,7 @@ feedstocks:
     commit: acb329186b934fcf832de24c2a6445a304cc2c8c
   curl-feedstock:
     branch: main
-    commit: e9be4acd8303852241785e7faabe00a4c9523b22
+    commit: 936625bbd1b236735e40060d972cdd1bc4914e20
   cycler-feedstock:
     branch: main
     commit: 39ce1d4eb2340d2fbaf658c37e95eab9bad0dd17
@@ -490,7 +490,7 @@ feedstocks:
     commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
   google-api-python-client-feedstock:
     branch: main
-    commit: d1b5ac1589c3b61ab55b0f2fff0fc72ed01db42f
+    commit: df10484027aaf100469c7cbc5764cd9185eff269
   google-auth-feedstock:
     branch: main
     commit: af5cdf00147c0d68285ddff717a39ac332b64845
@@ -1063,10 +1063,10 @@ feedstocks:
     commit: 3c6ec7c81123d86ab371eee8150fb578b3ab4a1b
   poetry-feedstock:
     branch: main
-    commit: 7b7ed34ce62355a74a476e54e1a18e18d14d9067
+    commit: 69b9573bb64bcd1d8915928c26b4638f5d6d8dd3
   poetry-plugin-export-feedstock:
     branch: main
-    commit: c6438db6f926db93fabc66d37638f7d40749cb3a
+    commit: 93cf7b82d39a5ca34a840a5d024605dbc68d50cc
   pooch-feedstock:
     branch: main
     commit: 6abb037a216ec739995be40183c25622576b8305
@@ -1282,7 +1282,7 @@ feedstocks:
     commit: 6b20e43e44c9e38091e99333ecebcc4a00aad260
   qt-main-feedstock:
     branch: main
-    commit: 18541460e76a39dd1d31d89ab198c289d432963e
+    commit: de396908d5f54b6ed928bb197e228151ae6004d5
   querystring_parser-feedstock:
     branch: main
     commit: 3de5ee7a282d0c8769dab4c652f124872926d831
@@ -1300,7 +1300,7 @@ feedstocks:
     commit: e202b7a00d629d91ddd62d31980480bb975f1070
   redis-py-feedstock:
     branch: main
-    commit: 95f298f8c22bd4163cee7dfdce768bf48feba321
+    commit: 11502c44cd1d58279e20a7f95ef8a1ea1ea1cc6c
   regex-feedstock:
     branch: main
     commit: e587e2cac34d105b99fb68fb62cfded54ddaef40
@@ -1462,7 +1462,7 @@ feedstocks:
     commit: c1afd76d1ea84a98495050b3e83197d45f784311
   stack-feedstock:
     branch: main
-    commit: 32b7c84b35d50de2a832c582b00ce4e8c8a807ad
+    commit: 1a5d7daef12b0fdb4e747790f9cc42a384307cd6
   stack_data-feedstock:
     branch: main
     commit: fdf71c03a399fcc1714b720b698d5df97421d8a7
@@ -1699,7 +1699,7 @@ feedstocks:
     commit: c1c707bf4dd3fbef6a2fce41d3f2ffe1451615ae
   xorg-libsm-feedstock:
     branch: main
-    commit: 4230dff3ba4487fac09496b36f6695b7e9c07cc7
+    commit: 293f6665345cfe92624bcce2955adc197911d3cd
   xorg-libx11-feedstock:
     branch: main
     commit: a5890541ee541cc4cb976fc87944a161932bcbef
