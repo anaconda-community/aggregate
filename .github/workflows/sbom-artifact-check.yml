@@ -18,6 +18,11 @@ jobs:
     defaults:
       run:
         shell: bash -l {0}
+    strategy:
+      matrix:
+        architecture:
+          - 'noarch'
+          - 'linux-64'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -39,7 +44,7 @@ jobs:
       - name: Get repodata packages
         id: repodata_packages
         run: |
-          repodata=$(curl -s https://staging.continuum.io/community/dev/noarch/repodata.json)
+          repodata=$(curl -s https://staging.continuum.io/community/dev/${{ matrix.architecture }}/repodata.json)
           repodata_packages=$(echo "$repodata" | yq '.packages | keys | join(",")')
           echo "repodata_packages=$repodata_packages" >> $GITHUB_OUTPUT
           echo "repodata_packages_count=$(echo "$repodata" | yq '.packages | keys | length')" >> $GITHUB_OUTPUT
@@ -65,8 +70,8 @@ jobs:
             # TODO: should not just check the index but also each path
             for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
           
-              # remove anaconda_SBOM_noarch_ prefix from path
-              sbom_package=${sbom_index_path/#anaconda_SBOM_noarch_}
+              # remove anaconda_SBOM_<<arch>>_ prefix from path
+              sbom_package=${sbom_index_path/#anaconda_SBOM_${{ matrix.architecture }}_}
 
               # remove the .spdx.json extension
               sbom_package=${sbom_package%.spdx.json}
