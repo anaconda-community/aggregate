@@ -59,6 +59,9 @@ feedstocks:
   asynctest-feedstock:
     branch: main
     commit: 97b9ba3a37d8bb59f8044c5597b9be828c6bc35a
+  attr-feedstock:
+    branch: main
+    commit: 0c5ef1f0800972da7b4cf6f6a872ed90f65f3766
   attrs-feedstock:
     branch: main
     commit: 352e829600f7b224e27f6479d3515a3ba9b89bf6
@@ -392,6 +395,9 @@ feedstocks:
   editables-feedstock:
     branch: main
     commit: b96f8cc94fcaf4a5e35e9e83e0122fb22d68ac43
+  elfutils-feedstock:
+    branch: main
+    commit: 94d2be0f6e4fa382715ef47a3cc5848d376736f8
   entrypoints-feedstock:
     branch: main
     commit: 15c660d984db7d9ab7d991941518218623653b83
@@ -488,6 +494,9 @@ feedstocks:
   gnuconfig-feedstock:
     branch: main
     commit: 0d7c0b184ea79032af77ef131022d1fa275b8dbd
+  gnutls-feedstock:
+    branch: main
+    commit: 7bad71eb9717351758f59b5f8d36588804263350
   gobject-introspection-feedstock:
     branch: main
     commit: b55e61bde3ddaf196335b22e3f0daa9a36559a20
@@ -755,12 +764,21 @@ feedstocks:
   lerc-feedstock:
     branch: main
     commit: f5df3506b440ff86fcbaea126707b12f7dda22f7
+  libacl-feedstock:
+    branch: main
+    commit: 8e7b221075b18cb67ec7676328ece2814d27147d
   libaec-feedstock:
     branch: main
     commit: 7a377a303cde31a48bba66335f1bcb45135c1dda
+  libarchive-feedstock:
+    branch: main
+    commit: eadcc05550d494f2d9d995c5ca48b07f4c9054b8
   libavif-feedstock:
     branch: main
     commit: d89e70524d10e66c82273df27522cb6e712be0aa
+  libcap-feedstock:
+    branch: main
+    commit: de0854df426ae4bcac42e08a7f8465960efeb8d0
   libcrc32c-feedstock:
     branch: main
     commit: 62fa6eaa2a7dcf66fbf912128bdfc282b037965f
@@ -785,15 +803,27 @@ feedstocks:
   libflac-feedstock:
     branch: main
     commit: a42e0bc0ce38647363dc965fe5f194ce9919df6c
+  libgcrypt-feedstock:
+    branch: main
+    commit: e4ff5f504aa0261b52df863ce6650f9ceb87979b
+  libgpg-error-feedstock:
+    branch: main
+    commit: 23d66469515e2ede1f6a50f184588a1c83650a89
   libhwloc-feedstock:
     branch: main
     commit: 20a0620f67bcb4cf7ec922f953cbf6437139c785
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
+  libidn2-feedstock:
+    branch: main
+    commit: 99ce808b9e1df302d4155168e0922ff1faeeeb16
   libjpeg-turbo-feedstock:
     branch: main
     commit: 4f1076e595b8a88e9db219a9f01d375bacd44e6f
+  libmicrohttpd-feedstock:
+    branch: main
+    commit: 07fc1f8989d6facf2d9878e41e327ab4ff1d110a
   libnsl-feedstock:
     branch: main
     commit: 8ea385d8f3006069b0e0b24d7f541214b31e86c8
@@ -812,9 +842,15 @@ feedstocks:
   libssh2-feedstock:
     branch: main
     commit: 80d6c199192af5851531fc7754c3b71b0347b7b2
+  libtasn1-feedstock:
+    branch: main
+    commit: 171e9c2ad3c7d8015b1c3bdfcb9587daa9c5ab11
   libtool-feedstock:
     branch: main
     commit: 69d49687f66b4edfda27699c9bea1c85deb1e083
+  libunistring-feedstock:
+    branch: main
+    commit: bc21f76dfed9d940f808dc1542753f7d52b54956
   libutf8proc-feedstock:
     branch: main
     commit: 0b335864ad79cfe7bab307fa49e392c52873b657
@@ -959,6 +995,9 @@ feedstocks:
   nest-asyncio-feedstock:
     branch: main
     commit: 8ee833b9558f35a97387bf2a4ef4cdeb107cb8c7
+  nettle-feedstock:
+    branch: main
+    commit: 5ee9304efed677806278827dac51a5a62ee0fdf4
   networkx-feedstock:
     branch: main
     commit: 9a4b2839cc4619dc1e6af9853d94e1361dd9967a
@@ -1013,6 +1052,9 @@ feedstocks:
   overrides-feedstock:
     branch: main
     commit: df5e4112f80a1ad43936ff991177eb5ec878cc06
+  p11-kit-feedstock:
+    branch: main
+    commit: 06751e46ec5eac81a112532108077091f371c1c8
   packaging-feedstock:
     branch: main
     commit: 40ab28643408ae5d73486b79c2d4430fc88146ae
@@ -1511,6 +1553,9 @@ feedstocks:
   streamlit-feedstock:
     branch: main
     commit: db53350fa4c33ba8947d5f1cfa40e0813da6b72d
+  systemd-feedstock:
+    branch: main
+    commit: b2b60165a029b6397b8409d523772d723f38a056
   tabulate-feedstock:
     branch: main
     commit: d40aebbb81d068841bdddafd80162298e9446b05
@@ -1640,6 +1685,9 @@ feedstocks:
   urllib3-feedstock:
     branch: main
     commit: 3d0365132d341d08421cb6b27d009df0abbc9f3a
+  util-linux-feedstock:
+    branch: main
+    commit: 0166ba6f32dd888a30dab7c1c36f339da5b21698
   validators-feedstock:
     branch: main
     commit: d8ff75d4ff35c1e5e6dd446e4a636fcde77c9030
