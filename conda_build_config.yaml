@@ -100,10 +100,7 @@ VERBOSE_CM:
   - VERBOSE=1
 # dual build configuration
 channel_sources:
-  - conda-forge # [not s390x]
-  - https://conda-web.anaconda.org/conda-forge # [s390x]
 channel_targets:
-  - defaults
 cdt_name: # [linux]
   - amzn2 # [linux and aarch64]
 docker_image: # [os.environ.get("BUILD_PLATFORM", "").startswith("linux-")]
@@ -188,29 +185,29 @@ assimp:
 attr:
   - 2.5
 aws_c_auth:
-  - 0.6.27
+  - 0.6.28
 aws_c_cal:
-  - 0.5.26
+  - 0.5.27
 aws_c_common:
-  - 0.8.19
+  - 0.8.20
 # coupled to aws_c_common version bump, see
 # https://github.com/conda-forge/aws-c-http-feedstock/pull/109
 aws_c_event_stream:
-  - 0.2.20
+  - 0.3.0
 aws_c_http:
-  - 0.7.7
+  - 0.7.8
 # the builds got coupled because 0.2.4 landed before the this migrator finished
 aws_c_io:
-  - 0.13.21
+  - 0.13.22
 # the builds got coupled because 0.2.4 landed before the io migrator
 aws_c_mqtt:
   - 0.8.11
 aws_c_s3:
-  - 0.3.0
+  - 0.3.4
 aws_c_sdkutils:
   - 0.1.10
 aws_checksums:
-  - 0.1.14
+  - 0.1.15
 aws_crt_cpp:
   - 0.20.2
 aws_sdk_cpp:
@@ -344,7 +341,7 @@ icu:
   - 58 # [not (s390x or aarch64 or (osx and arm64))]
   - 68 # [s390x or aarch64 or (osx and arm64)]
 imath:
-  - 3.1.7
+  - 3.1.8
 ipopt:
   - 3.14.12
 isl:
