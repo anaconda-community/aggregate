@@ -62,6 +62,12 @@ feedstocks:
   attrs-feedstock:
     branch: main
     commit: 352e829600f7b224e27f6479d3515a3ba9b89bf6
+  autoconf-feedstock:
+    branch: main
+    commit: 6ed626ddbc5ff2cbd85560e0403b5ffb1347d6c8
+  automake-feedstock:
+    branch: main
+    commit: f5b43f147c0c956426fd155f15e1d66601c83325
   autotools_clang_conda-feedstock:
     branch: main
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
@@ -566,6 +572,9 @@ feedstocks:
   hatchling-feedstock:
     branch: main
     commit: de22313409ce2d3b1f28ce760ae8c48e3c6ca040
+  help2man-feedstock:
+    branch: main
+    commit: 551797d296694f52bee9d8ea52306605d6a33f54
   hijri-converter-feedstock:
     branch: main
     commit: 03bfeff781e99147fcf7010799ace788d3fedd31
@@ -785,6 +794,9 @@ feedstocks:
   libssh2-feedstock:
     branch: main
     commit: 80d6c199192af5851531fc7754c3b71b0347b7b2
+  libtool-feedstock:
+    branch: main
+    commit: 69d49687f66b4edfda27699c9bea1c85deb1e083
   libutf8proc-feedstock:
     branch: main
     commit: 0b335864ad79cfe7bab307fa49e392c52873b657
