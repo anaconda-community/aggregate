@@ -737,6 +737,9 @@ feedstocks:
   krb5-feedstock:
     branch: main
     commit: 4a48ec9daf5498c39695569d71e254608f992551
+  lame-feedstock:
+    branch: main
+    commit: 72b2c92e48b54608b2ada19e23459c8107da121c
   langcodes-feedstock:
     branch: main
     commit: b1e8384b591f4f8b24b9c2af17a0dc8fffc86803
@@ -779,6 +782,9 @@ feedstocks:
   libevent-feedstock:
     branch: main
     commit: 50871498708ed94dccf8b468dbb41cc3d18a7233
+  libflac-feedstock:
+    branch: main
+    commit: a42e0bc0ce38647363dc965fe5f194ce9919df6c
   libhwloc-feedstock:
     branch: main
     commit: 20a0620f67bcb4cf7ec922f953cbf6437139c785
@@ -791,6 +797,15 @@ feedstocks:
   libnsl-feedstock:
     branch: main
     commit: 8ea385d8f3006069b0e0b24d7f541214b31e86c8
+  libogg-feedstock:
+    branch: main
+    commit: b168ea76125d297fb2744b154c7c9ac1bd094026
+  libopus-feedstock:
+    branch: main
+    commit: f20019d165d1abf01c29cc283c0d31bf4b812c6d
+  libsndfile-feedstock:
+    branch: main
+    commit: a1d14a3376f0827b221bca1d49725ade0c6e3162
   libsodium-feedstock:
     branch: main
     commit: 7e5cfefbb8669cdc471e854f977ab0ba3e8faf5b
@@ -809,6 +824,9 @@ feedstocks:
   libuv-feedstock:
     branch: main
     commit: 73498b1bff2c4e3bc093b12830a5c017002e8a0e
+  libvorbis-feedstock:
+    branch: main
+    commit: 2b11deca9dee89b276d6f772ef268844069a9b84
   libwebp-base-feedstock:
     branch: main
     commit: 90eddca6364c932a763247491dc42c23f61da731
@@ -893,6 +911,9 @@ feedstocks:
   more-itertools-feedstock:
     branch: main
     commit: b7ac4188bd256196d4366c175a1b1ef4fb0d9933
+  mpg123-feedstock:
+    branch: main
+    commit: e2f2de8fd3a8909d79af61eeb61c9e6d1781bf9b
   msal-feedstock:
     branch: main
     commit: 2c3b67f0bc323341627d68dd998b05f3f4e3d426
