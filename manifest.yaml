@@ -773,6 +773,9 @@ feedstocks:
   libarchive-feedstock:
     branch: main
     commit: eadcc05550d494f2d9d995c5ca48b07f4c9054b8
+  libatomic_ops-feedstock:
+    branch: main
+    commit: a9c0821f3cd353daac0261dba569f03df75b4cbf
   libavif-feedstock:
     branch: main
     commit: d89e70524d10e66c82273df27522cb6e712be0aa
