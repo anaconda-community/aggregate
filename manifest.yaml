@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 98d8d311b937a767c422f3806c6ed2fc82180914
+    commit: e74ef4f9865bbe4e336086e9ccd77a22c335e863
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -838,7 +838,7 @@ feedstocks:
     commit: 23d66469515e2ede1f6a50f184588a1c83650a89
   libhwloc-feedstock:
     branch: main
-    commit: c52395eb4fad7ce851df6956bdd3f35e0b12853b
+    commit: a6929015547e15b141365b1a3028ce78222f4948
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -1024,7 +1024,7 @@ feedstocks:
     commit: b734c1cfd2b0eb1765670185014c2c6e7b81c653
   nbformat-feedstock:
     branch: main
-    commit: 7bd3b7ac6854ae6333d723cc836a302f56415d3e
+    commit: f052b03baeda70dffd1dd357b770a2a12f40765e
   ncurses-feedstock:
     branch: main
     commit: f81ce58248f64af815ab9f758a96832f244dc8cb
@@ -1063,7 +1063,7 @@ feedstocks:
     commit: a3a258f497558cfc86c709cb72c9d9cae17ae2a8
   numba-feedstock:
     branch: main
-    commit: 13e5825ff0e84178a252f8b832abf1c0d523b14f
+    commit: 400106ef23daa19cdbc035ccfff7de89774f41e0
   numexpr-feedstock:
     branch: main
     commit: 635de0ed2c75e2256733266ae3ef4eeccad5f386
