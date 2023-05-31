@@ -41,3 +41,26 @@ act -j update-manifest -W .github/workflows/integration-test.yml -s GITHUB_TOKEN
 We maintain a list of pinned packages in `conda_build_config.yaml` that we sync from AnacondaRecipes and conda-forge/conda-forge-pinning-feedstock. 
 Feedstocks for packages in AnacondaRecipes conda_build_config should not be included in community repo.
 To support additional pinnings for community repo we have a file `conda_build_config_community.yaml` that will be merged with `conda_build_config.yaml` when the `sync-pinnings` workflow is run
+
+
+## Building feedstocks locally
+To build a feedstock locally you will need to install `abs-cli` and `docker`
+
+1. Setup your workspace. You can change the ref from 'main' to your branch to test changes that aren't merged.
+```text
+abs workspace init -a https://github.com/anaconda-community/aggregate -r main
+abs workspace add-recipe <feedstock>
+```
+2. Run build.
+```
+docker \
+  run --rm --init \
+  -v "<path to workspace>:/workspace" \
+  -v "<path to workspace>/feedstocks/<feedstock>:/recipe" \
+  -w "/workspace/aggregate" \
+  public.ecr.aws/y0o4y9o3/anaconda-pkg-build:latest \
+  /bin/bash \
+  -c \
+  'conda build "/recipe" --no-test --output-folder "/workspace/output" --croot "/workspace/croot" --cache-dir "/workspace/cache-dir" --channel "https://staging.continuum.io/community/dev" --channel "https://staging.continuum.io/community/seed"'
+```
+Note: This command may change. To get the latest command see https://github.com/anaconda-distribution/rocket-platform/blob/main/sdk/src/abs/workspace.py or check the logs in a recent Prefect build.
