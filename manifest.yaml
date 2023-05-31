@@ -31,7 +31,7 @@ feedstocks:
     commit: 326d024fd1c9d6501ff41bbaa0ddfb7e82a62d7c
   anyio-feedstock:
     branch: main
-    commit: 9e80b552cc1c41ce996dfd3bc3e48a9d5870aa0c
+    commit: 90ba382841717776e77e6c23aa6b7f59ed8baa51
   aom-feedstock:
     branch: main
     commit: 9239ada5b6381f4d0b029b61391726b20fee30f6
@@ -106,7 +106,7 @@ feedstocks:
     commit: 999c645a7fe1e52336bc3b4c543acf5a81bd9f6f
   aws-c-sdkutils-feedstock:
     branch: main
-    commit: a4b5b2e77f48e718aa76af9180131f3d3ec86a29
+    commit: 7487cc36cd90021c8bd51799f4b80a70ff847675
   aws-checksums-feedstock:
     branch: main
     commit: 45a5bc8ca3924c7c3202b89171f4a01819aec447
@@ -118,7 +118,7 @@ feedstocks:
     commit: 3a79fe19eb77828fc7a6f768a5fe31be5d06ace6
   awscli-feedstock:
     branch: main
-    commit: 42ffb8a880504e416be4c0c49264e42cbdd566c5
+    commit: ad2d72241434afb332ad9a16a2912661ea2f15d6
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: de00f459cc12418db746d42e90e3a9c1765a4922
+    commit: 9d02b4da820993b39c7f41f7eb34150e99cbab6e
   botocore-feedstock:
     branch: main
-    commit: 10615d1c363ad8fd8961def270b6d49f8d8f66c7
+    commit: c5692794268450ec34e24e082f5a8e828846db90
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: f8e5cefa2166f8e0697c9699ec1c0998f59cbef6
+    commit: 98d8d311b937a767c422f3806c6ed2fc82180914
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -322,7 +322,7 @@ feedstocks:
     commit: 0a43467fca2aa9374e85b19744628a8c5e0694d9
   cryptography-feedstock:
     branch: main
-    commit: e70d84149adf02d7482113fea612ea2211a4b10c
+    commit: 72035301bbff394a1fa0ebe2e6e35b2ef5f76f0e
   ctng-compilers-feedstock:
     branch: main
     commit: 8118bec940e44fe5e58eddc45a2650fbdf4609e2
@@ -838,7 +838,7 @@ feedstocks:
     commit: 23d66469515e2ede1f6a50f184588a1c83650a89
   libhwloc-feedstock:
     branch: main
-    commit: 20a0620f67bcb4cf7ec922f953cbf6437139c785
+    commit: c52395eb4fad7ce851df6956bdd3f35e0b12853b
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -1243,7 +1243,7 @@ feedstocks:
     commit: 0506e44471a30bf811167651676508a5cc6bb9f9
   pyOpenSSL-feedstock:
     branch: main
-    commit: bff90128ba7153b9058ca0eb12f9a42ea7a2c513
+    commit: fc1ef2a6abd54f12046d584892b50694c0801072
   pyarrow-feedstock:
     branch: main
     commit: e8602d8ee6f9cad9facf335d23a8aba21d399813
@@ -1309,7 +1309,7 @@ feedstocks:
     commit: 473fd9c0b96a2d1ca8a65ae1fe0ea0aa30321ba3
   pyopenssl-feedstock:
     branch: main
-    commit: bff90128ba7153b9058ca0eb12f9a42ea7a2c513
+    commit: fc1ef2a6abd54f12046d584892b50694c0801072
   pyparsing-feedstock:
     branch: main
     commit: b2ea8c20e2942effdff03200ccb43c91bfb856c5
@@ -1399,7 +1399,7 @@ feedstocks:
     commit: b39fdf325bfc1fac172a4974c7f3a8fb878b1e29
   pyzmq-feedstock:
     branch: main
-    commit: 6b20e43e44c9e38091e99333ecebcc4a00aad260
+    commit: bf6d5f2d87a02fc236ee209c5b188900c8285d93
   qt-main-feedstock:
     branch: main
     commit: de396908d5f54b6ed928bb197e228151ae6004d5
