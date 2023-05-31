@@ -64,6 +64,9 @@ jobs:
         run: |
           not_found_packages=()
           for repo_package in ${REPODATA_PACKAGES//,/ }; do
+            
+            # remove double quote characters from package name
+            repo_package=${repo_package//\"/}
           
             not_found=1
           
