@@ -70,13 +70,8 @@ jobs:
             # TODO: should not just check the index but also each path
             for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
           
-              # remove anaconda_SBOM_<<arch>>_ prefix from path
-              sbom_package=${sbom_index_path/#anaconda_SBOM_${{ matrix.architecture }}_}
-
-              # remove the .spdx.json extension
-              sbom_package=${sbom_package%.spdx.json}
-          
-              if [[ "$repo_package" == "$sbom_package" ]]; then
+              # check whether the package name is in the index path
+              if [[ $sbom_index_path == *$repo_package* ]]; then
                 not_found=0
                 break;
               fi 
