@@ -72,12 +72,14 @@ jobs:
           
               # check whether the package name is in the index path
               if [[ $sbom_index_path == *$repo_package* ]]; then
+                echo "Adding $repo_package to found"
                 not_found=0
                 break;
               fi 
             done
           
             if [[ $not_found == 1 ]]; then
+              echo "Adding $repo_package to not found"
               not_found_packages+=("$repo_package")
             fi
           done                  
