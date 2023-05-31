@@ -32,13 +32,18 @@ jobs:
           echo "feedstock_count=$(yq '(.feedstocks | keys | length)' manifest.yaml)" >> $GITHUB_OUTPUT
 
       - name: Sync forks
-        run: |          
+        run: |
+          # Limit to 10 at a time to avoid going over rate limit
+          COUNTER=0
           for feedstock in ${FEEDSTOCKS//,/ }; do
-            parent=$(gh repo view anaconda-community/$feedstock --json parent | yq '.parent')
-            if [[ $parent != "null" ]]; then
-              gh repo sync anaconda-community/$feedstock
+            (( COUNTER++ ))
+            if [[ "$COUNTER" -gt 10 ]]; then
+              wait
+              COUNTER=1
             fi
+            gh repo sync anaconda-community/$feedstock &
           done
+          wait
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           FEEDSTOCKS: ${{ steps.feedstocks.outputs.feedstocks }}
@@ -52,10 +57,17 @@ jobs:
           git checkout -b $branch
           
           for feedstock in ${FEEDSTOCKS//,/ }; do
-            hash=$(git ls-remote https://github.com/anaconda-community/${feedstock}.git | head -n1 | awk '{print $1;}')            
-            abs aggregate add --branch main --commit ${hash} ${feedstock}
+            git ls-remote https://github.com/anaconda-community/${feedstock}.git --tags HEAD | echo "$(awk '{print $1;}') ${feedstock}" >> hashes &            
           done
           
+          wait
+          
+          while IFS=' ' read -r f1 f2
+          do
+            cmd=".feedstocks[\"$f2\"].commit = \"$f1\""
+            yq -yi "$cmd" manifest.yaml
+          done <"hashes"
+                    
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
           git commit -m "update feedstocks" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT
