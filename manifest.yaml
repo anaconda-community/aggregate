@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 074a12dfcb030d4c78b9823202df6d1e4abbce74
+    commit: 1975058ad5d112c34d946e18ff98e378d9d17923
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -1483,7 +1483,7 @@ feedstocks:
     commit: 77a06efbb5f1e707bee7f5c5eeecd2330532e6cc
   scikit-build-feedstock:
     branch: main
-    commit: f3838cf1b30736da89f1982756285b125108d916
+    commit: fa28862706509bf22c18cd529cafadd0b242fe32
   scikit-image-feedstock:
     branch: main
     commit: 4ecab237e05c3d0b70894f82a7d8b074ce842863
