@@ -118,7 +118,7 @@ feedstocks:
     commit: 3a79fe19eb77828fc7a6f768a5fe31be5d06ace6
   awscli-feedstock:
     branch: main
-    commit: ad2d72241434afb332ad9a16a2912661ea2f15d6
+    commit: 4eef7144bc796d99402bad457cbf9f312f01935b
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 9d02b4da820993b39c7f41f7eb34150e99cbab6e
+    commit: be3f5e8a85e2cd2726f087944273a6d5cae7dbc7
   botocore-feedstock:
     branch: main
-    commit: c5692794268450ec34e24e082f5a8e828846db90
+    commit: 2f7db6c59113fe5a7a6ab4ab621f214f4091b39c
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: e74ef4f9865bbe4e336086e9ccd77a22c335e863
+    commit: 074a12dfcb030d4c78b9823202df6d1e4abbce74
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -838,7 +838,7 @@ feedstocks:
     commit: 23d66469515e2ede1f6a50f184588a1c83650a89
   libhwloc-feedstock:
     branch: main
-    commit: a6929015547e15b141365b1a3028ce78222f4948
+    commit: e76bd8d67e1f0c04bd9c60a30752eb85ef482c14
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -1456,7 +1456,7 @@ feedstocks:
     commit: 83cb7a8caca2c51ae0c09fc0f2f8541532dfba5d
   rich-feedstock:
     branch: main
-    commit: c813d42141c58aad135c7e48fcf6c0596cfeab57
+    commit: 5f5c1dd2eb155538dc7b0e30713fcb2ccdbf3b0d
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
@@ -1717,7 +1717,7 @@ feedstocks:
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
   ucx-split-feedstock:
     branch: main
-    commit: b37144323ba77038f5bf114ddb38e789fd22c7d4
+    commit: 78e8d08b1391a6a29d05eb22bf8a30d1878954f2
   umap-learn-feedstock:
     branch: main
     commit: 8a7b7634cb4f72a7966ba454119944de420b7479
