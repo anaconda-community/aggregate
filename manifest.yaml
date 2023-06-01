@@ -187,7 +187,7 @@ feedstocks:
     commit: 9d02b4da820993b39c7f41f7eb34150e99cbab6e
   botocore-feedstock:
     branch: main
-    commit: c5692794268450ec34e24e082f5a8e828846db90
+    commit: 2f7db6c59113fe5a7a6ab4ab621f214f4091b39c
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -838,7 +838,7 @@ feedstocks:
     commit: 23d66469515e2ede1f6a50f184588a1c83650a89
   libhwloc-feedstock:
     branch: main
-    commit: a6929015547e15b141365b1a3028ce78222f4948
+    commit: e76bd8d67e1f0c04bd9c60a30752eb85ef482c14
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -1456,7 +1456,7 @@ feedstocks:
     commit: 83cb7a8caca2c51ae0c09fc0f2f8541532dfba5d
   rich-feedstock:
     branch: main
-    commit: c813d42141c58aad135c7e48fcf6c0596cfeab57
+    commit: 5f5c1dd2eb155538dc7b0e30713fcb2ccdbf3b0d
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
@@ -1717,7 +1717,7 @@ feedstocks:
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
   ucx-split-feedstock:
     branch: main
-    commit: b37144323ba77038f5bf114ddb38e789fd22c7d4
+    commit: 78e8d08b1391a6a29d05eb22bf8a30d1878954f2
   umap-learn-feedstock:
     branch: main
     commit: 8a7b7634cb4f72a7966ba454119944de420b7479
