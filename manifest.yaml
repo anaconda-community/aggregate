@@ -506,6 +506,9 @@ feedstocks:
   git-feedstock:
     branch: main
     commit: befda89c19aca6bc3c097a67e6a7cb8e9ed8bafb
+  git-lfs-feedstock:
+    branch: main
+    commit: 30c010cdef47589fb278ced8da7a73688b8bbf2a
   gitdb-feedstock:
     branch: main
     commit: 14ed9f06d53b29fd49f88ab6a78c998b2a907f21
