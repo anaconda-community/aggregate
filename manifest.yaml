@@ -899,6 +899,9 @@ feedstocks:
   libwebp-base-feedstock:
     branch: main
     commit: 90eddca6364c932a763247491dc42c23f61da731
+  libwebp-feedstock:
+    branch: main
+    commit: 9010278b1a9bf26a2b4e65d47a6ff902f5088e42
   libxcb-feedstock:
     branch: main
     commit: 2ee845e795260839f3b44afefae0ca4ef5850523
