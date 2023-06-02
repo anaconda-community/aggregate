@@ -124,7 +124,7 @@ feedstocks:
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
   azure-core-feedstock:
     branch: main
-    commit: d39b7ef1397416eb9f31206e8db6cef6b3b72c9c
+    commit: daf1c16b436a66109c40e78e736cf876a7745140
   azure-storage-blob-feedstock:
     branch: main
     commit: a2d2b83529bd395182470ad9fcc67eb8e11ae004
@@ -187,7 +187,7 @@ feedstocks:
     commit: be3f5e8a85e2cd2726f087944273a6d5cae7dbc7
   botocore-feedstock:
     branch: main
-    commit: 2f7db6c59113fe5a7a6ab4ab621f214f4091b39c
+    commit: 958108be476e3f808fa614563c702bdb6d86cf15
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -214,7 +214,7 @@ feedstocks:
     commit: 1ba128e126f79ff61bfd0792ccfaa1f70e0a98b4
   cachecontrol-feedstock:
     branch: main
-    commit: abebecd75ba635668f821c4955138ab7cdb20822
+    commit: 0eec3e6561728aba1b086b124522b0a7d989255b
   cached-property-feedstock:
     branch: main
     commit: 09fdbe25a8ba49c670c6eea12c3444baf46e1ef1
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 1975058ad5d112c34d946e18ff98e378d9d17923
+    commit: 75490bc4fd5ee8aaac17c750ea4a7a7d4213f70c
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -322,7 +322,7 @@ feedstocks:
     commit: 0a43467fca2aa9374e85b19744628a8c5e0694d9
   cryptography-feedstock:
     branch: main
-    commit: 72035301bbff394a1fa0ebe2e6e35b2ef5f76f0e
+    commit: 0154f357fef7dc74b3524b644a1375576b8820cc
   ctng-compilers-feedstock:
     branch: main
     commit: 8118bec940e44fe5e58eddc45a2650fbdf4609e2
@@ -334,7 +334,7 @@ feedstocks:
     commit: 3ce1bae701079226f982b173667edc5d0a64c01f
   cudnn-feedstock:
     branch: main
-    commit: acb329186b934fcf832de24c2a6445a304cc2c8c
+    commit: 7779d9726927b6e45e44431ea847921d67542f29
   curl-feedstock:
     branch: main
     commit: 936625bbd1b236735e40060d972cdd1bc4914e20
@@ -358,7 +358,7 @@ feedstocks:
     commit: 531ddf94761ec9990d1a8cc2c1e0481919f9ac99
   databricks-cli-feedstock:
     branch: main
-    commit: 7497d9b49fdb970f477b36c68acbe0dd72f66cc5
+    commit: b4dc1bb83d31840de61b1df35b47f9eed3e03442
   dataclasses-feedstock:
     branch: main
     commit: 51db22e756e03b9c5e4900f5bdb3022842b56c98
@@ -631,7 +631,7 @@ feedstocks:
     commit: 99c80281635020bc8eae527af9d2aca7e199ce67
   huggingface_hub-feedstock:
     branch: main
-    commit: ebf74a187d507ef386e20d7aa4b14653faff9ac3
+    commit: 02eb48ec71ccc2fec71b3da7d5d1e861b8b57ce5
   idna-feedstock:
     branch: main
     commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
