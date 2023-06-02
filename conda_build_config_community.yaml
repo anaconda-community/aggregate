@@ -1,6 +1,8 @@
-channel_targets:
-channel_sources:
-libblas:
-libcblas:
-liblapack:
-liblapacke:
+channel_targets: {}
+channel_sources: {}
+libblas: {}
+libcblas: {}
+liblapack: {}
+liblapacke: {}
+docker_image: # [os.environ.get("BUILD_PLATFORM", "").startswith("linux-")]
+  - public.ecr.aws/y0o4y9o3/anaconda-pkg-build:latest
