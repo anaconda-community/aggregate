@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: f455c64aaf39b3faa4938694aeb29129b2959dcc
+    commit: 79226e4ae57ae2a35db788e003a0e00cc1832c2d
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -631,7 +631,7 @@ feedstocks:
     commit: 99c80281635020bc8eae527af9d2aca7e199ce67
   huggingface_hub-feedstock:
     branch: main
-    commit: 02eb48ec71ccc2fec71b3da7d5d1e861b8b57ce5
+    commit: 42288d3d8159e8c7e7db12051137896cfbb3deaf
   idna-feedstock:
     branch: main
     commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
@@ -670,7 +670,7 @@ feedstocks:
     commit: 1b0c4f5c11c094eedb52e836dfc1aab8292a3cfb
   ipython-feedstock:
     branch: main
-    commit: b596839f9b133a91f4ad788e82a483c11f0018ef
+    commit: 55f53817eb6360ce6a588ae9d4d8a3653d069857
   ipython_genutils-feedstock:
     branch: main
     commit: b732152d595428e8fd11927051c1bb8bccfc03c1
@@ -805,7 +805,7 @@ feedstocks:
     commit: a9c0821f3cd353daac0261dba569f03df75b4cbf
   libavif-feedstock:
     branch: main
-    commit: d89e70524d10e66c82273df27522cb6e712be0aa
+    commit: 72f12168ae122ce8043d6070448d3f89b764cc73
   libcap-feedstock:
     branch: main
     commit: de0854df426ae4bcac42e08a7f8465960efeb8d0
@@ -829,7 +829,7 @@ feedstocks:
     commit: 144ae3f39856f87c24efdb36746f55a943e5d4a4
   libevent-feedstock:
     branch: main
-    commit: 50871498708ed94dccf8b468dbb41cc3d18a7233
+    commit: e02113227c889afa8f9bddde740fbf3ef12b0383
   libflac-feedstock:
     branch: main
     commit: a42e0bc0ce38647363dc965fe5f194ce9919df6c
@@ -1498,7 +1498,7 @@ feedstocks:
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
   scipy-feedstock:
     branch: main
-    commit: 7b43d92b97f016f7c1e6f785bc9823dbf406760b
+    commit: ba61c642bdf1903bebbda9876a36ec422f0de140
   scramp-feedstock:
     branch: main
     commit: 0594ed0d7fb0ac6f02045f417a810f611c3a8b48
@@ -1669,10 +1669,10 @@ feedstocks:
     commit: e25e21af4e5e21666fb53add0994fa4631e720ce
   torchtext-feedstock:
     branch: main
-    commit: 98e890bda92dcffec72dcf8bd90dde2c4f7bc2e4
+    commit: 0ede8748c3ecd52204b1cf39fad99f26e197cf3e
   torchvision-feedstock:
     branch: main
-    commit: 60a3e724c5de55e5cb03d7643a9f9e3f409898cc
+    commit: e7c8f94d1392786892245378d7872f56cd383b7c
   tornado-feedstock:
     branch: main
     commit: 2ac434e6c4dd92cef6b4accd38fba2905fc163fb
@@ -1702,7 +1702,7 @@ feedstocks:
     commit: ab352adedc793b165cbb276a7bfc00fffc22fb13
   typing_extensions-feedstock:
     branch: main
-    commit: c4ab14d5ce94af8b204bdd2c7f652e92f17945fa
+    commit: 23c9abc313967779d4861e7011fb8c638288ec02
   typing_utils-feedstock:
     branch: main
     commit: f5dc7b58afb8ad613d5762cc03538e35214c30d9
@@ -1900,7 +1900,7 @@ feedstocks:
     commit: dfc163bc424c5bc100f815c71173e782dd24473f
   yarn-feedstock:
     branch: main
-    commit: d25d675ea2767f365b16debedd7636ae90dd570c
+    commit: eea23f0c3cde42d0e9ed56f6f9f86ed1ec204662
   yasm-feedstock:
     branch: main
     commit: 67fd3d4c038e85d1b56ca5378823f05e38c4eb6c
