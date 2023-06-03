@@ -97,7 +97,7 @@ feedstocks:
     commit: 132560dff9a271972709b561ad3de5531d343acf
   aws-c-io-feedstock:
     branch: main
-    commit: bcc40458e024d0c3e8b51ffdb9c3ec93c4d66ab6
+    commit: 546496dd970fbcdc5acca2c02d9368edae1a5d8b
   aws-c-mqtt-feedstock:
     branch: main
     commit: f348998b8a5b14a515bfb9da919504eb13aed010
@@ -118,7 +118,7 @@ feedstocks:
     commit: 3a79fe19eb77828fc7a6f768a5fe31be5d06ace6
   awscli-feedstock:
     branch: main
-    commit: 4085e82fece83137cc579e1fd9647a05766cbc35
+    commit: 9c6a365eddfcd531554c2cbb610a39396cbaadd8
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 7f773595ae3b3212e36562c6eee07ee71de11c0e
+    commit: 5350888e8bf698a9fff4af95bb48adcf008843bc
   botocore-feedstock:
     branch: main
-    commit: 958108be476e3f808fa614563c702bdb6d86cf15
+    commit: 47cfd2d810da7d6cc4d5e11214b5d52c1fbc2b48
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -253,7 +253,7 @@ feedstocks:
     commit: 70e8cc88c74a366e9642c39ff21a32c04b76e1f4
   clangdev-feedstock:
     branch: main
-    commit: d2e99d434ac4192ad14aa5cf7e8e062da038c071
+    commit: de7616f5c9d517a1c026da73196ac083f7391531
   cleo-feedstock:
     branch: main
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 79226e4ae57ae2a35db788e003a0e00cc1832c2d
+    commit: d9a4221b7415ad3ea21125ae69a628e9ae0e0947
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -325,7 +325,7 @@ feedstocks:
     commit: 0154f357fef7dc74b3524b644a1375576b8820cc
   ctng-compilers-feedstock:
     branch: main
-    commit: 8118bec940e44fe5e58eddc45a2650fbdf4609e2
+    commit: 923b25fa711bd71cc7c43299e032bd87579dbce9
   cuda-nvrtc-feedstock:
     branch: main
     commit: baea183c65beac3e32e68fa2499c5fcc6a736a63
@@ -505,7 +505,7 @@ feedstocks:
     commit: e6cef7d12c9c824869353a7773c51c40494b49bb
   git-feedstock:
     branch: main
-    commit: befda89c19aca6bc3c097a67e6a7cb8e9ed8bafb
+    commit: ec5c1f762136d79f0909d996dc60fc565d6589f8
   git-lfs-feedstock:
     branch: main
     commit: 30c010cdef47589fb278ced8da7a73688b8bbf2a
@@ -919,10 +919,10 @@ feedstocks:
     commit: 6b2306dea0e904367f32dcd37a72f5d0cbfdd92b
   lld-feedstock:
     branch: main
-    commit: 10a981f59e12b9e353cd4df9fb2c535cb5921213
+    commit: 0adef32df75c6d3361f2684ffcd4b9fc0262e1f4
   llvmdev-feedstock:
     branch: main
-    commit: 1803166fdf0a35cf83b72a403739919beca2a403
+    commit: 42724be98433dedde04299adc6ae56dc754cf1b5
   llvmlite-feedstock:
     branch: main
     commit: d55145a03314c586fbabe698d7d6b6a8f0e8a4be
@@ -958,7 +958,7 @@ feedstocks:
     commit: 41c63616e30d6c535c757bd878e1bf90ee461cc7
   markupsafe-feedstock:
     branch: main
-    commit: e4ad072f63fcc0e01d04898ec466edaa431b7269
+    commit: 357f55cafe37bee7ed20622bc9be264d7af85005
   matplotlib-feedstock:
     branch: main
     commit: a71b069344e21c63c2c4de27041881c128395de3
@@ -1081,7 +1081,7 @@ feedstocks:
     commit: 80dfc79325d1d7125bfa22fe49def301b0238933
   openmp-feedstock:
     branch: main
-    commit: 96c351aa6493a5a834d5c0f1379af86145444975
+    commit: d502c95022bbdfbe0ec73121c86064e50db59897
   openpyxl-feedstock:
     branch: main
     commit: 46dc3bbb5654e3a0c25426d4c5b1ea6afb01bc0d
@@ -1330,7 +1330,7 @@ feedstocks:
     commit: 4166637348b4c77fe72c9949af4d902c3519684b
   pyqt-builder-feedstock:
     branch: main
-    commit: 35cf551e429f6a01e315984f6ac457e3ad5dadfc
+    commit: e341884623aec5668b94182d45c903f2885f8c6b
   pyqt-feedstock:
     branch: main
     commit: 3e8b3aab5e6f8fdbacdf3e6e4b7cdf87874e1769
@@ -1414,7 +1414,7 @@ feedstocks:
     commit: 3de5ee7a282d0c8769dab4c652f124872926d831
   rapidfuzz-feedstock:
     branch: main
-    commit: a17b0a3acb616062285e07f7ec65cd592d3771c1
+    commit: 94f422400f8f7724ea12af2846fcaf393004102a
   rapidjson-feedstock:
     branch: main
     commit: f817ee26dbd3e7c670abe62b8dd756549e2c6eef
@@ -1477,7 +1477,7 @@ feedstocks:
     commit: ada08b152f27db3033b1725a74403658f30299ac
   s2n-feedstock:
     branch: main
-    commit: 0063b9fdf51f27b3b9e0a3f90738cde4b2b046a5
+    commit: 8ee3dbafd796c706f0009f3054a2aab04632415b
   s3fs-feedstock:
     branch: main
     commit: c5a50c505cacba3452f53b0b58ba013a59fecaf8
