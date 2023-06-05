@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: a6e7f1373dd44b3ca3ab64bba88c3ac937d33039
+    commit: 00eb52cfa9b4be5c95fe08504823c7c69ef17bb5
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -619,7 +619,7 @@ feedstocks:
     commit: 03bfeff781e99147fcf7010799ace788d3fedd31
   holidays-feedstock:
     branch: main
-    commit: 05f203d9850bcd62903274929e1ca9781853e778
+    commit: 9a76ea0c67fd65015332847e3b396f5d23c3ffcf
   html5lib-feedstock:
     branch: main
     commit: 775c9082c54546e2b783f93c01343d6b505e26b4
@@ -1108,7 +1108,7 @@ feedstocks:
     commit: 66b18b2d30de6095635450422a2ca99aa30c6e5c
   pandas-stubs-feedstock:
     branch: main
-    commit: ccef613ac1442168d4813be68302d2c8867b1f6d
+    commit: b799683ffb9bd8fa52a3915384f6d0c30a2c50ff
   paramiko-feedstock:
     branch: main
     commit: 46560023f2d8997a387073ebd5893fb28ac11762
@@ -1606,7 +1606,7 @@ feedstocks:
     commit: 248eb936da8966436adf77a1d6ac423da8ede31a
   streamlit-feedstock:
     branch: main
-    commit: db53350fa4c33ba8947d5f1cfa40e0813da6b72d
+    commit: a2afdf26224cd65023249662086ad048013cf0dc
   systemd-feedstock:
     branch: main
     commit: b2b60165a029b6397b8409d523772d723f38a056
@@ -1645,7 +1645,7 @@ feedstocks:
     commit: bf079d8fc6532c6295813966ec6efab02024146d
   thrift-cpp-feedstock:
     branch: main
-    commit: 19c8040f15d930fe94dcea1438cd254467ab6580
+    commit: 7b04edce0c78cbbdbeb404146f9b92134696249a
   tifffile-feedstock:
     branch: main
     commit: dcfb720fd102753f9dbb7666c346af17e7f04de3
