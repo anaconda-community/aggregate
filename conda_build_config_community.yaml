@@ -4,5 +4,6 @@ libblas: {}
 libcblas: {}
 liblapack: {}
 liblapacke: {}
+_libgcc_mutex: {}
 docker_image: # [os.environ.get("BUILD_PLATFORM", "").startswith("linux-")]
   - public.ecr.aws/y0o4y9o3/anaconda-pkg-build:latest
