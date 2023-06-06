@@ -48,11 +48,6 @@ cudnn:
   - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
   - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
   - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-
-#
-# Go Compiler Options
-#
-
 # The basic go-compiler with CGO disabled,
 # It generates fat binaries without libc dependencies
 # The activation scripts will set your CC,CXX and related flags
