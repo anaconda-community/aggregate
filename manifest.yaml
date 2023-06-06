@@ -79,7 +79,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: a463604c8c95e76d0a022ee13d1c271f2f48a71f
+    commit: 47b1863409b9dac7a8453e28d823cbdd2b21e747
   aws-c-cal-feedstock:
     branch: main
     commit: 1236f75d7b3f9711c14c533d33131bbf31cc4fcd
@@ -100,10 +100,10 @@ feedstocks:
     commit: 6eaeaad38f59a1aa14faa591af1011f699e199b5
   aws-c-mqtt-feedstock:
     branch: main
-    commit: f348998b8a5b14a515bfb9da919504eb13aed010
+    commit: fc3a6ffd155024e1badfce820296ea05c6110708
   aws-c-s3-feedstock:
     branch: main
-    commit: 999c645a7fe1e52336bc3b4c543acf5a81bd9f6f
+    commit: 21b93d6b80c20aaaec66b7d182d84b4e68fe4a85
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 7487cc36cd90021c8bd51799f4b80a70ff847675
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 7271834c352692967879540cae1877f8dc2b4eb3
+    commit: a8b77600a37e0f8e0c3e381c65bdfc447d37adbb
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -496,7 +496,7 @@ feedstocks:
     commit: 862b5a9877e7cbce82d6a48b0a65290d40a584fb
   geopandas-feedstock:
     branch: main
-    commit: fbbcb0d52f9a172af97227a0df6e0163d3f61537
+    commit: 8b985635a8538af1ee213900bd563085e3cdbd92
   gettext-feedstock:
     branch: main
     commit: 34eda0495a7eeb98f1644199382664dffb2e8e30
@@ -1522,7 +1522,7 @@ feedstocks:
     commit: a9c399956b9ea6a407d93ce04989fb14b26cf915
   sentencepiece-feedstock:
     branch: main
-    commit: 84d3cebaf12d2d1df41571144decc750dc07eb82
+    commit: af37334c1c8bf9efab0642313f1ddad23e232dd0
   sentry-sdk-feedstock:
     branch: main
     commit: ba75c36d910421ac9a935321cafe5f6ae905d528
