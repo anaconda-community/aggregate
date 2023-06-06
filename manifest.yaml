@@ -91,13 +91,13 @@ feedstocks:
     commit: 1b205f9331a67347751d71c2fcff6210eb1ad581
   aws-c-event-stream-feedstock:
     branch: main
-    commit: 7c4be64e3e34c67671f57f376aadbb8dfe47dc2c
+    commit: 7d3314e8f4fa58d67fe75f147e941883fc8e9300
   aws-c-http-feedstock:
     branch: main
-    commit: 132560dff9a271972709b561ad3de5531d343acf
+    commit: 268a833e2515b505843c40c7d301f4afffd45d64
   aws-c-io-feedstock:
     branch: main
-    commit: 546496dd970fbcdc5acca2c02d9368edae1a5d8b
+    commit: 6eaeaad38f59a1aa14faa591af1011f699e199b5
   aws-c-mqtt-feedstock:
     branch: main
     commit: f348998b8a5b14a515bfb9da919504eb13aed010
@@ -109,7 +109,7 @@ feedstocks:
     commit: 7487cc36cd90021c8bd51799f4b80a70ff847675
   aws-checksums-feedstock:
     branch: main
-    commit: 45a5bc8ca3924c7c3202b89171f4a01819aec447
+    commit: e2af8568d6c77aa2a268cce03e497eefcb2863b4
   aws-crt-cpp-feedstock:
     branch: main
     commit: 5d20bf058c18e7a9fb9bd2afcb05be2fa1c09909
@@ -118,7 +118,7 @@ feedstocks:
     commit: 3a79fe19eb77828fc7a6f768a5fe31be5d06ace6
   awscli-feedstock:
     branch: main
-    commit: 9c6a365eddfcd531554c2cbb610a39396cbaadd8
+    commit: d2184770dbc996f2c2316de71fc52eb30bc59c15
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 5350888e8bf698a9fff4af95bb48adcf008843bc
+    commit: de22f5b34dd7bc116e4982b0b74dffb2486cd30d
   botocore-feedstock:
     branch: main
-    commit: 47cfd2d810da7d6cc4d5e11214b5d52c1fbc2b48
+    commit: a1667b8ffd898dec2710e98ee9cf883a9f248a1a
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 00eb52cfa9b4be5c95fe08504823c7c69ef17bb5
+    commit: 7271834c352692967879540cae1877f8dc2b4eb3
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -496,7 +496,7 @@ feedstocks:
     commit: 862b5a9877e7cbce82d6a48b0a65290d40a584fb
   geopandas-feedstock:
     branch: main
-    commit: 699ffce000af1483fd3ecf4a488fdcd5c6bf69ce
+    commit: fbbcb0d52f9a172af97227a0df6e0163d3f61537
   gettext-feedstock:
     branch: main
     commit: 34eda0495a7eeb98f1644199382664dffb2e8e30
