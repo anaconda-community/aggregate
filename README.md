@@ -82,8 +82,11 @@ Because this is an additional file and not a modification of an existing file we
 ## Pinnings
 We maintain a list of pinned packages in `conda_build_config.yaml` that we sync from AnacondaRecipes and conda-forge/conda-forge-pinning-feedstock.
 Feedstocks for packages in AnacondaRecipes conda_build_config should not be included in community repo.
-To support additional pinnings for community repo we have a file `conda_build_config_community.yaml` that will be merged with `conda_build_config.yaml` when the `sync-pinnings` workflow is run
+To support additional pinnings for community repo we have a file `conda_build_config_community.yaml` that will be merged with `conda_build_config.yaml` when the [sync-pinnings](#sync-pinnings) workflow is run
 
+
+In order to remove a pinning from either AnacondaRecipes or conda-forge pinnings add the key with an empty map to `conda_build_config_community.yaml` and the github action will remove it from the final file.
+Example: `key: {}`
 
 ## Tools
 Tools to be used in github workflows. See [tools/README.md](tools/README.md)
