@@ -14,8 +14,9 @@ For input use a conda-forge feedstock. Separate multiple feedstocks by comma.
 Example: `7za-feedstock,7zip-feedstock`
 
 For all the feedstocks in the list, the tool `crawl_deptree.py` will be used to find dependencies.
-The resulting list of feedstocks and their dependencies will be forked from conda-forge and added to manifest.yaml.
-A PR will be opened that will contain the changes to `manifest.yaml`.
+The resulting list of feedstocks and their dependencies will be forked from conda-forge and added to `manifest.yaml`.
+If the feedstock has already been forked it will not attempt to fork again. If the feedstock is already in `manifest.yaml` then the file won't be modified.
+A PR will be opened that will contain any changes made to `manifest.yaml`.
 
 #### Remove repo
 To remove a repo go to the 'Actions' tab in GitHub and select 'Remove repo' action.
@@ -37,11 +38,12 @@ If the PR is being merged then the build will run against "main" branch, otherwi
 *There is also a "Manual build feedstock" workflow that takes a list of feedstocks to build as input to run builds manually.
 
 #### Update repo
-On a schedule defined in update-repo.yml all forks will be synced with upstream and a PR will be created with any changes to manifest.yaml
+On a schedule defined in update-repo.yml all forks will be synced with upstream and a PR will be created with any changes to `manifest.yaml`
+Because update repo action should only make hash updates we use yq instead of abs-cli to modify `manifest.yaml` for performance reasons.
 
 #### Sync Pinnings
 Pinnings are updated via the "Sync pinnings" workflow that runs on a schedule. This will merge the pinnings from community repo, anacondarecipes, and conda-forge.
-If an entry exists in conda_build_config_community it will be given preference. Next is AnacondaRecipes, and last is conda-forge.
+If an entry exists in `conda_build_config_community.yaml` it will be given preference. Next is AnacondaRecipes, and last is conda-forge.
 
 #### Integration test
 Integration test is run via the "Integration Test" workflow that runs on a schedule.
