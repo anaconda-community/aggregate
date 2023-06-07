@@ -112,7 +112,7 @@ feedstocks:
     commit: e2af8568d6c77aa2a268cce03e497eefcb2863b4
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 5d20bf058c18e7a9fb9bd2afcb05be2fa1c09909
+    commit: 8fd7acf7b058ee239ef3fad24f8b770f30c8db4d
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 3a79fe19eb77828fc7a6f768a5fe31be5d06ace6
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: de22f5b34dd7bc116e4982b0b74dffb2486cd30d
+    commit: a49c743b9a53d66cbdb0abbeb530539ea6d0a67f
   botocore-feedstock:
     branch: main
-    commit: a1667b8ffd898dec2710e98ee9cf883a9f248a1a
+    commit: 92a79c190153d0b66b3fd12c48730542af5f2ff6
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: a8b77600a37e0f8e0c3e381c65bdfc447d37adbb
+    commit: e8bb0ef18222b3fa132e90b977056f07d66fc991
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -979,7 +979,7 @@ feedstocks:
     commit: 9d735c3ef5293c0ec3ec7a7b26c51b0b03ed3d6a
   mlflow-feedstock:
     branch: main
-    commit: e0f47211a636b69d9ad66337f0323785ad11db9a
+    commit: e19651a1c0afb89002268f914a412387d8b6c1ab
   mlxtend-feedstock:
     branch: main
     commit: 2e3d657e2b01f143d07c214d7f3fab6b32de891f
@@ -1033,7 +1033,7 @@ feedstocks:
     commit: f052b03baeda70dffd1dd357b770a2a12f40765e
   ncurses-feedstock:
     branch: main
-    commit: f81ce58248f64af815ab9f758a96832f244dc8cb
+    commit: 456de0478ea4ef42d63eea3ec72adc24dfce01d6
   nest-asyncio-feedstock:
     branch: main
     commit: 8ee833b9558f35a97387bf2a4ef4cdeb107cb8c7
@@ -1414,7 +1414,7 @@ feedstocks:
     commit: 3de5ee7a282d0c8769dab4c652f124872926d831
   rapidfuzz-feedstock:
     branch: main
-    commit: 94f422400f8f7724ea12af2846fcaf393004102a
+    commit: be9be818827ca3389d4df72baf3a142490d997fc
   rapidjson-feedstock:
     branch: main
     commit: f817ee26dbd3e7c670abe62b8dd756549e2c6eef
@@ -1765,7 +1765,7 @@ feedstocks:
     commit: 9718eb91feff997ee6c06f27f48a9953057e79cb
   wandb-feedstock:
     branch: main
-    commit: bd8781ce98ef76e8536b18ab267e46066ba1c163
+    commit: d64401adb4d154e961f2275111bea7bc6e8353b7
   wasabi-feedstock:
     branch: main
     commit: 3cae1aee5976899d299d2972cc4cccd9dc4a2bf0
