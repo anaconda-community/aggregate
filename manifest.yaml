@@ -112,7 +112,7 @@ feedstocks:
     commit: e2af8568d6c77aa2a268cce03e497eefcb2863b4
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 5d20bf058c18e7a9fb9bd2afcb05be2fa1c09909
+    commit: 8fd7acf7b058ee239ef3fad24f8b770f30c8db4d
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 3a79fe19eb77828fc7a6f768a5fe31be5d06ace6
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: de22f5b34dd7bc116e4982b0b74dffb2486cd30d
+    commit: a49c743b9a53d66cbdb0abbeb530539ea6d0a67f
   botocore-feedstock:
     branch: main
-    commit: a1667b8ffd898dec2710e98ee9cf883a9f248a1a
+    commit: 92a79c190153d0b66b3fd12c48730542af5f2ff6
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: a8b77600a37e0f8e0c3e381c65bdfc447d37adbb
+    commit: 8aef898ae902ed5474cc34ed6fdc97a84e69e43b
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
