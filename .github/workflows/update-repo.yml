@@ -49,7 +49,7 @@ jobs:
           FEEDSTOCKS: ${{ steps.feedstocks.outputs.feedstocks }}
 
       - name: Update manifest
-        id: manifest
+        id: update_manifest
         run: |
           branch=$(date +updatefeedstocks%Y%m%d%H%M%S)
           git config user.name "GitHub Actions Bot"
@@ -74,8 +74,49 @@ jobs:
         env:
           FEEDSTOCKS: ${{ steps.feedstocks.outputs.feedstocks }}
 
+      - name: Add new dependencies
+        id: new_deps
+        run: |
+          # Get updated feedstocks
+          feedstocks+=($(git diff HEAD^..HEAD --diff-filter=M | grep -B 2 "\-\s*commit:" | grep ".*feedstock:" | grep -v "^\-.*feedstock:" | sed -r 's#^[[:blank:]]+(.*-feedstock):$#\1#'))
+          printf -v joined '%s,' "${feedstocks[@]}"
+          python tools/crawl_deptree.py -f $joined > output.log
+          deps=$(tail -n 1 output.log)
+          # Check gh is authenticated
+          gh auth status >/dev/null || exit 1
+          addlist=""
+          for NEW_FEEDSTOCK in ${deps//,/ }; do
+            echo "Checking if anaconda-community/${NEW_FEEDSTOCK} already exists"
+            # Check if the repo has already been forked
+            gh repo view anaconda-community/${NEW_FEEDSTOCK} > /dev/null && echo "anaconda-community/${NEW_FEEDSTOCK} already exists" || addlist+="${NEW_FEEDSTOCK},"
+          done
+          for repo in ${addlist//,/ }; do
+            gh repo fork https://github.com/conda-forge/$repo --org anaconda-community --clone=false --default-branch-only
+          done
+          echo "feedstocks=$addlist" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Update manifest
+        id: add_manifest
+        run: |
+          for repo in ${REPO_LIST//,/ }; do
+            until git ls-remote https://github.com/anaconda-community/${repo}.git &> /dev/null
+            do
+              echo "Waiting on repo..."
+              sleep 1
+            done
+            hash=$(git ls-remote https://github.com/anaconda-community/${repo}.git | head -n1 | awk '{print $1;}')
+            abs aggregate add --branch main --commit ${hash} ${repo}
+          done
+          yq --yaml-output --in-place . manifest.yaml
+          git add manifest.yaml
+          git commit -m "add dependencies" && git push && echo "createpr=true" >> $GITHUB_OUTPUT || echo "createpr=false" >> $GITHUB_OUTPUT
+        env:
+          REPO_LIST: ${{ steps.new_deps.outputs.feedstocks  }}
+
       - name: Open PR
-        if: ${{ steps.manifest.outputs.createpr == 'true' }}
+        if: ${{ steps.add_manifest.outputs.createpr == 'true' || steps.update_manifest.outputs.createpr == 'true' }}
         run: gh pr create --fill
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
