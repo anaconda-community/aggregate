@@ -5,7 +5,6 @@ All the code in this repository is executed via GitHub Actions.
 
 ## Actions
 
-
 ### Manual actions
 #### Add repo
 To add a new repo go to the 'Actions' tab in GitHub and select 'Add repo' action.
@@ -16,7 +15,7 @@ Example: `7za-feedstock,7zip-feedstock`
 For all the feedstocks in the list, the tool `crawl_deptree.py` will be used to find dependencies.
 The resulting list of feedstocks and their dependencies will be forked from conda-forge and added to `manifest.yaml`.
 If the feedstock has already been forked it will not attempt to fork again. If the feedstock is already in `manifest.yaml` then the file won't be modified.
-A PR will be opened that will contain any changes made to `manifest.yaml`.
+A **Pull Request** will be opened that will contain any changes made to `manifest.yaml`.
 
 #### Remove repo
 To remove a repo go to the 'Actions' tab in GitHub and select 'Remove repo' action.
@@ -25,25 +24,25 @@ For input use the repo name.
 Example: `7za-feedstock`
 
 All feedstocks in the list will be removed from `manifest.yaml` and the forks will be deleted.
-A PR will be opened that will contain the changes to `manifest.yaml`.
+A **Pull Request** will be opened that will contain the changes to `manifest.yaml`.
 
 ### Automatic actions
 
 #### Build
-Whenever a PR is opened or merged where manifest.yaml has been updated the file will be parsed and additions or changes to it will
+If a **Pull Request** is opened or merged where manifest.yaml has been updated the file will be parsed and additions or changes to it will
 trigger a new build.
 The action will use the tool `crawl_deptree.py` to find dependencies of the feedstocks to be built and create a build order.
-If the PR is being merged then the build will run against "main" branch, otherwise it will be on the PR branch.
+If the PR is being merged then the build will run against "main" branch, otherwise it will be on the **Pull Request** branch.
 
 *There is also a "Manual build feedstock" workflow that takes a list of feedstocks to build as input to run builds manually.
 
 #### Update repo
-On a schedule defined in update-repo.yml all forks will be synced with upstream and a PR will be created with any changes to `manifest.yaml`
+On a schedule defined in update-repo.yml all forks will be synced with upstream and a **Pull Request** will be created with any changes to `manifest.yaml`
 Because update repo action should only make hash updates we use yq instead of abs-cli to modify `manifest.yaml` for performance reasons.
 
 #### Sync Pinnings
 Pinnings are updated via the "Sync pinnings" workflow that runs on a schedule. This will merge the pinnings from community repo, anacondarecipes, and conda-forge.
-If an entry exists in `conda_build_config_community.yaml` it will be given preference. Next is AnacondaRecipes, and last is conda-forge.
+If an entry exists in `conda_build_config_community.yaml` it will be given preference. Next is AnacondaRecipes, and last is conda-forge. A **Pull Request** will be created with the changes.
 
 #### Integration test
 Integration test is run via the "Integration Test" workflow that runs on a schedule.
@@ -57,22 +56,37 @@ This action will download the repodata and sboms/index files from anaconda.cloud
 
 ## Non-standard or notable feedstocks
 
-Unless noted below, all feedstocks should be a strict fork from conda-forge without modification.
+Unless noted below, all feedstocks should be a strict fork from [conda-forge](https://github.com/conda-forge) without modification.
 
 ### Redis-feedstock
+[redis-feedstock](https://github.com/anaconda-community/redis-feedstock)
+
 This feedstock in conda-forge is a public archive which means we were not able to fork it. We made a manual copy but it will not be updated by any automation.
 
 ### Community-meta-feedstock
+[community-meta-feedstock](https://github.com/anaconda-community/community-meta-feedstock)
+
 This is a "virtual" package. We use it for libblas, libcblas, liblapack, liblapacke to force those packages to openblas-devel
 
 ### community-integration-test-feedstock
-This is colorama feedstock renamed to be used for integration tests.
+[community-integration-test-feedstock](https://github.com/anaconda-community/community-integration-test-feedstock)
+
+This is colorama feedstock re-named to be used for [integration tests](#integration-test).
 
 ### scipy-feedstock
-This feedstock has been modified from its parent with the addition of `recipe_append.yaml` to get the build to work.
+[scipy-feedstock](https://github.com/anaconda-community/scipy-feedstock)
+
+This feedstock has been modified from its parent with the addition of `recipe_append.yaml` to get the build to work. 
+Because this is an additional file and not a modification of an existing file we don't expect any issues syncing with the upstream repo.
+
+## Pinnings
+We maintain a list of pinned packages in `conda_build_config.yaml` that we sync from AnacondaRecipes and conda-forge/conda-forge-pinning-feedstock.
+Feedstocks for packages in AnacondaRecipes conda_build_config should not be included in community repo.
+To support additional pinnings for community repo we have a file `conda_build_config_community.yaml` that will be merged with `conda_build_config.yaml` when the `sync-pinnings` workflow is run
+
 
 ## Tools
-See [tools/README.md](tools/README.md)
+Tools to be used in github workflows. See [tools/README.md](tools/README.md)
 
 ## Development
 ### Building feedstocks locally
@@ -107,8 +121,3 @@ Run update-manifest job:
 ```
 act -j update-manifest -W .github/workflows/integration-test.yml -s GITHUB_TOKEN
 ```
-
-### Pinnings
-We maintain a list of pinned packages in `conda_build_config.yaml` that we sync from AnacondaRecipes and conda-forge/conda-forge-pinning-feedstock.
-Feedstocks for packages in AnacondaRecipes conda_build_config should not be included in community repo.
-To support additional pinnings for community repo we have a file `conda_build_config_community.yaml` that will be merged with `conda_build_config.yaml` when the `sync-pinnings` workflow is run
