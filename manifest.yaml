@@ -82,19 +82,19 @@ feedstocks:
     commit: 47b1863409b9dac7a8453e28d823cbdd2b21e747
   aws-c-cal-feedstock:
     branch: main
-    commit: 1236f75d7b3f9711c14c533d33131bbf31cc4fcd
+    commit: 71a34b0c536879e69c521a54a142a53b23dd06c3
   aws-c-common-feedstock:
     branch: main
     commit: 1e9b8467473f8b952192072a5740a29b940aea22
   aws-c-compression-feedstock:
     branch: main
-    commit: 1b205f9331a67347751d71c2fcff6210eb1ad581
+    commit: 81bfe1937a23767db5a8f3ef869807973c54f102
   aws-c-event-stream-feedstock:
     branch: main
-    commit: 7d3314e8f4fa58d67fe75f147e941883fc8e9300
+    commit: 2af1385bd67f2b7169237d1377fa337633187e7e
   aws-c-http-feedstock:
     branch: main
-    commit: 268a833e2515b505843c40c7d301f4afffd45d64
+    commit: 091ccb59db64e66111bcc9ab3a396ff1a9032882
   aws-c-io-feedstock:
     branch: main
     commit: 6eaeaad38f59a1aa14faa591af1011f699e199b5
@@ -106,10 +106,10 @@ feedstocks:
     commit: 21b93d6b80c20aaaec66b7d182d84b4e68fe4a85
   aws-c-sdkutils-feedstock:
     branch: main
-    commit: 7487cc36cd90021c8bd51799f4b80a70ff847675
+    commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
   aws-checksums-feedstock:
     branch: main
-    commit: e2af8568d6c77aa2a268cce03e497eefcb2863b4
+    commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
     commit: 8fd7acf7b058ee239ef3fad24f8b770f30c8db4d
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: a49c743b9a53d66cbdb0abbeb530539ea6d0a67f
+    commit: 94c01d1be81c5f40e7eefc23041e5dfda09233d9
   botocore-feedstock:
     branch: main
-    commit: 92a79c190153d0b66b3fd12c48730542af5f2ff6
+    commit: b4812546092b6f07ab04b68ea076866b483e993e
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: c9299135148ea65abaac4ebb0c2ed2e5685fda5b
+    commit: ef3fe3d5848081aee1d61e7aaff9fe3b02a3509e
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -1843,7 +1843,7 @@ feedstocks:
     commit: 293f6665345cfe92624bcce2955adc197911d3cd
   xorg-libx11-feedstock:
     branch: main
-    commit: a5890541ee541cc4cb976fc87944a161932bcbef
+    commit: f783921144191da1e912ff7689c6d7a33fc2f99f
   xorg-libxau-feedstock:
     branch: main
     commit: fbff32f931f844fd5f2bf623671368a3749c8356
