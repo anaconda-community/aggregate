@@ -85,7 +85,7 @@ feedstocks:
     commit: 1236f75d7b3f9711c14c533d33131bbf31cc4fcd
   aws-c-common-feedstock:
     branch: main
-    commit: 48d9db68d768ded143c26779dbb5b61094e80949
+    commit: 1e9b8467473f8b952192072a5740a29b940aea22
   aws-c-compression-feedstock:
     branch: main
     commit: 1b205f9331a67347751d71c2fcff6210eb1ad581
@@ -118,7 +118,7 @@ feedstocks:
     commit: 3a79fe19eb77828fc7a6f768a5fe31be5d06ace6
   awscli-feedstock:
     branch: main
-    commit: d2184770dbc996f2c2316de71fc52eb30bc59c15
+    commit: 7239262429d749c57f9d773975856904d444f001
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 766dd0812c7f6ff87b09616eeb3e7679bb8a9041
+    commit: 491ef89a05f2f7d458d8b1b53d22eb37b963aa74
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -841,7 +841,7 @@ feedstocks:
     commit: 23d66469515e2ede1f6a50f184588a1c83650a89
   libhwloc-feedstock:
     branch: main
-    commit: e76bd8d67e1f0c04bd9c60a30752eb85ef482c14
+    commit: eef334a1136ad79da32c0d5b0f8dcad329c53bf8
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -955,7 +955,7 @@ feedstocks:
     commit: 258b25c3493842e9a4b98c9e2f9a8e918ea5eec5
   markdown-it-py-feedstock:
     branch: main
-    commit: 41c63616e30d6c535c757bd878e1bf90ee461cc7
+    commit: f1cdd1453027958de364d439dddc5d6161dd640f
   markupsafe-feedstock:
     branch: main
     commit: 357f55cafe37bee7ed20622bc9be264d7af85005
@@ -1078,7 +1078,7 @@ feedstocks:
     commit: 3e818e786e6514b3c9d6bdacdf50b8d037994793
   openai-feedstock:
     branch: main
-    commit: 80dfc79325d1d7125bfa22fe49def301b0238933
+    commit: 4695edbb686a527074fd3ac764d4baa34f4c9d6c
   openmp-feedstock:
     branch: main
     commit: d502c95022bbdfbe0ec73121c86064e50db59897
@@ -1738,7 +1738,7 @@ feedstocks:
     commit: 10a6ee21b25884a4bc3b318c4fc2cd059dac7669
   urllib3-feedstock:
     branch: main
-    commit: 3d0365132d341d08421cb6b27d009df0abbc9f3a
+    commit: a24aa8101904ea78c60beefd91966036a63acb67
   util-linux-feedstock:
     branch: main
     commit: 0166ba6f32dd888a30dab7c1c36f339da5b21698
@@ -1768,7 +1768,7 @@ feedstocks:
     commit: d64401adb4d154e961f2275111bea7bc6e8353b7
   wasabi-feedstock:
     branch: main
-    commit: 3cae1aee5976899d299d2972cc4cccd9dc4a2bf0
+    commit: 9669cebf62b8a9aa156ff4c01d89bc48a40f2f7c
   watchdog-feedstock:
     branch: main
     commit: f48a648e3cff4da4141cb6ea7d87871df9acefe6
