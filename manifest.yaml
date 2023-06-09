@@ -82,34 +82,34 @@ feedstocks:
     commit: 47b1863409b9dac7a8453e28d823cbdd2b21e747
   aws-c-cal-feedstock:
     branch: main
-    commit: 1236f75d7b3f9711c14c533d33131bbf31cc4fcd
+    commit: 71a34b0c536879e69c521a54a142a53b23dd06c3
   aws-c-common-feedstock:
     branch: main
     commit: 1e9b8467473f8b952192072a5740a29b940aea22
   aws-c-compression-feedstock:
     branch: main
-    commit: 1b205f9331a67347751d71c2fcff6210eb1ad581
+    commit: 81bfe1937a23767db5a8f3ef869807973c54f102
   aws-c-event-stream-feedstock:
     branch: main
-    commit: 7d3314e8f4fa58d67fe75f147e941883fc8e9300
+    commit: 2af1385bd67f2b7169237d1377fa337633187e7e
   aws-c-http-feedstock:
     branch: main
-    commit: 268a833e2515b505843c40c7d301f4afffd45d64
+    commit: 091ccb59db64e66111bcc9ab3a396ff1a9032882
   aws-c-io-feedstock:
     branch: main
     commit: 6eaeaad38f59a1aa14faa591af1011f699e199b5
   aws-c-mqtt-feedstock:
     branch: main
-    commit: fc3a6ffd155024e1badfce820296ea05c6110708
+    commit: c3eecbf457c7898919b3e70e8de18d9bc9c40de0
   aws-c-s3-feedstock:
     branch: main
     commit: 21b93d6b80c20aaaec66b7d182d84b4e68fe4a85
   aws-c-sdkutils-feedstock:
     branch: main
-    commit: 7487cc36cd90021c8bd51799f4b80a70ff847675
+    commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
   aws-checksums-feedstock:
     branch: main
-    commit: e2af8568d6c77aa2a268cce03e497eefcb2863b4
+    commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
     commit: 8fd7acf7b058ee239ef3fad24f8b770f30c8db4d
@@ -118,7 +118,7 @@ feedstocks:
     commit: 3a79fe19eb77828fc7a6f768a5fe31be5d06ace6
   awscli-feedstock:
     branch: main
-    commit: 7239262429d749c57f9d773975856904d444f001
+    commit: 2504ba09e98648dfdf4858d16ff4be9e502309ee
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: a49c743b9a53d66cbdb0abbeb530539ea6d0a67f
+    commit: 5db5dd9f88da986d566906cdda435db9ff8ec699
   botocore-feedstock:
     branch: main
-    commit: 92a79c190153d0b66b3fd12c48730542af5f2ff6
+    commit: f374f16ea0350e5de8cf3292480b09aa33f4568d
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: c9299135148ea65abaac4ebb0c2ed2e5685fda5b
+    commit: a6c5504bb400719cb0dfa3719b8908e22228fa57
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -745,7 +745,7 @@ feedstocks:
     commit: dbacee20c45b6caf6677d0e27604e2115aa86d96
   jupyterlab-feedstock:
     branch: main
-    commit: 2ec3240683b0845db0171bb705a444d059631126
+    commit: 44f14d9ed40920c6f94f585289c888374f959155
   jupyterlab_server-feedstock:
     branch: main
     commit: b35ad46898042081099231e414163376e17cb79c
@@ -1174,7 +1174,7 @@ feedstocks:
     commit: b22720a9e575711cb71de68651ed52e7464d67d5
   plotly-feedstock:
     branch: main
-    commit: 205598c8e17f3bbf16055054ef047e905a372a2b
+    commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
   pluggy-feedstock:
     branch: main
     commit: a49afaca22f3face3554c628a61636b6c036913e
@@ -1786,7 +1786,7 @@ feedstocks:
     commit: 116c72910d21abe85d639d49f7c5b21a34edf2b0
   werkzeug-feedstock:
     branch: main
-    commit: 17be5811b4d5c582744177ad37598de8903b9130
+    commit: 3f70b31acb4af57ae2d6c5f4e256d12c0611190f
   wheel-feedstock:
     branch: main
     commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
@@ -1843,7 +1843,7 @@ feedstocks:
     commit: 293f6665345cfe92624bcce2955adc197911d3cd
   xorg-libx11-feedstock:
     branch: main
-    commit: a5890541ee541cc4cb976fc87944a161932bcbef
+    commit: f783921144191da1e912ff7689c6d7a33fc2f99f
   xorg-libxau-feedstock:
     branch: main
     commit: fbff32f931f844fd5f2bf623671368a3749c8356
