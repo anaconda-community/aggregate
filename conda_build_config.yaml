@@ -226,7 +226,7 @@ cutensor:
 curl:
   - 8
 dav1d:
-  - 1.2.0
+  - 1.2.1
 davix:
   - '0.8'
 dbus:
@@ -626,14 +626,14 @@ ruby:
   - 2.5
   - 2.6
 r_base:
-  - 4.1
+  - 4.1 # [win]
   - 4.2 # [not win]
 scotch:
   - 6.0.9
 ptscotch:
   - 6.0.9
 s2n:
-  - 1.3.44
+  - 1.3.45
 sdl2:
   - '2'
 sdl2_image:
