@@ -37,8 +37,12 @@ If the PR is being merged then the build will run against "main" branch, otherwi
 *There is also a "Manual build feedstock" workflow that takes a list of feedstocks to build as input to run builds manually.
 
 #### Update repo
-On a schedule defined in update-repo.yml all forks will be synced with upstream and a **Pull Request** will be created with any changes to `manifest.yaml`
-Because update repo action should only make hash updates we use yq instead of abs-cli to modify `manifest.yaml` for performance reasons.
+On a schedule defined in update-repo.yml all forks will be synced with upstream.
+For any feedstocks that are updated we will use the tool `crawl_deptree.py` to find any new dependencies. Any new dependencies will be forked and added to manifest
+as well as any commit hashes that were updated. A **Pull Request** will be created with any changes to `manifest.yaml`.
+
+In places were we are just checking if existing feedstocks were updated we use **yq** to modify `manifest.yaml` instead of **abs-cli** for performance reasons.
+There are concerns about how this action will scale once we have significantly more feedstocks.
 
 #### Sync Pinnings
 Pinnings are updated via the "Sync pinnings" workflow that runs on a schedule. This will merge the pinnings from community repo, anacondarecipes, and conda-forge.
