@@ -33,11 +33,11 @@ jobs:
 
       - name: Sync forks
         run: |
-          # Limit to 10 at a time to avoid going over rate limit
+          # Limit to 5 at a time to avoid going over rate limit
           COUNTER=0
           for feedstock in ${FEEDSTOCKS//,/ }; do
             (( COUNTER++ ))
-            if [[ "$COUNTER" -gt 10 ]]; then
+            if [[ "$COUNTER" -gt 5 ]]; then
               wait
               COUNTER=1
             fi
