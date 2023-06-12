@@ -17,10 +17,10 @@ We exclude some packages we don't intend to ever build. This includes some compi
 
 ### Issues / Bugs
 * This is considered a temporary solution to get a build order. Not expected to be a long term solution nor get 100% of the build order for 100% of feedstocks. Expect the number of missing dependencies to be minimal enough to handle manually until a better solution can be developed.
-* Architecture is ignored
-* Assumes default branch is `main`
-* Version is ignored - always reads the latest commit in `main` branch
-* Using recipes from `conda-forge`
+* `target_platform` is fixed to `linux-64`
+* Assumes default branch is `main`. This appears to be a requirement for `conda-forge` repos
+* Dependency version is ignored as we only build the latest version of feedstocks. Assume we will need to take manual action for any previous versions.
+* Using recipes from `conda-forge` when parsing dependencies so any `community` modifications will not be considered.
 * Using **pyyaml** to render and will not find all dependencies accurately
 * If we fail to find the recipe, render the recipe, or any other error we just continue
 * We use `conda-forge/feedstock-outputs` to find the mapping from package name to feedstock. Sometimes this returns multiple feedstocks and we just use the first one.
