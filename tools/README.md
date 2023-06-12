@@ -7,7 +7,7 @@ This project was copied from https://github.com/anaconda-distribution/distro-inc
 This Python script generates a dependency tree for a specified feedstock found on the conda-forge. The tool inspects the
 run, host, and build dependencies required to build the package and checks for the existence of these dependencies conda-forge. It will output a list feedstocks in build order
 
-To run provide feedstock name
+To run provide a comma separated list of feedstock names
 
 `python crawl_deptree.py -f urllib3-feedstock`
 
@@ -16,13 +16,14 @@ We exclude some packages we don't intend to ever build. This includes some compi
 
 
 ### Issues / Bugs
-* This is considered a temporary solution to get a build order
+* This is considered a temporary solution to get a build order. Not expected to be a long term solution nor get 100% of the build order for 100% of feedstocks. Expect the number of missing dependencies to be minimal enough to handle manually until a better solution can be developed.
 * Architecture is ignored
-* Version is ignored - always reads the latest commit in main branch
-* Using recipes from conda-forge
-* Using pyyaml to render and will not find all dependencies accurately
+* Assumes default branch is `main`
+* Version is ignored - always reads the latest commit in `main` branch
+* Using recipes from `conda-forge`
+* Using **pyyaml** to render and will not find all dependencies accurately
 * If we fail to find the recipe, render the recipe, or any other error we just continue
-* We use conda-forge/feedstock-outputs to find the mapping from package name to feedstock. Sometimes this returns multiple feedstocks and we just use the first one.
+* We use `conda-forge/feedstock-outputs` to find the mapping from package name to feedstock. Sometimes this returns multiple feedstocks and we just use the first one.
 
 ## find_deps.py
 This was an earlier attempt at crawl_deptree.py that is now broken. We left the code in place for reference.
