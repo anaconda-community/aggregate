@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 70e9235f2a9c703f9c46d04f0110dd2d09d7d6e3
+    commit: 8a56a6304121d1157f3c8902f02b8eb2f75703a8
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
