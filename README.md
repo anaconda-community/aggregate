@@ -17,6 +17,8 @@ The resulting list of feedstocks and their dependencies will be forked from cond
 If the feedstock has already been forked it will not attempt to fork again. If the feedstock is already in `manifest.yaml` then the file won't be modified.
 A **Pull Request** will be opened that will contain any changes made to `manifest.yaml`.
 
+*This assumes the default branch is `main` in the feedstock, if that changes we will expect errors.
+
 #### Remove repo
 To remove a repo go to the 'Actions' tab in GitHub and select 'Remove repo' action.
 For input use the repo name. 
