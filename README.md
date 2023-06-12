@@ -12,7 +12,7 @@ For input use a conda-forge feedstock. Separate multiple feedstocks by comma.
 
 Example: `7za-feedstock,7zip-feedstock`
 
-For all the feedstocks in the list, the tool `crawl_deptree.py` will be used to find dependencies.
+For all the feedstocks in the list, the [tool](#tools) `crawl_deptree.py` will be used to find dependencies.
 The resulting list of feedstocks and their dependencies will be forked from conda-forge and added to `manifest.yaml`.
 If the feedstock has already been forked it will not attempt to fork again. If the feedstock is already in `manifest.yaml` then the file won't be modified.
 A **Pull Request** will be opened that will contain any changes made to `manifest.yaml`.
@@ -31,14 +31,14 @@ A **Pull Request** will be opened that will contain the changes to `manifest.yam
 #### Build
 If a **Pull Request** is opened or merged where manifest.yaml has been updated the file will be parsed and additions or changes to it will
 trigger a new build.
-The action will use the tool `crawl_deptree.py` to find dependencies of the feedstocks to be built and create a build order.
+The action will use the [tool](#tools) `crawl_deptree.py` to find dependencies of the feedstocks to be built and create a build order.
 If the PR is being merged then the build will run against "main" branch, otherwise it will be on the **Pull Request** branch.
 
 *There is also a "Manual build feedstock" workflow that takes a list of feedstocks to build as input to run builds manually.
 
 #### Update repo
 On a schedule defined in update-repo.yml all forks will be synced with upstream.
-For any feedstocks that are updated we will use the tool `crawl_deptree.py` to find any new dependencies. Any new dependencies will be forked and added to manifest
+For any feedstocks that are updated we will use the [tool](#tools) `crawl_deptree.py` to find any new dependencies. Any new dependencies will be forked and added to manifest
 as well as any commit hashes that were updated. A **Pull Request** will be created with any changes to `manifest.yaml`.
 
 In places were we are just checking if existing feedstocks were updated we use **yq** to modify `manifest.yaml` instead of **abs-cli** for performance reasons.
@@ -90,6 +90,7 @@ To support additional pinnings for community repo we have a file `conda_build_co
 
 
 In order to remove a pinning from either AnacondaRecipes or conda-forge pinnings add the key with an empty map to `conda_build_config_community.yaml` and the github action will remove it from the final file.
+
 Example: `key: {}`
 
 ## Tools
