@@ -17,7 +17,7 @@ The resulting list of feedstocks and their dependencies will be forked from cond
 If the feedstock has already been forked it will not attempt to fork again. If the feedstock is already in `manifest.yaml` then the file won't be modified.
 A **Pull Request** will be opened that will contain any changes made to `manifest.yaml`.
 
-*This assumes the default branch is `main` in the feedstock, if that changes we will expect errors.
+*Note: This assumes the default branch is `main` in the feedstock, if that changes we will expect errors.
 
 #### Remove repo
 To remove a repo go to the 'Actions' tab in GitHub and select 'Remove repo' action.
@@ -36,7 +36,7 @@ trigger a new build.
 The action will use the [tool](#tools) `crawl_deptree.py` to find dependencies of the feedstocks to be built and create a build order.
 If the PR is being merged then the build will run against "main" branch, otherwise it will be on the **Pull Request** branch.
 
-*There is also a "Manual build feedstock" workflow that takes a list of feedstocks to build as input to run builds manually.
+*Note: There is also a "Manual build feedstock" workflow that takes a list of feedstocks to build as input to run builds manually.
 
 #### Update repo
 On a schedule defined in update-repo.yml all forks will be synced with upstream.
@@ -46,9 +46,13 @@ as well as any commit hashes that were updated. A **Pull Request** will be creat
 In places were we are just checking if existing feedstocks were updated we use **yq** to modify `manifest.yaml` instead of **abs-cli** for performance reasons.
 There are concerns about how this action will scale once we have significantly more feedstocks.
 
+*Note: A new branch is created everytime this runs if files are changed even if the previous PR is still open.
+
 #### Sync Pinnings
 Pinnings are updated via the "Sync pinnings" workflow that runs on a schedule. This will merge the pinnings from community repo, anacondarecipes, and conda-forge.
 If an entry exists in `conda_build_config_community.yaml` it will be given preference. Next is AnacondaRecipes, and last is conda-forge. A **Pull Request** will be created with the changes.
+
+*Note: A new branch is created everytime this runs if files are changed even if the previous PR is still open.
 
 #### Integration test
 Integration test is run via the "Integration Test" workflow that runs on a schedule.
