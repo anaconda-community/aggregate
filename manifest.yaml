@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 70e9235f2a9c703f9c46d04f0110dd2d09d7d6e3
+    commit: 8a56a6304121d1157f3c8902f02b8eb2f75703a8
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -610,7 +610,7 @@ feedstocks:
     commit: dbcf7fc7766da0cde548a39a68065b7eeeb8d134
   hatchling-feedstock:
     branch: main
-    commit: ead24da76a9001882deddaf19e90fcf4219f5b95
+    commit: c235b0eaff3c31df603d34ef40de16ff7511ddfc
   help2man-feedstock:
     branch: main
     commit: 551797d296694f52bee9d8ea52306605d6a33f54
@@ -1264,7 +1264,7 @@ feedstocks:
     commit: 87dda71aebb831759c6d9f454ac1618e24e31551
   pybind11-stubgen-feedstock:
     branch: main
-    commit: 1c4473b298fc05d3d2689b4501e8c9f7f31f9fbf
+    commit: 104ec889fbf162e9b8bf5affc5fc559f517c5b4d
   pycaret-feedstock:
     branch: main
     commit: c1e5bd5c2a3e50e6babc15f14c971517395f43c8
@@ -1342,7 +1342,7 @@ feedstocks:
     commit: b1b068113dbf052c02320de3d4b3e02aef014d4b
   pytest-feedstock:
     branch: main
-    commit: 1b362b17b9f355ab31f5bf571c28862b8c037ce8
+    commit: 70583517069ce8ad07eb75b05fb7727c78fd2d22
   pytest-runner-feedstock:
     branch: main
     commit: b53b6d4744e0a7f0750b90cac85aa849869e9a21
@@ -1462,7 +1462,7 @@ feedstocks:
     commit: 83cb7a8caca2c51ae0c09fc0f2f8541532dfba5d
   rich-feedstock:
     branch: main
-    commit: 5f5c1dd2eb155538dc7b0e30713fcb2ccdbf3b0d
+    commit: 0d745692c1bcff3df7e0a966dd78eb1bc8e6de03
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
