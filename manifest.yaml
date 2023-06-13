@@ -91,10 +91,10 @@ feedstocks:
     commit: 81bfe1937a23767db5a8f3ef869807973c54f102
   aws-c-event-stream-feedstock:
     branch: main
-    commit: 2af1385bd67f2b7169237d1377fa337633187e7e
+    commit: 0243bb29e2dd0715b0560a2cb087caf829708120
   aws-c-http-feedstock:
     branch: main
-    commit: 091ccb59db64e66111bcc9ab3a396ff1a9032882
+    commit: 8affe35b028ac427926beba4c509e173d7a4c2e8
   aws-c-io-feedstock:
     branch: main
     commit: 0f21a049e679b404ef5014e7de4bfe6fec7affd3
@@ -118,7 +118,7 @@ feedstocks:
     commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
   awscli-feedstock:
     branch: main
-    commit: c8b22cdc360a84ae262d94e2883e26cc29d03248
+    commit: 439adda315972220b90347f90d3e7265b8436414
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 75bff74766d12c222161bf15f13e8325f838f2d9
+    commit: f32de8960e068e0a57fdf11f4af88a0221664e07
   botocore-feedstock:
     branch: main
-    commit: 00f8d4ebd56eed0f7757e6c3ea73f1deb08a95a7
+    commit: 46fb189fc43f216d268a995a69680324cd50961a
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 8a56a6304121d1157f3c8902f02b8eb2f75703a8
+    commit: 351f89bf196438d3ab4300c64c56da5f6095fbe2
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -442,7 +442,7 @@ feedstocks:
     commit: 1c421ffcd4dc371acb580ec2e5051bd1dd54fa4f
   filelock-feedstock:
     branch: main
-    commit: b969f3138c628748adf5a62e18c017fdb45e7635
+    commit: 8336c4de32ea6b81a56b9b08d0002c4a52a195ce
   filesystem-spec-feedstock:
     branch: main
     commit: 663c7326db59964d79d0a24918ee6a2c0a66390f
@@ -565,7 +565,7 @@ feedstocks:
     commit: 5cf34b4d9378364f4179ba08e74dfa5b4899a0a8
   googleapis-common-protos-feedstock:
     branch: main
-    commit: d67b8741ffa433d88f2d4a05363ae7f9f834de5b
+    commit: e68a4dece41eef100bcd6b2d92fd12525daf5ede
   gperf-feedstock:
     branch: main
     commit: 453d782bef291554b480751989473834b7a23e0c
@@ -1027,7 +1027,7 @@ feedstocks:
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
   nbconvert-feedstock:
     branch: main
-    commit: b734c1cfd2b0eb1765670185014c2c6e7b81c653
+    commit: 244b7a2c9f07eb60aa15aed395593a8bc1e5fa65
   nbformat-feedstock:
     branch: main
     commit: f052b03baeda70dffd1dd357b770a2a12f40765e
