@@ -85,6 +85,7 @@ jobs:
           git add manifest.yaml
           git commit -m "update feedstocks" && git push --set-upstream origin $branch && gh pr create --fill || echo "No changes"
         env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
 
       - name: Fork new dependencies
@@ -138,7 +139,7 @@ jobs:
             removed=$(echo ${removed//$repo,/})
           done
           
-          formatted=$(echo ${removed%,} | yq 'split(",") | tostring' -c)
+          formatted=$(echo ${removed%,} | yq 'split(",")' -c)
           echo "feedstocks=$formatted" >> $GITHUB_OUTPUT
         env:
           FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
