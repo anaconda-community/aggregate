@@ -133,10 +133,17 @@ jobs:
       - name: Format output
         id: formatted
         run: |
-          formatted=$(echo ${FEEDSTOCKS%,} | yq 'split(",") | tostring' -c)
+          removed=$(echo $FEEDSTOCKS)
+          for repo in ${TO_REMOVE//,/ }; do
+            removed=$(echo ${removed//$repo,/})
+          done
+          
+          formatted=$(echo ${removed%,} | yq 'split(",") | tostring' -c)
           echo "feedstocks=$formatted" >> $GITHUB_OUTPUT
         env:
           FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
+          # We don't want to report changes to these feedstocks due to false positives
+          TO_REMOVE: "scipy-feedstock,redis-feedstock"
 
       - name: Update Feedstock Metric
         uses: masci/datadog@v1
