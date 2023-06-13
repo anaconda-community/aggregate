@@ -120,6 +120,10 @@ session = requests.Session()
 
 
 def include_dependency(dep):
+    """
+    We exclude some packages that we had trouble with. Not sure if these should all be excluded
+    Length less than 3 is excluded because feedstock-outputs expects package name to be at least 3 chars
+    """
     return not (dep == "python" or
                 dep.startswith("ctng-compilers-") or
                 dep.startswith("_") or
