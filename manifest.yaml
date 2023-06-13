@@ -112,7 +112,7 @@ feedstocks:
     commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
-    commit: bce6b9b895be4a3e1b668a846fa1ac525937370a
+    commit: c0c371c37464ddbd0108d1471728067f839f9412
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: b97bfcb4d72de31e03aefff061b5525e127cb2b5
+    commit: f547fdaf76ea973332a8f093c1282fa77040787e
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
