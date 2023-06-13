@@ -48,6 +48,8 @@ jobs:
           repodata_packages=$(echo "$repodata" | yq '.packages | keys | join(",")')
           echo "repodata_packages=$repodata_packages" >> $GITHUB_OUTPUT
           echo "repodata_packages_count=$(echo "$repodata" | yq '.packages | keys | length')" >> $GITHUB_OUTPUT
+        env:
+          ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
 
       - name: Get sbom index paths
         id: sbom_index_paths
