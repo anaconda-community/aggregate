@@ -104,7 +104,8 @@ jobs:
           for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
             sbom_data=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/sboms/${sbom_index_path})
             sbom_name=$(echo "$sbom_data" | yq '.name' | tr -d '"')
-            if [[ "$sbom_index_path" != "$sbom_name" ]]; then
+            sbom_name_from_path=$(echo "$sbom_index_path" | tr -d '"')
+            if [[ "$sbom_name_from_path" != "$sbom_name" ]]; then
               no_name_sboms+=("$sbom_index_path")
             fi
           done
