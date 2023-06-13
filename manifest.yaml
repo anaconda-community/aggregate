@@ -187,7 +187,7 @@ feedstocks:
     commit: 75bff74766d12c222161bf15f13e8325f838f2d9
   botocore-feedstock:
     branch: main
-    commit: 00f8d4ebd56eed0f7757e6c3ea73f1deb08a95a7
+    commit: 46fb189fc43f216d268a995a69680324cd50961a
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 8a56a6304121d1157f3c8902f02b8eb2f75703a8
+    commit: af302eb68ab28342f042abd19b12f59fc2a36a09
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -442,7 +442,7 @@ feedstocks:
     commit: 1c421ffcd4dc371acb580ec2e5051bd1dd54fa4f
   filelock-feedstock:
     branch: main
-    commit: b969f3138c628748adf5a62e18c017fdb45e7635
+    commit: 8336c4de32ea6b81a56b9b08d0002c4a52a195ce
   filesystem-spec-feedstock:
     branch: main
     commit: 663c7326db59964d79d0a24918ee6a2c0a66390f
@@ -565,7 +565,7 @@ feedstocks:
     commit: 5cf34b4d9378364f4179ba08e74dfa5b4899a0a8
   googleapis-common-protos-feedstock:
     branch: main
-    commit: d67b8741ffa433d88f2d4a05363ae7f9f834de5b
+    commit: e68a4dece41eef100bcd6b2d92fd12525daf5ede
   gperf-feedstock:
     branch: main
     commit: 453d782bef291554b480751989473834b7a23e0c
