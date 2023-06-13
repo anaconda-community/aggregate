@@ -130,4 +130,16 @@ jobs:
               name: "community.repo.feedstock.count"
               value: ${{ steps.feedstocks.outputs.feedstock_count }}
               tags:          
+                - "@github.org:anaconda-community"  
+
+      - name: Send Update Feedstocks Event
+        uses: masci/datadog@v1
+        with:
+          api-key: ${{ secrets.DATADOG_API_KEY }}
+          events: |
+            - title: "Community Repo Feedstocks Updated"
+              text: "Feedstocks were updated with ${{ steps.feedstocks.outputs.feedstock_count }} feedstocks."
+              alert_type: "info"
+              host: ${{ github.repository_owner }}
+              tags:
                 - "@github.org:anaconda-community"                
