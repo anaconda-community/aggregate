@@ -35,8 +35,8 @@ jobs:
         id: updated
         run: |
           for feedstock in ${FEEDSTOCKS//,/ }; do
-            git ls-remote https://github.com/conda-forge/${feedstock}.git --tags HEAD | echo "$(awk '{print $1;}') ${feedstock}" >> hashes1 &
-            git ls-remote https://github.com/anaconda-community/${feedstock}.git --tags HEAD | echo "$(awk '{print $1;}') ${feedstock}" >> hashes2 &
+            git ls-remote https://github.com/conda-forge/${feedstock}.git --tags HEAD | head -n 1 | echo "$(awk '{print $1;}') ${feedstock}" >> hashes1 &
+            git ls-remote https://github.com/anaconda-community/${feedstock}.git --tags HEAD | head -n 1 | echo "$(awk '{print $1;}') ${feedstock}" >> hashes2 &
           done
           
           wait
