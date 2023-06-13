@@ -79,7 +79,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: 612c57910e9f22e5a303ec66417105f923ae1fcb
+    commit: 583dc06cb3ad3440b21d6eed1c82595f6ee9b716
   aws-c-cal-feedstock:
     branch: main
     commit: 71a34b0c536879e69c521a54a142a53b23dd06c3
@@ -91,19 +91,19 @@ feedstocks:
     commit: 81bfe1937a23767db5a8f3ef869807973c54f102
   aws-c-event-stream-feedstock:
     branch: main
-    commit: 0243bb29e2dd0715b0560a2cb087caf829708120
+    commit: df0e697bc357f1124f94cf3991d744c708b2c714
   aws-c-http-feedstock:
     branch: main
-    commit: 8affe35b028ac427926beba4c509e173d7a4c2e8
+    commit: 78d1426428ab1cdde6c774670989bd173e06329d
   aws-c-io-feedstock:
     branch: main
     commit: 0f21a049e679b404ef5014e7de4bfe6fec7affd3
   aws-c-mqtt-feedstock:
     branch: main
-    commit: c3eecbf457c7898919b3e70e8de18d9bc9c40de0
+    commit: 6c727e072fb07166083dee4aa1eaf6bc757ce185
   aws-c-s3-feedstock:
     branch: main
-    commit: 7765e84cf2c28614191e12cc5158a1eb45f9be2c
+    commit: 666cab3f6c50b5c02d598e31e02348778ee4f887
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
@@ -286,7 +286,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: 351f89bf196438d3ab4300c64c56da5f6095fbe2
+    commit: b97bfcb4d72de31e03aefff061b5525e127cb2b5
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
@@ -532,7 +532,7 @@ feedstocks:
     commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
   google-api-python-client-feedstock:
     branch: main
-    commit: df10484027aaf100469c7cbc5764cd9185eff269
+    commit: 4738df89aae5ffe034dd26e3f17b3f6d1b80e943
   google-auth-feedstock:
     branch: main
     commit: b2bbd02642297419a6d23bff672a42f89f892d5f
@@ -748,7 +748,7 @@ feedstocks:
     commit: 44f14d9ed40920c6f94f585289c888374f959155
   jupyterlab_server-feedstock:
     branch: main
-    commit: b35ad46898042081099231e414163376e17cb79c
+    commit: 43a757b933e663a2d9e4b2e2c511149ca716d605
   jupyterlab_widgets-feedstock:
     branch: main
     commit: 56cad493c9ebc732a98eb69bd0c6756884728391
@@ -1027,7 +1027,7 @@ feedstocks:
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
   nbconvert-feedstock:
     branch: main
-    commit: 244b7a2c9f07eb60aa15aed395593a8bc1e5fa65
+    commit: 2dbeeb6224823a5e99bbeeb0f77d434872e22acc
   nbformat-feedstock:
     branch: main
     commit: f052b03baeda70dffd1dd357b770a2a12f40765e
