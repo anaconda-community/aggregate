@@ -67,7 +67,7 @@ jobs:
             cmd=".feedstocks[\"$f2\"].commit = \"$f1\""
             yq -yi "$cmd" manifest.yaml
           done <"hashes"
-                    
+          # format file for whitespace          
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
           git commit -m "update feedstocks" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT
@@ -109,16 +109,12 @@ jobs:
             hash=$(git ls-remote https://github.com/anaconda-community/${repo}.git | head -n1 | awk '{print $1;}')
             abs aggregate add --branch main --commit ${hash} ${repo}
           done
+          # format file for whitespace
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "add dependencies" && git push && echo "createpr=true" >> $GITHUB_OUTPUT || echo "createpr=false" >> $GITHUB_OUTPUT
+          git commit -m "add dependencies" && git push && gh pr create --fill
         env:
           REPO_LIST: ${{ steps.new_deps.outputs.feedstocks  }}
-
-      - name: Open PR
-        if: ${{ steps.add_manifest.outputs.createpr == 'true' || steps.update_manifest.outputs.createpr == 'true' }}
-        run: gh pr create --fill
-        env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Update Feedstock Metric

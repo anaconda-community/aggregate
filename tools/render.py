@@ -2,7 +2,7 @@ import re
 import jinja2
 import yaml
 import contextlib
-
+# This was copied from https://github.com/anaconda-distribution/percy/blob/main/percy/render/_renderer.py
 
 # Pyyaml configuration
 try:
