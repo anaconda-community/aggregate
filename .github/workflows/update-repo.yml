@@ -31,24 +31,36 @@ jobs:
           echo "feedstocks=$(yq '(.feedstocks | keys | join(","))' manifest.yaml | sed 's/"//g')" >> $GITHUB_OUTPUT  
           echo "feedstock_count=$(yq '(.feedstocks | keys | length)' manifest.yaml)" >> $GITHUB_OUTPUT
 
-      - name: Sync forks
+      - name: Get updated feedstocks
+        id: updated
         run: |
-          # Limit to 5 at a time to avoid going over rate limit
-          COUNTER=0
           for feedstock in ${FEEDSTOCKS//,/ }; do
-            (( COUNTER++ ))
-            if [[ "$COUNTER" -gt 5 ]]; then
-              wait
-              COUNTER=1
-            fi
-            gh repo sync anaconda-community/$feedstock &
+            git ls-remote https://github.com/conda-forge/${feedstock}.git --tags HEAD | echo "$(awk '{print $1;}') ${feedstock}" >> hashes1 &
+            git ls-remote https://github.com/anaconda-community/${feedstock}.git --tags HEAD | echo "$(awk '{print $1;}') ${feedstock}" >> hashes2 &
           done
+          
           wait
+          
+          # Get list of feedstocks where hashes are different
+          feedstocks+=($(comm -23 <(sort hashes1) <(sort hashes2) | awk '{print $2;}'))
+          printf -v joined '%s,' "${feedstocks[@]}"     
+          echo "feedstocks=$joined" >> $GITHUB_OUTPUT
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           FEEDSTOCKS: ${{ steps.feedstocks.outputs.feedstocks }}
 
-      - name: Update manifest
+      - name: Sync forks
+        run: |
+          for feedstock in ${FEEDSTOCKS//,/ }; do
+            parent=$(gh repo view anaconda-community/$feedstock --json parent | yq '.parent')
+            if [[ $parent != "null" ]]; then
+              gh repo sync anaconda-community/$feedstock
+            fi
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
+
+      - name: Update manifest with new hashes
         id: update_manifest
         run: |
           branch=$(date +updatefeedstocks%Y%m%d%H%M%S)
@@ -57,11 +69,11 @@ jobs:
           git checkout -b $branch
           
           for feedstock in ${FEEDSTOCKS//,/ }; do
-            git ls-remote https://github.com/anaconda-community/${feedstock}.git --tags HEAD | echo "$(awk '{print $1;}') ${feedstock}" >> hashes &            
+            git ls-remote https://github.com/anaconda-community/${feedstock}.git --tags HEAD | echo "$(awk '{print $1;}') ${feedstock}" >> hashes &
           done
           
           wait
-          
+
           while IFS=' ' read -r f1 f2
           do
             cmd=".feedstocks[\"$f2\"].commit = \"$f1\""
@@ -70,17 +82,14 @@ jobs:
           # format file for whitespace          
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "update feedstocks" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT
+          git commit -m "update feedstocks" && git push --set-upstream origin $branch || echo "no changes"
         env:
-          FEEDSTOCKS: ${{ steps.feedstocks.outputs.feedstocks }}
+          FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
 
-      - name: Add new dependencies
+      - name: Fork new dependencies
         id: new_deps
-        run: |
-          # Get updated feedstocks
-          feedstocks+=($(git diff HEAD^..HEAD --diff-filter=M | grep -B 2 "\-\s*commit:" | grep ".*feedstock:" | grep -v "^\-.*feedstock:" | sed -r 's#^[[:blank:]]+(.*-feedstock):$#\1#'))
-          printf -v joined '%s,' "${feedstocks[@]}"
-          python tools/crawl_deptree.py -f $joined > output.log
+        run: |                  
+          python tools/crawl_deptree.py -f $FEEDSTOCKS > output.log
           deps=$(tail -n 1 output.log)
           # Check gh is authenticated
           gh auth status >/dev/null || exit 1
@@ -96,8 +105,9 @@ jobs:
           echo "feedstocks=$addlist" >> $GITHUB_OUTPUT
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
 
-      - name: Update manifest
+      - name: Add new dependencies to manifest
         id: add_manifest
         run: |
           for repo in ${REPO_LIST//,/ }; do
@@ -112,7 +122,7 @@ jobs:
           # format file for whitespace
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "add dependencies" && git push && gh pr create --fill
+          git commit -m "add dependencies" && git push && gh pr create --fill || echo "No changes"
         env:
           REPO_LIST: ${{ steps.new_deps.outputs.feedstocks  }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -129,7 +139,7 @@ jobs:
                 - "@github.org:anaconda-community"                    
 
     outputs:
-      feedstocks: ${{ steps.feedstocks.outputs.feedstocks }}
+      feedstocks: ${{ steps.updated.outputs.feedstocks }}
 
   send-dd-events:
     needs: update-repo
