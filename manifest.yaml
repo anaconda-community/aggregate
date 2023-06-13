@@ -779,9 +779,6 @@ feedstocks:
   langcodes-feedstock:
     branch: main
     commit: b1e8384b591f4f8b24b9c2af17a0dc8fffc86803
-  lapack-feedstock:
-    branch: main
-    commit: 91340acb83ccba012dd7cdc7cb8ff6c432b2503c
   lazy_loader-feedstock:
     branch: main
     commit: addb293ae741c8b1a908094cedddf6d32f0ca17d
