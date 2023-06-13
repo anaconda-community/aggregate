@@ -43,8 +43,8 @@ jobs:
 
       - name: Get repodata packages
         id: repodata_packages
-        run: |
-          repodata=$(curl -s https://staging.continuum.io/community/dev/${{ matrix.architecture }}/repodata.json)
+        run: |          
+          repodata=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/${{ matrix.architecture }}/repodata.json)          
           repodata_packages=$(echo "$repodata" | yq '.packages | keys | join(",")')
           echo "repodata_packages=$repodata_packages" >> $GITHUB_OUTPUT
           echo "repodata_packages_count=$(echo "$repodata" | yq '.packages | keys | length')" >> $GITHUB_OUTPUT
