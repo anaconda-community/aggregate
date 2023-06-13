@@ -103,7 +103,7 @@ jobs:
           no_name_sboms=()
           for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
             sbom_data=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/sboms/${sbom_index_path})
-            sbom_name=$(echo "$sbom_data" | yq '.name')
+            sbom_name=$(echo "$sbom_data" | yq '.name' | tr -d '"')
             if [[ "$sbom_index_path" != "$sbom_name" ]]; then
               no_name_sboms+=("$sbom_index_path")
             fi
@@ -129,13 +129,13 @@ jobs:
                 - "@github.org:anaconda-community"
                 - architecture: ${{ matrix.architecture }}
 
-      - name: Send SBOM Name Mistmatch Event
+      - name: Send SBOM Index Name Mistmatch Event
         uses: masci/datadog@v1
         if: ${{ steps.index_path_check.outputs.no_name_sboms }} != ""
         with:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
-            - title: "Community Repo SBOM Not Found"
+            - title: "Community Repo SBOM Index Name Mismatch"
               text: "The SBOM name was not found at the sbom path location: ${{ steps.index_path_check.outputs.no_name_sboms }} with architecture: ${{ matrix.architecture }}"
               alert_type: "error"
               host: ${{ github.repository_owner }}
