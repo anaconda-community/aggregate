@@ -133,7 +133,7 @@ jobs:
       - name: Format output
         id: formatted
         run: |
-          formatted=$(echo ${FEEDSTOCKS%,} | yq 'split(",")' -c)
+          formatted=$(echo ${FEEDSTOCKS%,} | yq 'split(",") | tostring' -c)
           echo "feedstocks=$formatted" >> $GITHUB_OUTPUT
         env:
           FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
