@@ -207,7 +207,7 @@ jobs:
       matrix:
         feedstock: ${{ fromJson(needs.update-repo.outputs.errors) }}
     steps:
-      - name: Send Update Feedstock Event
+      - name: Send Update Feedstock Error Event
         uses: masci/datadog@v1
         with:
           api-key: ${{ secrets.DATADOG_API_KEY }}
