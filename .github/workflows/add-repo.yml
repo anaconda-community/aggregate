@@ -37,9 +37,6 @@ jobs:
           environment-file: environment.yml
           environment-name: agg
           cache-downloads: true
-          cache-env: true
-          extra-specs: |
-            python=3.9
 
       - name: Get dependencies
         id: deps
