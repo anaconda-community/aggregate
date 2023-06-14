@@ -49,13 +49,16 @@ jobs:
           FEEDSTOCKS: ${{ steps.feedstocks.outputs.feedstocks }}
 
       - name: Sync forks
+        id: sync
         run: |
+          errorlist=""
           for feedstock in ${FEEDSTOCKS//,/ }; do
             parent=$(gh repo view anaconda-community/$feedstock --json parent | yq '.parent')
             if [[ $parent != "null" ]]; then
-              gh repo sync anaconda-community/$feedstock
+              gh repo sync anaconda-community/$feedstock > /dev/null || errorlist+="${feedstock},"
             fi
           done
+          echo "errors=$errorlist" >> $GITHUB_OUTPUT
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
@@ -91,7 +94,7 @@ jobs:
       - name: Fork new dependencies
         id: new_deps
         if: ${{ steps.updated.outputs.feedstocks != '' }}
-        run: |                  
+        run: |
           python tools/crawl_deptree.py -f $FEEDSTOCKS > output.log
           deps=$(tail -n 1 output.log)
           # Check gh is authenticated
@@ -144,10 +147,14 @@ jobs:
             removed=$(echo ${removed//$repo,/})
           done
           
-          formatted=$(echo ${removed%,} | yq 'split(",")' -c)
-          echo "feedstocks=$formatted" >> $GITHUB_OUTPUT
+          formatted_feedstocks=$(echo ${removed%,} | yq 'split(",")' -c)
+          echo "feedstocks=$formatted_feedstocks" >> $GITHUB_OUTPUT
+          
+          formatted_errors=$(echo ${ERRORS%,} | yq 'split(",")' -c)
+          echo "errors=$formatted_errors" >> $GITHUB_OUTPUT
         env:
           FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
+          ERRORS: ${{ steps.sync.outputs.errors }}
           # We don't want to report changes to these feedstocks due to false positives
           TO_REMOVE: "scipy-feedstock,redis-feedstock"
 
@@ -164,8 +171,9 @@ jobs:
 
     outputs:
       feedstocks: ${{ steps.formatted.outputs.feedstocks }}
+      errors: ${{ steps.formatted.outputs.errors }}
 
-  send-dd-events:
+  send-dd-update-events:
     needs: update-repo
     defaults:
       run:
@@ -183,6 +191,28 @@ jobs:
             - title: "Community Repo Feedstock Updated"
               text: "Feedstock ${{ matrix.feedstock }} was updated."
               alert_type: "info"
+              host: ${{ github.repository_owner }}
+              tags:
+                - "@github.org:anaconda-community"
+
+  send-dd-error-events:
+    needs: update-repo
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        feedstock: ${{ fromJson(needs.update-repo.outputs.errors) }}
+    steps:
+      - name: Send Update Feedstock Event
+        uses: masci/datadog@v1
+        with:
+          api-key: ${{ secrets.DATADOG_API_KEY }}
+          events: |
+            - title: "Community Repo Feedstock Update Error"
+              text: "Feedstock ${{ matrix.feedstock }} failed to update."
+              alert_type: "error"
               host: ${{ github.repository_owner }}
               tags:
                 - "@github.org:anaconda-community"
