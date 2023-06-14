@@ -124,7 +124,7 @@ feedstocks:
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
   azure-core-feedstock:
     branch: main
-    commit: daf1c16b436a66109c40e78e736cf876a7745140
+    commit: 7149f8c337290d89a34fa98e4f7ce022d878916a
   azure-storage-blob-feedstock:
     branch: main
     commit: a2d2b83529bd395182470ad9fcc67eb8e11ae004
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: f32de8960e068e0a57fdf11f4af88a0221664e07
+    commit: 050399163b1719ab731d8e13d0dfbb7d9ef92076
   botocore-feedstock:
     branch: main
-    commit: 46fb189fc43f216d268a995a69680324cd50961a
+    commit: 813f236d35c6ca2db9dac345f3d695a7fbeb0df5
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
