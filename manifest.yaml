@@ -1484,6 +1484,9 @@ feedstocks:
   sacremoses-feedstock:
     branch: main
     commit: 77a06efbb5f1e707bee7f5c5eeecd2330532e6cc
+  safetensors-feedstock:
+    branch: main
+    commit: c589e03829e7af201bb507069a9af6c813e0bc9e
   scikit-build-feedstock:
     branch: main
     commit: fa28862706509bf22c18cd529cafadd0b242fe32
@@ -1697,6 +1700,9 @@ feedstocks:
   types-pytz-feedstock:
     branch: main
     commit: 9819e82349198a1925cbb834de0b3372538213c9
+  types-pyyaml-feedstock:
+    branch: main
+    commit: ad92f6c074cd7d10d09c91f434071cf30eb57753
   typing-feedstock:
     branch: main
     commit: ab352adedc793b165cbb276a7bfc00fffc22fb13
