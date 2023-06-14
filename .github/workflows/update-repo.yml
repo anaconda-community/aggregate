@@ -83,7 +83,7 @@ jobs:
           # format file for whitespace          
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "update feedstocks" && git push --set-upstream origin $branch && gh pr create --fill || echo "No changes"
+          git commit -m "update feedstocks" && git push --set-upstream origin $branch && echo "createpr=true" >> $GITHUB_OUTPUT || echo "No changes"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           FEEDSTOCKS: ${{ steps.updated.outputs.feedstocks }}
@@ -99,7 +99,6 @@ jobs:
           addlist=""
           for NEW_FEEDSTOCK in ${deps//,/ }; do
             echo "Checking if anaconda-community/${NEW_FEEDSTOCK} already exists"
-            # Check if the repo has already been forked
             gh repo view anaconda-community/${NEW_FEEDSTOCK} > /dev/null && echo "anaconda-community/${NEW_FEEDSTOCK} already exists" || addlist+="${NEW_FEEDSTOCK},"
           done
           for repo in ${addlist//,/ }; do
@@ -129,6 +128,12 @@ jobs:
           git commit -m "add dependencies" && git push || echo "No changes"
         env:
           REPO_LIST: ${{ steps.new_deps.outputs.feedstocks  }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Open PR
+        if: ${{ steps.update_manifest.outputs.createpr == 'true' }}
+        run: gh pr create --fill
+        env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Format output
