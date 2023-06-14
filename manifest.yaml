@@ -535,7 +535,7 @@ feedstocks:
     commit: 4738df89aae5ffe034dd26e3f17b3f6d1b80e943
   google-auth-feedstock:
     branch: main
-    commit: b2bbd02642297419a6d23bff672a42f89f892d5f
+    commit: 6f903471e30db4460448dd51d3b27e4ed7c9f8b9
   google-auth-httplib2-feedstock:
     branch: main
     commit: bf6c5bc776ce9c8535a5bba78320dc37757c1989
@@ -544,7 +544,7 @@ feedstocks:
     commit: 20ab1b2e04a0ed248eb6e843eabee00d047243c4
   google-cloud-bigquery-feedstock:
     branch: main
-    commit: b6bc8d919c7cf7c7f5a9ae5e44eb68e69172e00d
+    commit: 4e0db2f938eda4b01aa151787a3504275ee74852
   google-cloud-bigquery-storage-feedstock:
     branch: main
     commit: bf9f8e0d8a9af6092d002cef6512e250d8c5b95a
