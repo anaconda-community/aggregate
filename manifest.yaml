@@ -931,7 +931,7 @@ feedstocks:
     commit: 60e700089c71c98131f6bcdb1287896ee03e9455
   lxml-feedstock:
     branch: main
-    commit: b5850d45ecadd3ac705fbd29ed8350f1b904527c
+    commit: c5c205e999ae7c7898dd197595167d846305b339
   lz4-c-feedstock:
     branch: main
     commit: aa9cbeb2e08acc186fe205733e3f0779d9396f08
