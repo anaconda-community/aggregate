@@ -81,12 +81,17 @@ jobs:
 
       - name: Update manifest
         id: manifest
+        if: ${{ steps.prune.outputs.feedstocks != '' }}
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           branch=$(date +addfeedstocks%Y%m%d%H%M%S)
           git checkout -b $branch
           for repo in ${REPO_LIST//,/ }; do
+            if [[ "$ERROR_LIST" == *"$repo"* ]]; then
+              # Don't wait on repos we failed to fork
+              continue
+            fi 
             until git ls-remote https://github.com/anaconda-community/${repo}.git &> /dev/null
             do
               echo "Waiting on repo..."
@@ -98,9 +103,10 @@ jobs:
           # format file for whitespace
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
-          git commit -m "add ${{ github.event.inputs.feedstocks }}" && git push --set-upstream origin $branch && gh pr create --fill --label "manifest-add"
+          git commit -m "add ${{ github.event.inputs.feedstocks }}" && git push --set-upstream origin $branch && gh pr create --fill --label "manifest-add" || echo "No changes"
         env:
-          REPO_LIST: ${{ steps.deps.outputs.feedstocks  }}
+          REPO_LIST: ${{ steps.deps.outputs.feedstocks }}
+          ERROR_LIST: ${{ steps.fork.outputs.errors }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Format output
@@ -108,8 +114,12 @@ jobs:
         run: |
           formatted_errors=$(echo ${ERRORS%,} | yq 'split(",")' -c)
           echo "errors=$formatted_errors" >> $GITHUB_OUTPUT
+          
+          formatted_feedstocks=$(echo ${FEEDSTOCKS%,} | yq 'split(",")' -c)
+          echo "feedstocks=$formatted_feedstocks" >> $GITHUB_OUTPUT
         env:
           ERRORS: ${{ steps.fork.outputs.errors }}
+          FEEDSTOCKS: ${{ steps.prune.outputs.feedstocks }}
 
     outputs:
       errors: ${{ steps.formatted.outputs.errors }}
@@ -133,6 +143,29 @@ jobs:
             - title: "Community Repo Feedstock Creation Error"
               text: "Feedstock ${{ matrix.feedstock }} failed to fork."
               alert_type: "error"
+              host: ${{ github.repository_owner }}
+              tags:
+                - "@github.org:anaconda-community"
+
+  send-dd-add-events:
+    needs: add-repo
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    if: ${{ needs.add-repo.outputs.feedstocks != '' }}
+    strategy:
+      matrix:
+        feedstock: ${{ fromJson(needs.add-repo.outputs.feedstocks) }}
+    steps:
+      - name: Send Add Feedstock Event
+        uses: masci/datadog@v1
+        with:
+          api-key: ${{ secrets.DATADOG_API_KEY }}
+          events: |
+            - title: "Community Repo Feedstock Added"
+              text: "Feedstock ${{ matrix.feedstock }} was added."
+              alert_type: "info"
               host: ${{ github.repository_owner }}
               tags:
                 - "@github.org:anaconda-community"
