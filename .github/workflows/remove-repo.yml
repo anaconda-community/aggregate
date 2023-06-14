@@ -52,3 +52,37 @@ jobs:
         env:
           REPO_LIST: ${{ github.event.inputs.feedstocks }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Format output
+        id: formatted
+        run: |     
+          formatted_feedstocks=$(echo $FEEDSTOCKS | yq 'split(",")' -c)
+          echo "feedstocks=$formatted_feedstocks" >> $GITHUB_OUTPUT
+        env:
+          FEEDSTOCKS: ${{ github.event.inputs.feedstocks }}
+
+    outputs:
+      feedstocks: ${{ steps.formatted.outputs.feedstocks }}
+
+  send-dd-remove-events:
+    needs: remove-repo
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    if: ${{ needs.remove-repo.outputs.feedstocks != '' }}
+    strategy:
+      matrix:
+        feedstock: ${{ fromJson(needs.remove-repo.outputs.feedstocks) }}
+    steps:
+      - name: Send Remove Feedstock Event
+        uses: masci/datadog@v1
+        with:
+          api-key: ${{ secrets.DATADOG_API_KEY }}
+          events: |
+            - title: "Community Repo Feedstock Removed"
+              text: "Feedstock ${{ matrix.feedstock }} was removed."
+              alert_type: "info"
+              host: ${{ github.repository_owner }}
+              tags:
+                - "@github.org:anaconda-community"
