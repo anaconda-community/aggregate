@@ -529,7 +529,7 @@ feedstocks:
     commit: b55e61bde3ddaf196335b22e3f0daa9a36559a20
   google-api-core-feedstock:
     branch: main
-    commit: a3d6a5e2cb74a1231944782588c39b9cbd017b51
+    commit: b3fb5533a886b83bcd09ff28b5dc5a73a76ae7ff
   google-api-python-client-feedstock:
     branch: main
     commit: 4738df89aae5ffe034dd26e3f17b3f6d1b80e943
@@ -577,7 +577,7 @@ feedstocks:
     commit: c493dfdc3c34d86911c2dd6429e5b1aeec8714a2
   grpc-cpp-feedstock:
     branch: main
-    commit: 0b7d230908006cbad1230f9271b760495d027511
+    commit: 646e89399b673094bf18cabfa2ae4038de5d0b36
   grpcio-feedstock:
     branch: main
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
@@ -919,7 +919,7 @@ feedstocks:
     commit: 0adef32df75c6d3361f2684ffcd4b9fc0262e1f4
   llvmdev-feedstock:
     branch: main
-    commit: 42724be98433dedde04299adc6ae56dc754cf1b5
+    commit: 8dddad8d1d1890291a17bb237d7faf456603905e
   llvmlite-feedstock:
     branch: main
     commit: d55145a03314c586fbabe698d7d6b6a8f0e8a4be
