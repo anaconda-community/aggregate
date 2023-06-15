@@ -364,7 +364,7 @@ feedstocks:
     commit: 51db22e756e03b9c5e4900f5bdb3022842b56c98
   datasets-feedstock:
     branch: main
-    commit: a6d5326f31769a41fabb31cad0b78b02a50099b2
+    commit: d7a0b35ad3b2e5ed0d51ea01a6fbdf5bb3357cba
   dav1d-feedstock:
     branch: main
     commit: 23bbb0a9849e230e290131c2b8d1ddf8e452bea5
