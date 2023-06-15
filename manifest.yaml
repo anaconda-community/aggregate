@@ -577,7 +577,7 @@ feedstocks:
     commit: c493dfdc3c34d86911c2dd6429e5b1aeec8714a2
   grpc-cpp-feedstock:
     branch: main
-    commit: 0b7d230908006cbad1230f9271b760495d027511
+    commit: e1add830c14f1a3ff4d4c125a2cae49729af7a40
   grpcio-feedstock:
     branch: main
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
@@ -1066,7 +1066,7 @@ feedstocks:
     commit: a3a258f497558cfc86c709cb72c9d9cae17ae2a8
   numba-feedstock:
     branch: main
-    commit: 400106ef23daa19cdbc035ccfff7de89774f41e0
+    commit: 4fd71fda8f961ef8e2a5bc843c3ea1dc69cb705f
   numexpr-feedstock:
     branch: main
     commit: 635de0ed2c75e2256733266ae3ef4eeccad5f386
