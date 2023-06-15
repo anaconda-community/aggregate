@@ -733,7 +733,7 @@ feedstocks:
     commit: 847c85a23ccabbe07c82cef8b9215e97da8a41ef
   jupyter_core-feedstock:
     branch: main
-    commit: 74d55a17c70d14240615a6da2c7c497bc86fb180
+    commit: 46c8072dbd9bcf4dacd8a51e1a695a838919eb26
   jupyter_events-feedstock:
     branch: main
     commit: 2e47f6ea58e376bfe58a436dfc3bc0013b184e42
@@ -1018,7 +1018,7 @@ feedstocks:
     commit: d45f15c17a71974f388b69d3a854fc5c5d2a2b18
   mysql-feedstock:
     branch: main
-    commit: fe655173a044cf0f39ed5ff3401661afe33e6d4c
+    commit: 58703210ec92e74d0d3868f542d5d83e8313a798
   nasm-feedstock:
     branch: main
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
@@ -1084,7 +1084,7 @@ feedstocks:
     commit: 46dc3bbb5654e3a0c25426d4c5b1ea6afb01bc0d
   orc-feedstock:
     branch: main
-    commit: ebb6c2d792abb340ae2fd030f09d6a89a8726941
+    commit: 7356c032b464ebceda5ea35353ed8183f3921a0d
   oscrypto-feedstock:
     branch: main
     commit: 32f4f58bca54c93107c39ca546232dfef1661cd5
