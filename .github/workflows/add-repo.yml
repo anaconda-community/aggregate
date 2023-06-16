@@ -121,6 +121,22 @@ jobs:
     outputs:
       errors: ${{ steps.formatted.outputs.errors }}
 
+  send-dd-job-metrics:
+    needs: add-repo
+    runs-on: ubuntu-latest
+    name: Datadog reports
+    steps:
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+      - uses: scribd/github-action-datadog-reporting@v1
+        with:
+          datadog-metric-prefix: 'communityrepo.github.action'
+          metrics-type: 'job_metrics'
+        env:
+          DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
+          OCTOKIT_TOKEN: ${{ secrets.GH_TOKEN }}
+
   send-dd-error-events:
     needs: add-repo
     defaults:
