@@ -253,7 +253,7 @@ feedstocks:
     commit: 70e8cc88c74a366e9642c39ff21a32c04b76e1f4
   clangdev-feedstock:
     branch: main
-    commit: de7616f5c9d517a1c026da73196ac083f7391531
+    commit: a3627f48c6f218ba87b1e1a7023e4a445e2f4d05
   cleo-feedstock:
     branch: main
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
