@@ -80,9 +80,11 @@ jobs:
         with:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
-            - title: "Community Repo Feedstock Removed"
+            - title: "Removed feedstock ${{ matrix.feedstock }}"
+              aggregate_key: "community-repo/feedstock-removed"
               text: "Feedstock ${{ matrix.feedstock }} was removed."
               alert_type: "info"
               host: ${{ github.repository_owner }}
               tags:
                 - "@github.org:anaconda-community"
+                - "service:community-repo"
