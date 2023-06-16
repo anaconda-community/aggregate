@@ -122,7 +122,7 @@ jobs:
         id: install
         if: ${{ steps.poll_repodata.outputs.timeout_reached }} != "1"
         run: |          
-          conda install -y community-integration-test --channel https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/us-conversion/community_test
+          conda install -y community-integration-test --channel https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing
           
           if conda list | grep community-integration-test; then
             echo "Found installed pacakge"
