@@ -118,7 +118,7 @@ feedstocks:
     commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
   awscli-feedstock:
     branch: main
-    commit: aa663bd3650a957fbcccb0e37ec651a7d71ae7fe
+    commit: 8c90549d325fdd1de2641893d9f65c16f4a2980b
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 050399163b1719ab731d8e13d0dfbb7d9ef92076
+    commit: 5d5fa7288b0b3912a206a0adaec13c571fd4111d
   botocore-feedstock:
     branch: main
-    commit: 813f236d35c6ca2db9dac345f3d695a7fbeb0df5
+    commit: bd033a0fcd6f5ecbc9a34d45f87345338d7c2330
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -916,7 +916,7 @@ feedstocks:
     commit: 6b2306dea0e904367f32dcd37a72f5d0cbfdd92b
   lld-feedstock:
     branch: main
-    commit: 0adef32df75c6d3361f2684ffcd4b9fc0262e1f4
+    commit: e17d568cdefac4e09e807685b53f4b6df49e422c
   llvmdev-feedstock:
     branch: main
     commit: 8dddad8d1d1890291a17bb237d7faf456603905e
@@ -1078,7 +1078,7 @@ feedstocks:
     commit: 4695edbb686a527074fd3ac764d4baa34f4c9d6c
   openmp-feedstock:
     branch: main
-    commit: d502c95022bbdfbe0ec73121c86064e50db59897
+    commit: 2e3d1be71c92b2a586ef4c1e3100b1c23587558d
   openpyxl-feedstock:
     branch: main
     commit: 46dc3bbb5654e3a0c25426d4c5b1ea6afb01bc0d
@@ -1672,7 +1672,7 @@ feedstocks:
     commit: e25e21af4e5e21666fb53add0994fa4631e720ce
   torchtext-feedstock:
     branch: main
-    commit: 0ede8748c3ecd52204b1cf39fad99f26e197cf3e
+    commit: 9527af16b9f2858f04baf8ed41bad42a393062d6
   torchvision-feedstock:
     branch: main
     commit: e7c8f94d1392786892245378d7872f56cd383b7c
@@ -1846,7 +1846,7 @@ feedstocks:
     commit: 293f6665345cfe92624bcce2955adc197911d3cd
   xorg-libx11-feedstock:
     branch: main
-    commit: f783921144191da1e912ff7689c6d7a33fc2f99f
+    commit: 2689e7bd6a86ad9c31351efe428683749cc4dce5
   xorg-libxau-feedstock:
     branch: main
     commit: fbff32f931f844fd5f2bf623671368a3749c8356
