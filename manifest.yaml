@@ -1339,7 +1339,7 @@ feedstocks:
     commit: b1b068113dbf052c02320de3d4b3e02aef014d4b
   pytest-feedstock:
     branch: main
-    commit: 70583517069ce8ad07eb75b05fb7727c78fd2d22
+    commit: c52b3e028c0873c0e7c6a3c8d7fc80c38bf6b3be
   pytest-runner-feedstock:
     branch: main
     commit: b53b6d4744e0a7f0750b90cac85aa849869e9a21
