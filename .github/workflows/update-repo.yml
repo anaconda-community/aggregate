@@ -132,7 +132,9 @@ jobs:
 
       - name: Open PR
         if: ${{ steps.update_manifest.outputs.createpr == 'true' }}
-        run: gh pr create --fill
+        run: |
+          pr_url="$(gh pr create --fill)"
+          gh pr merge --auto --rebase "$pr_url"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
