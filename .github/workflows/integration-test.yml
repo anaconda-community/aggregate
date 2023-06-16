@@ -94,31 +94,34 @@ jobs:
             elapsed_time=$((current_time - start_time))
 
             # check repodata.json
-            package_name=community-integration-test-0.4.6-pyhd3eb1b0_${{ steps.build_number.outputs.result }}.tar.bz2
-            response=$(curl -s https://staging.continuum.io/community/dev/noarch/repodata.json)            
+            package_name=community-integration-test-0.4.6-py_${{ steps.build_number.outputs.result }}.tar.bz2          
+            response=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/noarch/repodata.json)            
             repo_package=$(echo "$response" | jq -r ".packages.\"${package_name}\"")
           
             if [[ "$repo_package" != "null" ]]; then
-              echo "Found package in repodata.json: $repo_package"              
+              echo "Found package in repodata.json: $repo_package"   
+              echo "timeout_reached=0" >> $GITHUB_OUTPUT
               echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               break
             fi
 
             # Check if timeout reached
             if [[ $elapsed_time -gt $timeout ]]; then
-              echo "Timeout reached, did not detect package: ${package_name} within 10 minutes."                            
+              echo "Timeout reached, did not detect package: ${package_name} within 10 minutes."
+              echo "timeout_reached=1" >> $GITHUB_OUTPUT
               echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
               break
             fi
 
             sleep 60  # Wait for 1 minute before polling again
           done
+        env:
+          ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
 
       - name: Install package
         id: install
-        run: |
-          conda install conda-token -n root
-          conda token set $ANACONDA_BUSINESS_TOKEN
+        if: ${{ steps.poll_repodata.outputs.timeout_reached }} != "1"
+        run: |          
           conda install -y community-integration-test --channel https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/us-conversion/community_test
           
           if conda list | grep community-integration-test; then
