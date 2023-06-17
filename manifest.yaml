@@ -1759,7 +1759,7 @@ feedstocks:
     commit: 3b8c5449dd4da97556f752a7428b1fd216c3506a
   virtualenv-feedstock:
     branch: main
-    commit: 2fb5343e51a31fdced295dc026d6a10f166c891b
+    commit: 4ce99906b36227cc7d482dc6b732539dc13bde0f
   visions-feedstock:
     branch: main
     commit: 32bc57be2207c17c5d46b63896f7b05f8f6e42d1
