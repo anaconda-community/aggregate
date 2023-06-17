@@ -184,10 +184,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 5d5fa7288b0b3912a206a0adaec13c571fd4111d
+    commit: f7154f16efe0d803010575b87b85fe9f43073e13
   botocore-feedstock:
     branch: main
-    commit: bd033a0fcd6f5ecbc9a34d45f87345338d7c2330
+    commit: 0a37cc2e1119be176d50704d229d3827606c7e10
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -835,7 +835,7 @@ feedstocks:
     commit: e4ff5f504aa0261b52df863ce6650f9ceb87979b
   libgpg-error-feedstock:
     branch: main
-    commit: 23d66469515e2ede1f6a50f184588a1c83650a89
+    commit: a52e9b1a369f616580552f9802f0c45aa7727360
   libhwloc-feedstock:
     branch: main
     commit: eef334a1136ad79da32c0d5b0f8dcad329c53bf8
