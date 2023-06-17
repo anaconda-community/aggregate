@@ -118,7 +118,7 @@ feedstocks:
     commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
   awscli-feedstock:
     branch: main
-    commit: 8c90549d325fdd1de2641893d9f65c16f4a2980b
+    commit: 7690b6fbdcc18e73a364e0091e5e618694371c41
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -1786,7 +1786,7 @@ feedstocks:
     commit: 045d9b752ad89b777f0bd6b2a6dfb46924a0a449
   websocket-client-feedstock:
     branch: main
-    commit: d30c43fc08bd2ed3fab9ff5392f55b1ab9b4e21b
+    commit: 9faa1bb19b03d4e0e63727a53b52c17ebf5959e5
   werkzeug-feedstock:
     branch: main
     commit: ec160355c2c680411939e855f5eebe5bb1f22d14
