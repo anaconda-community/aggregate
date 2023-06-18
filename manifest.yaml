@@ -1168,7 +1168,7 @@ feedstocks:
     commit: 0abd41c2ea1e78914cadc49b19bd3721693d0c25
   platformdirs-feedstock:
     branch: main
-    commit: 9e81d02f96eb01720f45e1b4f5794ab55bc1e3a1
+    commit: 0b92636eaae5c6b9a07a5f929b14cddcfc471d8c
   plotly-feedstock:
     branch: main
     commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
