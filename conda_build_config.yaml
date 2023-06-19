@@ -320,13 +320,13 @@ icu:
   - 58 # [not (s390x or aarch64 or (osx and arm64))]
   - 68 # [s390x or aarch64 or (osx and arm64)]
 imath:
-  - 3.1.8
+  - 3.1.9
 ipopt:
   - 3.14.12
 isl:
   - '0.25'
 jasper:
-  - '2'
+  - 4
 jpeg:
   - 9
 lcms:
@@ -436,7 +436,7 @@ librsvg:
 libsecret:
   - 0.18
 libsentencepiece:
-  - 0.1.97
+  - '0.1.99'
 libsndfile:
   - '1.2'
 libspatialindex:
@@ -546,7 +546,7 @@ openssl:
 openturns:
   - '1.20'
 orc:
-  - 1.8.3
+  - 1.8.4
 pango:
   - 1.50
 pari:
