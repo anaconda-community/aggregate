@@ -1174,7 +1174,7 @@ feedstocks:
     commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
   pluggy-feedstock:
     branch: main
-    commit: a49afaca22f3face3554c628a61636b6c036913e
+    commit: d9d8a1a757fc6a29a6fee8eca15729ea87ef4869
   ply-feedstock:
     branch: main
     commit: f7dd26a2707378a72c13d42cbd5738fbca833b6b
@@ -1390,7 +1390,7 @@ feedstocks:
     commit: 5afa930dd4c407568d4507d3341f414187d0439a
   pywin32-ctypes-feedstock:
     branch: main
-    commit: 38c6dd199518b3542e0dc6bb45ab9ebecbe5bc34
+    commit: b79e0ae62c78ad33e42556d37d7f540f98f9e577
   pywin32-feedstock:
     branch: main
     commit: aa71b091cec99e6ee5d20512111b4bf0f5c3ddd1
