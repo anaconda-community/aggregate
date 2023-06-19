@@ -112,6 +112,10 @@ def create_parser() -> argparse.ArgumentParser:
         type=check_dep_name,
         help="Feedstock name available on conda-forge. Should be a string, comma separated",
     )
+    parser.add_argument('--sort_only',
+                        action=argparse.BooleanOptionalAction,
+                        default=False,
+                        help="Flag to only sort the given list of feedstocks")
     return parser
 
 
@@ -184,7 +188,8 @@ if __name__ == "__main__":
         deps = {lookup_feedstock_name(d): get_metadata(d) for d in extract_deps(metadata, package_name)}
         dependency_feedstocks = {f"{d}-feedstock": metadata for d, metadata in deps.items() if metadata is not None and len(d) > 0}
         dependency_map[feedstock] = set(dependency_feedstocks.keys())
-        to_process.extend([(d, metadata) for d, metadata in dependency_feedstocks.items() if d not in dependency_map])
+        if not args.sort_only:
+            to_process.extend([(d, metadata) for d, metadata in dependency_feedstocks.items() if d not in dependency_map])
 
     dependency_order = [
         feedstock
@@ -193,5 +198,16 @@ if __name__ == "__main__":
         # Also helps with imputing group boundaries in output
         for feedstock in sorted(group.members)
     ]
+
+    if args.sort_only:
+        to_remove = []
+        feedstocks = args.feedstock_name.split(",")
+        for feedstock in dependency_order:
+            if feedstock not in feedstocks:
+                to_remove.append(feedstock)
+
+        for feedstock in to_remove:
+            dependency_order.remove(feedstock)
+
     print(",".join(dependency_order))
 

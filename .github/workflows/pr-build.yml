@@ -41,7 +41,7 @@ jobs:
 
   build:
     needs: find-feedstocks
-    uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
+    uses: ./.github/workflows/build-feedstock.yml
     strategy:
       matrix:
         arch: [ "linux-64" ]
