@@ -140,9 +140,11 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
             - title: "Community Repo Integration Test ${{ steps.install.outputs.test_result }}"
+              aggregate_key: "community-repo/integration-test-completed"
               text: "Test ${{ steps.install.outputs.test_result }}"
               alert_type: "${{ steps.install.outputs.test_result }}"
               host: ${{ github.repository_owner }}
               tags:
                 - "@github.org:anaconda-community"                
                 - "package-name:${{ steps.poll_repodata.outputs.repodata_package }}"
+                - "service:community-repo"
