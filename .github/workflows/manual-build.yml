@@ -36,7 +36,7 @@ on:
           - "ubuntu-latest"
       add_deps:
         description: "Flag to add dependencies"
-        default: true
+        default: false
         type: boolean
         required: true
 
@@ -44,7 +44,7 @@ permissions: write-all
 
 jobs:
   build:
-    uses: anaconda-community/aggregate/.github/workflows/build-feedstock.yml@main
+    uses: ./.github/workflows/build-feedstock.yml
     with:
       feedstock: ${{ inputs.feedstock }}
       arch: ${{ inputs.arch }}

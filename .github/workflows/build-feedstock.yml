@@ -25,7 +25,7 @@ on:
         type: string
       add_deps:
         description: "Flag to add dependencies"
-        default: true
+        default: false
         type: boolean
     secrets:
       GH_TOKEN:
@@ -65,7 +65,8 @@ jobs:
             python tools/crawl_deptree.py -f ${{ inputs.feedstock }} > output.log
             feedstocks=$(tail -n 1 output.log)
           else
-            feedstocks=${{ inputs.feedstock }}
+            python tools/crawl_deptree.py --sort_only -f ${{ inputs.feedstock }} > output.log
+            feedstocks=$(tail -n 1 output.log)
           fi
           echo "feedstocks=$feedstocks" >> $GITHUB_OUTPUT
 
