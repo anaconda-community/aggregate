@@ -652,7 +652,7 @@ feedstocks:
     commit: 951ac69b8f8686a6cdfc34064ebd993547265228
   importlib_metadata-feedstock:
     branch: main
-    commit: 692c8f10dc36df59935b719183a6440d9f9d9b1c
+    commit: 3e30643929461f6a388c9084c864e1658e4fa144
   importlib_resources-feedstock:
     branch: main
     commit: 2e1001891ddf4406ae0694885047a5309852b643
