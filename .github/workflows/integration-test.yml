@@ -14,7 +14,7 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  integration-test:
+  setup-test:
     defaults:
       run:
         shell: bash -l {0}
@@ -73,78 +73,84 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Build
-        run: |
-          gh secret set GH_TOKEN --body "$GITHUB_TOKEN"
-          gh -R anaconda-community/aggregate workflow run "Manual build feedstock" \
-            -f feedstock=community-integration-test-feedstock \
-            -f arch=linux-64 \
-            -f branch=community-integration-test-branch \
-            -f add_deps=false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+  build-feedstock:
+    needs: setup-test
+    uses: ./.github/workflows/build-feedstock.yml
+    with:
+      feedstock: community-integration-test-feedstock
+      arch: linux-64
+      branch: community-integration-test-branch
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Poll Repodata.json
-        id: poll_repodata
-        run: |
-          timeout=600  # 10 minutes
-          start_time=$(date +%s)
-          while true; do
-            current_time=$(date +%s)
-            elapsed_time=$((current_time - start_time))
+  install-package:
+    needs: build-feedstocks
+    defaults:
+      run:
+        shell: bash -l {0}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Poll Repodata.json
+      id: poll_repodata
+      run: |
+        timeout=600  # 10 minutes
+        start_time=$(date +%s)
+        while true; do
+          current_time=$(date +%s)
+          elapsed_time=$((current_time - start_time))
 
-            # check repodata.json
-            package_name=community-integration-test-0.4.6-py_${{ steps.build_number.outputs.result }}.tar.bz2          
-            response=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/noarch/repodata.json)            
-            repo_package=$(echo "$response" | jq -r ".packages.\"${package_name}\"")
-          
-            if [[ "$repo_package" != "null" ]]; then
-              echo "Found package in repodata.json: $repo_package"   
-              echo "timeout_reached=0" >> $GITHUB_OUTPUT
-              echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
-              break
-            fi
-
-            # Check if timeout reached
-            if [[ $elapsed_time -gt $timeout ]]; then
-              echo "Timeout reached, did not detect package: ${package_name} within 10 minutes."
-              echo "timeout_reached=1" >> $GITHUB_OUTPUT
-              echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
-              break
-            fi
-
-            sleep 60  # Wait for 1 minute before polling again
-          done
-        env:
-          ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
-
-      - name: Install package
-        id: install
-        if: ${{ steps.poll_repodata.outputs.timeout_reached }} != "1"
-        run: |          
-          conda install -y community-integration-test --channel https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing
-          
-          if conda list | grep community-integration-test; then
-            echo "Found installed pacakge"
-            echo "test_result=Success" >> $GITHUB_OUTPUT            
-          else
-            echo "Failed to install"
-            echo "test_result=Error" >> $GITHUB_OUTPUT
+          # check repodata.json
+          package_name=community-integration-test-0.4.6-py_${{ steps.build_number.outputs.result }}.tar.bz2          
+          response=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/noarch/repodata.json)            
+          repo_package=$(echo "$response" | jq -r ".packages.\"${package_name}\"")
+        
+          if [[ "$repo_package" != "null" ]]; then
+            echo "Found package in repodata.json: $repo_package"   
+            echo "timeout_reached=0" >> $GITHUB_OUTPUT
+            echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
+            break
           fi
-        env:
-          ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
 
-      - name: Send Integration Test Event
-        uses: masci/datadog@v1
-        with:
-          api-key: ${{ secrets.DATADOG_API_KEY }}
-          events: |
-            - title: "Community Repo Integration Test ${{ steps.install.outputs.test_result }}"
-              aggregate_key: "community-repo/integration-test-completed"
-              text: "Test ${{ steps.install.outputs.test_result }}"
-              alert_type: "${{ steps.install.outputs.test_result }}"
-              host: ${{ github.repository_owner }}
-              tags:
-                - "@github.org:anaconda-community"                
-                - "package-name:${{ steps.poll_repodata.outputs.repodata_package }}"
-                - "service:community-repo"
+          # Check if timeout reached
+          if [[ $elapsed_time -gt $timeout ]]; then
+            echo "Timeout reached, did not detect package: ${package_name} within 10 minutes."
+            echo "timeout_reached=1" >> $GITHUB_OUTPUT
+            echo "repodata_package=$package_name" >> $GITHUB_OUTPUT
+            break
+          fi
+
+          sleep 60  # Wait for 1 minute before polling again
+        done
+      env:
+        ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
+
+    - name: Install package
+      id: install
+      if: ${{ steps.poll_repodata.outputs.timeout_reached }} != "1"
+      run: |          
+        conda install -y community-integration-test --channel https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing
+        
+        if conda list | grep community-integration-test; then
+          echo "Found installed pacakge"
+          echo "test_result=Success" >> $GITHUB_OUTPUT            
+        else
+          echo "Failed to install"
+          echo "test_result=Error" >> $GITHUB_OUTPUT
+        fi
+      env:
+        ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
+
+    - name: Send Integration Test Event
+      uses: masci/datadog@v1
+      with:
+        api-key: ${{ secrets.DATADOG_API_KEY }}
+        events: |
+          - title: "Community Repo Integration Test ${{ steps.install.outputs.test_result }}"
+            aggregate_key: "community-repo/integration-test-completed"
+            text: "Test ${{ steps.install.outputs.test_result }}"
+            alert_type: "${{ steps.install.outputs.test_result }}"
+            host: ${{ github.repository_owner }}
+            tags:
+              - "@github.org:anaconda-community"                
+              - "package-name:${{ steps.poll_repodata.outputs.repodata_package }}"
+              - "service:community-repo"

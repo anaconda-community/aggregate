@@ -199,6 +199,12 @@ if __name__ == "__main__":
         for feedstock in sorted(group.members)
     ]
 
+    # Always include the input even if we couldn't find the recipe for whatever reason
+    for feedstock in args.feedstock_name.split(","):
+        if feedstock not in dependency_order:
+            dependency_order.append(feedstock)
+
+    # If we only want to sort the given input, remove everything else
     if args.sort_only:
         to_remove = []
         feedstocks = args.feedstock_name.split(",")
