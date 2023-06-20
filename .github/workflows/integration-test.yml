@@ -72,6 +72,8 @@ jobs:
           git commit -m "update community-integration-test-feedstock" && git push --set-upstream origin community-integration-test-branch --force
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    outputs:
+      build-number: ${{ steps.build_number.outputs.result }}
 
   build-feedstock:
     needs: setup-test
@@ -84,7 +86,7 @@ jobs:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
   install-package:
-    needs: build-feedstocks
+    needs: [build-feedstock, setup-test]
     defaults:
       run:
         shell: bash -l {0}
@@ -100,7 +102,7 @@ jobs:
           elapsed_time=$((current_time - start_time))
 
           # check repodata.json
-          package_name=community-integration-test-0.4.6-py_${{ steps.build_number.outputs.result }}.tar.bz2          
+          package_name=community-integration-test-0.4.6-py_${{ needs.setup-test.outputs.build-number }}.tar.bz2          
           response=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/noarch/repodata.json)            
           repo_package=$(echo "$response" | jq -r ".packages.\"${package_name}\"")
         
@@ -130,7 +132,7 @@ jobs:
       run: |          
         conda install -y community-integration-test --channel https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing
         
-        if conda list | grep community-integration-test; then
+        if conda list | grep community-integration-test | grep py_${{ needs.setup-test.outputs.build-number }}; then
           echo "Found installed pacakge"
           echo "test_result=Success" >> $GITHUB_OUTPUT            
         else
