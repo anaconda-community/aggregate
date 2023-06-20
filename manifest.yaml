@@ -187,7 +187,7 @@ feedstocks:
     commit: f7154f16efe0d803010575b87b85fe9f43073e13
   botocore-feedstock:
     branch: main
-    commit: 0a37cc2e1119be176d50704d229d3827606c7e10
+    commit: b02319d8f7c4e032dd5fab06540ac2967e1997ab
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -619,7 +619,7 @@ feedstocks:
     commit: 03bfeff781e99147fcf7010799ace788d3fedd31
   holidays-feedstock:
     branch: main
-    commit: 9a76ea0c67fd65015332847e3b396f5d23c3ffcf
+    commit: 4d747d0607fb049f6f6569b5ec06dcc76b54d2b1
   html5lib-feedstock:
     branch: main
     commit: 775c9082c54546e2b783f93c01343d6b505e26b4
@@ -1018,13 +1018,13 @@ feedstocks:
     commit: d45f15c17a71974f388b69d3a854fc5c5d2a2b18
   mysql-feedstock:
     branch: main
-    commit: 58703210ec92e74d0d3868f542d5d83e8313a798
+    commit: d472855e97ea453535c320beba10df5162f891e8
   nasm-feedstock:
     branch: main
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
   nbconvert-feedstock:
     branch: main
-    commit: 2dbeeb6224823a5e99bbeeb0f77d434872e22acc
+    commit: 34125864997d84e9b5cee918960abf96378e13d0
   nbformat-feedstock:
     branch: main
     commit: f052b03baeda70dffd1dd357b770a2a12f40765e
