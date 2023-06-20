@@ -25,6 +25,7 @@ on:
         type: string
       add_deps:
         description: "Flag to add dependencies"
+        # We default this to false because both add and update repo already include any changed dependencies
         default: false
         type: boolean
     secrets:
