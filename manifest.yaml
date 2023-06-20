@@ -757,7 +757,7 @@ feedstocks:
     commit: 5213c6db1d6f4588d77ab25099a7878beef96deb
   keyring-feedstock:
     branch: main
-    commit: 1c0100e018bfa242cab2d1dad95d60aac8044a34
+    commit: 0114de3780a5ded021809a8c89e47cd2cf3bb41e
   keyutils-feedstock:
     branch: main
     commit: 3ac0669ef6f0a90687d5043f4d7b3d7172339eb6
