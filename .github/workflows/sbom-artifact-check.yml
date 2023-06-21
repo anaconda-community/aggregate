@@ -118,7 +118,7 @@ jobs:
 
       - name: Send SBOM Not Found Event
         uses: masci/datadog@v1
-        if: ${{ steps.match_packages.outputs.not_found_packages }} != ""
+        if: ${{ steps.match_packages.outputs.not_found_packages_count }} != 0
         with:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
