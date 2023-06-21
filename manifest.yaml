@@ -1132,7 +1132,7 @@ feedstocks:
     commit: 91030217ed20a0fb6aeb164e21c6844a8e50a113
   pathy-feedstock:
     branch: main
-    commit: 1e6da43da5c8e11e09c063c79b09236bbacb7780
+    commit: b61e0a35ace682ec0aea575f479cb4bd6477bdbc
   patsy-feedstock:
     branch: main
     commit: 9ac95271c86fdb9cea780c33633c9b5f97b240d7
