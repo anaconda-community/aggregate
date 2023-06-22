@@ -129,9 +129,7 @@ jobs:
               tags:
                 - "@github.org:anaconda-community"
                 - architecture: ${{ matrix.architecture }}
-                - "service:community-repo"
-        env:
-          not_found_packages_count: ${{ steps.match_packages.outputs.not_found_packages_count }}
+                - "service:community-repo/post-process/sbom-check"        
 
 #      - name: Send SBOM Index Name Mistmatch Event
 #        uses: masci/datadog@v1
@@ -147,7 +145,7 @@ jobs:
 #              tags:
 #                - "@github.org:anaconda-community"
 #                - architecture: ${{ matrix.architecture }}
-#                - "service:community-repo"
+#                - "service:community-repo/post-process/sbom-name-check"
 
       - name: Send SBOM Metrics
         uses: masci/datadog@v1
@@ -159,18 +157,18 @@ jobs:
               value: ${{ steps.repodata_packages.outputs.repodata_packages_count }}
               tags:          
                 - "@github.org:anaconda-community"
-                - "service:community-repo"
+                - "service:community-repo/post-process/sbom-check"        
             
             - type: "count"
               name: "community.repo.${{ matrix.architecture }}.sbom.paths.count"
               value: ${{ steps.sbom_index_paths.outputs.sbom_index_paths_count }}
               tags:          
                 - "@github.org:anaconda-community"
-                - "service:community-repo"
+                - "service:community-repo/post-process/sbom-check"        
             
             - type: "count"
               name: "community.repo.${{ matrix.architecture }}.sbom.not_found_packages.count"
               value: ${{ steps.match_packages.outputs.not_found_packages_count }}
               tags:          
                 - "@github.org:anaconda-community"
-                - "service:community-repo"
+                - "service:community-repo/post-process/sbom-check"        
