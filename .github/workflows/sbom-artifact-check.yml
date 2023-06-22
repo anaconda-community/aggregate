@@ -128,7 +128,7 @@ jobs:
               host: ${{ github.repository_owner }}
               tags:
                 - "@github.org:anaconda-community"
-                - architecture: ${{ matrix.architecture }}
+                - "architecture:${{ matrix.architecture }}"
                 - "service:community-repo/post-process/sbom-check"        
 
 #      - name: Send SBOM Index Name Mistmatch Event
@@ -157,7 +157,7 @@ jobs:
               value: ${{ steps.repodata_packages.outputs.repodata_packages_count }}
               tags:          
                 - "@github.org:anaconda-community"
-                - architecture: ${{ matrix.architecture }}
+                - "architecture:${{ matrix.architecture }}"
                 - "service:community-repo/post-process/sbom-check"        
             
             - type: "count"
@@ -165,13 +165,13 @@ jobs:
               value: ${{ steps.sbom_index_paths.outputs.sbom_index_paths_count }}
               tags:          
                 - "@github.org:anaconda-community"
-                - architecture: ${{ matrix.architecture }}
+                - "architecture:${{ matrix.architecture }}"
                 - "service:community-repo/post-process/sbom-check"        
             
             - type: "count"
-              name: "community.repo.sbom.not_found_packages.count"
+              name: "community.repo.packages_missing_sbom.count"
               value: ${{ steps.match_packages.outputs.not_found_packages_count }}
               tags:          
                 - "@github.org:anaconda-community"
-                - architecture: ${{ matrix.architecture }}
+                - "architecture:${{ matrix.architecture }}"
                 - "service:community-repo/post-process/sbom-check"        
