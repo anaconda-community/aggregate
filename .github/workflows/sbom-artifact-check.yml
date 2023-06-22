@@ -153,22 +153,25 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           metrics: |
             - type: "count"
-              name: "community.repo.${{ matrix.architecture }}.packages.count"
+              name: "community.repo.packages.count"
               value: ${{ steps.repodata_packages.outputs.repodata_packages_count }}
               tags:          
                 - "@github.org:anaconda-community"
+                - architecture: ${{ matrix.architecture }}
                 - "service:community-repo/post-process/sbom-check"        
             
             - type: "count"
-              name: "community.repo.${{ matrix.architecture }}.sbom.paths.count"
+              name: "community.repo.sbom.paths.count"
               value: ${{ steps.sbom_index_paths.outputs.sbom_index_paths_count }}
               tags:          
                 - "@github.org:anaconda-community"
+                - architecture: ${{ matrix.architecture }}
                 - "service:community-repo/post-process/sbom-check"        
             
             - type: "count"
-              name: "community.repo.${{ matrix.architecture }}.sbom.not_found_packages.count"
+              name: "community.repo.sbom.not_found_packages.count"
               value: ${{ steps.match_packages.outputs.not_found_packages_count }}
               tags:          
                 - "@github.org:anaconda-community"
+                - architecture: ${{ matrix.architecture }}
                 - "service:community-repo/post-process/sbom-check"        
