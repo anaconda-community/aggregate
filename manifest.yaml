@@ -79,7 +79,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: 583dc06cb3ad3440b21d6eed1c82595f6ee9b716
+    commit: e8c253b35207ec793c45e3b135164b4325cfed78
   aws-c-cal-feedstock:
     branch: main
     commit: 71a34b0c536879e69c521a54a142a53b23dd06c3
