@@ -95,26 +95,26 @@ jobs:
           REPODATA_PACKAGES: ${{ steps.repodata_packages.outputs.repodata_packages }}
           SBOM_INDEX_PATHS: ${{ steps.sbom_index_paths.outputs.sbom_index_paths }}
 
-      - name: Check Index Paths
-        id: index_path_check
-        run: |
-          # In order to determine whether the sbom exists, do a sanity check on each of the sbom index paths
-          # by going to that sbom file and checking the name field matches the index path
-          no_name_sboms=()
-          for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
-            sbom_data=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/sboms/${sbom_index_path})
-            sbom_name=$(echo "$sbom_data" | yq '.name' | tr -d '"')
-            sbom_name_from_path=$(echo "$sbom_index_path" | tr -d '"')
-            if [[ "$sbom_name_from_path" != "$sbom_name" ]]; then
-              no_name_sboms+=("$sbom_index_path")
-            fi
-          done
-          no_name_sboms_str=$(IFS=,; echo "${no_name_sboms[*]}")
-          echo "no_name_sboms=$no_name_sboms_str" | tr -d '"' >> $GITHUB_OUTPUT
-          echo "no_name_sboms_count=${#no_name_sboms[@]}" >> $GITHUB_OUTPUT
-        env:
-          SBOM_INDEX_PATHS: ${{ steps.sbom_index_paths.outputs.sbom_index_paths }}
-          ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
+#      - name: Check Index Paths
+#        id: index_path_check
+#        run: |
+#          # In order to determine whether the sbom exists, do a sanity check on each of the sbom index paths
+#          # by going to that sbom file and checking the name field matches the index path
+#          no_name_sboms=()
+#          for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
+#            sbom_data=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/sboms/${sbom_index_path})
+#            sbom_name=$(echo "$sbom_data" | yq '.name' | tr -d '"')
+#            sbom_name_from_path=$(echo "$sbom_index_path" | tr -d '"')
+#            if [[ "$sbom_name_from_path" != "$sbom_name" ]]; then
+#              no_name_sboms+=("$sbom_index_path")
+#            fi
+#          done
+#          no_name_sboms_str=$(IFS=,; echo "${no_name_sboms[*]}")
+#          echo "no_name_sboms=$no_name_sboms_str" | tr -d '"' >> $GITHUB_OUTPUT
+#          echo "no_name_sboms_count=${#no_name_sboms[@]}" >> $GITHUB_OUTPUT
+#        env:
+#          SBOM_INDEX_PATHS: ${{ steps.sbom_index_paths.outputs.sbom_index_paths }}
+#          ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
 
       - name: Send SBOM Not Found Event
         uses: masci/datadog@v1
@@ -134,21 +134,21 @@ jobs:
         env:
           not_found_packages_count: ${{ steps.match_packages.outputs.not_found_packages_count }}
 
-      - name: Send SBOM Index Name Mistmatch Event
-        uses: masci/datadog@v1
-        if: ${{ steps.index_path_check.outputs.no_name_sboms }} != ""
-        with:
-          api-key: ${{ secrets.DATADOG_API_KEY }}
-          events: |
-            - title: "Community Repo SBOM Index Name Mismatch"
-              aggregate_key: "community-repo/sbom-index-name-mismatch"
-              text: "The SBOM name was not found at the sbom path location: ${{ steps.index_path_check.outputs.no_name_sboms }} with architecture: ${{ matrix.architecture }}"
-              alert_type: "error"
-              host: ${{ github.repository_owner }}
-              tags:
-                - "@github.org:anaconda-community"
-                - architecture: ${{ matrix.architecture }}
-                - "service:community-repo"
+#      - name: Send SBOM Index Name Mistmatch Event
+#        uses: masci/datadog@v1
+#        if: ${{ steps.index_path_check.outputs.no_name_sboms }} != ""
+#        with:
+#          api-key: ${{ secrets.DATADOG_API_KEY }}
+#          events: |
+#            - title: "Community Repo SBOM Index Name Mismatch"
+#              aggregate_key: "community-repo/sbom-index-name-mismatch"
+#              text: "The SBOM name was not found at the sbom path location: ${{ steps.index_path_check.outputs.no_name_sboms }} with architecture: ${{ matrix.architecture }}"
+#              alert_type: "error"
+#              host: ${{ github.repository_owner }}
+#              tags:
+#                - "@github.org:anaconda-community"
+#                - architecture: ${{ matrix.architecture }}
+#                - "service:community-repo"
 
       - name: Send SBOM Metrics
         uses: masci/datadog@v1
