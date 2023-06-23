@@ -757,7 +757,7 @@ feedstocks:
     commit: 5213c6db1d6f4588d77ab25099a7878beef96deb
   keyring-feedstock:
     branch: main
-    commit: 0114de3780a5ded021809a8c89e47cd2cf3bb41e
+    commit: 0744616d6452c8eda92736cc4558c1511d16664e
   keyutils-feedstock:
     branch: main
     commit: 3ac0669ef6f0a90687d5043f4d7b3d7172339eb6
@@ -1531,7 +1531,7 @@ feedstocks:
     commit: 157180e9961f485e4384ea08110c5670b54ed066
   setuptools-feedstock:
     branch: main
-    commit: 3d1c73c2de420f6101b4d32468a6c3b51468d84b
+    commit: c7d84379fd6c4e4a139b91b091041a9bcd351aa3
   setuptools-rust-feedstock:
     branch: main
     commit: a0b45b8eff30a6cee0d0f54f6f4ccf484c8a6401
@@ -1570,7 +1570,7 @@ feedstocks:
     commit: afeb1e0bc5239e4dc8ac5d3f9b384b7d56133bb7
   snowflake-connector-python-feedstock:
     branch: main
-    commit: 82ccd1e2776a97d7d34aa66394c8bea74eecf107
+    commit: 977543d1a6c4b035d3dcf55b5dd14e556eab7fc9
   sortedcontainers-feedstock:
     branch: main
     commit: 04ea352d08abb3d4c3e3e46b01d2a5a86f6fc74a
