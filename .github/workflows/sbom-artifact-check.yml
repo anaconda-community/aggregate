@@ -122,7 +122,7 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
             - title: "Community Repo SBOM Not Found"
-              aggregate_key: "community-repo/sbom-not-found"
+              aggregation_key: "community-repo/sbom-not-found"
               text: "The SBOM path was not found for repodata packages: ${{ steps.match_packages.outputs.not_found_packages }} with architecture: ${{ matrix.architecture }}"
               alert_type: "error"
               host: ${{ github.repository_owner }}
@@ -138,7 +138,7 @@ jobs:
 #          api-key: ${{ secrets.DATADOG_API_KEY }}
 #          events: |
 #            - title: "Community Repo SBOM Index Name Mismatch"
-#              aggregate_key: "community-repo/sbom-index-name-mismatch"
+#              aggregation_key: "community-repo/sbom-index-name-mismatch"
 #              text: "The SBOM name was not found at the sbom path location: ${{ steps.index_path_check.outputs.no_name_sboms }} with architecture: ${{ matrix.architecture }}"
 #              alert_type: "error"
 #              host: ${{ github.repository_owner }}

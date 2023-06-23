@@ -155,7 +155,7 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
             - title: "Unable to create feedstock ${{ matrix.feedstock }}"
-              aggregate_key: "community-repo/feedstock-creation-error"
+              aggregation_key: "community-repo/feedstock-creation-error"
               text: "Feedstock ${{ matrix.feedstock }} failed to fork."
               alert_type: "error"
               host: ${{ github.repository_owner }}
@@ -180,7 +180,7 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
             - title: "Added feedstock ${{ matrix.feedstock }}"
-              aggregate_key: "community-repo/feedstock-created"
+              aggregation_key: "community-repo/feedstock-created"
               text: "Feedstock ${{ matrix.feedstock }} was added."
               alert_type: "info"
               host: ${{ github.repository_owner }}

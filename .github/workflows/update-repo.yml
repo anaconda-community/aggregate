@@ -207,7 +207,7 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
             - title: "Updated feedstock ${{ matrix.feedstock }}"
-              aggregate_key: "community-repo/feedstock-updated"
+              aggregation_key: "community-repo/feedstock-updated"
               text: "Feedstock ${{ matrix.feedstock }} was updated."
               alert_type: "info"
               host: ${{ github.repository_owner }}
@@ -232,7 +232,7 @@ jobs:
           api-key: ${{ secrets.DATADOG_API_KEY }}
           events: |
             - title: "Unable to update feedstock ${{ matrix.feedstock }}"
-              aggregate_key: "community-repo/feedstock-update-error"
+              aggregation_key: "community-repo/feedstock-update-error"
               text: "Feedstock ${{ matrix.feedstock }} failed to update."
               alert_type: "error"
               host: ${{ github.repository_owner }}
