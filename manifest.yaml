@@ -106,7 +106,7 @@ feedstocks:
     commit: 6c727e072fb07166083dee4aa1eaf6bc757ce185
   aws-c-s3-feedstock:
     branch: main
-    commit: 666cab3f6c50b5c02d598e31e02348778ee4f887
+    commit: c78b6f56374b3dba8f4e2d442e35416e4e518df8
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
