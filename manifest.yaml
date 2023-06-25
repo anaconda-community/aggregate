@@ -121,7 +121,7 @@ feedstocks:
     commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
   awscli-feedstock:
     branch: main
-    commit: bbe25f4fe93c6da2ddd77866ec9325e08cb13885
+    commit: b30572a4f83855d4504d45d408b320e8467566c6
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,7 +187,7 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: e07b6918fbea9a590b4edef764db209bb2fdb500
+    commit: c550dc7f70f6d7d4c79b37d09e3be4079e7a7fba
   botocore-feedstock:
     branch: main
     commit: 74eae107de1492c66d7082f76dd588a477892786
@@ -208,7 +208,7 @@ feedstocks:
     commit: 18dfc2795d7355c659d162819b6eae6a00730592
   c-blosc2-feedstock:
     branch: main
-    commit: ca23a7f9041cce11afaedc20addfa30f70c2ad4d
+    commit: edeff42e89f1d6cc6216fc7f0ce08d426159c312
   c99-to-c89-feedstock:
     branch: main
     commit: f1bc59c385801259e94817a84ed1113fb522740e
@@ -535,7 +535,7 @@ feedstocks:
     commit: b3fb5533a886b83bcd09ff28b5dc5a73a76ae7ff
   google-api-python-client-feedstock:
     branch: main
-    commit: 4738df89aae5ffe034dd26e3f17b3f6d1b80e943
+    commit: c40a8b046b899c5a3a99d55e912f731e2569cfee
   google-auth-feedstock:
     branch: main
     commit: 6f903471e30db4460448dd51d3b27e4ed7c9f8b9
@@ -589,7 +589,7 @@ feedstocks:
     commit: f15e91469b74543bf7e9a238385729cf54a1c257
   gstreamer-feedstock:
     branch: main
-    commit: 74b74718e2b4067ffb520689577b3c19826a8200
+    commit: 170cff4bf5db2639058ff4c7ce1374ee4c28501e
   gtest-feedstock:
     branch: main
     commit: d10a4b2fa491cc1acd9ec6eb3a3c2e71bff3fc9e
@@ -733,7 +733,7 @@ feedstocks:
     commit: 16cc7e9b1b546a53f1e59d89ae1751cb71254e86
   jupyter_client-feedstock:
     branch: main
-    commit: 847c85a23ccabbe07c82cef8b9215e97da8a41ef
+    commit: 5508733cbbe09c3d1648f8a8bd4a6506dd23eacc
   jupyter_core-feedstock:
     branch: main
     commit: 46c8072dbd9bcf4dacd8a51e1a695a838919eb26
@@ -760,7 +760,7 @@ feedstocks:
     commit: 5213c6db1d6f4588d77ab25099a7878beef96deb
   keyring-feedstock:
     branch: main
-    commit: 0744616d6452c8eda92736cc4558c1511d16664e
+    commit: b263ef91cc6017e5d93ce11c4d8e408a91202ec8
   keyutils-feedstock:
     branch: main
     commit: 3ac0669ef6f0a90687d5043f4d7b3d7172339eb6
@@ -1171,7 +1171,7 @@ feedstocks:
     commit: 0abd41c2ea1e78914cadc49b19bd3721693d0c25
   platformdirs-feedstock:
     branch: main
-    commit: 0b92636eaae5c6b9a07a5f929b14cddcfc471d8c
+    commit: 0b3f425db75eed4e26e4ba82a07164ece5b65f9e
   plotly-feedstock:
     branch: main
     commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
@@ -1222,7 +1222,7 @@ feedstocks:
     commit: 730bf2240de64c5aa246135292f7cfb3eb0f5d61
   proto-plus-feedstock:
     branch: main
-    commit: 5c8076f47d0e254c8544d032062b52e2e9f115dc
+    commit: e70290cd2011045f62dac8bb4175e932e07aff0b
   psutil-feedstock:
     branch: main
     commit: a74ba844fe00c420fe3c3569c23288b4cc30cb09
