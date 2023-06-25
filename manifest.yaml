@@ -190,7 +190,7 @@ feedstocks:
     commit: e07b6918fbea9a590b4edef764db209bb2fdb500
   botocore-feedstock:
     branch: main
-    commit: 21aecd7fd2665c1ca5b6064de4731f39bbb21e55
+    commit: 74eae107de1492c66d7082f76dd588a477892786
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -1342,7 +1342,7 @@ feedstocks:
     commit: b1b068113dbf052c02320de3d4b3e02aef014d4b
   pytest-feedstock:
     branch: main
-    commit: c52b3e028c0873c0e7c6a3c8d7fc80c38bf6b3be
+    commit: 6fead3e46ab8b1a41481c1f56e21aa9b88137347
   pytest-runner-feedstock:
     branch: main
     commit: b53b6d4744e0a7f0750b90cac85aa849869e9a21
@@ -1477,7 +1477,7 @@ feedstocks:
     commit: ada08b152f27db3033b1725a74403658f30299ac
   s2n-feedstock:
     branch: main
-    commit: 8ee3dbafd796c706f0009f3054a2aab04632415b
+    commit: 6ead44645c3477ce080bfef526e196f8ee426787
   s3fs-feedstock:
     branch: main
     commit: 67cc7909014f38ed061e16ad0e62c49fae082749
