@@ -1375,7 +1375,7 @@ feedstocks:
     commit: da1a1ca3748011318b9ea9080862b24dad38035c
   pythran-feedstock:
     branch: main
-    commit: 858511f32869d7c112f25959a08f2c0a19f1f497
+    commit: 9a2de8382f3ee795c537c4f9ffe94b03db6546b5
   pytorch-cpu-feedstock:
     branch: main
     commit: 1a3257e9f1aa9cb3ac8d7347c22493024265f821
