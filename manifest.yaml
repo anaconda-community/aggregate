@@ -49,7 +49,7 @@ feedstocks:
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
   arrow-cpp-feedstock:
     branch: main
-    commit: c0fff2566382e4cb56e0df29ab46f421f5e171bf
+    commit: 31ba05cea1b36b36bc79675e91cd7d67e40d3537
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
@@ -1303,7 +1303,7 @@ feedstocks:
     commit: 66b095b1d0eb33be0a40a40bfd92a6811739633f
   pymysql-feedstock:
     branch: main
-    commit: 5e1781ad98dc052d7a4c0e130a5a193e9361cd5b
+    commit: 3aabfa511d31f0e73cd7809e6ebe91bc07733355
   pynacl-feedstock:
     branch: main
     commit: 5016e060495fa5d729e1455b6cdd92dc1764fe4e
@@ -1789,7 +1789,7 @@ feedstocks:
     commit: 045d9b752ad89b777f0bd6b2a6dfb46924a0a449
   websocket-client-feedstock:
     branch: main
-    commit: 9faa1bb19b03d4e0e63727a53b52c17ebf5959e5
+    commit: a0cb098959027b66b1d6885b861079f7fe571d16
   werkzeug-feedstock:
     branch: main
     commit: ec160355c2c680411939e855f5eebe5bb1f22d14
