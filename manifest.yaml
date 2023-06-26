@@ -667,7 +667,7 @@ feedstocks:
     commit: 4e9708a0683b2023725836f90f0934449bf8abb4
   ipykernel-feedstock:
     branch: main
-    commit: 7b10bb89d56bc3e4d456dc83bf49c55f0d208738
+    commit: fee89061781e0214a77e33790bbc7905997b905d
   ipympl-feedstock:
     branch: main
     commit: 1b0c4f5c11c094eedb52e836dfc1aab8292a3cfb
@@ -1312,7 +1312,7 @@ feedstocks:
     commit: f5b6ddfe4e085430a62acb36923aff90f86b8d4c
   pyod-feedstock:
     branch: main
-    commit: 473fd9c0b96a2d1ca8a65ae1fe0ea0aa30321ba3
+    commit: 239270fd84fde6365be6f668faa3de786ef8e67e
   pyopenssl-feedstock:
     branch: main
     commit: fc1ef2a6abd54f12046d584892b50694c0801072
