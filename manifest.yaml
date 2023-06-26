@@ -148,7 +148,7 @@ feedstocks:
     commit: b7291bcb73e87b51039dff364444613c30fe0268
   backports.functools_lru_cache-feedstock:
     branch: main
-    commit: 25a9fe48b478e52ee0dcf9e712a608801c8a91d6
+    commit: 544ff9dbcd80d80c973b45ffe2b9b1528301685c
   backports.zoneinfo-feedstock:
     branch: main
     commit: abe6ba11d23b80c7f95ceb2ae91e6a82452f0893
@@ -832,7 +832,7 @@ feedstocks:
     commit: e02113227c889afa8f9bddde740fbf3ef12b0383
   libflac-feedstock:
     branch: main
-    commit: a42e0bc0ce38647363dc965fe5f194ce9919df6c
+    commit: 8574a7d4667f406d6325f75f60de1c612063fbee
   libgcrypt-feedstock:
     branch: main
     commit: e4ff5f504aa0261b52df863ce6650f9ceb87979b
@@ -1177,7 +1177,7 @@ feedstocks:
     commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
   pluggy-feedstock:
     branch: main
-    commit: d9d8a1a757fc6a29a6fee8eca15729ea87ef4869
+    commit: 232b5b81f6a1d2a6481ec0d57b60088ef22d30dd
   ply-feedstock:
     branch: main
     commit: f7dd26a2707378a72c13d42cbd5738fbca833b6b
@@ -1504,7 +1504,7 @@ feedstocks:
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
   scipy-feedstock:
     branch: main
-    commit: ba61c642bdf1903bebbda9876a36ec422f0de140
+    commit: fab3c71f6c97efa2e7a9e92b95d17a97cf1fe25e
   scramp-feedstock:
     branch: main
     commit: 0594ed0d7fb0ac6f02045f417a810f611c3a8b48
