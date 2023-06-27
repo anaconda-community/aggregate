@@ -547,7 +547,7 @@ feedstocks:
     commit: 20ab1b2e04a0ed248eb6e843eabee00d047243c4
   google-cloud-bigquery-feedstock:
     branch: main
-    commit: 4e0db2f938eda4b01aa151787a3504275ee74852
+    commit: f4e7857da8e9275fe5d4426b700078811234de53
   google-cloud-bigquery-storage-feedstock:
     branch: main
     commit: bf9f8e0d8a9af6092d002cef6512e250d8c5b95a
@@ -559,7 +559,7 @@ feedstocks:
     commit: 30ed83ec08eba6c353446e77761d2567012703ec
   google-cloud-storage-feedstock:
     branch: main
-    commit: eb7f207505b4aa5598fca7e72ead837f391351d9
+    commit: 251d3a148d0025bcd874ce66073247ef503c803c
   google-crc32c-feedstock:
     branch: main
     commit: 6dee79cdbfbaf37c05a909c411a47991ae4dcac0
@@ -1591,7 +1591,7 @@ feedstocks:
     commit: 277368b46aaf09bff4c242d2ce8dfa7beaccee86
   sqlalchemy-feedstock:
     branch: main
-    commit: 210f23763ff6f6551d58904838a679df5d784696
+    commit: 08bb7f4095cb1216de360ea679a33ff0f55141da
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
