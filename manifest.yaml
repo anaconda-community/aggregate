@@ -196,7 +196,7 @@ feedstocks:
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
   brotli-feedstock:
     branch: main
-    commit: b67ad1d23842448a06a08df29e649a2588fcbcd7
+    commit: 5dd997541fdfd55d620f7509a1c12745682a202d
   brotlipy-feedstock:
     branch: main
     commit: 3f434b421ffea2a2901e50e08df6c0cb129d2f8f
@@ -367,7 +367,7 @@ feedstocks:
     commit: 51db22e756e03b9c5e4900f5bdb3022842b56c98
   datasets-feedstock:
     branch: main
-    commit: d7a0b35ad3b2e5ed0d51ea01a6fbdf5bb3357cba
+    commit: 164f82f3129bd2afb47e83e9406ef3857e9593fd
   dav1d-feedstock:
     branch: main
     commit: 23bbb0a9849e230e290131c2b8d1ddf8e452bea5
@@ -742,7 +742,7 @@ feedstocks:
     commit: 2e47f6ea58e376bfe58a436dfc3bc0013b184e42
   jupyter_server-feedstock:
     branch: main
-    commit: 0fe545cb7d1528141db9145674c95509a54502d6
+    commit: 7a6acd84f3984e49aca8bd8bcda2f468890fa17b
   jupyter_server_terminals-feedstock:
     branch: main
     commit: dbacee20c45b6caf6677d0e27604e2115aa86d96
@@ -1609,7 +1609,7 @@ feedstocks:
     commit: 248eb936da8966436adf77a1d6ac423da8ede31a
   streamlit-feedstock:
     branch: main
-    commit: a2afdf26224cd65023249662086ad048013cf0dc
+    commit: bb7e71d8d008551e997d1f832964bf2f7c732bcc
   systemd-feedstock:
     branch: main
     commit: b2b60165a029b6397b8409d523772d723f38a056
