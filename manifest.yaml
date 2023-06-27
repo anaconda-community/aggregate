@@ -121,7 +121,7 @@ feedstocks:
     commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
   awscli-feedstock:
     branch: main
-    commit: b30572a4f83855d4504d45d408b320e8467566c6
+    commit: a4a38c858442aec1a4982657946e79d596c54377
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: c550dc7f70f6d7d4c79b37d09e3be4079e7a7fba
+    commit: b2ab7c8682532c111ffe22d1c980a14c110799cb
   botocore-feedstock:
     branch: main
-    commit: 74eae107de1492c66d7082f76dd588a477892786
+    commit: 42c9b8c24f15beeaaa6c0093a89a990f539d2149
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -358,7 +358,7 @@ feedstocks:
     commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
   dask-core-feedstock:
     branch: main
-    commit: 0f966c7bcf31c5357d131d2b00e957efbe5c38c6
+    commit: e3cfc3964322f9421c7eed04af30d8e8924edddb
   databricks-cli-feedstock:
     branch: main
     commit: b4dc1bb83d31840de61b1df35b47f9eed3e03442
@@ -538,7 +538,7 @@ feedstocks:
     commit: c40a8b046b899c5a3a99d55e912f731e2569cfee
   google-auth-feedstock:
     branch: main
-    commit: 6f903471e30db4460448dd51d3b27e4ed7c9f8b9
+    commit: 6adb1a06474afa8baab44276f88272f41dc4e457
   google-auth-httplib2-feedstock:
     branch: main
     commit: bf6c5bc776ce9c8535a5bba78320dc37757c1989
@@ -925,7 +925,7 @@ feedstocks:
     commit: 8dddad8d1d1890291a17bb237d7faf456603905e
   llvmlite-feedstock:
     branch: main
-    commit: d55145a03314c586fbabe698d7d6b6a8f0e8a4be
+    commit: 178d2bece5cae82d1ad320c2abfe727d4ef8809b
   locket-feedstock:
     branch: main
     commit: 5f046cd18b9f6b2e8fe0220a4bf58f44064fef52
@@ -1069,7 +1069,7 @@ feedstocks:
     commit: a3a258f497558cfc86c709cb72c9d9cae17ae2a8
   numba-feedstock:
     branch: main
-    commit: 4fd71fda8f961ef8e2a5bc843c3ea1dc69cb705f
+    commit: cdfb22b9e6dcbcf65085d9054e4aa545ffaa163c
   numexpr-feedstock:
     branch: main
     commit: 635de0ed2c75e2256733266ae3ef4eeccad5f386
