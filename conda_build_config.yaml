@@ -299,7 +299,7 @@ gmp:
   - 6.2 # [osx and arm64]
 # keep google_cloud_cpp in sync with libgoogle_cloud
 google_cloud_cpp:
-  - 2.11.0
+  - '2.12'
 google_cloud_cpp_common:
   - 0.25.0
 googleapis_cpp:
@@ -392,7 +392,7 @@ libgit2:
   - '1.6'
 # Keep in sync with google_cloud_cpp
 libgoogle_cloud:
-  - 2.11.0
+  - '2.12'
 libgrpc:
   - '1.52'
 libhugetlbfs:
@@ -557,13 +557,13 @@ perl:
   - 5.26 # [win]
   - 5.34 # [not win]
 petsc:
-  - '3.17'
+  - '3.18'
 petsc4py:
-  - '3.17'
+  - '3.18'
 slepc:
-  - '3.17'
+  - '3.18'
 slepc4py:
-  - '3.17'
+  - '3.18'
 svt_av1:
   - 1.6.0
 p11_kit:
