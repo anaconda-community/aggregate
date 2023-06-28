@@ -709,7 +709,7 @@ feedstocks:
     commit: 6043a72de840e8ef3099ad11f6ea0a15be50e389
   joblib-feedstock:
     branch: main
-    commit: e936dac7369198eed167bfdfc085453417d739e7
+    commit: ef929f3216f930b494e80f357ff8f5d92ccbe9fa
   jom-feedstock:
     branch: main
     commit: b34030cbe144416022201f46c1a17e1dc1723852
@@ -841,7 +841,7 @@ feedstocks:
     commit: a52e9b1a369f616580552f9802f0c45aa7727360
   libhwloc-feedstock:
     branch: main
-    commit: eef334a1136ad79da32c0d5b0f8dcad329c53bf8
+    commit: c50dc69f6f81aecc5fb6a0977d219b1f6d37b727
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -973,7 +973,7 @@ feedstocks:
     commit: 6de6a81f8a9c8fddc0687340202c6036d39c00ae
   meson-python-feedstock:
     branch: main
-    commit: 11522852fba606a7f46559b6a8179cae6ad5f4ed
+    commit: ea80ce1fa067fba6fc6c45d7f730ef6b1d01c7ec
   miniful-feedstock:
     branch: main
     commit: 9d735c3ef5293c0ec3ec7a7b26c51b0b03ed3d6a
@@ -1054,7 +1054,7 @@ feedstocks:
     commit: c7e6148db52f30c63954ab9438e2a97edd4c0a68
   nodejs-feedstock:
     branch: main
-    commit: d99c41eba55515ccb24f10ce51bcde5e1605c076
+    commit: 0bcbdb2c6d2fe12d651c57697fd9ba76c6a1c057
   nomkl-feedstock:
     branch: main
     commit: e76f888f2eea80add43b22dc00bb1fb1869f8126
