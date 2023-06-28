@@ -49,7 +49,7 @@ feedstocks:
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
   arrow-cpp-feedstock:
     branch: main
-    commit: 31ba05cea1b36b36bc79675e91cd7d67e40d3537
+    commit: 31d8dc412a59fdf14ff742cf87807ae79db94315
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
@@ -100,7 +100,7 @@ feedstocks:
     commit: 78d1426428ab1cdde6c774670989bd173e06329d
   aws-c-io-feedstock:
     branch: main
-    commit: 0f21a049e679b404ef5014e7de4bfe6fec7affd3
+    commit: c3fb7a19f4d178bb06aebe8acf70e8523ac37be1
   aws-c-mqtt-feedstock:
     branch: main
     commit: 6c727e072fb07166083dee4aa1eaf6bc757ce185
@@ -121,7 +121,7 @@ feedstocks:
     commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
   awscli-feedstock:
     branch: main
-    commit: a4a38c858442aec1a4982657946e79d596c54377
+    commit: 214af750975e86def3d3a2ec8f065448bde9337a
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: b2ab7c8682532c111ffe22d1c980a14c110799cb
+    commit: aeabdd484d3fb7864adef995a8870b2300646d47
   botocore-feedstock:
     branch: main
-    commit: 42c9b8c24f15beeaaa6c0093a89a990f539d2149
+    commit: 36dc963f4ac2d55ff7d58325263ea37f04caf01c
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -547,7 +547,7 @@ feedstocks:
     commit: 20ab1b2e04a0ed248eb6e843eabee00d047243c4
   google-cloud-bigquery-feedstock:
     branch: main
-    commit: f4e7857da8e9275fe5d4426b700078811234de53
+    commit: 0426704680580ab50be0b2507ec6fa7373958d39
   google-cloud-bigquery-storage-feedstock:
     branch: main
     commit: bf9f8e0d8a9af6092d002cef6512e250d8c5b95a
