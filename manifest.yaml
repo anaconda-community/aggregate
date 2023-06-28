@@ -1393,7 +1393,7 @@ feedstocks:
     commit: 5afa930dd4c407568d4507d3341f414187d0439a
   pywin32-ctypes-feedstock:
     branch: main
-    commit: b79e0ae62c78ad33e42556d37d7f540f98f9e577
+    commit: aea18bc533fab279bdea8939255637a4203cbc31
   pywin32-feedstock:
     branch: main
     commit: aa71b091cec99e6ee5d20512111b4bf0f5c3ddd1
@@ -1408,7 +1408,7 @@ feedstocks:
     commit: bf6d5f2d87a02fc236ee209c5b188900c8285d93
   qt-main-feedstock:
     branch: main
-    commit: de396908d5f54b6ed928bb197e228151ae6004d5
+    commit: 531a81d38fe34e8a63c279aff89bb91696429db4
   querystring_parser-feedstock:
     branch: main
     commit: 3de5ee7a282d0c8769dab4c652f124872926d831
