@@ -97,7 +97,7 @@ feedstocks:
     commit: df0e697bc357f1124f94cf3991d744c708b2c714
   aws-c-http-feedstock:
     branch: main
-    commit: 78d1426428ab1cdde6c774670989bd173e06329d
+    commit: a4946236e9a4ddabeece9c8fd8a5f792cbba2840
   aws-c-io-feedstock:
     branch: main
     commit: c3fb7a19f4d178bb06aebe8acf70e8523ac37be1
@@ -190,7 +190,7 @@ feedstocks:
     commit: aeabdd484d3fb7864adef995a8870b2300646d47
   botocore-feedstock:
     branch: main
-    commit: 36dc963f4ac2d55ff7d58325263ea37f04caf01c
+    commit: 38addc4ee8e3c345f268ff30094deb0872dcb166
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: b8cfbb2bdabeeb7be7d0b4c1fc3349ae74c3860c
+    commit: 96ec16180efd2c2331d4070449a8a38aa48eafac
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -1504,7 +1504,7 @@ feedstocks:
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
   scipy-feedstock:
     branch: main
-    commit: fab3c71f6c97efa2e7a9e92b95d17a97cf1fe25e
+    commit: 10ae9bdf8b0e762dbe8021d071d57a99e8b4eab9
   scramp-feedstock:
     branch: main
     commit: 0594ed0d7fb0ac6f02045f417a810f611c3a8b48
