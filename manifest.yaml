@@ -622,7 +622,7 @@ feedstocks:
     commit: 03bfeff781e99147fcf7010799ace788d3fedd31
   holidays-feedstock:
     branch: main
-    commit: 4d747d0607fb049f6f6569b5ec06dcc76b54d2b1
+    commit: bf5c357f0993f9c2e90ae73b212607354dc84176
   html5lib-feedstock:
     branch: main
     commit: 775c9082c54546e2b783f93c01343d6b505e26b4
@@ -898,10 +898,10 @@ feedstocks:
     commit: 2b11deca9dee89b276d6f772ef268844069a9b84
   libwebp-base-feedstock:
     branch: main
-    commit: 90eddca6364c932a763247491dc42c23f61da731
+    commit: 24908845f8aeaebc3f113a2b2eb73a3226fb8f96
   libwebp-feedstock:
     branch: main
-    commit: 9010278b1a9bf26a2b4e65d47a6ff902f5088e42
+    commit: 51e4451b226aae2832ef6b3975308094667d7032
   libxcb-feedstock:
     branch: main
     commit: 2ee845e795260839f3b44afefae0ca4ef5850523
@@ -1582,7 +1582,7 @@ feedstocks:
     commit: 0f1095f9d5ee5cdd7b7b154ade5c7fea2cc826f2
   spacy-feedstock:
     branch: main
-    commit: 94103463cc1f0ef4c2fca122215012ed40e96296
+    commit: 61b7b4c3090886bd46ce0f17723caab8736079e4
   spacy-legacy-feedstock:
     branch: main
     commit: d294ae8e9d81e9f7a08c71a04ffe0196e970c893
