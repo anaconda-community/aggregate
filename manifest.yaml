@@ -10,7 +10,7 @@ feedstocks:
     commit: ae3b94a40ed6eafc116de7f3f9cd9a0ec0f774e7
   aiobotocore-feedstock:
     branch: main
-    commit: 3b8aff2bfc88151ff60ff850c2081366c23d529a
+    commit: 8540f88c322585871c3be43d3997b4efb46bd7b8
   aiohttp-feedstock:
     branch: main
     commit: ea1543a51d451e05989010e1da1fab5e76f40a5c
@@ -535,7 +535,7 @@ feedstocks:
     commit: b3fb5533a886b83bcd09ff28b5dc5a73a76ae7ff
   google-api-python-client-feedstock:
     branch: main
-    commit: c40a8b046b899c5a3a99d55e912f731e2569cfee
+    commit: ce282d81ddca6a42f51d5c22c54be65b5a507b55
   google-auth-feedstock:
     branch: main
     commit: 6adb1a06474afa8baab44276f88272f41dc4e457
@@ -1087,7 +1087,7 @@ feedstocks:
     commit: 46dc3bbb5654e3a0c25426d4c5b1ea6afb01bc0d
   orc-feedstock:
     branch: main
-    commit: 7356c032b464ebceda5ea35353ed8183f3921a0d
+    commit: 82fc75a69380b8b8010cf594455e23710309ffb5
   oscrypto-feedstock:
     branch: main
     commit: 32f4f58bca54c93107c39ca546232dfef1661cd5
