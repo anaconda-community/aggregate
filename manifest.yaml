@@ -49,7 +49,7 @@ feedstocks:
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
   arrow-cpp-feedstock:
     branch: main
-    commit: 31d8dc412a59fdf14ff742cf87807ae79db94315
+    commit: 1e14bdf714b44c6fda8c3f2f69ed5d586f2c639a
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
@@ -85,7 +85,7 @@ feedstocks:
     commit: 41e87a499e99c24fb1b0dc86e429eeb720970fe0
   aws-c-cal-feedstock:
     branch: main
-    commit: 71a34b0c536879e69c521a54a142a53b23dd06c3
+    commit: 53e0d1bed996161e4b8da59f1ad95fceb2a3fa95
   aws-c-common-feedstock:
     branch: main
     commit: 1e9b8467473f8b952192072a5740a29b940aea22
@@ -841,7 +841,7 @@ feedstocks:
     commit: a52e9b1a369f616580552f9802f0c45aa7727360
   libhwloc-feedstock:
     branch: main
-    commit: c50dc69f6f81aecc5fb6a0977d219b1f6d37b727
+    commit: 35b1f7d6bb4753997335842a42da0503cecb4ce2
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -1279,7 +1279,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: eec04a13a48bf7afbf87d4718c45efe047eed5c2
+    commit: c0eea2a39278e48cd39a983acec1b7a03d98e7ae
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
