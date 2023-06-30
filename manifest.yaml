@@ -7,7 +7,7 @@ feedstocks:
     commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
   abseil-cpp-feedstock:
     branch: main
-    commit: ae3b94a40ed6eafc116de7f3f9cd9a0ec0f774e7
+    commit: 61170480817610e6702ed51af8391c557d200f94
   aiobotocore-feedstock:
     branch: main
     commit: 8540f88c322585871c3be43d3997b4efb46bd7b8
@@ -121,7 +121,7 @@ feedstocks:
     commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
   awscli-feedstock:
     branch: main
-    commit: e3f92ad42cb87c5c01f7bc2a0866489605cbf69e
+    commit: f35c4b7b3d00cec96356c9302c4c57ddaaf5fb9a
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: ceccedd48381affe58bb96b61caeba81aa68d3c0
+    commit: b8bb7af4796e82a4a5db508bc286cabe2667b9b2
   botocore-feedstock:
     branch: main
-    commit: 38addc4ee8e3c345f268ff30094deb0872dcb166
+    commit: 00abbf4d9be24a2d4bc1047c093985588e046246
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -580,7 +580,7 @@ feedstocks:
     commit: c493dfdc3c34d86911c2dd6429e5b1aeec8714a2
   grpc-cpp-feedstock:
     branch: main
-    commit: 646e89399b673094bf18cabfa2ae4038de5d0b36
+    commit: 57275e41e7330c2bece6383a5d9e4217dbdc95f0
   grpcio-feedstock:
     branch: main
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
@@ -1498,7 +1498,7 @@ feedstocks:
     commit: 4ecab237e05c3d0b70894f82a7d8b074ce842863
   scikit-learn-feedstock:
     branch: main
-    commit: c234a183928211d501ebb5f5300f6d2849547f5b
+    commit: 7199b346a932e1457e9b7d466dd62075d15e1d62
   scikit-plot-feedstock:
     branch: main
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
