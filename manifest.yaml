@@ -97,10 +97,10 @@ feedstocks:
     commit: df0e697bc357f1124f94cf3991d744c708b2c714
   aws-c-http-feedstock:
     branch: main
-    commit: a4946236e9a4ddabeece9c8fd8a5f792cbba2840
+    commit: 456b925c92cea8c02984ea851519613ddff9c1ca
   aws-c-io-feedstock:
     branch: main
-    commit: c3fb7a19f4d178bb06aebe8acf70e8523ac37be1
+    commit: e656df734c3b6d1340d8fe39d01014a319e35537
   aws-c-mqtt-feedstock:
     branch: main
     commit: 1be6fb754b9e6d2773ce4100774262b63f981154
@@ -223,7 +223,7 @@ feedstocks:
     commit: 09fdbe25a8ba49c670c6eea12c3444baf46e1ef1
   cachetools-feedstock:
     branch: main
-    commit: a9fc0f4b6690d58907e1f21900551b3504562cb7
+    commit: 26ea1e58f35455291e4526532eb3349b9197bcf2
   calver-feedstock:
     branch: main
     commit: b80c1f3754f451bb993bb0ac29bf550f0f8e4095
@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: e812fd5629fbfbfb3fce8f6dfa19ccaa86172654
+    commit: 74fe3e31e12ae8a524f87d4851914328ad3336ce
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -1087,7 +1087,7 @@ feedstocks:
     commit: 46dc3bbb5654e3a0c25426d4c5b1ea6afb01bc0d
   orc-feedstock:
     branch: main
-    commit: 82fc75a69380b8b8010cf594455e23710309ffb5
+    commit: 0b88729b4488a6c16ccd10b977e07e5c829d656d
   oscrypto-feedstock:
     branch: main
     commit: 32f4f58bca54c93107c39ca546232dfef1661cd5
@@ -1279,7 +1279,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: c0eea2a39278e48cd39a983acec1b7a03d98e7ae
+    commit: db1b092deb2a8efbee39a8ed3194f48558f98235
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
