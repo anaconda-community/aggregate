@@ -289,7 +289,7 @@ feedstocks:
     commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
   community-integration-test-feedstock:
     branch: main
-    commit: f547fdaf76ea973332a8f093c1282fa77040787e
+    commit: 0458ff2e60bbf113cd402fed11eb406efccd85e5
   community-meta-feedstock:
     branch: main
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
