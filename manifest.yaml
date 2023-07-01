@@ -106,7 +106,7 @@ feedstocks:
     commit: 1be6fb754b9e6d2773ce4100774262b63f981154
   aws-c-s3-feedstock:
     branch: main
-    commit: e317c611afff209873623990ba6d0bc55110e4ff
+    commit: 07b15811f9691a4e88b082147aea6c7d53a279df
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: b8bb7af4796e82a4a5db508bc286cabe2667b9b2
+    commit: 7bf91cf44a66bf76cc58b2e19bcc31936dbb8532
   botocore-feedstock:
     branch: main
-    commit: 00abbf4d9be24a2d4bc1047c093985588e046246
+    commit: 72708dbb5f2c915c250f0e3b73ef96d616c3f5d6
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -709,7 +709,7 @@ feedstocks:
     commit: 6043a72de840e8ef3099ad11f6ea0a15be50e389
   joblib-feedstock:
     branch: main
-    commit: ef929f3216f930b494e80f357ff8f5d92ccbe9fa
+    commit: 7fa73bfdaa760a4a478e5c356a4cd7c6501f75af
   jom-feedstock:
     branch: main
     commit: b34030cbe144416022201f46c1a17e1dc1723852
