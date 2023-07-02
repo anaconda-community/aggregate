@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: 74fe3e31e12ae8a524f87d4851914328ad3336ce
+    commit: 95140431ae0761445125c17c934f1cd177b8c704
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -556,7 +556,7 @@ feedstocks:
     commit: dcb3448abff9b675670de51cfa59350123b0a49b
   google-cloud-cpp-feedstock:
     branch: main
-    commit: 30ed83ec08eba6c353446e77761d2567012703ec
+    commit: bfb4587dcbcec771539f1196fa55d1a9bb59cc79
   google-cloud-storage-feedstock:
     branch: main
     commit: 251d3a148d0025bcd874ce66073247ef503c803c
