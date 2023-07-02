@@ -49,7 +49,7 @@ feedstocks:
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
   arrow-cpp-feedstock:
     branch: main
-    commit: 1e14bdf714b44c6fda8c3f2f69ed5d586f2c639a
+    commit: 752163190f2c02791addd4cc8c9f95790fab4b13
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
@@ -106,7 +106,7 @@ feedstocks:
     commit: f7677590c7868ccb8dce6c23181e48dcdddc4e46
   aws-c-s3-feedstock:
     branch: main
-    commit: fe1debaba9eb8e393fca48e753bb89b1dc0f2a03
+    commit: 1b76c66d0c0819ac864d5b77a3b6543c3777175e
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
@@ -1012,7 +1012,7 @@ feedstocks:
     commit: 314bf455097221373efdba558a516fedea40ba19
   munch-feedstock:
     branch: main
-    commit: d7fc438f43a75e6160156e079a2133203c8d0990
+    commit: c4f6b44ab34cf12153eb38ae3d6a6e3d26e0df9c
   murmurhash-feedstock:
     branch: main
     commit: 055cb456dbf01d45a700a9977b8c81ab3e13bdc6
@@ -1711,7 +1711,7 @@ feedstocks:
     commit: ab352adedc793b165cbb276a7bfc00fffc22fb13
   typing_extensions-feedstock:
     branch: main
-    commit: dc9b97bdf851fdaadd5306fa84f2bbbf9512169a
+    commit: 1bf2656a505b51eba77e9318b082342e71dc96f9
   typing_utils-feedstock:
     branch: main
     commit: f5dc7b58afb8ad613d5762cc03538e35214c30d9
@@ -1867,7 +1867,7 @@ feedstocks:
     commit: 125652e31e10e404406ddc8c52d9463e268d5de1
   xorg-libxrender-feedstock:
     branch: main
-    commit: 1652f897a82fc4fc128ad555942df4dd39cbc731
+    commit: ab5ac0cf763756b198c089454b89570850ec7349
   xorg-libxxf86vm-feedstock:
     branch: main
     commit: 6b173fffce47474ea430d7f26bc48c59441e1b2e
