@@ -82,7 +82,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: 20b9d4e2e45f85a618ba31e8e0afad9cc753213f
+    commit: e63569885d23b9c6298973512ed0d747483788a3
   aws-c-cal-feedstock:
     branch: main
     commit: 53e0d1bed996161e4b8da59f1ad95fceb2a3fa95
@@ -115,10 +115,10 @@ feedstocks:
     commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
-    commit: c0c371c37464ddbd0108d1471728067f839f9412
+    commit: 39a8124c6111d2acd17026ce709264859d08b7fa
   aws-sdk-cpp-feedstock:
     branch: main
-    commit: 3402c6c8428c9b951aeed2531f7da38e72206c5d
+    commit: b81244b6f5661d1456fbe88f0e2ef64ec99d5359
   awscli-feedstock:
     branch: main
     commit: ff9a49f5295e2e03823f34775010cb70d3de8f42
@@ -430,7 +430,7 @@ feedstocks:
     commit: 2694882f133f3797d1134e4dd33000a20358acc8
   exceptiongroup-feedstock:
     branch: main
-    commit: 62be579804682d62e6e52dc129de71c448d23f02
+    commit: 2f87b9a264c20bd713581f8fc0c8be296cc58dd4
   executing-feedstock:
     branch: main
     commit: 23498ae679f6f525c9aaf219b1f718794d7fc93e
@@ -487,7 +487,7 @@ feedstocks:
     commit: f43163769d7ac6ccef845529e46fe52f130a3553
   gast-feedstock:
     branch: main
-    commit: 2cc1992504cbbe580118e272ac1744bd3e514ea8
+    commit: 2913677850178be6bba0de58b84b2720a9549ed7
   gawk-feedstock:
     branch: main
     commit: dc7e41985c6331f18ae24fbf6212de631a0192c0
