@@ -586,7 +586,7 @@ feedstocks:
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
   grpcio-status-feedstock:
     branch: main
-    commit: f15e91469b74543bf7e9a238385729cf54a1c257
+    commit: c216504f003812e3189f2069f48ae07a78c9f82c
   gstreamer-feedstock:
     branch: main
     commit: 170cff4bf5db2639058ff4c7ce1374ee4c28501e
