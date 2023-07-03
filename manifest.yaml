@@ -667,7 +667,7 @@ feedstocks:
     commit: 4e9708a0683b2023725836f90f0934449bf8abb4
   ipykernel-feedstock:
     branch: main
-    commit: fee89061781e0214a77e33790bbc7905997b905d
+    commit: f3cb7dfb99a6cea042f490054a6c070a28f9e7a6
   ipympl-feedstock:
     branch: main
     commit: 1b0c4f5c11c094eedb52e836dfc1aab8292a3cfb
