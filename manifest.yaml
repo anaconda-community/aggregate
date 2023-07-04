@@ -82,7 +82,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: e63569885d23b9c6298973512ed0d747483788a3
+    commit: 588c5d5fd64c83c43061800dcbf6f5837cd8ee05
   aws-c-cal-feedstock:
     branch: main
     commit: 53e0d1bed996161e4b8da59f1ad95fceb2a3fa95
@@ -94,7 +94,7 @@ feedstocks:
     commit: 81bfe1937a23767db5a8f3ef869807973c54f102
   aws-c-event-stream-feedstock:
     branch: main
-    commit: 409e285a4e5b15bfe910fbd3a056b5b5c305e187
+    commit: d0a7a0474f510eb6b24e8a5f26d9e9e679446a80
   aws-c-http-feedstock:
     branch: main
     commit: 81f9613019fda8f6075945fde846da8514302e79
@@ -106,7 +106,7 @@ feedstocks:
     commit: f7677590c7868ccb8dce6c23181e48dcdddc4e46
   aws-c-s3-feedstock:
     branch: main
-    commit: 1b76c66d0c0819ac864d5b77a3b6543c3777175e
+    commit: 00d67822ff9c668cd267f986f5277fba7f81cde2
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
@@ -121,7 +121,7 @@ feedstocks:
     commit: b81244b6f5661d1456fbe88f0e2ef64ec99d5359
   awscli-feedstock:
     branch: main
-    commit: ff9a49f5295e2e03823f34775010cb70d3de8f42
+    commit: dd2205bb2f536becd8ffa70cf6e83a2caae9339c
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 7bf91cf44a66bf76cc58b2e19bcc31936dbb8532
+    commit: dc24d5b6f05f69188ea865b1696246531c805d84
   botocore-feedstock:
     branch: main
-    commit: 72708dbb5f2c915c250f0e3b73ef96d616c3f5d6
+    commit: 70a13cd8114fa83dd1e57cd0aee22835a932ce97
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -622,7 +622,7 @@ feedstocks:
     commit: 03bfeff781e99147fcf7010799ace788d3fedd31
   holidays-feedstock:
     branch: main
-    commit: bf5c357f0993f9c2e90ae73b212607354dc84176
+    commit: 1de4dc4c41b874158af2e2a0d385effdefa081ba
   html5lib-feedstock:
     branch: main
     commit: 775c9082c54546e2b783f93c01343d6b505e26b4
