@@ -115,10 +115,10 @@ feedstocks:
     commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
-    commit: f8b8ac27b44d36649f2057c12fe93bc16d06cb49
+    commit: 434005a1929005c438f55b45d5a5a3dcebdda62e
   aws-sdk-cpp-feedstock:
     branch: main
-    commit: b81244b6f5661d1456fbe88f0e2ef64ec99d5359
+    commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
     commit: dd2205bb2f536becd8ffa70cf6e83a2caae9339c
@@ -679,7 +679,7 @@ feedstocks:
     commit: b732152d595428e8fd11927051c1bb8bccfc03c1
   ipywidgets-feedstock:
     branch: main
-    commit: 7291c34b58e98d36e5d5992b74c10e9f2e3b22f8
+    commit: c5197110719ad0a8e35624f161ccc7b5f76c1361
   isodate-feedstock:
     branch: main
     commit: cdbcc75372ee4b925876f85fe9612495d9838915
@@ -754,7 +754,7 @@ feedstocks:
     commit: 43a757b933e663a2d9e4b2e2c511149ca716d605
   jupyterlab_widgets-feedstock:
     branch: main
-    commit: 56cad493c9ebc732a98eb69bd0c6756884728391
+    commit: 75e1fb6eb1d0d1e3e076cb48339a702ccb31972d
   jxrlib-feedstock:
     branch: main
     commit: 5213c6db1d6f4588d77ab25099a7878beef96deb
