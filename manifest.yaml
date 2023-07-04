@@ -106,7 +106,7 @@ feedstocks:
     commit: f7677590c7868ccb8dce6c23181e48dcdddc4e46
   aws-c-s3-feedstock:
     branch: main
-    commit: 00d67822ff9c668cd267f986f5277fba7f81cde2
+    commit: 6b6edaca3fcf1477c3b22e51f50cb6e086a6b226
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
@@ -115,7 +115,7 @@ feedstocks:
     commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 39a8124c6111d2acd17026ce709264859d08b7fa
+    commit: f8b8ac27b44d36649f2057c12fe93bc16d06cb49
   aws-sdk-cpp-feedstock:
     branch: main
     commit: b81244b6f5661d1456fbe88f0e2ef64ec99d5359
@@ -208,7 +208,7 @@ feedstocks:
     commit: 18dfc2795d7355c659d162819b6eae6a00730592
   c-blosc2-feedstock:
     branch: main
-    commit: edeff42e89f1d6cc6216fc7f0ce08d426159c312
+    commit: b90321c0eeb067addf46e8837d39db2d260d2cc1
   c99-to-c89-feedstock:
     branch: main
     commit: f1bc59c385801259e94817a84ed1113fb522740e
