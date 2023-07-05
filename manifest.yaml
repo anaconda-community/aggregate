@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: 95140431ae0761445125c17c934f1cd177b8c704
+    commit: 2429b6a6f72d59f67c06232a3beffba98c074c82
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
