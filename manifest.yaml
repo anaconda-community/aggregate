@@ -352,7 +352,7 @@ feedstocks:
     commit: 2095b6a691b64883f85d9b90e21106a8b51c2003
   cython-feedstock:
     branch: main
-    commit: 46ad38520db88f31ed0e29e38b31974be7749d1f
+    commit: 55c4f85fdbf12b098ff7c30890f35177b59d0c32
   cytoolz-feedstock:
     branch: main
     commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
@@ -535,7 +535,7 @@ feedstocks:
     commit: b3fb5533a886b83bcd09ff28b5dc5a73a76ae7ff
   google-api-python-client-feedstock:
     branch: main
-    commit: ce282d81ddca6a42f51d5c22c54be65b5a507b55
+    commit: bfa725f46164b588964e349d5c257c95510ed22e
   google-auth-feedstock:
     branch: main
     commit: 6adb1a06474afa8baab44276f88272f41dc4e457
@@ -634,7 +634,7 @@ feedstocks:
     commit: 99c80281635020bc8eae527af9d2aca7e199ce67
   huggingface_hub-feedstock:
     branch: main
-    commit: 42288d3d8159e8c7e7db12051137896cfbb3deaf
+    commit: 22cccf0ab8e922d904e64ee70d344eee1ffbf51f
   idna-feedstock:
     branch: main
     commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
@@ -934,7 +934,7 @@ feedstocks:
     commit: 60e700089c71c98131f6bcdb1287896ee03e9455
   lxml-feedstock:
     branch: main
-    commit: c5c205e999ae7c7898dd197595167d846305b339
+    commit: 4c0c92c8603d9a65c87fd0e76dc87bd8e3fe5ce9
   lz4-c-feedstock:
     branch: main
     commit: aa9cbeb2e08acc186fe205733e3f0779d9396f08
@@ -1219,7 +1219,7 @@ feedstocks:
     commit: 40f4793868eeda4dbdd6f5985ce62b634cab72d5
   prompt_toolkit-feedstock:
     branch: main
-    commit: 730bf2240de64c5aa246135292f7cfb3eb0f5d61
+    commit: 4961aae7306dd48f5101a7e05c61ecf47c6d6309
   proto-plus-feedstock:
     branch: main
     commit: e70290cd2011045f62dac8bb4175e932e07aff0b
@@ -1279,7 +1279,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: ea21e1135a2538d7b5565cbcce6c17498922fa83
+    commit: f66ae2a174738e71d4470d9c60e2648e77e74126
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
