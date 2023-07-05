@@ -1651,7 +1651,7 @@ feedstocks:
     commit: 7b04edce0c78cbbdbeb404146f9b92134696249a
   tifffile-feedstock:
     branch: main
-    commit: dcfb720fd102753f9dbb7666c346af17e7f04de3
+    commit: 65b5055a29752e530295f10553a06e8d88e20ac4
   tk-feedstock:
     branch: main
     commit: 2f72fdce1c5b6ac80164b24cc45ccc0dc7b606ff
