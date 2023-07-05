@@ -1279,7 +1279,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: db1b092deb2a8efbee39a8ed3194f48558f98235
+    commit: ea21e1135a2538d7b5565cbcce6c17498922fa83
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1798,7 +1798,7 @@ feedstocks:
     commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
   widgetsnbextension-feedstock:
     branch: main
-    commit: 5e9bc62b7d91cafed0e3fea6d7e03b71748041f2
+    commit: d305c9b6be0fff0a32b664e81772910b77acaa1a
   wordcloud-feedstock:
     branch: main
     commit: 03d73c5e20766b64cb2cb2aae51d606041e73628
