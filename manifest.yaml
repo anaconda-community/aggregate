@@ -115,7 +115,7 @@ feedstocks:
     commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 35b360df0ad53497b374d601a2a17a801f2e0739
+    commit: 2bb7ad2699948ebe306f7878cbd39e73a55bc83e
   aws-sdk-cpp-feedstock:
     branch: main
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
@@ -553,7 +553,7 @@ feedstocks:
     commit: bf9f8e0d8a9af6092d002cef6512e250d8c5b95a
   google-cloud-core-feedstock:
     branch: main
-    commit: dcb3448abff9b675670de51cfa59350123b0a49b
+    commit: a09765bbd387815da99b3e54937a1da8f5baf660
   google-cloud-cpp-feedstock:
     branch: main
     commit: bfb4587dcbcec771539f1196fa55d1a9bb59cc79
@@ -1279,7 +1279,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: f66ae2a174738e71d4470d9c60e2648e77e74126
+    commit: ccbf39a88ff45b55e1fc33f10f3aae5f3750395b
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1591,7 +1591,7 @@ feedstocks:
     commit: 277368b46aaf09bff4c242d2ce8dfa7beaccee86
   sqlalchemy-feedstock:
     branch: main
-    commit: 08bb7f4095cb1216de360ea679a33ff0f55141da
+    commit: 13183b2d3d36b91f1312b449b94b8a76a406d5e2
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
