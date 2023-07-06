@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: dc24d5b6f05f69188ea865b1696246531c805d84
+    commit: a847af42bb1724a16c472953bd4f7bf3c61bf714
   botocore-feedstock:
     branch: main
-    commit: 70a13cd8114fa83dd1e57cd0aee22835a932ce97
+    commit: 988e15bd100e1874931f45ed121663f247672d3a
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -589,7 +589,7 @@ feedstocks:
     commit: c216504f003812e3189f2069f48ae07a78c9f82c
   gstreamer-feedstock:
     branch: main
-    commit: 170cff4bf5db2639058ff4c7ce1374ee4c28501e
+    commit: ff31e3ff3c54fd23bc318a7e4238ed61d207970a
   gtest-feedstock:
     branch: main
     commit: d10a4b2fa491cc1acd9ec6eb3a3c2e71bff3fc9e
