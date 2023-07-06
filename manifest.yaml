@@ -103,7 +103,7 @@ feedstocks:
     commit: e656df734c3b6d1340d8fe39d01014a319e35537
   aws-c-mqtt-feedstock:
     branch: main
-    commit: f7677590c7868ccb8dce6c23181e48dcdddc4e46
+    commit: e4a3156847df877361c641159c5f09f83802e9b8
   aws-c-s3-feedstock:
     branch: main
     commit: 6b6edaca3fcf1477c3b22e51f50cb6e086a6b226
@@ -115,7 +115,7 @@ feedstocks:
     commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 434005a1929005c438f55b45d5a5a3dcebdda62e
+    commit: 35b360df0ad53497b374d601a2a17a801f2e0739
   aws-sdk-cpp-feedstock:
     branch: main
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
