@@ -31,7 +31,7 @@ feedstocks:
     commit: 326d024fd1c9d6501ff41bbaa0ddfb7e82a62d7c
   anyio-feedstock:
     branch: main
-    commit: 90ba382841717776e77e6c23aa6b7f59ed8baa51
+    commit: 4204c3f90b747bcf6673f61a77f40aa16239612c
   aom-feedstock:
     branch: main
     commit: 9239ada5b6381f4d0b029b61391726b20fee30f6
@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: dd2205bb2f536becd8ffa70cf6e83a2caae9339c
+    commit: 7546b61fddd82bad51462a4fff342bc5877c50fc
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -1279,7 +1279,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: ccbf39a88ff45b55e1fc33f10f3aae5f3750395b
+    commit: 75a88f5bf7de875abf8a8342e2e09ee030ee300f
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1738,7 +1738,7 @@ feedstocks:
     commit: 5100fb98823ccd67630393f6f7aabeaacfa9b49b
   uri-template-feedstock:
     branch: main
-    commit: 7788060de43d6afd707105a84a8c84c7e369c4a0
+    commit: 8392fcb84e989d727d630674653faf2b13d39668
   uritemplate-feedstock:
     branch: main
     commit: 10a6ee21b25884a4bc3b318c4fc2cd059dac7669
@@ -1771,7 +1771,7 @@ feedstocks:
     commit: 9718eb91feff997ee6c06f27f48a9953057e79cb
   wandb-feedstock:
     branch: main
-    commit: d64401adb4d154e961f2275111bea7bc6e8353b7
+    commit: 2178a2c622649ca4ed82c306bb9b818491832596
   wasabi-feedstock:
     branch: main
     commit: 9669cebf62b8a9aa156ff4c01d89bc48a40f2f7c
