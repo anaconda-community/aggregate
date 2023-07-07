@@ -20,11 +20,24 @@ jobs:
         shell: bash -l {0}
     runs-on: ubuntu-latest
     steps:
+      - name: Import Secrets
+        id: import-secrets
+        uses: hashicorp/vault-action@v2
+        with:
+          url: ${{ secrets.VAULT_ADDR }}
+          method: approle
+          path: approle-gha
+          roleId: ${{ secrets.VAULT_APPROLE_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_APPROLE_SECRET_ID }}
+          namespace: admin
+          secrets: |
+            community/common/data/anaconda_bot_github_token token | GH_TOKEN
+
       - name: Checkout Community-Integration-Test-Feedstock Repo
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
         with:
           repository: anaconda-community/community-integration-test-feedstock
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ env.GH_TOKEN }}
 
       - name: Create Conda environment with abs
         uses: mamba-org/setup-micromamba@5d5dbebd87f7b9358c403c7a66651fa92b310105 #v1.4.1
@@ -70,10 +83,10 @@ jobs:
           yq --yaml-output --in-place . manifest.yaml
           git add manifest.yaml
           git commit -m "update community-integration-test-feedstock" && git push --set-upstream origin community-integration-test-branch --force
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
     outputs:
       build-number: ${{ steps.build_number.outputs.result }}
+      GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
   build-feedstock:
     needs: setup-test
@@ -83,7 +96,7 @@ jobs:
       arch: linux-64
       branch: community-integration-test-branch
     secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ needs.setup-test.outputs.GH_TOKEN }}
 
   install-package:
     needs: [build-feedstock, setup-test]
