@@ -100,7 +100,7 @@ feedstocks:
     commit: 81f9613019fda8f6075945fde846da8514302e79
   aws-c-io-feedstock:
     branch: main
-    commit: e656df734c3b6d1340d8fe39d01014a319e35537
+    commit: 0901025a6b84ee278f5ba348d2c57b24eb819432
   aws-c-mqtt-feedstock:
     branch: main
     commit: e4a3156847df877361c641159c5f09f83802e9b8
@@ -439,7 +439,7 @@ feedstocks:
     commit: 4c5155ef6591685aaddfc6e807224bb1476bd99c
   fastavro-feedstock:
     branch: main
-    commit: 0908f019c5c2a2c10849357c8dd98c307e241c72
+    commit: d985de3c9b278960e555e97f6ea6b9c02228d580
   file-feedstock:
     branch: main
     commit: 1c421ffcd4dc371acb580ec2e5051bd1dd54fa4f
@@ -724,7 +724,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: 53dd991af34d42526ddc300cd20d43b6418d8c92
+    commit: 759af04699e51aede1e02c04ff979fe67ade70eb
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
@@ -961,7 +961,7 @@ feedstocks:
     commit: 357f55cafe37bee7ed20622bc9be264d7af85005
   matplotlib-feedstock:
     branch: main
-    commit: a71b069344e21c63c2c4de27041881c128395de3
+    commit: 2df716ba88a076814696e3c6510efcc32729082d
   matplotlib-inline-feedstock:
     branch: main
     commit: 7812ba34b7da7b6d5f56156e41dd54b2a90cf9ff
@@ -1693,7 +1693,7 @@ feedstocks:
     commit: 4f0970a846fecccd501cd0803a3c3eb061a17526
   trove-classifiers-feedstock:
     branch: main
-    commit: 167761450e2656a12abd5f5ed5ad6b2d810230a6
+    commit: 12eeef6351f5aa95e1c613dbde5c8255be70463c
   typeguard-feedstock:
     branch: main
     commit: 921c528f27657d3c9fa72c1057362130bdfb8de0
