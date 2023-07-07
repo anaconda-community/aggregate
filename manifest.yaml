@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: dd2205bb2f536becd8ffa70cf6e83a2caae9339c
+    commit: b095298d45f243365fb0414148212dc09e43e9e1
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,7 +187,7 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: a847af42bb1724a16c472953bd4f7bf3c61bf714
+    commit: c0480ca486d0d2deb93a8fb444e848278e0b8eae
   botocore-feedstock:
     branch: main
     commit: 1fa2b4e4f828ee5d1819d26f2768c9dfbd118b8e
@@ -262,7 +262,7 @@ feedstocks:
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
   click-feedstock:
     branch: main
-    commit: 9a87e0f3ed6e15ba710c7824b3b8071c1ddc85b3
+    commit: 64240898995c779849e69952255bf896ee2edcee
   click-plugins-feedstock:
     branch: main
     commit: 6fc732ff59b51ed7fe37ac65bfdc15850406423b
@@ -1102,7 +1102,7 @@ feedstocks:
     commit: 40ab28643408ae5d73486b79c2d4430fc88146ae
   pandas-feedstock:
     branch: main
-    commit: 9e5de7cb33661f9856f7fd9eb829cfe129ed63e8
+    commit: 2fee95611ee9fe0be2ea594eb708396e78fc42dc
   pandas-profiling-feedstock:
     branch: main
     commit: 66b18b2d30de6095635450422a2ca99aa30c6e5c
@@ -1171,7 +1171,7 @@ feedstocks:
     commit: 0abd41c2ea1e78914cadc49b19bd3721693d0c25
   platformdirs-feedstock:
     branch: main
-    commit: 0b3f425db75eed4e26e4ba82a07164ece5b65f9e
+    commit: 793da92912412ab66fa0cdd7218e7eb7628e098a
   plotly-feedstock:
     branch: main
     commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
@@ -1756,7 +1756,7 @@ feedstocks:
     commit: 97ada02cef22b60a8d64c71c16f58297046bf24a
   versioneer-feedstock:
     branch: main
-    commit: fac0aff71110dfa0fcd201e3d3df783251f2837c
+    commit: 9fd9ab9cdc34c7c99935eed03e7360539b537996
   versioningit-feedstock:
     branch: main
     commit: 3b8c5449dd4da97556f752a7428b1fd216c3506a
@@ -1801,7 +1801,7 @@ feedstocks:
     commit: d305c9b6be0fff0a32b664e81772910b77acaa1a
   wordcloud-feedstock:
     branch: main
-    commit: 03d73c5e20766b64cb2cb2aae51d606041e73628
+    commit: e289d5c6fdb2ac4937b6e81ead58f59bd25efea0
   wrapt-feedstock:
     branch: main
     commit: 8aef76851db4d566bd4ff854aa96f30db1bb6732
