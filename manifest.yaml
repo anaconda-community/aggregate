@@ -10,7 +10,7 @@ feedstocks:
     commit: 61170480817610e6702ed51af8391c557d200f94
   aiobotocore-feedstock:
     branch: main
-    commit: 8540f88c322585871c3be43d3997b4efb46bd7b8
+    commit: 47446e7bbb7487aea5f4de898b31fe8246b82772
   aiohttp-feedstock:
     branch: main
     commit: ea1543a51d451e05989010e1da1fab5e76f40a5c
@@ -298,7 +298,7 @@ feedstocks:
     commit: c4865f325ba752842f7ea21470abde447f7f1062
   confection-feedstock:
     branch: main
-    commit: 1432208df64cb02ecb78f24b282c4effefd82e8e
+    commit: 1088aa43ff242e40caa2b852f68c25ee1221d880
   configparser-feedstock:
     branch: main
     commit: 92028348349bc8fcc84e0eb4247241d3c096e33e
