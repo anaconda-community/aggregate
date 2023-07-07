@@ -10,7 +10,7 @@ feedstocks:
     commit: 61170480817610e6702ed51af8391c557d200f94
   aiobotocore-feedstock:
     branch: main
-    commit: 8540f88c322585871c3be43d3997b4efb46bd7b8
+    commit: 47446e7bbb7487aea5f4de898b31fe8246b82772
   aiohttp-feedstock:
     branch: main
     commit: ea1543a51d451e05989010e1da1fab5e76f40a5c
@@ -100,7 +100,7 @@ feedstocks:
     commit: 81f9613019fda8f6075945fde846da8514302e79
   aws-c-io-feedstock:
     branch: main
-    commit: e656df734c3b6d1340d8fe39d01014a319e35537
+    commit: 0901025a6b84ee278f5ba348d2c57b24eb819432
   aws-c-mqtt-feedstock:
     branch: main
     commit: e4a3156847df877361c641159c5f09f83802e9b8
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: a847af42bb1724a16c472953bd4f7bf3c61bf714
+    commit: c0480ca486d0d2deb93a8fb444e848278e0b8eae
   botocore-feedstock:
     branch: main
-    commit: 988e15bd100e1874931f45ed121663f247672d3a
+    commit: 1fa2b4e4f828ee5d1819d26f2768c9dfbd118b8e
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -262,7 +262,7 @@ feedstocks:
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
   click-feedstock:
     branch: main
-    commit: 9a87e0f3ed6e15ba710c7824b3b8071c1ddc85b3
+    commit: 64240898995c779849e69952255bf896ee2edcee
   click-plugins-feedstock:
     branch: main
     commit: 6fc732ff59b51ed7fe37ac65bfdc15850406423b
@@ -298,7 +298,7 @@ feedstocks:
     commit: c4865f325ba752842f7ea21470abde447f7f1062
   confection-feedstock:
     branch: main
-    commit: 1432208df64cb02ecb78f24b282c4effefd82e8e
+    commit: 1088aa43ff242e40caa2b852f68c25ee1221d880
   configparser-feedstock:
     branch: main
     commit: 92028348349bc8fcc84e0eb4247241d3c096e33e
@@ -439,7 +439,7 @@ feedstocks:
     commit: 4c5155ef6591685aaddfc6e807224bb1476bd99c
   fastavro-feedstock:
     branch: main
-    commit: 0908f019c5c2a2c10849357c8dd98c307e241c72
+    commit: d985de3c9b278960e555e97f6ea6b9c02228d580
   file-feedstock:
     branch: main
     commit: 1c421ffcd4dc371acb580ec2e5051bd1dd54fa4f
@@ -724,7 +724,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: 53dd991af34d42526ddc300cd20d43b6418d8c92
+    commit: 759af04699e51aede1e02c04ff979fe67ade70eb
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
@@ -961,7 +961,7 @@ feedstocks:
     commit: 357f55cafe37bee7ed20622bc9be264d7af85005
   matplotlib-feedstock:
     branch: main
-    commit: a71b069344e21c63c2c4de27041881c128395de3
+    commit: 2df716ba88a076814696e3c6510efcc32729082d
   matplotlib-inline-feedstock:
     branch: main
     commit: 7812ba34b7da7b6d5f56156e41dd54b2a90cf9ff
@@ -1102,7 +1102,7 @@ feedstocks:
     commit: 40ab28643408ae5d73486b79c2d4430fc88146ae
   pandas-feedstock:
     branch: main
-    commit: 9e5de7cb33661f9856f7fd9eb829cfe129ed63e8
+    commit: 2fee95611ee9fe0be2ea594eb708396e78fc42dc
   pandas-profiling-feedstock:
     branch: main
     commit: 66b18b2d30de6095635450422a2ca99aa30c6e5c
@@ -1171,7 +1171,7 @@ feedstocks:
     commit: 0abd41c2ea1e78914cadc49b19bd3721693d0c25
   platformdirs-feedstock:
     branch: main
-    commit: 0b3f425db75eed4e26e4ba82a07164ece5b65f9e
+    commit: 793da92912412ab66fa0cdd7218e7eb7628e098a
   plotly-feedstock:
     branch: main
     commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
@@ -1693,7 +1693,7 @@ feedstocks:
     commit: 4f0970a846fecccd501cd0803a3c3eb061a17526
   trove-classifiers-feedstock:
     branch: main
-    commit: 167761450e2656a12abd5f5ed5ad6b2d810230a6
+    commit: 12eeef6351f5aa95e1c613dbde5c8255be70463c
   typeguard-feedstock:
     branch: main
     commit: 921c528f27657d3c9fa72c1057362130bdfb8de0
@@ -1756,7 +1756,7 @@ feedstocks:
     commit: 97ada02cef22b60a8d64c71c16f58297046bf24a
   versioneer-feedstock:
     branch: main
-    commit: fac0aff71110dfa0fcd201e3d3df783251f2837c
+    commit: 9fd9ab9cdc34c7c99935eed03e7360539b537996
   versioningit-feedstock:
     branch: main
     commit: 3b8c5449dd4da97556f752a7428b1fd216c3506a
@@ -1801,7 +1801,7 @@ feedstocks:
     commit: d305c9b6be0fff0a32b664e81772910b77acaa1a
   wordcloud-feedstock:
     branch: main
-    commit: 03d73c5e20766b64cb2cb2aae51d606041e73628
+    commit: e289d5c6fdb2ac4937b6e81ead58f59bd25efea0
   wrapt-feedstock:
     branch: main
     commit: 8aef76851db4d566bd4ff854aa96f30db1bb6732
