@@ -97,7 +97,7 @@ feedstocks:
     commit: d0a7a0474f510eb6b24e8a5f26d9e9e679446a80
   aws-c-http-feedstock:
     branch: main
-    commit: 81f9613019fda8f6075945fde846da8514302e79
+    commit: e011d4ee56ee33e565c43bf4df79e386f0b5f18e
   aws-c-io-feedstock:
     branch: main
     commit: 0901025a6b84ee278f5ba348d2c57b24eb819432
@@ -658,7 +658,7 @@ feedstocks:
     commit: 3e30643929461f6a388c9084c864e1658e4fa144
   importlib_resources-feedstock:
     branch: main
-    commit: 2e1001891ddf4406ae0694885047a5309852b643
+    commit: ee211427869a0d6fd8e615bf0be2df2c0a24a069
   iniconfig-feedstock:
     branch: main
     commit: 45e8aa5e8dd9442194f7a1acc3be0906a322ca54
@@ -1924,7 +1924,7 @@ feedstocks:
     commit: b6cbd144abae736d39fa60fb37a96dd78619619c
   zipp-feedstock:
     branch: main
-    commit: 5f6d9be431801864a7e4c9aceb4367338581293a
+    commit: b35546b5165cacd5ab36c17db40d6efd421dd91b
   zlib-ng-feedstock:
     branch: main
     commit: 49504f890cfa4d74363d5fad2a19a7fcac701eea
