@@ -817,7 +817,7 @@ feedstocks:
     commit: 75d2c34142a006efc3c23b12e084757395d008b2
   libcups-feedstock:
     branch: main
-    commit: 0719a0c0de0df55018bb3dae0c704767852e9285
+    commit: 9c96cafe87d6af2286603cb6baca21dbf7c89266
   libcxx-feedstock:
     branch: main
     commit: 0ec7cd6ed60b1db275a821a684f1125b033c697b
