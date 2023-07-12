@@ -82,7 +82,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: 588c5d5fd64c83c43061800dcbf6f5837cd8ee05
+    commit: 6bd9ab24e596d4635c8e2742233a64f4bdc17736
   aws-c-cal-feedstock:
     branch: main
     commit: 53e0d1bed996161e4b8da59f1ad95fceb2a3fa95
@@ -97,16 +97,16 @@ feedstocks:
     commit: d0a7a0474f510eb6b24e8a5f26d9e9e679446a80
   aws-c-http-feedstock:
     branch: main
-    commit: 81f9613019fda8f6075945fde846da8514302e79
+    commit: e011d4ee56ee33e565c43bf4df79e386f0b5f18e
   aws-c-io-feedstock:
     branch: main
     commit: 0901025a6b84ee278f5ba348d2c57b24eb819432
   aws-c-mqtt-feedstock:
     branch: main
-    commit: e4a3156847df877361c641159c5f09f83802e9b8
+    commit: 283de97d4d5d9cec23a90abf2a84d42a922e4f8b
   aws-c-s3-feedstock:
     branch: main
-    commit: 6b6edaca3fcf1477c3b22e51f50cb6e086a6b226
+    commit: d1ccefcdb286ac2e555e138c22a9238f74d9f789
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
@@ -115,13 +115,13 @@ feedstocks:
     commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 2bb7ad2699948ebe306f7878cbd39e73a55bc83e
+    commit: 8512a6c39a4ea5f8b4d08d27c285750d67ce3231
   aws-sdk-cpp-feedstock:
     branch: main
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: 7546b61fddd82bad51462a4fff342bc5877c50fc
+    commit: b8d4ce89be9b1b20f175424de53837505df10518
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: c0480ca486d0d2deb93a8fb444e848278e0b8eae
+    commit: 084b0e7d219f47f1318bab30ca2496efcda2afdb
   botocore-feedstock:
     branch: main
-    commit: 1fa2b4e4f828ee5d1819d26f2768c9dfbd118b8e
+    commit: 6e9fd374091d4ff6b492cab1e31652a82c8f6b12
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: 2429b6a6f72d59f67c06232a3beffba98c074c82
+    commit: f0f0abd10e1d9843f326a0d007f6f177b0cc48aa
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -658,7 +658,7 @@ feedstocks:
     commit: 3e30643929461f6a388c9084c864e1658e4fa144
   importlib_resources-feedstock:
     branch: main
-    commit: 2e1001891ddf4406ae0694885047a5309852b643
+    commit: ee211427869a0d6fd8e615bf0be2df2c0a24a069
   iniconfig-feedstock:
     branch: main
     commit: 45e8aa5e8dd9442194f7a1acc3be0906a322ca54
@@ -1924,7 +1924,7 @@ feedstocks:
     commit: b6cbd144abae736d39fa60fb37a96dd78619619c
   zipp-feedstock:
     branch: main
-    commit: 5f6d9be431801864a7e4c9aceb4367338581293a
+    commit: b35546b5165cacd5ab36c17db40d6efd421dd91b
   zlib-ng-feedstock:
     branch: main
     commit: 49504f890cfa4d74363d5fad2a19a7fcac701eea
