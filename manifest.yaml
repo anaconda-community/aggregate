@@ -28,7 +28,7 @@ feedstocks:
     commit: 5e3529ff65eceeb6bc27c1e5deb0bc583923b53c
   altair-feedstock:
     branch: main
-    commit: 326d024fd1c9d6501ff41bbaa0ddfb7e82a62d7c
+    commit: bf6fcb4d2710b90439e53932aa4ddc3fc31f5e17
   anyio-feedstock:
     branch: main
     commit: 4204c3f90b747bcf6673f61a77f40aa16239612c
@@ -82,7 +82,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: 588c5d5fd64c83c43061800dcbf6f5837cd8ee05
+    commit: f6a13776f165f6f3f707900f68e31c45787a2f8b
   aws-c-cal-feedstock:
     branch: main
     commit: 53e0d1bed996161e4b8da59f1ad95fceb2a3fa95
@@ -97,16 +97,16 @@ feedstocks:
     commit: d0a7a0474f510eb6b24e8a5f26d9e9e679446a80
   aws-c-http-feedstock:
     branch: main
-    commit: 81f9613019fda8f6075945fde846da8514302e79
+    commit: c1b0312c6b5f8fb5f26b3234ccb1a0d5d6aa9a54
   aws-c-io-feedstock:
     branch: main
     commit: 0901025a6b84ee278f5ba348d2c57b24eb819432
   aws-c-mqtt-feedstock:
     branch: main
-    commit: e4a3156847df877361c641159c5f09f83802e9b8
+    commit: f4483ce270b4a381b05f9d14c43f1790197bbdb3
   aws-c-s3-feedstock:
     branch: main
-    commit: 6b6edaca3fcf1477c3b22e51f50cb6e086a6b226
+    commit: e6c191101119480754ed6bf9af5294fd1f5a4b89
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
@@ -115,22 +115,22 @@ feedstocks:
     commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 2bb7ad2699948ebe306f7878cbd39e73a55bc83e
+    commit: 2120983871df7e2ab293f7556a87b388fcc46b65
   aws-sdk-cpp-feedstock:
     branch: main
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: 7546b61fddd82bad51462a4fff342bc5877c50fc
+    commit: 3cab7f03aac1f01cc47fbd0dce3cb5e892be9eed
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
   azure-core-feedstock:
     branch: main
-    commit: 7149f8c337290d89a34fa98e4f7ce022d878916a
+    commit: f98066e129cef0e2fc48aea0138ca4219da72ab9
   azure-storage-blob-feedstock:
     branch: main
-    commit: a2d2b83529bd395182470ad9fcc67eb8e11ae004
+    commit: 578693463d22b572c83fd57cb7215c5d473d2d16
   babel-feedstock:
     branch: main
     commit: 703f24b3173ff8e8e96a08e0c857d8b5322c79c4
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: c0480ca486d0d2deb93a8fb444e848278e0b8eae
+    commit: c693093bc645de1c430911d388f287e031bc6de3
   botocore-feedstock:
     branch: main
-    commit: 1fa2b4e4f828ee5d1819d26f2768c9dfbd118b8e
+    commit: 1b93e91fb8f95688c1cff54ea5ec196e209a6a8b
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: 2429b6a6f72d59f67c06232a3beffba98c074c82
+    commit: 5ba83b3d3f82509577de4fc93ebc9e2a9cd1480e
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -295,7 +295,7 @@ feedstocks:
     commit: 71e232f0ee76fb5966f3ee5a46476eefc7297cdf
   compilers-feedstock:
     branch: main
-    commit: c4865f325ba752842f7ea21470abde447f7f1062
+    commit: 95a25d8e5d853ebcacce1ad223f3196139d2497a
   confection-feedstock:
     branch: main
     commit: 1088aa43ff242e40caa2b852f68c25ee1221d880
@@ -325,7 +325,7 @@ feedstocks:
     commit: 0a43467fca2aa9374e85b19744628a8c5e0694d9
   cryptography-feedstock:
     branch: main
-    commit: 0154f357fef7dc74b3524b644a1375576b8820cc
+    commit: 32ac6dabfba953884ee338e40e183fb2d1ed6ac2
   ctng-compilers-feedstock:
     branch: main
     commit: 923b25fa711bd71cc7c43299e032bd87579dbce9
@@ -517,7 +517,7 @@ feedstocks:
     commit: 14ed9f06d53b29fd49f88ab6a78c998b2a907f21
   gitpython-feedstock:
     branch: main
-    commit: 6e31157d7ac2e585c2d498c45df9a04afca00071
+    commit: 5ed0eae16c2ac38820515c9ec55b7fc943f32b39
   glog-feedstock:
     branch: main
     commit: 4e8358cb4ca22c7e947e88956facd2fd64beab29
@@ -535,10 +535,10 @@ feedstocks:
     commit: b3fb5533a886b83bcd09ff28b5dc5a73a76ae7ff
   google-api-python-client-feedstock:
     branch: main
-    commit: bfa725f46164b588964e349d5c257c95510ed22e
+    commit: 8cd39d72f28276ffd6816af1962410e5bbc0de3e
   google-auth-feedstock:
     branch: main
-    commit: 6adb1a06474afa8baab44276f88272f41dc4e457
+    commit: 43934c92e23a5d1339295caa00c4006ea2ae2e20
   google-auth-httplib2-feedstock:
     branch: main
     commit: bf6c5bc776ce9c8535a5bba78320dc37757c1989
@@ -580,7 +580,7 @@ feedstocks:
     commit: c493dfdc3c34d86911c2dd6429e5b1aeec8714a2
   grpc-cpp-feedstock:
     branch: main
-    commit: 2ef52bdfdcc2b1b8012fe369136d45e41f3d3cea
+    commit: b6ccc6b9163bedb82ae6b5c84f2a8c31bd47ea43
   grpcio-feedstock:
     branch: main
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
@@ -658,7 +658,7 @@ feedstocks:
     commit: 3e30643929461f6a388c9084c864e1658e4fa144
   importlib_resources-feedstock:
     branch: main
-    commit: 2e1001891ddf4406ae0694885047a5309852b643
+    commit: bd0869ab872dce1960f003fa57099ca353b84e7d
   iniconfig-feedstock:
     branch: main
     commit: 45e8aa5e8dd9442194f7a1acc3be0906a322ca54
@@ -694,7 +694,7 @@ feedstocks:
     commit: 8e8bce747cef2409fcc8ee491c929471690699c2
   jaraco.classes-feedstock:
     branch: main
-    commit: 536b593c5afb55f79ea00b597e9a79eb805d37e5
+    commit: b3e23e159edec9a6b050ac1b035d5254382bd8af
   jedi-feedstock:
     branch: main
     commit: 49607f75fd59d3091fdd5443f065d8612ce46269
@@ -724,7 +724,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: 759af04699e51aede1e02c04ff979fe67ade70eb
+    commit: 5a0ada843c5ef152c7051102eab8e037d94be0ed
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
@@ -775,7 +775,7 @@ feedstocks:
     commit: 9f423d69e7d1e2efdc6abb89d57ab4487dfc4a10
   krb5-feedstock:
     branch: main
-    commit: 4a48ec9daf5498c39695569d71e254608f992551
+    commit: 66ea6cf212742917077d286952952a9651d3ae18
   lame-feedstock:
     branch: main
     commit: 72b2c92e48b54608b2ada19e23459c8107da121c
@@ -841,7 +841,7 @@ feedstocks:
     commit: a52e9b1a369f616580552f9802f0c45aa7727360
   libhwloc-feedstock:
     branch: main
-    commit: 35b1f7d6bb4753997335842a42da0503cecb4ce2
+    commit: bf765cbfe3d353454cd4f6f5b638c3165d987d0e
   libiconv-feedstock:
     branch: main
     commit: bbd0d4fa6db6c1d4eb8d1fd5a84c94188d67dbb9
@@ -1213,7 +1213,7 @@ feedstocks:
     commit: cf43bf42296e3659df86e2dbca679d85d28af382
   prometheus_client-feedstock:
     branch: main
-    commit: fda4c0cacd661fa9a0c582247805538877f3834b
+    commit: dc0ad45887608d46f06b2bc31b58d7387a3beedb
   prometheus_flask_exporter-feedstock:
     branch: main
     commit: 40f4793868eeda4dbdd6f5985ce62b634cab72d5
@@ -1651,7 +1651,7 @@ feedstocks:
     commit: 7b04edce0c78cbbdbeb404146f9b92134696249a
   tifffile-feedstock:
     branch: main
-    commit: 65b5055a29752e530295f10553a06e8d88e20ac4
+    commit: 309a8f58e4a9bf0141b65d62f0f9baec2a1db316
   tk-feedstock:
     branch: main
     commit: 2f72fdce1c5b6ac80164b24cc45ccc0dc7b606ff
@@ -1924,7 +1924,7 @@ feedstocks:
     commit: b6cbd144abae736d39fa60fb37a96dd78619619c
   zipp-feedstock:
     branch: main
-    commit: 5f6d9be431801864a7e4c9aceb4367338581293a
+    commit: 5cb6b8cad5f8fec742ae0039fd0941f07db69a69
   zlib-ng-feedstock:
     branch: main
     commit: 49504f890cfa4d74363d5fad2a19a7fcac701eea
