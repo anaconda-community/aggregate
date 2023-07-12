@@ -174,21 +174,21 @@ aws_c_common:
 aws_c_event_stream:
   - 0.3.1
 aws_c_http:
-  - 0.7.10
+  - 0.7.11
 # the builds got coupled because 0.2.4 landed before the this migrator finished
 aws_c_io:
-  - 0.13.27
+  - 0.13.28
 # the builds got coupled because 0.2.4 landed before the io migrator
 aws_c_mqtt:
   - 0.8.14
 aws_c_s3:
-  - 0.3.12
+  - 0.3.13
 aws_c_sdkutils:
   - 0.1.11
 aws_checksums:
   - 0.1.16
 aws_crt_cpp:
-  - 0.20.2
+  - 0.20.3
 aws_sdk_cpp:
   - 1.10.57
 boost:
