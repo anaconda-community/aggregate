@@ -39,6 +39,7 @@ jobs:
           create-args: >-
             abs-cli
             yq
+            pydantic=1.10
 
       - name: Get build number
         id: build_number
