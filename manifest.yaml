@@ -467,6 +467,24 @@ feedstocks:
   folium-feedstock:
     branch: main
     commit: 58ee6f51108abf8604ed675d494ed7d7b0b164e3
+  font-ttf-dejavu-sans-mono-feedstock:
+    branch: main
+    commit: a8c0cac426f47d2883ff218a1eac64beac5d9a3c
+  font-ttf-inconsolata-feedstock:
+    branch: main
+    commit: 8e39830b54867e3391f87081e956b9a0accc02b8
+  font-ttf-source-code-pro-feedstock:
+    branch: main
+    commit: 0f8ca25c3f158f5383c00e311c06945cec41f059
+  font-ttf-ubuntu-feedstock:
+    branch: main
+    commit: d4fed9e0a591b21ea320a3de84cd8f49ec840aa5
+  fonts-conda-ecosystem-feedstock:
+    branch: main
+    commit: 640d305faab20da920b93974cc67919d2a0170fe
+  fonts-conda-forge-feedstock:
+    branch: main
+    commit: 4c5f175e9236ecaa8d054afb66e2b71b8c143fff
   fqdn-feedstock:
     branch: main
     commit: 04dfb34e6d9cfd9c126b1a4199f6396849e8a275
