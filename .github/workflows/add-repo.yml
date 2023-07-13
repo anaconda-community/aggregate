@@ -78,7 +78,6 @@ jobs:
 
       - name: Update manifest
         id: manifest
-        if: ${{ steps.prune.outputs.feedstocks != '' }}
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
