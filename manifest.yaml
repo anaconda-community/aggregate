@@ -724,7 +724,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: 759af04699e51aede1e02c04ff979fe67ade70eb
+    commit: bc4f165dfd08ee3151a6908774e832f12db729fa
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
@@ -1201,7 +1201,7 @@ feedstocks:
     commit: c18900fd7e825f0d68d49ddf5439a65a9c534476
   postgresql-feedstock:
     branch: main
-    commit: 176b047276b7419c9d368f4fac31c2a8c8c4bd78
+    commit: 55c2573845d9aca645e9fe6a7b7547b6f713cffc
   ppmac-feedstock:
     branch: main
     commit: f66a0d16c9ddc3520b3c8bd20ae582e084181587
