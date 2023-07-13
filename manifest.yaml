@@ -649,7 +649,7 @@ feedstocks:
     commit: 99c80281635020bc8eae527af9d2aca7e199ce67
   huggingface_hub-feedstock:
     branch: main
-    commit: 22cccf0ab8e922d904e64ee70d344eee1ffbf51f
+    commit: b02a42eee0b1f3e5159a38bc148ba0003a063263
   idna-feedstock:
     branch: main
     commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
@@ -763,7 +763,7 @@ feedstocks:
     commit: dbacee20c45b6caf6677d0e27604e2115aa86d96
   jupyterlab-feedstock:
     branch: main
-    commit: 44f14d9ed40920c6f94f585289c888374f959155
+    commit: 3b4899c7993c806982816d01a8790703b84e09cd
   jupyterlab_server-feedstock:
     branch: main
     commit: 43a757b933e663a2d9e4b2e2c511149ca716d605
@@ -1660,7 +1660,7 @@ feedstocks:
     commit: c5a33b313a153fbf4c18ca536898c7d7a21d3751
   threadpoolctl-feedstock:
     branch: main
-    commit: bf079d8fc6532c6295813966ec6efab02024146d
+    commit: 72d7923900e0a7dad80a32579b979c853de73b50
   thrift-cpp-feedstock:
     branch: main
     commit: 7b04edce0c78cbbdbeb404146f9b92134696249a
