@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: c0480ca486d0d2deb93a8fb444e848278e0b8eae
+    commit: 84f3d004c4e146ef5d8f494ea7ef31bc804d8691
   botocore-feedstock:
     branch: main
-    commit: 1fa2b4e4f828ee5d1819d26f2768c9dfbd118b8e
+    commit: ae573f66be799c4cb81ba21554a0fefd34c57a7e
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -262,7 +262,7 @@ feedstocks:
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
   click-feedstock:
     branch: main
-    commit: 64240898995c779849e69952255bf896ee2edcee
+    commit: 0db6221e7d4c2ab1dac6791916d47f77d0378272
   click-plugins-feedstock:
     branch: main
     commit: 6fc732ff59b51ed7fe37ac65bfdc15850406423b
@@ -739,7 +739,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: bc4f165dfd08ee3151a6908774e832f12db729fa
+    commit: 158e02bcc021110637ea380392ce681f8ebd4a37
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
@@ -1912,7 +1912,7 @@ feedstocks:
     commit: bfaae6b6675c21acee98588747205cbdd57dc741
   xyzservices-feedstock:
     branch: main
-    commit: 53bf3827becec8f89c2d852581e52e3665f6cf34
+    commit: 8479350c0cab0e255e8aaeeb9663f40a1d961764
   xz-feedstock:
     branch: main
     commit: 0d1084422b26392f22e9205318808a45230ff836
