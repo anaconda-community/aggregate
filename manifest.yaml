@@ -250,7 +250,7 @@ feedstocks:
     commit: fc792391e35885499883c83d503ecaed78cc4b56
   charset-normalizer-feedstock:
     branch: main
-    commit: 6ddc2cb6f7b5ea0708c992b324133bce146520c2
+    commit: 4dce801a805a898b88970dbaef9db3d03bfc7e33
   chart-studio-feedstock:
     branch: main
     commit: 70e8cc88c74a366e9642c39ff21a32c04b76e1f4
@@ -670,7 +670,7 @@ feedstocks:
     commit: 951ac69b8f8686a6cdfc34064ebd993547265228
   importlib_metadata-feedstock:
     branch: main
-    commit: 3e30643929461f6a388c9084c864e1658e4fa144
+    commit: 214f2727d644e9f0412288c8db47f14e4be0f5df
   importlib_resources-feedstock:
     branch: main
     commit: 2e1001891ddf4406ae0694885047a5309852b643
