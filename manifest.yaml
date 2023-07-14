@@ -1505,6 +1505,9 @@ feedstocks:
   safetensors-feedstock:
     branch: main
     commit: c589e03829e7af201bb507069a9af6c813e0bc9e
+  scikit-build-core-feedstock:
+    branch: main
+    commit: 9a495da525971b598ea821b777c5980dd9cde0ad
   scikit-build-feedstock:
     branch: main
     commit: fa28862706509bf22c18cd529cafadd0b242fe32
