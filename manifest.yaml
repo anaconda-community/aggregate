@@ -1036,7 +1036,7 @@ feedstocks:
     commit: d45f15c17a71974f388b69d3a854fc5c5d2a2b18
   mysql-feedstock:
     branch: main
-    commit: e432eaca0a027b6d2c79e94dfec4d3b33d3ee45b
+    commit: 79d4dfa6317c056e7c0e8f3aaae82b0c8207136f
   nasm-feedstock:
     branch: main
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
@@ -1609,7 +1609,7 @@ feedstocks:
     commit: 277368b46aaf09bff4c242d2ce8dfa7beaccee86
   sqlalchemy-feedstock:
     branch: main
-    commit: 13183b2d3d36b91f1312b449b94b8a76a406d5e2
+    commit: 3f1f233be09a67cd903fb95c63a691cfae61909e
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
@@ -1780,7 +1780,7 @@ feedstocks:
     commit: 3b8c5449dd4da97556f752a7428b1fd216c3506a
   virtualenv-feedstock:
     branch: main
-    commit: 4ce99906b36227cc7d482dc6b732539dc13bde0f
+    commit: 16801909d71c4b91963bc4059f04cd00db2cf23e
   visions-feedstock:
     branch: main
     commit: 32bc57be2207c17c5d46b63896f7b05f8f6e42d1
