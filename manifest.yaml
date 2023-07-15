@@ -112,7 +112,7 @@ feedstocks:
     commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
   aws-checksums-feedstock:
     branch: main
-    commit: 16f9ec2bd37a58a83a902ab4756b325a221e9c61
+    commit: d6843229840f88f4616be76a3d634f3e1d61c5f7
   aws-crt-cpp-feedstock:
     branch: main
     commit: 2bb7ad2699948ebe306f7878cbd39e73a55bc83e
@@ -1276,7 +1276,7 @@ feedstocks:
     commit: bc2a4ed0b42f845d26ccba2a807f31d2eb0ddcf0
   pybind11-feedstock:
     branch: main
-    commit: 87dda71aebb831759c6d9f454ac1618e24e31551
+    commit: 17632b27bdbcba4f284342aca5064e5e130c0be8
   pybind11-stubgen-feedstock:
     branch: main
     commit: 104ec889fbf162e9b8bf5affc5fc559f517c5b4d
@@ -1492,7 +1492,7 @@ feedstocks:
     commit: ada08b152f27db3033b1725a74403658f30299ac
   s2n-feedstock:
     branch: main
-    commit: 6ead44645c3477ce080bfef526e196f8ee426787
+    commit: 2d65761a17efb6266f9969b6db6e6818bc284a22
   s3fs-feedstock:
     branch: main
     commit: 67cc7909014f38ed061e16ad0e62c49fae082749
@@ -1942,7 +1942,7 @@ feedstocks:
     commit: b6cbd144abae736d39fa60fb37a96dd78619619c
   zipp-feedstock:
     branch: main
-    commit: 5f6d9be431801864a7e4c9aceb4367338581293a
+    commit: f66430f21566b0591fe1791bc7e31701a4a6ccbc
   zlib-ng-feedstock:
     branch: main
     commit: 49504f890cfa4d74363d5fad2a19a7fcac701eea
