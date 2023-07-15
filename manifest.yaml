@@ -595,7 +595,7 @@ feedstocks:
     commit: c493dfdc3c34d86911c2dd6429e5b1aeec8714a2
   grpc-cpp-feedstock:
     branch: main
-    commit: 2ef52bdfdcc2b1b8012fe369136d45e41f3d3cea
+    commit: 86370729e46752679f69b396869636ff38f139b6
   grpcio-feedstock:
     branch: main
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
@@ -649,7 +649,7 @@ feedstocks:
     commit: 99c80281635020bc8eae527af9d2aca7e199ce67
   huggingface_hub-feedstock:
     branch: main
-    commit: b02a42eee0b1f3e5159a38bc148ba0003a063263
+    commit: 781c24018a5c89acfc1ced370a95bf59204884bb
   idna-feedstock:
     branch: main
     commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
@@ -1174,7 +1174,7 @@ feedstocks:
     commit: 51b1eb7c31ec8bbf6639a4aaf48b53b561924628
   pip-feedstock:
     branch: main
-    commit: d08a3ca454ccfc9fc47a2541b7ba7088e90ddfab
+    commit: 5de71b0315c0277e223c952f35f5d73e2ec84c54
   pkg-config-feedstock:
     branch: main
     commit: c7a98e5797cd5147bc72e45bf7bba3a31f0262af
