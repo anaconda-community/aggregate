@@ -100,7 +100,7 @@ feedstocks:
     commit: 81f9613019fda8f6075945fde846da8514302e79
   aws-c-io-feedstock:
     branch: main
-    commit: 0901025a6b84ee278f5ba348d2c57b24eb819432
+    commit: a1ce46ccba51d0b7a75b412f16fdf194c9b26f75
   aws-c-mqtt-feedstock:
     branch: main
     commit: e4a3156847df877361c641159c5f09f83802e9b8
