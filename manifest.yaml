@@ -1186,7 +1186,7 @@ feedstocks:
     commit: 0abd41c2ea1e78914cadc49b19bd3721693d0c25
   platformdirs-feedstock:
     branch: main
-    commit: 793da92912412ab66fa0cdd7218e7eb7628e098a
+    commit: f9792c0eb2a1622f615f507043ed5346e01a830e
   plotly-feedstock:
     branch: main
     commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
@@ -1813,7 +1813,7 @@ feedstocks:
     commit: ec160355c2c680411939e855f5eebe5bb1f22d14
   wheel-feedstock:
     branch: main
-    commit: d0b8fc0a84ea94c04bf9a61dea9ed9a39565e863
+    commit: 5b67c8ca484bb30c7ffd3f5821291b01cea6e6fa
   widgetsnbextension-feedstock:
     branch: main
     commit: d305c9b6be0fff0a32b664e81772910b77acaa1a
