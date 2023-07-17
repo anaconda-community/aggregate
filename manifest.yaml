@@ -115,7 +115,7 @@ feedstocks:
     commit: d6843229840f88f4616be76a3d634f3e1d61c5f7
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 2bb7ad2699948ebe306f7878cbd39e73a55bc83e
+    commit: 589407e201f0b94fa8d4eade8b676987b578690c
   aws-sdk-cpp-feedstock:
     branch: main
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
@@ -352,7 +352,7 @@ feedstocks:
     commit: 2095b6a691b64883f85d9b90e21106a8b51c2003
   cython-feedstock:
     branch: main
-    commit: 55c4f85fdbf12b098ff7c30890f35177b59d0c32
+    commit: 89b7b7e6b5b28fa2badb17cbe0afe52e3e52d139
   cytoolz-feedstock:
     branch: main
     commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
@@ -391,7 +391,7 @@ feedstocks:
     commit: b8f50501111a4ed3491eb40613233dbbf62e6e96
   distlib-feedstock:
     branch: main
-    commit: b98a407f1ff07db1e28a032fefa46877eb089397
+    commit: 9b553f4fc572ccc6f09c90f2a5175745aaf6d2f0
   distro-feedstock:
     branch: main
     commit: 0e92dd30fe524a228bd47ac52a58c1b1ef371acd
@@ -1042,7 +1042,7 @@ feedstocks:
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
   nbconvert-feedstock:
     branch: main
-    commit: 34125864997d84e9b5cee918960abf96378e13d0
+    commit: 4d3be1337a7de288f5721a619ca277761418525e
   nbformat-feedstock:
     branch: main
     commit: f052b03baeda70dffd1dd357b770a2a12f40765e
