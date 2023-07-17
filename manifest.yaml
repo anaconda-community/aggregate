@@ -985,7 +985,7 @@ feedstocks:
     commit: ce41356cd3c7f92146180f9ba9f3244f08429f2b
   meson-feedstock:
     branch: main
-    commit: 6de6a81f8a9c8fddc0687340202c6036d39c00ae
+    commit: 58d7968c5fa1df550fd05eb062c7f5a8f7430555
   meson-python-feedstock:
     branch: main
     commit: ea80ce1fa067fba6fc6c45d7f730ef6b1d01c7ec
