@@ -550,7 +550,7 @@ feedstocks:
     commit: b3fb5533a886b83bcd09ff28b5dc5a73a76ae7ff
   google-api-python-client-feedstock:
     branch: main
-    commit: bfa725f46164b588964e349d5c257c95510ed22e
+    commit: b8369de33fe08473d9d35cc57e39ac09645d6815
   google-auth-feedstock:
     branch: main
     commit: 6adb1a06474afa8baab44276f88272f41dc4e457
@@ -610,7 +610,7 @@ feedstocks:
     commit: d10a4b2fa491cc1acd9ec6eb3a3c2e71bff3fc9e
   gunicorn-feedstock:
     branch: main
-    commit: a5ae9da4710a1405a1af467d5a5d03f7da0af66c
+    commit: af40fc8dde734c7aff4a2fa38963874b24c94d9a
   h11-feedstock:
     branch: main
     commit: 2c26e10479fa2782ea64208b9bfa1548996d1f4c
@@ -739,7 +739,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: 158e02bcc021110637ea380392ce681f8ebd4a37
+    commit: d026805c4b01993b09a85ad030fd1d3bb91b0af2
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
