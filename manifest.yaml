@@ -115,7 +115,7 @@ feedstocks:
     commit: d6843229840f88f4616be76a3d634f3e1d61c5f7
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 589407e201f0b94fa8d4eade8b676987b578690c
+    commit: fa3b2ba53ddd5084dfec9468160b401d6024a2c8
   aws-sdk-cpp-feedstock:
     branch: main
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
@@ -637,7 +637,7 @@ feedstocks:
     commit: 03bfeff781e99147fcf7010799ace788d3fedd31
   holidays-feedstock:
     branch: main
-    commit: 1de4dc4c41b874158af2e2a0d385effdefa081ba
+    commit: 31953054fcf61088df63aea75e6bcb7829602890
   html5lib-feedstock:
     branch: main
     commit: 775c9082c54546e2b783f93c01343d6b505e26b4
@@ -994,7 +994,7 @@ feedstocks:
     commit: 9d735c3ef5293c0ec3ec7a7b26c51b0b03ed3d6a
   mlflow-feedstock:
     branch: main
-    commit: d3fd14d584ca97f9360bac52ee5547c8381023a6
+    commit: e5c90dd411e42a553a2c610feed1b5f0329852e4
   mlxtend-feedstock:
     branch: main
     commit: 2e3d657e2b01f143d07c214d7f3fab6b32de891f
@@ -1276,7 +1276,7 @@ feedstocks:
     commit: bc2a4ed0b42f845d26ccba2a807f31d2eb0ddcf0
   pybind11-feedstock:
     branch: main
-    commit: 17632b27bdbcba4f284342aca5064e5e130c0be8
+    commit: f0b695d60f518c8dc5ad7da679f65f52de5ff142
   pybind11-stubgen-feedstock:
     branch: main
     commit: 104ec889fbf162e9b8bf5affc5fc559f517c5b4d
