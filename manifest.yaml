@@ -262,7 +262,7 @@ feedstocks:
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
   click-feedstock:
     branch: main
-    commit: 0db6221e7d4c2ab1dac6791916d47f77d0378272
+    commit: 2e58ff4a754183f27655c38c51bcdcd22559f4ee
   click-plugins-feedstock:
     branch: main
     commit: 6fc732ff59b51ed7fe37ac65bfdc15850406423b
@@ -340,7 +340,7 @@ feedstocks:
     commit: 7779d9726927b6e45e44431ea847921d67542f29
   curl-feedstock:
     branch: main
-    commit: f60ad1c44d65e06dfa43b97a8c5fd37cd5665d58
+    commit: 2fc11e42a13d2244f038aa309820ec26300e1b1e
   cycler-feedstock:
     branch: main
     commit: 39ce1d4eb2340d2fbaf658c37e95eab9bad0dd17
