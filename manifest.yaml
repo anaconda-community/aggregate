@@ -85,7 +85,7 @@ feedstocks:
     commit: 588c5d5fd64c83c43061800dcbf6f5837cd8ee05
   aws-c-cal-feedstock:
     branch: main
-    commit: 53e0d1bed996161e4b8da59f1ad95fceb2a3fa95
+    commit: 4fb3c8a581a2ba2a19d4bb85340962d7660dafe8
   aws-c-common-feedstock:
     branch: main
     commit: 1e9b8467473f8b952192072a5740a29b940aea22
@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: 989976b4a8861cfeb9e5a5ae420621f02b6d525a
+    commit: b11297a32f2c4cb8e8064f42521fc1f9a59480b6
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,7 +187,7 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: addc4f5975a81455f70e60252ac04b45e0c6a6c9
+    commit: c6088f272841ce2d6311599b819fc32a8169b011
   botocore-feedstock:
     branch: main
     commit: 5396de5fd5dd0fa1e480561eea785da32999a0c3
@@ -1042,7 +1042,7 @@ feedstocks:
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
   nbconvert-feedstock:
     branch: main
-    commit: 4d3be1337a7de288f5721a619ca277761418525e
+    commit: 28ccdeae1f5cd32a39129f820c9e223aaa10d471
   nbformat-feedstock:
     branch: main
     commit: f052b03baeda70dffd1dd357b770a2a12f40765e
@@ -1708,7 +1708,7 @@ feedstocks:
     commit: 3fc0324055783951de8353524dd288df19ec780d
   transformers-feedstock:
     branch: main
-    commit: 4f0970a846fecccd501cd0803a3c3eb061a17526
+    commit: 20c2bcb557bae55cb86e88e0df53a5255c558e1e
   trove-classifiers-feedstock:
     branch: main
     commit: 12eeef6351f5aa95e1c613dbde5c8255be70463c
