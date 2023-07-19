@@ -190,7 +190,7 @@ feedstocks:
     commit: addc4f5975a81455f70e60252ac04b45e0c6a6c9
   botocore-feedstock:
     branch: main
-    commit: 87f7d9795e01946295f49c07f3492008b963f868
+    commit: 5396de5fd5dd0fa1e480561eea785da32999a0c3
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -1306,7 +1306,7 @@ feedstocks:
     commit: 58c278d72111861767540b83cebd623c0016fb7e
   pyjwt-feedstock:
     branch: main
-    commit: f2a86edc9c86738f3cc391fc4902174066be9ae4
+    commit: 1d5db507a769e7d46bb85c278ceebf59e15c293a
   pyldavis-feedstock:
     branch: main
     commit: 3f80ca57610932dd772564710b3940b0f8fd2513
