@@ -29,25 +29,12 @@ m2w64_fortran_compiler: # [win]
 cuda_compiler:
   - None
   - nvcc # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-  - nvcc # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-  - nvcc # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-  - nvcc # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
 cuda_compiler_version:
   - None
-  - 10.2 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-  - 11.0 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-  - 11.1 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
   - 11.2 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
 cuda_compiler_version_min:
   - None # [osx]
-  - 10.2 # [linux64 or win64]
-  - 11.2 # [linux and (ppc64le or aarch64)]
-cudnn:
-  - undefined
-  - 7 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-  - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-  - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
-  - 8 # [(linux64 or win64) and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
+  - 11.2 # [linux or win64]
 # The basic go-compiler with CGO disabled,
 # It generates fat binaries without libc dependencies
 # The activation scripts will set your CC,CXX and related flags
@@ -221,6 +208,8 @@ coin_or_utils:
   - 2.11
 console_bridge:
   - 1.0
+cudnn:
+  - 8
 cutensor:
   - 1
 curl:
