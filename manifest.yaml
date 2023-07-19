@@ -610,7 +610,7 @@ feedstocks:
     commit: d10a4b2fa491cc1acd9ec6eb3a3c2e71bff3fc9e
   gunicorn-feedstock:
     branch: main
-    commit: af40fc8dde734c7aff4a2fa38963874b24c94d9a
+    commit: e5ea00dcc4192bb4133d9b38437b609c9123f4b5
   h11-feedstock:
     branch: main
     commit: 2c26e10479fa2782ea64208b9bfa1548996d1f4c
@@ -1294,7 +1294,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: a3982d977ab8fa49d7c76a0f6972b405c65149de
+    commit: 10544b00c12b5cc486f21a5030b790df72dec332
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1762,7 +1762,7 @@ feedstocks:
     commit: 10a6ee21b25884a4bc3b318c4fc2cd059dac7669
   urllib3-feedstock:
     branch: main
-    commit: f8204826244a5f052586f42c911862f0112e64c9
+    commit: f17a22f6d347d35d2d2fd6738a19b18d255f1fbf
   util-linux-feedstock:
     branch: main
     commit: 0166ba6f32dd888a30dab7c1c36f339da5b21698
