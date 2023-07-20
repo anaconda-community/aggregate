@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: b11297a32f2c4cb8e8064f42521fc1f9a59480b6
+    commit: f5760d3a2008a5ee38f4c89fbc6dd084600455a7
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 26f2ebe626defb73a3270b0caa7c4dca1cb1cef9
+    commit: f3c6e035c87fbb4a61028e8ac0ca73b84d8148df
   botocore-feedstock:
     branch: main
-    commit: 1eea362b064905ddeb7816eedea13eb2b5bc35b5
+    commit: b6da5d09bb59c3f20023b29e32b5eb8e44326e07
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -562,7 +562,7 @@ feedstocks:
     commit: 7dfb8fb25cc819a1359f5a114002b6d624d12288
   google-cloud-bigquery-feedstock:
     branch: main
-    commit: 0426704680580ab50be0b2507ec6fa7373958d39
+    commit: 14509cb71168b67cd39b879f07f3992de0d10aa0
   google-cloud-bigquery-storage-feedstock:
     branch: main
     commit: bf9f8e0d8a9af6092d002cef6512e250d8c5b95a
@@ -601,7 +601,7 @@ feedstocks:
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
   grpcio-status-feedstock:
     branch: main
-    commit: c216504f003812e3189f2069f48ae07a78c9f82c
+    commit: c37b4b4e09c5dfdf6be276406a8f5eb174338ab2
   gstreamer-feedstock:
     branch: main
     commit: ff31e3ff3c54fd23bc318a7e4238ed61d207970a
@@ -1615,7 +1615,7 @@ feedstocks:
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
   srsly-feedstock:
     branch: main
-    commit: c1afd76d1ea84a98495050b3e83197d45f784311
+    commit: 625b8ee81db78e4328bd9ddbe347ea4749b3f95c
   stack-feedstock:
     branch: main
     commit: 1a5d7daef12b0fdb4e747790f9cc42a384307cd6
@@ -1780,7 +1780,7 @@ feedstocks:
     commit: 3b8c5449dd4da97556f752a7428b1fd216c3506a
   virtualenv-feedstock:
     branch: main
-    commit: 16801909d71c4b91963bc4059f04cd00db2cf23e
+    commit: 53dd6b0cd4b2243de2a23df9ccefcbfa015f1553
   visions-feedstock:
     branch: main
     commit: 32bc57be2207c17c5d46b63896f7b05f8f6e42d1
