@@ -13,7 +13,7 @@ feedstocks:
     commit: 47446e7bbb7487aea5f4de898b31fe8246b82772
   aiohttp-feedstock:
     branch: main
-    commit: ea1543a51d451e05989010e1da1fab5e76f40a5c
+    commit: f446dda1d1527ea61a4637178fac8917d1eb7463
   aioitertools-feedstock:
     branch: main
     commit: c803ac7368d6f79648f3876915b785dda888e9c3
@@ -109,13 +109,13 @@ feedstocks:
     commit: 6b6edaca3fcf1477c3b22e51f50cb6e086a6b226
   aws-c-sdkutils-feedstock:
     branch: main
-    commit: 6061cec512021bd156bd4fbb29cc7f57f2d4388e
+    commit: 935f6f310535ae14233b4f065f3ab9d4cb2c21e1
   aws-checksums-feedstock:
     branch: main
     commit: d6843229840f88f4616be76a3d634f3e1d61c5f7
   aws-crt-cpp-feedstock:
     branch: main
-    commit: fa3b2ba53ddd5084dfec9468160b401d6024a2c8
+    commit: aa9ac498fd9f148a48ca1205229936eb76fc4087
   aws-sdk-cpp-feedstock:
     branch: main
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: c6088f272841ce2d6311599b819fc32a8169b011
+    commit: 26f2ebe626defb73a3270b0caa7c4dca1cb1cef9
   botocore-feedstock:
     branch: main
-    commit: 5396de5fd5dd0fa1e480561eea785da32999a0c3
+    commit: 1eea362b064905ddeb7816eedea13eb2b5bc35b5
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
