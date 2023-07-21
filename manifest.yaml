@@ -1723,7 +1723,7 @@ feedstocks:
     commit: 9819e82349198a1925cbb834de0b3372538213c9
   types-pyyaml-feedstock:
     branch: main
-    commit: ad92f6c074cd7d10d09c91f434071cf30eb57753
+    commit: f21740d32ef3fd92dfd69a87af6c22ea706108fc
   typing-feedstock:
     branch: main
     commit: ab352adedc793b165cbb276a7bfc00fffc22fb13
