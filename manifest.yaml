@@ -358,7 +358,7 @@ feedstocks:
     commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
   dask-core-feedstock:
     branch: main
-    commit: e3cfc3964322f9421c7eed04af30d8e8924edddb
+    commit: 179f957fceda4513ece2c9d901771741ffeb94a6
   databricks-cli-feedstock:
     branch: main
     commit: b4dc1bb83d31840de61b1df35b47f9eed3e03442
@@ -604,7 +604,7 @@ feedstocks:
     commit: c37b4b4e09c5dfdf6be276406a8f5eb174338ab2
   gstreamer-feedstock:
     branch: main
-    commit: ff31e3ff3c54fd23bc318a7e4238ed61d207970a
+    commit: 8c769acf356f85147f6b5a9f0557001769c5d228
   gtest-feedstock:
     branch: main
     commit: d10a4b2fa491cc1acd9ec6eb3a3c2e71bff3fc9e
@@ -1042,7 +1042,7 @@ feedstocks:
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
   nbconvert-feedstock:
     branch: main
-    commit: 28ccdeae1f5cd32a39129f820c9e223aaa10d471
+    commit: 234b29f0fc960f2b65452c90bb55b10a8afd8e3c
   nbformat-feedstock:
     branch: main
     commit: f052b03baeda70dffd1dd357b770a2a12f40765e
@@ -1669,7 +1669,7 @@ feedstocks:
     commit: 7b04edce0c78cbbdbeb404146f9b92134696249a
   tifffile-feedstock:
     branch: main
-    commit: 65b5055a29752e530295f10553a06e8d88e20ac4
+    commit: 42d6bf47dae020f6ca7f48961a1a70b6735425cb
   tk-feedstock:
     branch: main
     commit: 2f72fdce1c5b6ac80164b24cc45ccc0dc7b606ff
