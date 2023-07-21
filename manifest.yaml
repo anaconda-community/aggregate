@@ -1087,7 +1087,7 @@ feedstocks:
     commit: cdfb22b9e6dcbcf65085d9054e4aa545ffaa163c
   numexpr-feedstock:
     branch: main
-    commit: 635de0ed2c75e2256733266ae3ef4eeccad5f386
+    commit: 7a1473705351b97658dca38bb7d4ac47f7ef4f2b
   oauthlib-feedstock:
     branch: main
     commit: 3e818e786e6514b3c9d6bdacdf50b8d037994793
@@ -1912,7 +1912,7 @@ feedstocks:
     commit: 0146d3af479b7d924e8ec8a0e7fb44826d2f2df8
   xxhash-feedstock:
     branch: main
-    commit: bfaae6b6675c21acee98588747205cbdd57dc741
+    commit: 32ac61bf1aa349258f50a0eebc8d00ebf1e596a4
   xyzservices-feedstock:
     branch: main
     commit: 8479350c0cab0e255e8aaeeb9663f40a1d961764
