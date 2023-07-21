@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: 32fcafaf8c4ba1ba3a4a78054638ce75001658ff
+    commit: 1e95ede34081afc795862645cc81c4ed15013c3a
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: f3c6e035c87fbb4a61028e8ac0ca73b84d8148df
+    commit: 22624f03aa21e23e7bf057052b68f3ce93695a2b
   botocore-feedstock:
     branch: main
-    commit: b6da5d09bb59c3f20023b29e32b5eb8e44326e07
+    commit: a1b9c53f356a88f0330d1c9d9815deb976133ba3
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -1429,7 +1429,7 @@ feedstocks:
     commit: 3de5ee7a282d0c8769dab4c652f124872926d831
   rapidfuzz-feedstock:
     branch: main
-    commit: be9be818827ca3389d4df72baf3a142490d997fc
+    commit: 19699d5509c387d07583cbf328fa63fde6a5aed0
   rapidjson-feedstock:
     branch: main
     commit: f817ee26dbd3e7c670abe62b8dd756549e2c6eef
@@ -1486,7 +1486,7 @@ feedstocks:
     commit: c60589e7c2dbe450bab0ffaa5433d53bc75053ff
   rtree-feedstock:
     branch: main
-    commit: f703261e2daf6c54bfc99fcf663565fa0b542e8d
+    commit: e31ff81aaed76db778cee1c0bcce0486d786a267
   ruby-feedstock:
     branch: main
     commit: ada08b152f27db3033b1725a74403658f30299ac
