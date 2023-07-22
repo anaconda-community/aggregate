@@ -214,7 +214,7 @@ feedstocks:
     commit: f1bc59c385801259e94817a84ed1113fb522740e
   ca-certificates-feedstock:
     branch: main
-    commit: 1ba128e126f79ff61bfd0792ccfaa1f70e0a98b4
+    commit: 9a1e8d065621cbd33fcba9b615067666f5dcf71c
   cachecontrol-feedstock:
     branch: main
     commit: 0eec3e6561728aba1b086b124522b0a7d989255b
@@ -235,7 +235,7 @@ feedstocks:
     commit: caedc9c8dce631cfd69994966ed203bec9318b9a
   certifi-feedstock:
     branch: main
-    commit: 8ed59d7346c3fb18776f6f49a8e5487d451589e6
+    commit: 89a585853c6962abe2a22712b7b4ff20b1f15bf8
   cffi-feedstock:
     branch: main
     commit: 9d141942a5404542efc9ef2b584787885dadd31f
@@ -1174,7 +1174,7 @@ feedstocks:
     commit: 51b1eb7c31ec8bbf6639a4aaf48b53b561924628
   pip-feedstock:
     branch: main
-    commit: 5de71b0315c0277e223c952f35f5d73e2ec84c54
+    commit: 9378e63c0e324642f5e3f14d6536cb6171358dc7
   pkg-config-feedstock:
     branch: main
     commit: c7a98e5797cd5147bc72e45bf7bba3a31f0262af
