@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: 1e95ede34081afc795862645cc81c4ed15013c3a
+    commit: f40736ae0d0d965a78b6928beed19b10e3cd56d7
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -937,7 +937,7 @@ feedstocks:
     commit: e17d568cdefac4e09e807685b53f4b6df49e422c
   llvmdev-feedstock:
     branch: main
-    commit: 8dddad8d1d1890291a17bb237d7faf456603905e
+    commit: 65d708927538528d8438270cda7a1acf737c43d4
   llvmlite-feedstock:
     branch: main
     commit: 178d2bece5cae82d1ad320c2abfe727d4ef8809b
