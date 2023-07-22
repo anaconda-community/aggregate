@@ -100,7 +100,7 @@ feedstocks:
     commit: 81f9613019fda8f6075945fde846da8514302e79
   aws-c-io-feedstock:
     branch: main
-    commit: a1ce46ccba51d0b7a75b412f16fdf194c9b26f75
+    commit: a1266528ab6e05c655a8dbb36d09d06c4a2ac827
   aws-c-mqtt-feedstock:
     branch: main
     commit: e4a3156847df877361c641159c5f09f83802e9b8
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 22624f03aa21e23e7bf057052b68f3ce93695a2b
+    commit: 1bb8053077c61aaca655bb7055ee2f27509f7bcf
   botocore-feedstock:
     branch: main
-    commit: a1b9c53f356a88f0330d1c9d9815deb976133ba3
+    commit: 4f33608980a1d036f2bfa03c69db05cc3ae3016b
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -355,7 +355,7 @@ feedstocks:
     commit: 89b7b7e6b5b28fa2badb17cbe0afe52e3e52d139
   cytoolz-feedstock:
     branch: main
-    commit: 0a077cbe91b513c2eff4d8fa2339538e56dbd86c
+    commit: 9519076d340da8a301db59579b096ab416f9d077
   dask-core-feedstock:
     branch: main
     commit: 179f957fceda4513ece2c9d901771741ffeb94a6
