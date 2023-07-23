@@ -1372,7 +1372,7 @@ feedstocks:
     commit: 0c6fb1e83060d55d4c2d6de6699c73036579af65
   python-fastjsonschema-feedstock:
     branch: main
-    commit: 0a6d2202c09f82471e7b6b8f4e9053b7bc0a8376
+    commit: 8aad905d24b756db9311680c4cca2262312d062c
   python-installer-feedstock:
     branch: main
     commit: bc1acbbe1847950f3b01da2fd7fe278cf8e267e1
