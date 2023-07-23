@@ -388,7 +388,7 @@ feedstocks:
     commit: 9956b48e30cdc2749e5f8372d33c985ab48b3afe
   dill-feedstock:
     branch: main
-    commit: b8f50501111a4ed3491eb40613233dbbf62e6e96
+    commit: 0810d35016373b611d941e9e8f0f864d69b2d4ff
   distlib-feedstock:
     branch: main
     commit: 9b553f4fc572ccc6f09c90f2a5175745aaf6d2f0
@@ -1006,7 +1006,7 @@ feedstocks:
     commit: e2f2de8fd3a8909d79af61eeb61c9e6d1781bf9b
   msal-feedstock:
     branch: main
-    commit: 2c3b67f0bc323341627d68dd998b05f3f4e3d426
+    commit: 40894aa8789ce47333bfccd4c5f3f13808e415a4
   msgpack-python-feedstock:
     branch: main
     commit: 38caf3a7f65a2d1d9285a28f02f2a0e8f302e060
@@ -1024,7 +1024,7 @@ feedstocks:
     commit: 2b2e124cbbb38ef0572dce1d3f892730ae1a1102
   multiprocess-feedstock:
     branch: main
-    commit: 314bf455097221373efdba558a516fedea40ba19
+    commit: 2931b3d5b766cd140e041ffbb3d12519c71729c0
   munch-feedstock:
     branch: main
     commit: c4f6b44ab34cf12153eb38ae3d6a6e3d26e0df9c
