@@ -658,7 +658,7 @@ feedstocks:
     commit: 6a6a33791c0374f2071d9df8a6b225070bd526ea
   imagecodecs-feedstock:
     branch: main
-    commit: f2441a01701d5169d11d88f84ec79afb4962c92e
+    commit: 82e62efbd90b8b826ab133ef1e82ac91dd7fe5c7
   imagehash-feedstock:
     branch: main
     commit: 430e83bd600375b5f21ddd4c5ebc052d2d4eeaa2
