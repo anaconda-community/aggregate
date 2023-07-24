@@ -229,7 +229,7 @@ feedstocks:
     commit: b80c1f3754f451bb993bb0ac29bf550f0f8e4095
   catalogue-feedstock:
     branch: main
-    commit: a88830920b0aa6a2af44f38179b5d22b2ae2821b
+    commit: 889d05b6abcf5098e6ec82a36ca62f407e8a4d37
   cctools-and-ld64-feedstock:
     branch: main
     commit: caedc9c8dce631cfd69994966ed203bec9318b9a
