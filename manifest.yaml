@@ -49,7 +49,7 @@ feedstocks:
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
   arrow-cpp-feedstock:
     branch: main
-    commit: 3339a3f8043d46b57fd9cecd47c18ef0b7add8ba
+    commit: 74da7d7a4a00c0e34398f1145177e4708e84e5e1
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
@@ -766,7 +766,7 @@ feedstocks:
     commit: 3b4899c7993c806982816d01a8790703b84e09cd
   jupyterlab_server-feedstock:
     branch: main
-    commit: 43a757b933e663a2d9e4b2e2c511149ca716d605
+    commit: 9ba31feae8ddad65581771ce926815305cf430be
   jupyterlab_widgets-feedstock:
     branch: main
     commit: 75e1fb6eb1d0d1e3e076cb48339a702ccb31972d
@@ -1000,7 +1000,7 @@ feedstocks:
     commit: 2e3d657e2b01f143d07c214d7f3fab6b32de891f
   more-itertools-feedstock:
     branch: main
-    commit: b7ac4188bd256196d4366c175a1b1ef4fb0d9933
+    commit: b0caffe94c932fd408aae082dddfba707253e90a
   mpg123-feedstock:
     branch: main
     commit: e2f2de8fd3a8909d79af61eeb61c9e6d1781bf9b
@@ -1345,7 +1345,7 @@ feedstocks:
     commit: 4166637348b4c77fe72c9949af4d902c3519684b
   pyqt-builder-feedstock:
     branch: main
-    commit: e341884623aec5668b94182d45c903f2885f8c6b
+    commit: 130425ca547fad623cde1af7b2666f6999605ef2
   pyqt-feedstock:
     branch: main
     commit: 3e8b3aab5e6f8fdbacdf3e6e4b7cdf87874e1769
