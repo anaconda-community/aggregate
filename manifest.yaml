@@ -217,7 +217,7 @@ feedstocks:
     commit: 9a1e8d065621cbd33fcba9b615067666f5dcf71c
   cachecontrol-feedstock:
     branch: main
-    commit: 0eec3e6561728aba1b086b124522b0a7d989255b
+    commit: c9fcb0053b7f35a59de6ba03e42a95c20a469d1b
   cached-property-feedstock:
     branch: main
     commit: 09fdbe25a8ba49c670c6eea12c3444baf46e1ef1
@@ -754,7 +754,7 @@ feedstocks:
     commit: 46c8072dbd9bcf4dacd8a51e1a695a838919eb26
   jupyter_events-feedstock:
     branch: main
-    commit: 2e47f6ea58e376bfe58a436dfc3bc0013b184e42
+    commit: bd891682eadce50491bf4af456e1fef3475ba982
   jupyter_server-feedstock:
     branch: main
     commit: 7a6acd84f3984e49aca8bd8bcda2f468890fa17b
@@ -967,7 +967,7 @@ feedstocks:
     commit: 11f01eb8929ce6c6f8d1d2ace7813a40d8701eb5
   markdown-feedstock:
     branch: main
-    commit: 258b25c3493842e9a4b98c9e2f9a8e918ea5eec5
+    commit: 09c11089ad2d4cb3bb03adcb9057071aa7cf1a83
   markdown-it-py-feedstock:
     branch: main
     commit: f1cdd1453027958de364d439dddc5d6161dd640f
@@ -1348,7 +1348,7 @@ feedstocks:
     commit: 130425ca547fad623cde1af7b2666f6999605ef2
   pyqt-feedstock:
     branch: main
-    commit: 3e8b3aab5e6f8fdbacdf3e6e4b7cdf87874e1769
+    commit: f6a1cb35e9ea365bf9c67099446aced306bb742f
   pyrsistent-feedstock:
     branch: main
     commit: 04965172095c191f58e185d822b1e059f05cd1b4
@@ -1789,7 +1789,7 @@ feedstocks:
     commit: 9718eb91feff997ee6c06f27f48a9953057e79cb
   wandb-feedstock:
     branch: main
-    commit: a13346ea1f72bbe7801debe136871ae481871628
+    commit: 21d4cb4a1630be0c14d100a89d507461d5b737c2
   wasabi-feedstock:
     branch: main
     commit: 9669cebf62b8a9aa156ff4c01d89bc48a40f2f7c
