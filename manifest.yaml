@@ -1789,7 +1789,7 @@ feedstocks:
     commit: 9718eb91feff997ee6c06f27f48a9953057e79cb
   wandb-feedstock:
     branch: main
-    commit: 2178a2c622649ca4ed82c306bb9b818491832596
+    commit: a13346ea1f72bbe7801debe136871ae481871628
   wasabi-feedstock:
     branch: main
     commit: 9669cebf62b8a9aa156ff4c01d89bc48a40f2f7c
