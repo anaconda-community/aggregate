@@ -241,7 +241,7 @@ feedstocks:
     commit: 9d141942a5404542efc9ef2b584787885dadd31f
   cfitsio-feedstock:
     branch: main
-    commit: d91a629b4b5c0b8803ddb1e7cf367dffa9aa1873
+    commit: d5fff24d350a2b1f626146a407d5fa741ba85a71
   chardet-feedstock:
     branch: main
     commit: d7d88d20007b141531df3746af27239e396a6395
