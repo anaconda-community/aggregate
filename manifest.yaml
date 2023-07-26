@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: 9735eafcaba28df676e2cac4f2bbbfec0d9fab83
+    commit: 94c207bdb067050de980b127906c8b4a9463737f
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -190,7 +190,7 @@ feedstocks:
     commit: f52834d64d8d673c43b61c7d4d8daaa2121a33e4
   botocore-feedstock:
     branch: main
-    commit: d9eaf69bbfd0db136e1307fabcd4fc3504304383
+    commit: 19b2752851ca0a3ef4117edba5ab55e457104b3a
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -550,7 +550,7 @@ feedstocks:
     commit: b3fb5533a886b83bcd09ff28b5dc5a73a76ae7ff
   google-api-python-client-feedstock:
     branch: main
-    commit: b8369de33fe08473d9d35cc57e39ac09645d6815
+    commit: ceb4f3d57d629bb7e6dfa8a8a0aa6ec4fde7b60f
   google-auth-feedstock:
     branch: main
     commit: 6adb1a06474afa8baab44276f88272f41dc4e457
@@ -682,7 +682,7 @@ feedstocks:
     commit: 4e9708a0683b2023725836f90f0934449bf8abb4
   ipykernel-feedstock:
     branch: main
-    commit: f3cb7dfb99a6cea042f490054a6c070a28f9e7a6
+    commit: d5e8001e203cf2097e076debf20a67fb58ad2a49
   ipympl-feedstock:
     branch: main
     commit: 1b0c4f5c11c094eedb52e836dfc1aab8292a3cfb
@@ -1042,7 +1042,7 @@ feedstocks:
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
   nbconvert-feedstock:
     branch: main
-    commit: 234b29f0fc960f2b65452c90bb55b10a8afd8e3c
+    commit: 02e0ff8533c9a9422eeac7efaf0949f2864e52c3
   nbformat-feedstock:
     branch: main
     commit: f052b03baeda70dffd1dd357b770a2a12f40765e
@@ -1294,7 +1294,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: 10544b00c12b5cc486f21a5030b790df72dec332
+    commit: 8c80738f25090e35706c2f86dbc79e02ce639e81
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1456,7 +1456,7 @@ feedstocks:
     commit: 75fa7e435b32ca8c5a488acec6aa8d0523b51d38
   responses-feedstock:
     branch: main
-    commit: 84a1806fcaa72a2b174981ee77a7d1607a67b447
+    commit: f435fbcb319f26421da21e452ac9cb672444a6e5
   retrying-feedstock:
     branch: main
     commit: fa5752c507a8c415056713e30d85cace5e977c4b
