@@ -907,7 +907,7 @@ feedstocks:
     commit: 1c123652436e22ba6ded28448627e0d2c3af2665
   libuv-feedstock:
     branch: main
-    commit: 73498b1bff2c4e3bc093b12830a5c017002e8a0e
+    commit: 0718ed640b65a2710d4ef48351b26788eafad87d
   libvorbis-feedstock:
     branch: main
     commit: 2b11deca9dee89b276d6f772ef268844069a9b84
@@ -1294,7 +1294,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: 8c80738f25090e35706c2f86dbc79e02ce639e81
+    commit: f2f7a1419b16b41c75ca94025896827a13ec6b5f
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1474,7 +1474,7 @@ feedstocks:
     commit: f12803d36383c337271983ee4e012fd0d134d319
   rhash-feedstock:
     branch: main
-    commit: 83cb7a8caca2c51ae0c09fc0f2f8541532dfba5d
+    commit: 0ce34e53353349fb8f52ce9f43e62bf7062118be
   rich-feedstock:
     branch: main
     commit: 0d745692c1bcff3df7e0a966dd78eb1bc8e6de03
