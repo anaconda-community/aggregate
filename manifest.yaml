@@ -187,7 +187,7 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: f52834d64d8d673c43b61c7d4d8daaa2121a33e4
+    commit: f8079a35adf430f0c6fc7ff3a506f223fed75f7c
   botocore-feedstock:
     branch: main
     commit: 19b2752851ca0a3ef4117edba5ab55e457104b3a
