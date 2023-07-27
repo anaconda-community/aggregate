@@ -115,7 +115,7 @@ feedstocks:
     commit: d6843229840f88f4616be76a3d634f3e1d61c5f7
   aws-crt-cpp-feedstock:
     branch: main
-    commit: aa9ac498fd9f148a48ca1205229936eb76fc4087
+    commit: 30104a80191375c4acff0bd58eef4696c3c75b89
   aws-sdk-cpp-feedstock:
     branch: main
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
@@ -1456,7 +1456,7 @@ feedstocks:
     commit: 75fa7e435b32ca8c5a488acec6aa8d0523b51d38
   responses-feedstock:
     branch: main
-    commit: f435fbcb319f26421da21e452ac9cb672444a6e5
+    commit: 6da32a51213a7438e2e7a946a5a888352cec9f55
   retrying-feedstock:
     branch: main
     commit: fa5752c507a8c415056713e30d85cace5e977c4b
@@ -1687,7 +1687,7 @@ feedstocks:
     commit: 1367061e1ca8275fca42272ebcc4b147759c3e23
   tomlkit-feedstock:
     branch: main
-    commit: c08655be0856c0bd8830ea4bf9ac7691914ef128
+    commit: f6dd25bdf5c21ea5b400400a4be4b40da628973e
   toolz-feedstock:
     branch: main
     commit: e25e21af4e5e21666fb53add0994fa4631e720ce
@@ -1714,7 +1714,7 @@ feedstocks:
     commit: 12eeef6351f5aa95e1c613dbde5c8255be70463c
   typeguard-feedstock:
     branch: main
-    commit: 921c528f27657d3c9fa72c1057362130bdfb8de0
+    commit: d6c7eb0ed407a10fa17a9701eb1fc5c2073d5716
   typer-feedstock:
     branch: main
     commit: 7d5852239ca2b531a30c7c378404e3d5c210483d
