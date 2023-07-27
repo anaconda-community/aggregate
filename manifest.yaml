@@ -1687,7 +1687,7 @@ feedstocks:
     commit: 1367061e1ca8275fca42272ebcc4b147759c3e23
   tomlkit-feedstock:
     branch: main
-    commit: c08655be0856c0bd8830ea4bf9ac7691914ef128
+    commit: 22e11dbdf391478fe6223095336dc273390083b7
   toolz-feedstock:
     branch: main
     commit: e25e21af4e5e21666fb53add0994fa4631e720ce
