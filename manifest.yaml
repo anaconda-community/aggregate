@@ -256,7 +256,7 @@ feedstocks:
     commit: 70e8cc88c74a366e9642c39ff21a32c04b76e1f4
   clangdev-feedstock:
     branch: main
-    commit: 60e0ed07baadaf59c7646015aff34fc0352327f0
+    commit: ee8c8f948c9ab5d0229bbeddd808bc23e80eb3d0
   cleo-feedstock:
     branch: main
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
@@ -1642,7 +1642,7 @@ feedstocks:
     commit: 7e578b1aa3e1b9d6cc2b23c0bc86b2bc3017a08a
   tbb-feedstock:
     branch: main
-    commit: 738274f894b5b92ba1a0fd421cf0d89c726d8e8f
+    commit: 743f0acacee51c1bd665d8d76acdd858830b160e
   tenacity-feedstock:
     branch: main
     commit: a3e8926138d7a056d3fb5a16407b772ec812b355
