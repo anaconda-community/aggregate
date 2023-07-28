@@ -58,7 +58,7 @@ feedstocks:
     commit: 3979b2a569a67ff17ed83d9dda8d768b2eb63ef5
   async-lru-feedstock:
     branch: main
-    commit: 43c553389a3ee8f30ee375c8a103d563230f31a4
+    commit: 5afc04db8eb8a27d875cfc38f9d4a6957b5dd251
   async-timeout-feedstock:
     branch: main
     commit: 402a764275fc8ae746b10184a0c871a01663df4a
@@ -190,7 +190,7 @@ feedstocks:
     commit: e37f2ead600cc9933bca0cdf7d07a82e177b674d
   botocore-feedstock:
     branch: main
-    commit: ffc6f57355fd16ff8ef8f7863278c84fd4a8dfc9
+    commit: f83dbe647ea4aaf124902cc0983b7c95edfe0fef
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
