@@ -190,7 +190,7 @@ feedstocks:
     commit: 3fec70f7bf061cffd9628444baff0f72234c42ba
   botocore-feedstock:
     branch: main
-    commit: 1a2d47c59ea3875e3e6223237033140da360c9e1
+    commit: ffc6f57355fd16ff8ef8f7863278c84fd4a8dfc9
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
