@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: 1db42733b076896beca39e4b6a41b3a6ea29c9aa
+    commit: 315bf4a8db3f7c2023cabf8f2f29c9ebc0d48035
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -1000,7 +1000,7 @@ feedstocks:
     commit: 2e3d657e2b01f143d07c214d7f3fab6b32de891f
   more-itertools-feedstock:
     branch: main
-    commit: b0caffe94c932fd408aae082dddfba707253e90a
+    commit: ebf7aaf91e37a6153c612ec700b3b48450f0470a
   mpg123-feedstock:
     branch: main
     commit: e2f2de8fd3a8909d79af61eeb61c9e6d1781bf9b
