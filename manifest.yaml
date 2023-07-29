@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 218757423fa7d18f0883a7cd2767ef725b48a89a
+    commit: a5a66deeb14828bc3c7742b2f8e83cf3d2d50f21
   botocore-feedstock:
     branch: main
-    commit: f83dbe647ea4aaf124902cc0983b7c95edfe0fef
+    commit: f03b1c16bc55c3487580a06341d23c8c2af36e4b
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -1144,7 +1144,7 @@ feedstocks:
     commit: caa697cf6d2b2ef860b35d812fd88bb748075a9e
   pathspec-feedstock:
     branch: main
-    commit: 858f85ab95730ae77da6706ef5c461031e5f87b8
+    commit: 58051a62722376a88f3c31e06fef37f73fa818c2
   pathtools-feedstock:
     branch: main
     commit: 91030217ed20a0fb6aeb164e21c6844a8e50a113
