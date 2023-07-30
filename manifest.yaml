@@ -1126,7 +1126,7 @@ feedstocks:
     commit: b799683ffb9bd8fa52a3915384f6d0c30a2c50ff
   paramiko-feedstock:
     branch: main
-    commit: 46560023f2d8997a387073ebd5893fb28ac11762
+    commit: 31d1827f0aef090fcf08814facde989991e1f0b5
   parquet-cpp-feedstock:
     branch: main
     commit: ad81f5772fee734541acd641cd64b4bde316d8f9
@@ -1714,7 +1714,7 @@ feedstocks:
     commit: 12eeef6351f5aa95e1c613dbde5c8255be70463c
   typeguard-feedstock:
     branch: main
-    commit: d6c7eb0ed407a10fa17a9701eb1fc5c2073d5716
+    commit: 12f76892cf58b55b947c22ae055c804d77f5f086
   typer-feedstock:
     branch: main
     commit: 7d5852239ca2b531a30c7c378404e3d5c210483d
