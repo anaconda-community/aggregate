@@ -1285,7 +1285,7 @@ feedstocks:
     commit: c1e5bd5c2a3e50e6babc15f14c971517395f43c8
   pycodestyle-feedstock:
     branch: main
-    commit: fc71ae5dbd7881e52e8ae57597df590ecfa1abc6
+    commit: fe674b510612a39f86a9dcd1bccdbc11715f1234
   pycparser-feedstock:
     branch: main
     commit: da1bb2e0920083a120ee56db3674f469233d8d21
@@ -1333,7 +1333,7 @@ feedstocks:
     commit: fc1ef2a6abd54f12046d584892b50694c0801072
   pyparsing-feedstock:
     branch: main
-    commit: d8ab68870581cf43b3de3effc82d87623cd34928
+    commit: a599a28a8c61c41c6d18aa924b39ac2be78558ba
   pyproject-metadata-feedstock:
     branch: main
     commit: 68fce7bfb5fceb24c0ccda0ec4dbf5effa41e582
@@ -1507,7 +1507,7 @@ feedstocks:
     commit: c589e03829e7af201bb507069a9af6c813e0bc9e
   scikit-build-core-feedstock:
     branch: main
-    commit: 9a495da525971b598ea821b777c5980dd9cde0ad
+    commit: abde72023d6e38b9ef43a82396924003a412ddfa
   scikit-build-feedstock:
     branch: main
     commit: fa28862706509bf22c18cd529cafadd0b242fe32
