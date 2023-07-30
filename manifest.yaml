@@ -1477,7 +1477,7 @@ feedstocks:
     commit: 0ce34e53353349fb8f52ce9f43e62bf7062118be
   rich-feedstock:
     branch: main
-    commit: 0d745692c1bcff3df7e0a966dd78eb1bc8e6de03
+    commit: 5d062f96737d40d5ed30b2315c39f2dbf10e57bd
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
