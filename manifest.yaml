@@ -232,7 +232,7 @@ feedstocks:
     commit: 889d05b6abcf5098e6ec82a36ca62f407e8a4d37
   cctools-and-ld64-feedstock:
     branch: main
-    commit: caedc9c8dce631cfd69994966ed203bec9318b9a
+    commit: 9e204eead779fddd402b975b4145daf3733c2f31
   certifi-feedstock:
     branch: main
     commit: 89a585853c6962abe2a22712b7b4ff20b1f15bf8
