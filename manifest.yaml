@@ -1546,7 +1546,7 @@ feedstocks:
     commit: 03096bc8f57bc9c501a1376b9828bc7d0f218cb6
   sentry-sdk-feedstock:
     branch: main
-    commit: 906477f77129a9c8bf3e37d0bc4c62a5cdf0125b
+    commit: 2dccdee339b7a4ba46f95ed47bb81b43fa846c0b
   setproctitle-feedstock:
     branch: main
     commit: 157180e9961f485e4384ea08110c5670b54ed066
