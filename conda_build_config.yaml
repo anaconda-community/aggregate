@@ -386,7 +386,7 @@ libgit2:
 libgoogle_cloud:
   - '2.12'
 libgrpc:
-  - '1.52'
+  - '1.54'
 libhugetlbfs:
   - 2
 libhwy:
@@ -496,7 +496,7 @@ ncurses:
 netcdf_cxx4:
   - 4.3
 netcdf_fortran:
-  - 4.5
+  - '4.6'
 nettle:
   - '3.8'
 nodejs:
@@ -544,7 +544,7 @@ pango:
 pari:
   - 2.15.* *_pthread
 pcl:
-  - 1.13.0
+  - 1.13.1
 perl:
   - 5.26 # [win]
   - 5.34 # [not win]
