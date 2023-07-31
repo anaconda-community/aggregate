@@ -754,7 +754,7 @@ feedstocks:
     commit: 46c8072dbd9bcf4dacd8a51e1a695a838919eb26
   jupyter_events-feedstock:
     branch: main
-    commit: bd891682eadce50491bf4af456e1fef3475ba982
+    commit: c4796f9e13eb20ac75edea0020bd0039a1ad9455
   jupyter_server-feedstock:
     branch: main
     commit: 7a6acd84f3984e49aca8bd8bcda2f468890fa17b
@@ -1045,7 +1045,7 @@ feedstocks:
     commit: 02e0ff8533c9a9422eeac7efaf0949f2864e52c3
   nbformat-feedstock:
     branch: main
-    commit: f052b03baeda70dffd1dd357b770a2a12f40765e
+    commit: f17ee8e04eb5164f5902b13c6e49d58e0e4194ca
   ncurses-feedstock:
     branch: main
     commit: 456de0478ea4ef42d63eea3ec72adc24dfce01d6
@@ -1186,7 +1186,7 @@ feedstocks:
     commit: 0abd41c2ea1e78914cadc49b19bd3721693d0c25
   platformdirs-feedstock:
     branch: main
-    commit: 0a1745a9486664971e1d0be15818d72eb0455ef9
+    commit: 1e0db4efabfcf2593b46f3fcc558cd5097dcf6cb
   plotly-feedstock:
     branch: main
     commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
@@ -1393,7 +1393,7 @@ feedstocks:
     commit: 9a2de8382f3ee795c537c4f9ffe94b03db6546b5
   pytorch-cpu-feedstock:
     branch: main
-    commit: 1a3257e9f1aa9cb3ac8d7347c22493024265f821
+    commit: 229b44730ae4e9b1cb144910f0a3a25cee0e7391
   pytz-deprecation-shim-feedstock:
     branch: main
     commit: a93d568c095e9b34b27ea9baf30fd42cc9c347ab
@@ -1477,7 +1477,7 @@ feedstocks:
     commit: 0ce34e53353349fb8f52ce9f43e62bf7062118be
   rich-feedstock:
     branch: main
-    commit: 5d062f96737d40d5ed30b2315c39f2dbf10e57bd
+    commit: 24ea8215fc8cd190749e92e422783ba81252eb7c
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
@@ -1816,7 +1816,7 @@ feedstocks:
     commit: ff9762529dfa10c1374046b67f35db93878ace3c
   widgetsnbextension-feedstock:
     branch: main
-    commit: d305c9b6be0fff0a32b664e81772910b77acaa1a
+    commit: a464a98438a93b4dbd0ecfa6934a6ac799bc09b7
   wordcloud-feedstock:
     branch: main
     commit: e289d5c6fdb2ac4937b6e81ead58f59bd25efea0
