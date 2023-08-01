@@ -583,7 +583,7 @@ feedstocks:
     commit: 5cf34b4d9378364f4179ba08e74dfa5b4899a0a8
   googleapis-common-protos-feedstock:
     branch: main
-    commit: e68a4dece41eef100bcd6b2d92fd12525daf5ede
+    commit: 500a249ada192095e91ec824411db3b0813f3a87
   gperf-feedstock:
     branch: main
     commit: 453d782bef291554b480751989473834b7a23e0c
