@@ -694,7 +694,7 @@ feedstocks:
     commit: b732152d595428e8fd11927051c1bb8bccfc03c1
   ipywidgets-feedstock:
     branch: main
-    commit: c5197110719ad0a8e35624f161ccc7b5f76c1361
+    commit: 4a9b4b7403ebed9a8f05fff6aa2585d873be991c
   isodate-feedstock:
     branch: main
     commit: cdbcc75372ee4b925876f85fe9612495d9838915
