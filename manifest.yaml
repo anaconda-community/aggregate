@@ -367,7 +367,7 @@ feedstocks:
     commit: 51db22e756e03b9c5e4900f5bdb3022842b56c98
   datasets-feedstock:
     branch: main
-    commit: b60bbe9080606c2cb044e64e851626455bc49f96
+    commit: f95e015e156f7f131117d204c3189bf0de170413
   dav1d-feedstock:
     branch: main
     commit: 23bbb0a9849e230e290131c2b8d1ddf8e452bea5
@@ -712,7 +712,7 @@ feedstocks:
     commit: 536b593c5afb55f79ea00b597e9a79eb805d37e5
   jedi-feedstock:
     branch: main
-    commit: 49607f75fd59d3091fdd5443f065d8612ce46269
+    commit: 8326698e19ef1639b314dfc95a699ccfa9d9bd3b
   jeepney-feedstock:
     branch: main
     commit: a136817985e24d1907a62380bd2fb90ea4f15129
@@ -1477,7 +1477,7 @@ feedstocks:
     commit: 0ce34e53353349fb8f52ce9f43e62bf7062118be
   rich-feedstock:
     branch: main
-    commit: 24ea8215fc8cd190749e92e422783ba81252eb7c
+    commit: 2a1d429605eca065936c078542f0a3243a96eabc
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
@@ -1546,7 +1546,7 @@ feedstocks:
     commit: 03096bc8f57bc9c501a1376b9828bc7d0f218cb6
   sentry-sdk-feedstock:
     branch: main
-    commit: 2dccdee339b7a4ba46f95ed47bb81b43fa846c0b
+    commit: a6e313a35e3ef0f396a062aead416c08c3ed7c7e
   setproctitle-feedstock:
     branch: main
     commit: 157180e9961f485e4384ea08110c5670b54ed066
