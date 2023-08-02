@@ -190,7 +190,7 @@ feedstocks:
     commit: 285f6f64577cb2c4c82605866bbb8c21ab2954b8
   botocore-feedstock:
     branch: main
-    commit: f57e51e981a9ade303158225a0f29780e08ce016
+    commit: 35a999670676aaf4052a5e22fb7343489bc5cc73
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -325,7 +325,7 @@ feedstocks:
     commit: 0a43467fca2aa9374e85b19744628a8c5e0694d9
   cryptography-feedstock:
     branch: main
-    commit: 0154f357fef7dc74b3524b644a1375576b8820cc
+    commit: b674d8c1c87bcc722aa77d9e0fa359242ff584c0
   ctng-compilers-feedstock:
     branch: main
     commit: 923b25fa711bd71cc7c43299e032bd87579dbce9
