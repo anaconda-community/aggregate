@@ -367,7 +367,7 @@ feedstocks:
     commit: 51db22e756e03b9c5e4900f5bdb3022842b56c98
   datasets-feedstock:
     branch: main
-    commit: f95e015e156f7f131117d204c3189bf0de170413
+    commit: a7bb48021f83faf107685f92d358cbcbd1dbbb92
   dav1d-feedstock:
     branch: main
     commit: 23bbb0a9849e230e290131c2b8d1ddf8e452bea5
@@ -1573,7 +1573,7 @@ feedstocks:
     commit: 7afe6efa2f9f747267c3ac9069a2c54c4d66d432
   sip-feedstock:
     branch: main
-    commit: 9d6651a826d45341fc66c2414d02aba0498d0e57
+    commit: aa011c7e1f3b8ffaab1a942eba00e785e8b5ae62
   six-feedstock:
     branch: main
     commit: 72223a1cb193d2309b6434bb9ec806e0afcbca7c
