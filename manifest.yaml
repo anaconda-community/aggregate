@@ -190,7 +190,7 @@ feedstocks:
     commit: 285f6f64577cb2c4c82605866bbb8c21ab2954b8
   botocore-feedstock:
     branch: main
-    commit: b1db771997a3994feeb0706361f74c14b3b256fe
+    commit: f57e51e981a9ade303158225a0f29780e08ce016
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -244,7 +244,7 @@ feedstocks:
     commit: d5fff24d350a2b1f626146a407d5fa741ba85a71
   chardet-feedstock:
     branch: main
-    commit: d7d88d20007b141531df3746af27239e396a6395
+    commit: 0642625f57bf2f02733339542873fac11f08bf9b
   charls-feedstock:
     branch: main
     commit: fc792391e35885499883c83d503ecaed78cc4b56
@@ -1456,7 +1456,7 @@ feedstocks:
     commit: 75fa7e435b32ca8c5a488acec6aa8d0523b51d38
   responses-feedstock:
     branch: main
-    commit: 6da32a51213a7438e2e7a946a5a888352cec9f55
+    commit: 663063c18b715f61309f656758304c15aab923d8
   retrying-feedstock:
     branch: main
     commit: fa5752c507a8c415056713e30d85cace5e977c4b
@@ -1477,7 +1477,7 @@ feedstocks:
     commit: 0ce34e53353349fb8f52ce9f43e62bf7062118be
   rich-feedstock:
     branch: main
-    commit: 2a1d429605eca065936c078542f0a3243a96eabc
+    commit: 41ee1f032f0ff7c5c5e04dcfaaff5712ff627495
   rsa-feedstock:
     branch: main
     commit: 638ee3bf04e45ba2bdefcac041a2ff99320ef321
