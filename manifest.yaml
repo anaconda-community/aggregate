@@ -376,7 +376,7 @@ feedstocks:
     commit: 359f2982a00a81edf5af23813a3fb44363e652bb
   debugpy-feedstock:
     branch: main
-    commit: 0df7078cefada9a6f3b5403ed3340de976c013d5
+    commit: c0c3c0b3a1831f92ec7b64b375fe9cdafd9c700d
   decorator-feedstock:
     branch: main
     commit: ea7ffb7f1cc8c1dec47f4c3e2cd1a0ae196cbf81
@@ -739,7 +739,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: d026805c4b01993b09a85ad030fd1d3bb91b0af2
+    commit: b00226bc73a1b94ec500499bc67f19dc83efa442
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
@@ -754,7 +754,7 @@ feedstocks:
     commit: 46c8072dbd9bcf4dacd8a51e1a695a838919eb26
   jupyter_events-feedstock:
     branch: main
-    commit: c4796f9e13eb20ac75edea0020bd0039a1ad9455
+    commit: 7c0c639dcf625834f2bb67abed22aac02a57347d
   jupyter_server-feedstock:
     branch: main
     commit: 7a6acd84f3984e49aca8bd8bcda2f468890fa17b
@@ -1789,7 +1789,7 @@ feedstocks:
     commit: 9718eb91feff997ee6c06f27f48a9953057e79cb
   wandb-feedstock:
     branch: main
-    commit: 21d4cb4a1630be0c14d100a89d507461d5b737c2
+    commit: f21368accc689b50dffed8afa5c8c58261f71c86
   wasabi-feedstock:
     branch: main
     commit: 9669cebf62b8a9aa156ff4c01d89bc48a40f2f7c
