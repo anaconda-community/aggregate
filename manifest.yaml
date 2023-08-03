@@ -607,7 +607,7 @@ feedstocks:
     commit: 8c769acf356f85147f6b5a9f0557001769c5d228
   gtest-feedstock:
     branch: main
-    commit: d10a4b2fa491cc1acd9ec6eb3a3c2e71bff3fc9e
+    commit: c70fe853f72f0de22ef3bcd10420864760f6600f
   gunicorn-feedstock:
     branch: main
     commit: e5ea00dcc4192bb4133d9b38437b609c9123f4b5
