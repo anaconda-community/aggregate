@@ -286,7 +286,7 @@ feedstocks:
     commit: 3d2713e57fead5294efd512dca117eef190af1af
   comm-feedstock:
     branch: main
-    commit: 0448daf6a651788d7f68ad424e2c6563d540e6a8
+    commit: f62e9ce673b918d289dd9f92a7cb5fc30dabb10e
   community-integration-test-feedstock:
     branch: main
     commit: f547fdaf76ea973332a8f093c1282fa77040787e
@@ -1429,7 +1429,7 @@ feedstocks:
     commit: 3de5ee7a282d0c8769dab4c652f124872926d831
   rapidfuzz-feedstock:
     branch: main
-    commit: 19699d5509c387d07583cbf328fa63fde6a5aed0
+    commit: 0076f02663bd8991703a70ddd7e3ca39ff7a5c28
   rapidjson-feedstock:
     branch: main
     commit: f817ee26dbd3e7c670abe62b8dd756549e2c6eef
