@@ -22,7 +22,7 @@ feedstocks:
     commit: 49d78be8c23a443a1f669225bffb882b51148369
   alembic-feedstock:
     branch: main
-    commit: cd60cf51a3edf3ade745036a5cb653283035ea3a
+    commit: eb3703798c48c72352a7c91534e3d724255e4c45
   alsa-lib-feedstock:
     branch: main
     commit: 5e3529ff65eceeb6bc27c1e5deb0bc583923b53c
