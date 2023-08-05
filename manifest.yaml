@@ -1813,7 +1813,7 @@ feedstocks:
     commit: ec160355c2c680411939e855f5eebe5bb1f22d14
   wheel-feedstock:
     branch: main
-    commit: ff9762529dfa10c1374046b67f35db93878ace3c
+    commit: 68110382893be96f569d046bc0411f6b1f3f36a1
   widgetsnbextension-feedstock:
     branch: main
     commit: a464a98438a93b4dbd0ecfa6934a6ac799bc09b7
