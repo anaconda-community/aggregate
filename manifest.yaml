@@ -121,7 +121,7 @@ feedstocks:
     commit: cf80fe06ff823d448c9001bf8090bc853d090e74
   awscli-feedstock:
     branch: main
-    commit: 788730448b6a7b79fa386e29b9713083ef0bdff4
+    commit: 2464ca813ce1d194cf98870adedcea98218be401
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 51a34b980596741d7b730408fa59924ea85f9888
+    commit: 6f4f16802ec313a84d647381f4f0c76149539b5b
   botocore-feedstock:
     branch: main
-    commit: f699f10a8ab89e5294373fa584e4f342db4144fa
+    commit: 93dcfca94cb11ed686d388b051bb5d9fc31674dc
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
