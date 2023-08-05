@@ -358,7 +358,7 @@ feedstocks:
     commit: 9519076d340da8a301db59579b096ab416f9d077
   dask-core-feedstock:
     branch: main
-    commit: 179f957fceda4513ece2c9d901771741ffeb94a6
+    commit: c58975712343821ff7b9456e4b00ebec1859e14f
   databricks-cli-feedstock:
     branch: main
     commit: b4dc1bb83d31840de61b1df35b47f9eed3e03442
