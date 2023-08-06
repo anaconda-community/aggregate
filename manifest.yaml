@@ -1108,7 +1108,7 @@ feedstocks:
     commit: 32f4f58bca54c93107c39ca546232dfef1661cd5
   overrides-feedstock:
     branch: main
-    commit: df5e4112f80a1ad43936ff991177eb5ec878cc06
+    commit: 1c7eef89d30b1ec72272b0573194d5c1f5fc8a16
   p11-kit-feedstock:
     branch: main
     commit: 06751e46ec5eac81a112532108077091f371c1c8
