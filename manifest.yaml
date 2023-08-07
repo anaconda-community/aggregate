@@ -682,7 +682,7 @@ feedstocks:
     commit: 4e9708a0683b2023725836f90f0934449bf8abb4
   ipykernel-feedstock:
     branch: main
-    commit: d5e8001e203cf2097e076debf20a67fb58ad2a49
+    commit: 3e13568acfa6036666a096a9c3b91dc72e12d65d
   ipympl-feedstock:
     branch: main
     commit: 1b0c4f5c11c094eedb52e836dfc1aab8292a3cfb
@@ -799,7 +799,7 @@ feedstocks:
     commit: b1e8384b591f4f8b24b9c2af17a0dc8fffc86803
   lazy_loader-feedstock:
     branch: main
-    commit: addb293ae741c8b1a908094cedddf6d32f0ca17d
+    commit: 1b6a6e1e60e24058a25946e2277d6cc74c1db97d
   lcms2-feedstock:
     branch: main
     commit: 9c674728bfe71476d7fd095220834ee96969e585
@@ -1591,7 +1591,7 @@ feedstocks:
     commit: afeb1e0bc5239e4dc8ac5d3f9b384b7d56133bb7
   snowflake-connector-python-feedstock:
     branch: main
-    commit: 977543d1a6c4b035d3dcf55b5dd14e556eab7fc9
+    commit: b86bbd16e5bdf376465a0b7269fb570f28e25d15
   sortedcontainers-feedstock:
     branch: main
     commit: 04ea352d08abb3d4c3e3e46b01d2a5a86f6fc74a
