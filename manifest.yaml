@@ -298,7 +298,7 @@ feedstocks:
     commit: c4865f325ba752842f7ea21470abde447f7f1062
   confection-feedstock:
     branch: main
-    commit: 1088aa43ff242e40caa2b852f68c25ee1221d880
+    commit: 1e91740d1fc4a03c538ac6a124034419e7e32d06
   configparser-feedstock:
     branch: main
     commit: 92028348349bc8fcc84e0eb4247241d3c096e33e
@@ -673,7 +673,7 @@ feedstocks:
     commit: 214f2727d644e9f0412288c8db47f14e4be0f5df
   importlib_resources-feedstock:
     branch: main
-    commit: 2e1001891ddf4406ae0694885047a5309852b643
+    commit: fee669df78940da030671ad650eac5e99bb34cf8
   iniconfig-feedstock:
     branch: main
     commit: 45e8aa5e8dd9442194f7a1acc3be0906a322ca54
@@ -739,7 +739,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: b00226bc73a1b94ec500499bc67f19dc83efa442
+    commit: b629c563caa80a7cd4000bdbf6d2fdeeb99e45d3
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
@@ -1303,7 +1303,7 @@ feedstocks:
     commit: 61087a161de8abf837b0fd05b826666ea0b0a021
   pygments-feedstock:
     branch: main
-    commit: 58c278d72111861767540b83cebd623c0016fb7e
+    commit: bceeea9df4bc0441520aad4c84e26c5ced8536e5
   pyjwt-feedstock:
     branch: main
     commit: 1d5db507a769e7d46bb85c278ceebf59e15c293a
@@ -1660,7 +1660,7 @@ feedstocks:
     commit: 17d14d0f09f5149d4927500016e86dfd5dabe3cb
   thinc-feedstock:
     branch: main
-    commit: c5a33b313a153fbf4c18ca536898c7d7a21d3751
+    commit: 7709c53f55fdc282d39045a56d0018963b59b83b
   threadpoolctl-feedstock:
     branch: main
     commit: 72d7923900e0a7dad80a32579b979c853de73b50
