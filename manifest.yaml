@@ -118,7 +118,7 @@ feedstocks:
     commit: 98ac2936db4039d98c9170094bf1853bb36b9581
   aws-sdk-cpp-feedstock:
     branch: main
-    commit: 15a06480ff834707eea1dd26fbfc5a93738f8160
+    commit: 54e57b53ee478d40e7f1b6acb3e7686fe9c33bcc
   awscli-feedstock:
     branch: main
     commit: 14184e4f6fc29eef3112149d39f62e97806ce03c
@@ -754,7 +754,7 @@ feedstocks:
     commit: 46c8072dbd9bcf4dacd8a51e1a695a838919eb26
   jupyter_events-feedstock:
     branch: main
-    commit: 7c0c639dcf625834f2bb67abed22aac02a57347d
+    commit: a071dbc75fac8feb4396c5c64e6a59a9159b2f07
   jupyter_server-feedstock:
     branch: main
     commit: 7a6acd84f3984e49aca8bd8bcda2f468890fa17b
