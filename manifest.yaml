@@ -97,31 +97,31 @@ feedstocks:
     commit: 429e98b6f9105a79158d9bf624acf9710c93340f
   aws-c-http-feedstock:
     branch: main
-    commit: bf9d84c2b60bd235e28d9fdda6d7de087e4f33bd
+    commit: 8fb766a7e8ff47f0ccad79f396568d9e4f825c42
   aws-c-io-feedstock:
     branch: main
-    commit: 6d0c5f6b6d8ef47e2651608e481fefa9200217ce
+    commit: 71ccb27520d969c0d47340d111be9c2b383acf76
   aws-c-mqtt-feedstock:
     branch: main
-    commit: e1821841184484ac9acb6b64c19d1d2fb97e58ff
+    commit: 34f903ff2eca4b3f0a66e19958aa3c99a5e57e05
   aws-c-s3-feedstock:
     branch: main
     commit: 3089d1fa79799e8ebce3a2665998c3c6e97184e3
   aws-c-sdkutils-feedstock:
     branch: main
-    commit: 935f6f310535ae14233b4f065f3ab9d4cb2c21e1
+    commit: 328bc936c5dc10ab6569ec6c62df3cd2f952b05b
   aws-checksums-feedstock:
     branch: main
-    commit: d6843229840f88f4616be76a3d634f3e1d61c5f7
+    commit: 4ccee164609b75c8461c479550938924568ad404
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 904f49e13f3107f16743d6b424a1a6b624ae2e43
+    commit: 98ac2936db4039d98c9170094bf1853bb36b9581
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 15a06480ff834707eea1dd26fbfc5a93738f8160
   awscli-feedstock:
     branch: main
-    commit: 2464ca813ce1d194cf98870adedcea98218be401
+    commit: 14184e4f6fc29eef3112149d39f62e97806ce03c
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
