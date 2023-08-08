@@ -49,7 +49,7 @@ feedstocks:
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
   arrow-cpp-feedstock:
     branch: main
-    commit: a32211f9006476e07db5011058745364314ef0a1
+    commit: 949b91c121987262664b23c5e3bf73897084f464
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
@@ -94,7 +94,7 @@ feedstocks:
     commit: 2e27988bf3f077375ded5b03a0281a6d2df2d8db
   aws-c-event-stream-feedstock:
     branch: main
-    commit: 429e98b6f9105a79158d9bf624acf9710c93340f
+    commit: c4252ae98fd0895c40d6eae1645145500c8f82c2
   aws-c-http-feedstock:
     branch: main
     commit: 8fb766a7e8ff47f0ccad79f396568d9e4f825c42
@@ -349,7 +349,7 @@ feedstocks:
     commit: dbf0db45c9c9c83ba42d7ae6817e363b111dfca1
   cython-blis-feedstock:
     branch: main
-    commit: 2095b6a691b64883f85d9b90e21106a8b51c2003
+    commit: 6edc42296412560f86102bad13214812effbd3d8
   cython-feedstock:
     branch: main
     commit: 89b7b7e6b5b28fa2badb17cbe0afe52e3e52d139
@@ -1504,7 +1504,7 @@ feedstocks:
     commit: 77a06efbb5f1e707bee7f5c5eeecd2330532e6cc
   safetensors-feedstock:
     branch: main
-    commit: c589e03829e7af201bb507069a9af6c813e0bc9e
+    commit: 178783610a167fcc3486512404d7197a24f0d7a7
   scikit-build-core-feedstock:
     branch: main
     commit: abde72023d6e38b9ef43a82396924003a412ddfa
@@ -1702,7 +1702,7 @@ feedstocks:
     commit: 2ac434e6c4dd92cef6b4accd38fba2905fc163fb
   tqdm-feedstock:
     branch: main
-    commit: 63821b6e8e7b01b4e058bffbff38d4ad4dda11e2
+    commit: 1f96c0b05558abe5f74489b8b9177ac380c12403
   traitlets-feedstock:
     branch: main
     commit: 3fc0324055783951de8353524dd288df19ec780d
@@ -1711,7 +1711,7 @@ feedstocks:
     commit: 20c2bcb557bae55cb86e88e0df53a5255c558e1e
   trove-classifiers-feedstock:
     branch: main
-    commit: 12eeef6351f5aa95e1c613dbde5c8255be70463c
+    commit: 12dfbede9e4f541e35b89434da87172ab962f0f2
   typeguard-feedstock:
     branch: main
     commit: 12f76892cf58b55b947c22ae055c804d77f5f086
