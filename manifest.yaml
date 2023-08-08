@@ -10,7 +10,7 @@ feedstocks:
     commit: 61170480817610e6702ed51af8391c557d200f94
   aiobotocore-feedstock:
     branch: main
-    commit: 47446e7bbb7487aea5f4de898b31fe8246b82772
+    commit: 09f3aff223100c49806548ba4e885ac5a3c1fba2
   aiohttp-feedstock:
     branch: main
     commit: f446dda1d1527ea61a4637178fac8917d1eb7463
@@ -82,31 +82,31 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: 588c5d5fd64c83c43061800dcbf6f5837cd8ee05
+    commit: 2d2053f8293fd73c8a875e0d4688097aa64166b9
   aws-c-cal-feedstock:
     branch: main
-    commit: 4fb3c8a581a2ba2a19d4bb85340962d7660dafe8
+    commit: 7edb5d92d4aca32bc604fb741a23aabe08fd3d74
   aws-c-common-feedstock:
     branch: main
-    commit: 1e9b8467473f8b952192072a5740a29b940aea22
+    commit: e9c54bfa94468bae74b30caf9f47082a9b1dcc1a
   aws-c-compression-feedstock:
     branch: main
-    commit: 81bfe1937a23767db5a8f3ef869807973c54f102
+    commit: 2e27988bf3f077375ded5b03a0281a6d2df2d8db
   aws-c-event-stream-feedstock:
     branch: main
-    commit: d0a7a0474f510eb6b24e8a5f26d9e9e679446a80
+    commit: 429e98b6f9105a79158d9bf624acf9710c93340f
   aws-c-http-feedstock:
     branch: main
-    commit: 81f9613019fda8f6075945fde846da8514302e79
+    commit: bf9d84c2b60bd235e28d9fdda6d7de087e4f33bd
   aws-c-io-feedstock:
     branch: main
-    commit: 45ed0d1ab92a2ce5f4f12e513b4d31535d7b28f5
+    commit: 6d0c5f6b6d8ef47e2651608e481fefa9200217ce
   aws-c-mqtt-feedstock:
     branch: main
     commit: e1821841184484ac9acb6b64c19d1d2fb97e58ff
   aws-c-s3-feedstock:
     branch: main
-    commit: 6b6edaca3fcf1477c3b22e51f50cb6e086a6b226
+    commit: 3089d1fa79799e8ebce3a2665998c3c6e97184e3
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 935f6f310535ae14233b4f065f3ab9d4cb2c21e1
@@ -115,10 +115,10 @@ feedstocks:
     commit: d6843229840f88f4616be76a3d634f3e1d61c5f7
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 30104a80191375c4acff0bd58eef4696c3c75b89
+    commit: 904f49e13f3107f16743d6b424a1a6b624ae2e43
   aws-sdk-cpp-feedstock:
     branch: main
-    commit: cf80fe06ff823d448c9001bf8090bc853d090e74
+    commit: 15a06480ff834707eea1dd26fbfc5a93738f8160
   awscli-feedstock:
     branch: main
     commit: 2464ca813ce1d194cf98870adedcea98218be401
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 6f4f16802ec313a84d647381f4f0c76149539b5b
+    commit: 791e8207a350b15f9dca285354c8168028fa9df8
   botocore-feedstock:
     branch: main
-    commit: 93dcfca94cb11ed686d388b051bb5d9fc31674dc
+    commit: 91060ff635c40e50267fcddca2b846861338f4d4
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -637,7 +637,7 @@ feedstocks:
     commit: 03bfeff781e99147fcf7010799ace788d3fedd31
   holidays-feedstock:
     branch: main
-    commit: 31953054fcf61088df63aea75e6bcb7829602890
+    commit: 292b6866186ed7d2ab8bc180efcb7faac502f13a
   html5lib-feedstock:
     branch: main
     commit: 775c9082c54546e2b783f93c01343d6b505e26b4
