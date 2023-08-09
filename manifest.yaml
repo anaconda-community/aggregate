@@ -190,7 +190,7 @@ feedstocks:
     commit: 791e8207a350b15f9dca285354c8168028fa9df8
   botocore-feedstock:
     branch: main
-    commit: 91060ff635c40e50267fcddca2b846861338f4d4
+    commit: aa42effb8eb29021dcd99a0c15dbcad62d850d9d
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -595,7 +595,7 @@ feedstocks:
     commit: c493dfdc3c34d86911c2dd6429e5b1aeec8714a2
   grpc-cpp-feedstock:
     branch: main
-    commit: 86370729e46752679f69b396869636ff38f139b6
+    commit: 2e04d514f4e12e20d29ac4847282dc568207c318
   grpcio-feedstock:
     branch: main
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
@@ -1282,7 +1282,7 @@ feedstocks:
     commit: 104ec889fbf162e9b8bf5affc5fc559f517c5b4d
   pycaret-feedstock:
     branch: main
-    commit: c1e5bd5c2a3e50e6babc15f14c971517395f43c8
+    commit: 9b65033734ea8a7dce831e39bc9e91e2a1549446
   pycodestyle-feedstock:
     branch: main
     commit: fe674b510612a39f86a9dcd1bccdbc11715f1234
@@ -1702,7 +1702,7 @@ feedstocks:
     commit: 2ac434e6c4dd92cef6b4accd38fba2905fc163fb
   tqdm-feedstock:
     branch: main
-    commit: 1f96c0b05558abe5f74489b8b9177ac380c12403
+    commit: 64291851d0a5b06cdf3ad6626710f36f32a46d54
   traitlets-feedstock:
     branch: main
     commit: 3fc0324055783951de8353524dd288df19ec780d
