@@ -7,7 +7,7 @@ feedstocks:
     commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
   abseil-cpp-feedstock:
     branch: main
-    commit: 61170480817610e6702ed51af8391c557d200f94
+    commit: 2c1a261cce60bd412c1f63ba1c238f0dda718d88
   aiobotocore-feedstock:
     branch: main
     commit: 09f3aff223100c49806548ba4e885ac5a3c1fba2
@@ -127,7 +127,7 @@ feedstocks:
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
   azure-core-feedstock:
     branch: main
-    commit: 7149f8c337290d89a34fa98e4f7ce022d878916a
+    commit: 6edcf51bf0a1e10f315bbd3a79d8534c9a98a055
   azure-storage-blob-feedstock:
     branch: main
     commit: a2d2b83529bd395182470ad9fcc67eb8e11ae004
@@ -550,7 +550,7 @@ feedstocks:
     commit: b3fb5533a886b83bcd09ff28b5dc5a73a76ae7ff
   google-api-python-client-feedstock:
     branch: main
-    commit: ceb4f3d57d629bb7e6dfa8a8a0aa6ec4fde7b60f
+    commit: 307e8b4af98ed9da9a534d8b4107839d6837b391
   google-auth-feedstock:
     branch: main
     commit: 6adb1a06474afa8baab44276f88272f41dc4e457
@@ -985,7 +985,7 @@ feedstocks:
     commit: ce41356cd3c7f92146180f9ba9f3244f08429f2b
   meson-feedstock:
     branch: main
-    commit: 58d7968c5fa1df550fd05eb062c7f5a8f7430555
+    commit: 66c1a02f389e7cf70f48a9352855cc986a9b61e9
   meson-python-feedstock:
     branch: main
     commit: ea80ce1fa067fba6fc6c45d7f730ef6b1d01c7ec
@@ -1444,7 +1444,7 @@ feedstocks:
     commit: 11502c44cd1d58279e20a7f95ef8a1ea1ea1cc6c
   regex-feedstock:
     branch: main
-    commit: c579bda6fd5773ba980821cf8e704a3bfffab38d
+    commit: 4ee8afc1a5bfdfb5b8bf7d1908e9ce0f0626da29
   requests-feedstock:
     branch: main
     commit: 435b91c49a0a88c30205464f24da14810f9a2c51
