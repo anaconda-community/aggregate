@@ -1702,7 +1702,7 @@ feedstocks:
     commit: 2ac434e6c4dd92cef6b4accd38fba2905fc163fb
   tqdm-feedstock:
     branch: main
-    commit: 64291851d0a5b06cdf3ad6626710f36f32a46d54
+    commit: 43a8c1016d4e8237412bb3455011d11901f7a489
   traitlets-feedstock:
     branch: main
     commit: 3fc0324055783951de8353524dd288df19ec780d
