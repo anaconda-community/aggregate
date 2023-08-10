@@ -91,13 +91,13 @@ feedstocks:
     commit: e9c54bfa94468bae74b30caf9f47082a9b1dcc1a
   aws-c-compression-feedstock:
     branch: main
-    commit: 2e27988bf3f077375ded5b03a0281a6d2df2d8db
+    commit: 021c8f2506560e759eea1398322380b7618a7ebc
   aws-c-event-stream-feedstock:
     branch: main
     commit: c4252ae98fd0895c40d6eae1645145500c8f82c2
   aws-c-http-feedstock:
     branch: main
-    commit: 8fb766a7e8ff47f0ccad79f396568d9e4f825c42
+    commit: fc45f4a27557fb4dd2a54bdaa3cb245d083e1541
   aws-c-io-feedstock:
     branch: main
     commit: 71ccb27520d969c0d47340d111be9c2b383acf76
@@ -190,7 +190,7 @@ feedstocks:
     commit: 791e8207a350b15f9dca285354c8168028fa9df8
   botocore-feedstock:
     branch: main
-    commit: aa42effb8eb29021dcd99a0c15dbcad62d850d9d
+    commit: 349e120521efea0a319f25740080df97b893a837
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
