@@ -103,7 +103,7 @@ feedstocks:
     commit: 71ccb27520d969c0d47340d111be9c2b383acf76
   aws-c-mqtt-feedstock:
     branch: main
-    commit: 34f903ff2eca4b3f0a66e19958aa3c99a5e57e05
+    commit: dee9ef5117004a888a060795fb28dd97e18b22b2
   aws-c-s3-feedstock:
     branch: main
     commit: 3089d1fa79799e8ebce3a2665998c3c6e97184e3
