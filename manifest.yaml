@@ -7,7 +7,7 @@ feedstocks:
     commit: 2a3de02f160a147de687de5658cc23bd52e3f7cf
   abseil-cpp-feedstock:
     branch: main
-    commit: 2c1a261cce60bd412c1f63ba1c238f0dda718d88
+    commit: a8e518de77df2166422353f5741acf77292496c9
   aiobotocore-feedstock:
     branch: main
     commit: 09f3aff223100c49806548ba4e885ac5a3c1fba2
@@ -100,7 +100,7 @@ feedstocks:
     commit: fc45f4a27557fb4dd2a54bdaa3cb245d083e1541
   aws-c-io-feedstock:
     branch: main
-    commit: 71ccb27520d969c0d47340d111be9c2b383acf76
+    commit: 77cd43ba980f00eef3817f8427ccd3ac495ed633
   aws-c-mqtt-feedstock:
     branch: main
     commit: 6516b6b7976f57419fe02154235da0dc071932e9
