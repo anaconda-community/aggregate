@@ -121,7 +121,7 @@ feedstocks:
     commit: 54e57b53ee478d40e7f1b6acb3e7686fe9c33bcc
   awscli-feedstock:
     branch: main
-    commit: 86d89597c4233acd46f3f79ecb160a45468303bb
+    commit: e2612c266dff8e25fb9d6e34d23a4846b65d9160
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
