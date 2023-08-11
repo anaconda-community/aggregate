@@ -103,7 +103,7 @@ feedstocks:
     commit: 71ccb27520d969c0d47340d111be9c2b383acf76
   aws-c-mqtt-feedstock:
     branch: main
-    commit: dee9ef5117004a888a060795fb28dd97e18b22b2
+    commit: 6516b6b7976f57419fe02154235da0dc071932e9
   aws-c-s3-feedstock:
     branch: main
     commit: 3089d1fa79799e8ebce3a2665998c3c6e97184e3
@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 75287166898d919d0c3e5a767fffc838dc34d220
+    commit: 1674fb6dcd9c37acd92af0a904423c10b4bb931a
   botocore-feedstock:
     branch: main
-    commit: 349e120521efea0a319f25740080df97b893a837
+    commit: 8321de7fbf45e46facd9485d255f1de2e67c38e0
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -607,7 +607,7 @@ feedstocks:
     commit: 8c769acf356f85147f6b5a9f0557001769c5d228
   gtest-feedstock:
     branch: main
-    commit: c70fe853f72f0de22ef3bcd10420864760f6600f
+    commit: 8160e5c06b196d9a15ba551828dffb70ce96986c
   gunicorn-feedstock:
     branch: main
     commit: e5ea00dcc4192bb4133d9b38437b609c9123f4b5
@@ -1216,7 +1216,7 @@ feedstocks:
     commit: c18900fd7e825f0d68d49ddf5439a65a9c534476
   postgresql-feedstock:
     branch: main
-    commit: 55c2573845d9aca645e9fe6a7b7547b6f713cffc
+    commit: 155278af767ae61d0b9c5c175e2a6baff8fca80e
   ppmac-feedstock:
     branch: main
     commit: f66a0d16c9ddc3520b3c8bd20ae582e084181587
