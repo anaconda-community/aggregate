@@ -61,7 +61,7 @@ feedstocks:
     commit: 5afc04db8eb8a27d875cfc38f9d4a6957b5dd251
   async-timeout-feedstock:
     branch: main
-    commit: 402a764275fc8ae746b10184a0c871a01663df4a
+    commit: c03389b42cf5e08b1c2dfa969aa4394d7df5b042
   asynctest-feedstock:
     branch: main
     commit: 97b9ba3a37d8bb59f8044c5597b9be828c6bc35a
@@ -82,7 +82,7 @@ feedstocks:
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
   aws-c-auth-feedstock:
     branch: main
-    commit: ad9ca5e07266faabfb4fa03409281757776ba78d
+    commit: 5f9f199c715e317b1ae90302d90b40a6b716ac8b
   aws-c-cal-feedstock:
     branch: main
     commit: 7edb5d92d4aca32bc604fb741a23aabe08fd3d74
@@ -94,19 +94,19 @@ feedstocks:
     commit: 021c8f2506560e759eea1398322380b7618a7ebc
   aws-c-event-stream-feedstock:
     branch: main
-    commit: c4252ae98fd0895c40d6eae1645145500c8f82c2
+    commit: 59b94b68007e7536de6b11d03222d8a30e184caf
   aws-c-http-feedstock:
     branch: main
-    commit: fc45f4a27557fb4dd2a54bdaa3cb245d083e1541
+    commit: 376fec95121038437b155d9b8d4b84a6aa225ede
   aws-c-io-feedstock:
     branch: main
     commit: 77cd43ba980f00eef3817f8427ccd3ac495ed633
   aws-c-mqtt-feedstock:
     branch: main
-    commit: 6516b6b7976f57419fe02154235da0dc071932e9
+    commit: 1f6842b21bb85cf9ba91889c7a61a9811179b4c9
   aws-c-s3-feedstock:
     branch: main
-    commit: 3089d1fa79799e8ebce3a2665998c3c6e97184e3
+    commit: 7d9f5de0e623beac3c8368d6f476d5a46df916c5
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 328bc936c5dc10ab6569ec6c62df3cd2f952b05b
@@ -739,7 +739,7 @@ feedstocks:
     commit: bf97bac0c7a4a28ebea47f96dcb7959cc1a7e692
   jsonschema-feedstock:
     branch: main
-    commit: b629c563caa80a7cd4000bdbf6d2fdeeb99e45d3
+    commit: 52ce3dac3709067a2a6fa51a9d13f72ccbdfd70a
   jupyter-lsp-feedstock:
     branch: main
     commit: df1201cf7f1c848604deac14ef9fdebabed3a269
@@ -1660,7 +1660,7 @@ feedstocks:
     commit: 17d14d0f09f5149d4927500016e86dfd5dabe3cb
   thinc-feedstock:
     branch: main
-    commit: 7709c53f55fdc282d39045a56d0018963b59b83b
+    commit: 9f3fe277054d6697c182914440542aabe9612d83
   threadpoolctl-feedstock:
     branch: main
     commit: 72d7923900e0a7dad80a32579b979c853de73b50
