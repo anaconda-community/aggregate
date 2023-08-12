@@ -121,7 +121,7 @@ feedstocks:
     commit: 54e57b53ee478d40e7f1b6acb3e7686fe9c33bcc
   awscli-feedstock:
     branch: main
-    commit: 86d89597c4233acd46f3f79ecb160a45468303bb
+    commit: 6da98ef3cf95d0f8f785669479a4fb089eb5ad53
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: 2429b6a6f72d59f67c06232a3beffba98c074c82
+    commit: 4f03bae41c27e572fab103b890320e3f42477d52
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
