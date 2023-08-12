@@ -10,7 +10,7 @@ feedstocks:
     commit: a8e518de77df2166422353f5741acf77292496c9
   aiobotocore-feedstock:
     branch: main
-    commit: 09f3aff223100c49806548ba4e885ac5a3c1fba2
+    commit: 10cffad457f3a80d9dc2e6dab55bd14dafe433ab
   aiohttp-feedstock:
     branch: main
     commit: f446dda1d1527ea61a4637178fac8917d1eb7463
@@ -106,7 +106,7 @@ feedstocks:
     commit: 1f6842b21bb85cf9ba91889c7a61a9811179b4c9
   aws-c-s3-feedstock:
     branch: main
-    commit: 7d9f5de0e623beac3c8368d6f476d5a46df916c5
+    commit: 8fce3299d41bcc6294b50ba11529a24c495c80e6
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 328bc936c5dc10ab6569ec6c62df3cd2f952b05b
@@ -190,7 +190,7 @@ feedstocks:
     commit: 1674fb6dcd9c37acd92af0a904423c10b4bb931a
   botocore-feedstock:
     branch: main
-    commit: 8321de7fbf45e46facd9485d255f1de2e67c38e0
+    commit: 225219dde97973e716db0f83e349df1759b35009
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -595,7 +595,7 @@ feedstocks:
     commit: c493dfdc3c34d86911c2dd6429e5b1aeec8714a2
   grpc-cpp-feedstock:
     branch: main
-    commit: 2e04d514f4e12e20d29ac4847282dc568207c318
+    commit: 6dbff2cfc6d284398101b2cd2641e96c40ca02ac
   grpcio-feedstock:
     branch: main
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
@@ -1189,7 +1189,7 @@ feedstocks:
     commit: 1e0db4efabfcf2593b46f3fcc558cd5097dcf6cb
   plotly-feedstock:
     branch: main
-    commit: 3dbb16641c19f45ce35103aa71a879454fab5db5
+    commit: 5c05ab1e0508c037d19bf9805759969a152b2349
   pluggy-feedstock:
     branch: main
     commit: 232b5b81f6a1d2a6481ec0d57b60088ef22d30dd
