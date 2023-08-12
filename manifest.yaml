@@ -187,7 +187,7 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 1674fb6dcd9c37acd92af0a904423c10b4bb931a
+    commit: dbe505e31cbbc1eb63d8764c37cae656bad315c3
   botocore-feedstock:
     branch: main
     commit: 225219dde97973e716db0f83e349df1759b35009
@@ -835,7 +835,7 @@ feedstocks:
     commit: 9c96cafe87d6af2286603cb6baca21dbf7c89266
   libcxx-feedstock:
     branch: main
-    commit: 0ec7cd6ed60b1db275a821a684f1125b033c697b
+    commit: 3a0e628d51b675d0e0bdbc52d48d8c41d41a101e
   libdeflate-feedstock:
     branch: main
     commit: 0fe2dae60489ecfc10cc31476fb6329e7f2d558c
@@ -1747,7 +1747,7 @@ feedstocks:
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
   ucx-split-feedstock:
     branch: main
-    commit: 78e8d08b1391a6a29d05eb22bf8a30d1878954f2
+    commit: ff58cf5d49fbcbda278353c42592613a7152c9b9
   umap-learn-feedstock:
     branch: main
     commit: 8a7b7634cb4f72a7966ba454119944de420b7479
