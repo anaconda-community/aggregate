@@ -601,7 +601,7 @@ feedstocks:
     commit: a99441fbf15d9bafd4370ea1c88c3c54311efdff
   grpcio-status-feedstock:
     branch: main
-    commit: c37b4b4e09c5dfdf6be276406a8f5eb174338ab2
+    commit: f18b9c56257fce22bcf85c985a52d6bdbbbbd5e2
   gstreamer-feedstock:
     branch: main
     commit: 8c769acf356f85147f6b5a9f0557001769c5d228
@@ -1768,7 +1768,7 @@ feedstocks:
     commit: 0166ba6f32dd888a30dab7c1c36f339da5b21698
   validators-feedstock:
     branch: main
-    commit: d8ff75d4ff35c1e5e6dd446e4a636fcde77c9030
+    commit: 29b45119acdc6e9416789ad0d3adfc5e494ba275
   vc-feedstock:
     branch: main
     commit: 97ada02cef22b60a8d64c71c16f58297046bf24a
@@ -1780,7 +1780,7 @@ feedstocks:
     commit: 3b8c5449dd4da97556f752a7428b1fd216c3506a
   virtualenv-feedstock:
     branch: main
-    commit: 1caf5f2e034cf29c9f90bef4a27c4b867ececb02
+    commit: 6a848e34b575207fd15ca34d702e7413f6952473
   visions-feedstock:
     branch: main
     commit: 32bc57be2207c17c5d46b63896f7b05f8f6e42d1
