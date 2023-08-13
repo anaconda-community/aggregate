@@ -181,7 +181,7 @@ feedstocks:
     commit: 8642a18750c7ab1bfe0f16e2ea3536e18230538e
   boost-cpp-feedstock:
     branch: main
-    commit: 699cfb6ec3488da8586833b1500b69133f052b6f
+    commit: f6b34b392599fe6aa4ef48a679a90d289e5f646e
   boruta_py-feedstock:
     branch: main
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
@@ -310,7 +310,7 @@ feedstocks:
     commit: 0cf0fa69eeb83ca7106ba174c4fbaca4ff5c37b6
   coverage-feedstock:
     branch: main
-    commit: d7b5560fbf5dca5efbe8a8340a5fb51421a112bd
+    commit: e2ee3d45316e2e84a9f836d0eb4a512749407eed
   cppy-feedstock:
     branch: main
     commit: 7e9cdb203b8d4ec3e8028e76841bb6474c25e8f5
