@@ -430,7 +430,7 @@ feedstocks:
     commit: 2694882f133f3797d1134e4dd33000a20358acc8
   exceptiongroup-feedstock:
     branch: main
-    commit: 2f87b9a264c20bd713581f8fc0c8be296cc58dd4
+    commit: dd1af19f92a116fb7ad27bfb3c35647debab1dbc
   executing-feedstock:
     branch: main
     commit: 23498ae679f6f525c9aaf219b1f718794d7fc93e
@@ -763,7 +763,7 @@ feedstocks:
     commit: dbacee20c45b6caf6677d0e27604e2115aa86d96
   jupyterlab-feedstock:
     branch: main
-    commit: 87bfbdcc8652a75ae658e3ac0491e96f138bdbe6
+    commit: 829c97d411000f62f3942cf6529c50dc7f4c9984
   jupyterlab_server-feedstock:
     branch: main
     commit: 9ba31feae8ddad65581771ce926815305cf430be
@@ -1069,7 +1069,7 @@ feedstocks:
     commit: c7e6148db52f30c63954ab9438e2a97edd4c0a68
   nodejs-feedstock:
     branch: main
-    commit: 0bcbdb2c6d2fe12d651c57697fd9ba76c6a1c057
+    commit: 5d46482dbab4159656c7664a572a61d6c6daab0a
   nomkl-feedstock:
     branch: main
     commit: e76f888f2eea80add43b22dc00bb1fb1869f8126
@@ -1123,7 +1123,7 @@ feedstocks:
     commit: 66b18b2d30de6095635450422a2ca99aa30c6e5c
   pandas-stubs-feedstock:
     branch: main
-    commit: b799683ffb9bd8fa52a3915384f6d0c30a2c50ff
+    commit: be5a4b4b48fd99e947853d6fe99709095fec7bf6
   paramiko-feedstock:
     branch: main
     commit: 31d1827f0aef090fcf08814facde989991e1f0b5
@@ -1384,7 +1384,7 @@ feedstocks:
     commit: 570684e7254ed5ae2e2a99e2df8665c5329517c9
   python-xxhash-feedstock:
     branch: main
-    commit: 7b364da23d1a7f9a4595ae05d6934c528aeeb92e
+    commit: ed10d14a5819242ebf015c3d8118f2f5bae1d615
   python_abi-feedstock:
     branch: main
     commit: da1a1ca3748011318b9ea9080862b24dad38035c
@@ -1645,7 +1645,7 @@ feedstocks:
     commit: 743f0acacee51c1bd665d8d76acdd858830b160e
   tenacity-feedstock:
     branch: main
-    commit: a3e8926138d7a056d3fb5a16407b772ec812b355
+    commit: c67565b23900187ff6509d04fbcacca03097f896
   termcolor-feedstock:
     branch: main
     commit: cd13a788f542d8fb8cbe08625183bbab70751b34
