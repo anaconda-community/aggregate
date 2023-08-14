@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: 4f03bae41c27e572fab103b890320e3f42477d52
+    commit: a6b028f5d2033649b8534c8d32b9197ce1f5f15c
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -1384,7 +1384,7 @@ feedstocks:
     commit: 570684e7254ed5ae2e2a99e2df8665c5329517c9
   python-xxhash-feedstock:
     branch: main
-    commit: 19054f1c2228e2094363c74ed801a18dda5c86f2
+    commit: 7b364da23d1a7f9a4595ae05d6934c528aeeb92e
   python_abi-feedstock:
     branch: main
     commit: da1a1ca3748011318b9ea9080862b24dad38035c
