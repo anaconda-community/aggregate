@@ -1720,7 +1720,7 @@ feedstocks:
     commit: 7d5852239ca2b531a30c7c378404e3d5c210483d
   types-pytz-feedstock:
     branch: main
-    commit: 9819e82349198a1925cbb834de0b3372538213c9
+    commit: 4654c2488ac412429f001fdef33bb24c6eb6862f
   types-pyyaml-feedstock:
     branch: main
     commit: f21740d32ef3fd92dfd69a87af6c22ea706108fc
