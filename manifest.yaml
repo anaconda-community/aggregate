@@ -757,7 +757,7 @@ feedstocks:
     commit: a071dbc75fac8feb4396c5c64e6a59a9159b2f07
   jupyter_server-feedstock:
     branch: main
-    commit: 7a6acd84f3984e49aca8bd8bcda2f468890fa17b
+    commit: 1d14a1826d71a76a84532b29dd898a72fb9aedc1
   jupyter_server_terminals-feedstock:
     branch: main
     commit: dbacee20c45b6caf6677d0e27604e2115aa86d96
@@ -880,7 +880,7 @@ feedstocks:
     commit: f20019d165d1abf01c29cc283c0d31bf4b812c6d
   libsndfile-feedstock:
     branch: main
-    commit: a1d14a3376f0827b221bca1d49725ade0c6e3162
+    commit: d32bc1a1016fba1ef02f0af3bfaadab5e74cd6c6
   libsodium-feedstock:
     branch: main
     commit: 7e5cfefbb8669cdc471e854f977ab0ba3e8faf5b
@@ -1069,7 +1069,7 @@ feedstocks:
     commit: c7e6148db52f30c63954ab9438e2a97edd4c0a68
   nodejs-feedstock:
     branch: main
-    commit: 5d46482dbab4159656c7664a572a61d6c6daab0a
+    commit: 5b632ecc26e242578e271a07da2c5dff3585b65b
   nomkl-feedstock:
     branch: main
     commit: e76f888f2eea80add43b22dc00bb1fb1869f8126
@@ -1441,7 +1441,7 @@ feedstocks:
     commit: e202b7a00d629d91ddd62d31980480bb975f1070
   redis-py-feedstock:
     branch: main
-    commit: 11502c44cd1d58279e20a7f95ef8a1ea1ea1cc6c
+    commit: 048eef4d74558490b0526b5f3bc1d4065ddcc5ad
   regex-feedstock:
     branch: main
     commit: 4ee8afc1a5bfdfb5b8bf7d1908e9ce0f0626da29
@@ -1669,7 +1669,7 @@ feedstocks:
     commit: 7b04edce0c78cbbdbeb404146f9b92134696249a
   tifffile-feedstock:
     branch: main
-    commit: 42d6bf47dae020f6ca7f48961a1a70b6735425cb
+    commit: cc624fb17a4cd1dfd5b308d6ae52324cec256758
   tk-feedstock:
     branch: main
     commit: 2f72fdce1c5b6ac80164b24cc45ccc0dc7b606ff
@@ -1810,7 +1810,7 @@ feedstocks:
     commit: a0cb098959027b66b1d6885b861079f7fe571d16
   werkzeug-feedstock:
     branch: main
-    commit: ec160355c2c680411939e855f5eebe5bb1f22d14
+    commit: a650b622ae5b3703ef864e068825445b34d81d1a
   wheel-feedstock:
     branch: main
     commit: 68110382893be96f569d046bc0411f6b1f3f36a1
