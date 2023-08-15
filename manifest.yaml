@@ -790,7 +790,7 @@ feedstocks:
     commit: 9f423d69e7d1e2efdc6abb89d57ab4487dfc4a10
   krb5-feedstock:
     branch: main
-    commit: 4a48ec9daf5498c39695569d71e254608f992551
+    commit: 6653822051bbc8580eb9835ee486422ead6ba14a
   lame-feedstock:
     branch: main
     commit: 72b2c92e48b54608b2ada19e23459c8107da121c
@@ -994,7 +994,7 @@ feedstocks:
     commit: 9d735c3ef5293c0ec3ec7a7b26c51b0b03ed3d6a
   mlflow-feedstock:
     branch: main
-    commit: e5c90dd411e42a553a2c610feed1b5f0329852e4
+    commit: 857093e9b700da626f5aaae17262141f2771ac2d
   mlxtend-feedstock:
     branch: main
     commit: 2e3d657e2b01f143d07c214d7f3fab6b32de891f
