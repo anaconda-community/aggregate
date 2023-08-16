@@ -115,7 +115,7 @@ feedstocks:
     commit: 4ccee164609b75c8461c479550938924568ad404
   aws-crt-cpp-feedstock:
     branch: main
-    commit: b08aa2510273bf36f7cb9edf0f7f1b416b7c92a8
+    commit: 5ebce8176d04f7d2608a06598fd3d4f43b36c54b
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 54e57b53ee478d40e7f1b6acb3e7686fe9c33bcc
@@ -1567,7 +1567,7 @@ feedstocks:
     commit: 85d51813a19bd1130ca3a6f143927c14b7c679f4
   shellingham-feedstock:
     branch: main
-    commit: 74e0aaa1382721024f454dfc5962434e74dafcd0
+    commit: 486149ba1df21ec0487b9322d4f099dbd6b22c38
   simpful-feedstock:
     branch: main
     commit: 7afe6efa2f9f747267c3ac9069a2c54c4d66d432
@@ -1609,7 +1609,7 @@ feedstocks:
     commit: 277368b46aaf09bff4c242d2ce8dfa7beaccee86
   sqlalchemy-feedstock:
     branch: main
-    commit: 3f1f233be09a67cd903fb95c63a691cfae61909e
+    commit: 8c124cf120b8ace8d6b2ba5f1d2c29fb6c3e23e7
   sqlparse-feedstock:
     branch: main
     commit: 4bdc66c0d4d263b5f1203ec6c88f33d7e3dec86c
