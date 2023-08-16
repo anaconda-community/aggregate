@@ -187,10 +187,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: dbe505e31cbbc1eb63d8764c37cae656bad315c3
+    commit: 1f78cf1f3c71e75687d3143639addcf7c30558bf
   botocore-feedstock:
     branch: main
-    commit: 225219dde97973e716db0f83e349df1759b35009
+    commit: 0f49916281814db940f9ee93b11442cf5d8d9747
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -1498,7 +1498,7 @@ feedstocks:
     commit: 67cc7909014f38ed061e16ad0e62c49fae082749
   s3transfer-feedstock:
     branch: main
-    commit: 25d4d7a578ee9892626d46602ccf88d38964a8de
+    commit: 7b7b69d66096029565753121274628210a448db6
   sacremoses-feedstock:
     branch: main
     commit: 77a06efbb5f1e707bee7f5c5eeecd2330532e6cc
