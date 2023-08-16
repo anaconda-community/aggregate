@@ -2,7 +2,8 @@
 
 package:
   name: package-testing
-  version: {{ data.get('version').lstrip('v') }}
+  #version: {{ data.get('version').lstrip('v') }}
+  version: 1.0.0
 
 source:
   path: ../
