@@ -88,7 +88,7 @@ feedstocks:
     commit: 7edb5d92d4aca32bc604fb741a23aabe08fd3d74
   aws-c-common-feedstock:
     branch: main
-    commit: e9c54bfa94468bae74b30caf9f47082a9b1dcc1a
+    commit: da1e87bfc4614358174d01afb55feda5a798e3f3
   aws-c-compression-feedstock:
     branch: main
     commit: 021c8f2506560e759eea1398322380b7618a7ebc
@@ -115,13 +115,13 @@ feedstocks:
     commit: 4ccee164609b75c8461c479550938924568ad404
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 98ac2936db4039d98c9170094bf1853bb36b9581
+    commit: b08aa2510273bf36f7cb9edf0f7f1b416b7c92a8
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 54e57b53ee478d40e7f1b6acb3e7686fe9c33bcc
   awscli-feedstock:
     branch: main
-    commit: 6da98ef3cf95d0f8f785669479a4fb089eb5ad53
+    commit: c743d6ce6fa63b24a09ae5a59ac522d01a6a394c
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
