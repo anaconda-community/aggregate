@@ -1,0 +1,40 @@
+{% set data = load_setup_py_data() %}
+
+package:
+  name: numpy-testing
+  #version: {{ data.get('version').lstrip('v') }}
+  version: 1.0.1
+
+source:
+  path: ../
+
+build:
+  number: 0
+  noarch: python
+  script:
+      - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+  entry_points:
+    - package-testing = package_testing.cli:main
+
+requirements:
+  host:
+    - python >=3.7
+    - pip
+    - setuptools
+  run:
+    - numpy
+    - pytest
+
+test:
+  commands:
+    - python -c "import os, json; print(json.dumps(dict(os.environ), sort_keys=True, indent=4))"
+    - echo "${STDLIB_DIR}/site-packages/anaconda_package_tests"
+    - pytest -s -vv "${STDLIB_DIR}/site-packages/anaconda_package_tests"
+
+about:
+  home: https://github.com/anaconda-distribution/package-testing
+  summary: 'Integration test suite for conda packages'
+  description: |
+    ``packages-integration-testing`` is a python based test suite which contains use case based
+    test cases for the top 10 packages.
+  dev_url: https://github.com/anaconda-distribution/package-testing
