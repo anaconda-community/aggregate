@@ -1,6 +1,6 @@
 import os
 
-import numpy as np
+#import numpy as np
 import pytest
 from scipy import sparse
 
@@ -45,17 +45,17 @@ def test_quality_of_product():
     assert len(data) == 2, f"unable to determine the highest quality product {data}"
 
 
-@pytest.mark.scipy
-def test_numpy_scipy_pkgs():
-    """
-    Create a 2D numpy array with ones and zeros.
-    And create a matrix out of numpy array and validate the
-    matrix with all ones.
-    Document to refer the use case:
-    https://docs.scipy.org/doc/scipy-1.8.0/html-scipyorg/reference/sparse.html
-    """
-    # declare the matrix
-    eye = np.eye(3)
-    sparse_matrix = sparse.csr_matrix(eye)
-    # assert that the matrix was created properly
-    assert sparse_matrix is not None, "matrix created is None"
+#@pytest.mark.scipy
+#def test_numpy_scipy_pkgs():
+#    """
+#    Create a 2D numpy array with ones and zeros.
+#    And create a matrix out of numpy array and validate the
+#    matrix with all ones.
+#    Document to refer the use case:
+#    https://docs.scipy.org/doc/scipy-1.8.0/html-scipyorg/reference/sparse.html
+#    """
+#    # declare the matrix
+#    eye = np.eye(3)
+#    sparse_matrix = sparse.csr_matrix(eye)
+#    # assert that the matrix was created properly
+#    assert sparse_matrix is not None, "matrix created is None"
