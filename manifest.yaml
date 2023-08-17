@@ -118,7 +118,7 @@ feedstocks:
     commit: 5ebce8176d04f7d2608a06598fd3d4f43b36c54b
   aws-sdk-cpp-feedstock:
     branch: main
-    commit: 54e57b53ee478d40e7f1b6acb3e7686fe9c33bcc
+    commit: 964c9cafdb99cadc37444fb501841545d59d671f
   awscli-feedstock:
     branch: main
     commit: c743d6ce6fa63b24a09ae5a59ac522d01a6a394c
@@ -1042,7 +1042,7 @@ feedstocks:
     commit: b6e61bb5786af7e687cebe556d42ff83a9142df4
   nbconvert-feedstock:
     branch: main
-    commit: 02e0ff8533c9a9422eeac7efaf0949f2864e52c3
+    commit: c06754ec359f32a26f24cbc2a8a44b840e3a8bc2
   nbformat-feedstock:
     branch: main
     commit: f17ee8e04eb5164f5902b13c6e49d58e0e4194ca
@@ -1189,7 +1189,7 @@ feedstocks:
     commit: 1e0db4efabfcf2593b46f3fcc558cd5097dcf6cb
   plotly-feedstock:
     branch: main
-    commit: 5c05ab1e0508c037d19bf9805759969a152b2349
+    commit: 0453e95a7cf15ef4fbd1ec3c736182e645234b3c
   pluggy-feedstock:
     branch: main
     commit: 232b5b81f6a1d2a6481ec0d57b60088ef22d30dd
@@ -1747,7 +1747,7 @@ feedstocks:
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
   ucx-split-feedstock:
     branch: main
-    commit: ff58cf5d49fbcbda278353c42592613a7152c9b9
+    commit: 0cf6eabee7753f9c526b6c679ca59492ce756e24
   umap-learn-feedstock:
     branch: main
     commit: 8a7b7634cb4f72a7966ba454119944de420b7479
