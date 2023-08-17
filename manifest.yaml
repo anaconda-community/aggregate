@@ -115,7 +115,7 @@ feedstocks:
     commit: 4ccee164609b75c8461c479550938924568ad404
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 5ebce8176d04f7d2608a06598fd3d4f43b36c54b
+    commit: 8319617813a24f59351f7b59348becd33adf19e6
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 964c9cafdb99cadc37444fb501841545d59d671f
@@ -190,7 +190,7 @@ feedstocks:
     commit: 1f78cf1f3c71e75687d3143639addcf7c30558bf
   botocore-feedstock:
     branch: main
-    commit: 0f49916281814db940f9ee93b11442cf5d8d9747
+    commit: 98014b74dd8ec74a2c4fda70102dfbd2010ca992
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: a6b028f5d2033649b8534c8d32b9197ce1f5f15c
+    commit: 0846e3a7f20b46f62a1b64d05e2a8aca45c9b595
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
