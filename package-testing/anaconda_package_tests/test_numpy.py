@@ -1,8 +1,8 @@
 import os
 
-#import numpy as np
+import numpy as np
 import pytest
-from scipy import sparse
+#from scipy import sparse
 
 from .utils.validations import Assertions
 
