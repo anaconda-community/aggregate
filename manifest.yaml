@@ -658,7 +658,7 @@ feedstocks:
     commit: 6a6a33791c0374f2071d9df8a6b225070bd526ea
   imagecodecs-feedstock:
     branch: main
-    commit: e04116190e4608514175c83950e5afc7f092d960
+    commit: 4ff4573079e0febaf35ac6d345289e081aab032e
   imagehash-feedstock:
     branch: main
     commit: 430e83bd600375b5f21ddd4c5ebc052d2d4eeaa2
@@ -799,7 +799,7 @@ feedstocks:
     commit: b1e8384b591f4f8b24b9c2af17a0dc8fffc86803
   lazy_loader-feedstock:
     branch: main
-    commit: 1b6a6e1e60e24058a25946e2277d6cc74c1db97d
+    commit: 30538bd75c193c03f45a0e7c192b414a64f7042b
   lcms2-feedstock:
     branch: main
     commit: 9c674728bfe71476d7fd095220834ee96969e585
