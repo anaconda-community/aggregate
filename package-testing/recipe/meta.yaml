@@ -3,7 +3,7 @@
 package:
   name: package-testing
   #version: {{ data.get('version').lstrip('v') }}
-  version: 1.0.1
+  version: 1.0.2
 
 source:
   path: ../
@@ -22,13 +22,13 @@ requirements:
     - pip
     - setuptools
   run:
-    - matplotlib
+    #- matplotlib
     - numpy
-    - pandas
-      #    - pillow
-    - pytest
-    - scipy
-    - scikit-learn
+    #- pandas
+    #- pillow
+    #- pytest
+    # - scipy
+    #- scikit-learn
 
 test:
   commands:

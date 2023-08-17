@@ -1,8 +1,0 @@
-include versioneer.py
-include anaconda_package_tests/_version.py
-include anaconda_package_tests/test_data/packages_test_data.csv
-include anaconda_package_tests/test_data/product_quality.csv
-include anaconda_package_tests/test_data/iris.csv
-include anaconda_package_tests/test_data/harmonic_motion_data.csv
-include anaconda_package_tests/test_data/optimal_point_data.csv
-include anaconda_package_tests/test_data/optimization_data.csv
