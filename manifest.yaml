@@ -22,7 +22,7 @@ feedstocks:
     commit: 49d78be8c23a443a1f669225bffb882b51148369
   alembic-feedstock:
     branch: main
-    commit: eb3703798c48c72352a7c91534e3d724255e4c45
+    commit: 0d01bdcbd272250c134ca924bbe2680e2ab8425a
   alsa-lib-feedstock:
     branch: main
     commit: 5e3529ff65eceeb6bc27c1e5deb0bc583923b53c
@@ -121,7 +121,7 @@ feedstocks:
     commit: 964c9cafdb99cadc37444fb501841545d59d671f
   awscli-feedstock:
     branch: main
-    commit: c743d6ce6fa63b24a09ae5a59ac522d01a6a394c
+    commit: 83e9ea92ba1eb98459bfa111cf46c940c3192485
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -187,7 +187,7 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 1f78cf1f3c71e75687d3143639addcf7c30558bf
+    commit: ed16223817575573d9f15ead77d47e9ed3931900
   botocore-feedstock:
     branch: main
     commit: 98014b74dd8ec74a2c4fda70102dfbd2010ca992
@@ -277,7 +277,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: 0846e3a7f20b46f62a1b64d05e2a8aca45c9b595
+    commit: 025d417724043b26d17bb9f4a13d7b34d72b6b80
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -1567,7 +1567,7 @@ feedstocks:
     commit: 85d51813a19bd1130ca3a6f143927c14b7c679f4
   shellingham-feedstock:
     branch: main
-    commit: 486149ba1df21ec0487b9322d4f099dbd6b22c38
+    commit: 66de65f952c9d1d987fb3775398630837fb5bdd4
   simpful-feedstock:
     branch: main
     commit: 7afe6efa2f9f747267c3ac9069a2c54c4d66d432
