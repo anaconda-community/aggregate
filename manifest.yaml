@@ -757,7 +757,7 @@ feedstocks:
     commit: a071dbc75fac8feb4396c5c64e6a59a9159b2f07
   jupyter_server-feedstock:
     branch: main
-    commit: 1d14a1826d71a76a84532b29dd898a72fb9aedc1
+    commit: d5217c21a85b166dc9d364583bc5fb4d004948cb
   jupyter_server_terminals-feedstock:
     branch: main
     commit: dbacee20c45b6caf6677d0e27604e2115aa86d96
