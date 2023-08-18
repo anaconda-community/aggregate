@@ -190,7 +190,7 @@ feedstocks:
     commit: ed16223817575573d9f15ead77d47e9ed3931900
   botocore-feedstock:
     branch: main
-    commit: 98014b74dd8ec74a2c4fda70102dfbd2010ca992
+    commit: 5d91def253cead22dde8c1e298b5babc2933c648
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -262,7 +262,7 @@ feedstocks:
     commit: 7dcc8efb12f80a2a2fa28503ef02265bd331e46b
   click-feedstock:
     branch: main
-    commit: 2e58ff4a754183f27655c38c51bcdcd22559f4ee
+    commit: 72305f6ed73383cc866c30d2426ba0137c4163c6
   click-plugins-feedstock:
     branch: main
     commit: 6fc732ff59b51ed7fe37ac65bfdc15850406423b
@@ -1294,7 +1294,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: f2f7a1419b16b41c75ca94025896827a13ec6b5f
+    commit: f4c04b655e217545f12a796cdd892ae3c57dfa62
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1699,7 +1699,7 @@ feedstocks:
     commit: 072ec574ec541d60f4f2926c0458ba9a1ee3a3a7
   tornado-feedstock:
     branch: main
-    commit: 2ac434e6c4dd92cef6b4accd38fba2905fc163fb
+    commit: 4782efa79643ae72d3dda08f0554aa6bd01e015f
   tqdm-feedstock:
     branch: main
     commit: 64291851d0a5b06cdf3ad6626710f36f32a46d54
@@ -1927,7 +1927,7 @@ feedstocks:
     commit: dfc163bc424c5bc100f815c71173e782dd24473f
   yarn-feedstock:
     branch: main
-    commit: 6a0bcabf3153b497cc29707457ff2e2af3139262
+    commit: a3f0a8d3a3ccedcfd3fb1517a1c6f75037884c91
   yasm-feedstock:
     branch: main
     commit: 67fd3d4c038e85d1b56ca5378823f05e38c4eb6c
