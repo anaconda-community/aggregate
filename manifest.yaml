@@ -190,7 +190,7 @@ feedstocks:
     commit: ec196f6594d8537905d6b26570789c1dcdeb3a00
   botocore-feedstock:
     branch: main
-    commit: 5d91def253cead22dde8c1e298b5babc2933c648
+    commit: 5cd518246c3e812cfd7bd245b433e23040b1592e
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -358,7 +358,7 @@ feedstocks:
     commit: 9519076d340da8a301db59579b096ab416f9d077
   dask-core-feedstock:
     branch: main
-    commit: c58975712343821ff7b9456e4b00ebec1859e14f
+    commit: b8b99df4111ceaba6a26b1212e4bcd85df942b22
   databricks-cli-feedstock:
     branch: main
     commit: b4dc1bb83d31840de61b1df35b47f9eed3e03442
@@ -1294,7 +1294,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-feedstock:
     branch: main
-    commit: f4c04b655e217545f12a796cdd892ae3c57dfa62
+    commit: a9195e86e71252ec895282d7e577d633ddec6738
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1552,7 +1552,7 @@ feedstocks:
     commit: 157180e9961f485e4384ea08110c5670b54ed066
   setuptools-feedstock:
     branch: main
-    commit: c7d84379fd6c4e4a139b91b091041a9bcd351aa3
+    commit: 13477ed25385752547d19a595d1afac9c5284aa8
   setuptools-rust-feedstock:
     branch: main
     commit: a0b45b8eff30a6cee0d0f54f6f4ccf484c8a6401
