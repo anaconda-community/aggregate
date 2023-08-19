@@ -1561,7 +1561,7 @@ feedstocks:
     commit: d870dcba7f9faef9642515be773bb98840254876
   shapely-feedstock:
     branch: main
-    commit: 6498fd6867c0c8015bae053cb5bf8dd8395bf06e
+    commit: c2a112569a854f742ec20393664bf4bde9e326ec
   shellcheck-feedstock:
     branch: main
     commit: 85d51813a19bd1130ca3a6f143927c14b7c679f4
