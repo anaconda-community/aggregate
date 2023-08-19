@@ -208,7 +208,7 @@ feedstocks:
     commit: 18dfc2795d7355c659d162819b6eae6a00730592
   c-blosc2-feedstock:
     branch: main
-    commit: b90321c0eeb067addf46e8837d39db2d260d2cc1
+    commit: 98809282224ebb8c34952beb2cc71bd10e9a5a82
   c99-to-c89-feedstock:
     branch: main
     commit: f1bc59c385801259e94817a84ed1113fb522740e
