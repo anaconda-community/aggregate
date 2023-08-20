@@ -1522,7 +1522,7 @@ feedstocks:
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
   scipy-feedstock:
     branch: main
-    commit: 10ae9bdf8b0e762dbe8021d071d57a99e8b4eab9
+    commit: 9145c021c69067ef545dbe59859d733c3b2bf10f
   scramp-feedstock:
     branch: main
     commit: 0594ed0d7fb0ac6f02045f417a810f611c3a8b48
