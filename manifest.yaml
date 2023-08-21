@@ -29,6 +29,9 @@ feedstocks:
   altair-feedstock:
     branch: main
     commit: 326d024fd1c9d6501ff41bbaa0ddfb7e82a62d7c
+  annotated-types-feedstock:
+    branch: main
+    commit: 5fcede03f10ab691573128913e2a526cf60d1131
   anyio-feedstock:
     branch: main
     commit: 4204c3f90b747bcf6673f61a77f40aa16239612c
@@ -437,6 +440,9 @@ feedstocks:
   ez_setup-feedstock:
     branch: main
     commit: 4c5155ef6591685aaddfc6e807224bb1476bd99c
+  fastapi-feedstock:
+    branch: main
+    commit: 9ef260d008e743f0e9388d8720e1cf73999d6b12
   fastavro-feedstock:
     branch: main
     commit: d985de3c9b278960e555e97f6ea6b9c02228d580
@@ -980,6 +986,9 @@ feedstocks:
   matplotlib-inline-feedstock:
     branch: main
     commit: 7812ba34b7da7b6d5f56156e41dd54b2a90cf9ff
+  maturin-feedstock:
+    branch: main
+    commit: 26a2115e0d94462f0c392f3166ee694cff2c42d8
   mdurl-feedstock:
     branch: main
     commit: ce41356cd3c7f92146180f9ba9f3244f08429f2b
@@ -1292,6 +1301,9 @@ feedstocks:
   pycryptodomex-feedstock:
     branch: main
     commit: e9c215fef924408033d7130a875247c7b460d682
+  pydantic-core-feedstock:
+    branch: main
+    commit: b7da46883a46e8b788689ba7f2adca64744f0842
   pydantic-feedstock:
     branch: main
     commit: a9195e86e71252ec895282d7e577d633ddec6738
@@ -1622,6 +1634,9 @@ feedstocks:
   stack_data-feedstock:
     branch: main
     commit: fdf71c03a399fcc1714b720b698d5df97421d8a7
+  starlette-feedstock:
+    branch: main
+    commit: f1295e12e22d16e6319c41b2de174bffd92233ba
   statsmodels-feedstock:
     branch: main
     commit: 248eb936da8966436adf77a1d6ac423da8ede31a
