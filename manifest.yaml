@@ -83,6 +83,9 @@ feedstocks:
   autotools_clang_conda-feedstock:
     branch: main
     commit: edd44c7d71e5086a8cd09aa511e3def62d5861c9
+  autots-feedstock:
+    branch: main
+    commit: 0b3ccf9bdd9010a73966ef80db9049677f510fc8
   aws-c-auth-feedstock:
     branch: main
     commit: 5f9f199c715e317b1ae90302d90b40a6b716ac8b
@@ -730,7 +733,7 @@ feedstocks:
     commit: 6043a72de840e8ef3099ad11f6ea0a15be50e389
   joblib-feedstock:
     branch: main
-    commit: 7fa73bfdaa760a4a478e5c356a4cd7c6501f75af
+    commit: f6196f2589d7bd7358e6a284d1bed600d1b489f9
   jom-feedstock:
     branch: main
     commit: b34030cbe144416022201f46c1a17e1dc1723852
