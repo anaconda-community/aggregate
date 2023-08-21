@@ -1595,6 +1595,9 @@ feedstocks:
   six-feedstock:
     branch: main
     commit: 72223a1cb193d2309b6434bb9ec806e0afcbca7c
+  skyfield-data-feedstock:
+    branch: main
+    commit: c101227d8183ffeab8b3390529293e97203a116e
   smart_open-feedstock:
     branch: main
     commit: 289a6900a9fc2975a12cf771bc33e7ad35382da1
