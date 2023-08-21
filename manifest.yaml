@@ -1198,13 +1198,13 @@ feedstocks:
     commit: f7dd26a2707378a72c13d42cbd5738fbca833b6b
   poetry-core-feedstock:
     branch: main
-    commit: 3c6ec7c81123d86ab371eee8150fb578b3ab4a1b
+    commit: 090b73792cd3a768f7451c387111d7ad929d9475
   poetry-feedstock:
     branch: main
-    commit: 69b9573bb64bcd1d8915928c26b4638f5d6d8dd3
+    commit: a5cbdec25231ccdb49dcb1295483a2db363f14ef
   poetry-plugin-export-feedstock:
     branch: main
-    commit: 93cf7b82d39a5ca34a840a5d024605dbc68d50cc
+    commit: be1863fe2b728b087f310ffaf2c98dfa5ad4c20a
   pooch-feedstock:
     branch: main
     commit: 6abb037a216ec739995be40183c25622576b8305
