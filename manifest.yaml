@@ -1337,6 +1337,9 @@ feedstocks:
   pynndescent-feedstock:
     branch: main
     commit: f5b6ddfe4e085430a62acb36923aff90f86b8d4c
+  pynvml-feedstock:
+    branch: main
+    commit: b93cdd3cdd21442f3c373daf88bc9000610d6904
   pyod-feedstock:
     branch: main
     commit: 239270fd84fde6365be6f668faa3de786ef8e67e
