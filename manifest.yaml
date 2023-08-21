@@ -1814,6 +1814,9 @@ feedstocks:
   watchdog-feedstock:
     branch: main
     commit: f48a648e3cff4da4141cb6ea7d87871df9acefe6
+  watchgod-feedstock:
+    branch: main
+    commit: 8b44c1eebd1fca1b49bc7add92f8bc006f0de5b6
   wcwidth-feedstock:
     branch: main
     commit: 39b72c69231e5cc9896e07f7b1f6e4d31c5e2f32
