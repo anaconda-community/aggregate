@@ -103,7 +103,7 @@ feedstocks:
     commit: 376fec95121038437b155d9b8d4b84a6aa225ede
   aws-c-io-feedstock:
     branch: main
-    commit: 77cd43ba980f00eef3817f8427ccd3ac495ed633
+    commit: 6c9ba32a0015444fceac1eba378c7754edd0297e
   aws-c-mqtt-feedstock:
     branch: main
     commit: 1f6842b21bb85cf9ba91889c7a61a9811179b4c9
@@ -121,7 +121,7 @@ feedstocks:
     commit: 8319617813a24f59351f7b59348becd33adf19e6
   aws-sdk-cpp-feedstock:
     branch: main
-    commit: 964c9cafdb99cadc37444fb501841545d59d671f
+    commit: 3c3c86d3d42ab778e42e6bd5e9fe4a2521a703fd
   awscli-feedstock:
     branch: main
     commit: 3fe0b805fad2fc78d9e3f0a7633ae4266a5bd442
@@ -988,7 +988,7 @@ feedstocks:
     commit: 7812ba34b7da7b6d5f56156e41dd54b2a90cf9ff
   maturin-feedstock:
     branch: main
-    commit: 26a2115e0d94462f0c392f3166ee694cff2c42d8
+    commit: bb0842a7ac0c799b7b4862ca45508a61b1259f4c
   mdurl-feedstock:
     branch: main
     commit: ce41356cd3c7f92146180f9ba9f3244f08429f2b
@@ -1090,7 +1090,7 @@ feedstocks:
     commit: 4a1bfcd58b3d86314f041963020f39c58bd89143
   nss-feedstock:
     branch: main
-    commit: a3a258f497558cfc86c709cb72c9d9cae17ae2a8
+    commit: 35af4e2fecb7920f8e90f8ee432d6ee448daf8a4
   numba-feedstock:
     branch: main
     commit: cdfb22b9e6dcbcf65085d9054e4aa545ffaa163c
@@ -1303,7 +1303,7 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-core-feedstock:
     branch: main
-    commit: b7da46883a46e8b788689ba7f2adca64744f0842
+    commit: eae79e35ab4dfc3022b22b9efce217686cfdfd2e
   pydantic-feedstock:
     branch: main
     commit: a9195e86e71252ec895282d7e577d633ddec6738
