@@ -1423,7 +1423,7 @@ feedstocks:
     commit: 430a287b2141f60ac5d7f52118a03f754891cfeb
   qt-main-feedstock:
     branch: main
-    commit: 2b166b35e9e1a2d897640ac28ae4b00491d9e310
+    commit: ceba351e4d431d22bb4a29a06c0ddd31faf410ff
   querystring_parser-feedstock:
     branch: main
     commit: 3de5ee7a282d0c8769dab4c652f124872926d831
