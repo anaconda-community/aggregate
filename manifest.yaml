@@ -1580,6 +1580,9 @@ feedstocks:
   shellingham-feedstock:
     branch: main
     commit: 66de65f952c9d1d987fb3775398630837fb5bdd4
+  shyaml-feedstock:
+    branch: main
+    commit: 242df13a82bf8b2bde899690499df308d199a428
   simpful-feedstock:
     branch: main
     commit: 7afe6efa2f9f747267c3ac9069a2c54c4d66d432
