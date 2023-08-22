@@ -106,7 +106,7 @@ feedstocks:
     commit: 77cd43ba980f00eef3817f8427ccd3ac495ed633
   aws-c-mqtt-feedstock:
     branch: main
-    commit: 1f6842b21bb85cf9ba91889c7a61a9811179b4c9
+    commit: ad471809c475bb00e206fc5bed5b69fbcb2c8549
   aws-c-s3-feedstock:
     branch: main
     commit: 8fce3299d41bcc6294b50ba11529a24c495c80e6
@@ -460,7 +460,7 @@ feedstocks:
     commit: fb612980dbd815523cda336f6c40814eaf2764b9
   flask-feedstock:
     branch: main
-    commit: fe78f8210cab49d4d5a3bbcb6e1d09cda151b205
+    commit: 405fdfd08a379ca68d3d2173c2eb72977731da98
   flex-feedstock:
     branch: main
     commit: ed7aef25eabe7114966e148eb31a30ca6f2b38ae
@@ -1843,7 +1843,7 @@ feedstocks:
     commit: a650b622ae5b3703ef864e068825445b34d81d1a
   wheel-feedstock:
     branch: main
-    commit: 68110382893be96f569d046bc0411f6b1f3f36a1
+    commit: a851dfb6614fe3b6b34d392df016539ba09ac706
   widgetsnbextension-feedstock:
     branch: main
     commit: a464a98438a93b4dbd0ecfa6934a6ac799bc09b7
