@@ -121,7 +121,7 @@ feedstocks:
     commit: 4ccee164609b75c8461c479550938924568ad404
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 8319617813a24f59351f7b59348becd33adf19e6
+    commit: e8f9c117666277be13223841a0603db9c412fe8d
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 964c9cafdb99cadc37444fb501841545d59d671f
@@ -532,7 +532,7 @@ feedstocks:
     commit: e6cef7d12c9c824869353a7773c51c40494b49bb
   git-feedstock:
     branch: main
-    commit: ec5c1f762136d79f0909d996dc60fc565d6589f8
+    commit: f9150620fb53e930d3a202f19fd6f3c946d3003b
   git-lfs-feedstock:
     branch: main
     commit: f48ce64a18dcfe769e483786b8f0a98d3e4a1d27
@@ -1531,7 +1531,7 @@ feedstocks:
     commit: 178783610a167fcc3486512404d7197a24f0d7a7
   scikit-build-core-feedstock:
     branch: main
-    commit: abde72023d6e38b9ef43a82396924003a412ddfa
+    commit: ace22cd28956346c7dd0e2a03a781b7b98862081
   scikit-build-feedstock:
     branch: main
     commit: fa28862706509bf22c18cd529cafadd0b242fe32
