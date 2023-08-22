@@ -959,6 +959,9 @@ feedstocks:
   lockfile-feedstock:
     branch: main
     commit: 60e700089c71c98131f6bcdb1287896ee03e9455
+  lunardate-feedstock:
+    branch: main
+    commit: bda648937e98928b9c09b8e0e22d4d3002c758c5
   lxml-feedstock:
     branch: main
     commit: 4c0c92c8603d9a65c87fd0e76dc87bd8e3fe5ce9
