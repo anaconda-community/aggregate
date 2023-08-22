@@ -390,7 +390,7 @@ libgit2:
 libgoogle_cloud:
   - '2.12'
 libgrpc:
-  - '1.54'
+  - '1.56'
 libhugetlbfs:
   - 2
 libhwy:
@@ -628,7 +628,7 @@ scotch:
 ptscotch:
   - 6.0.9
 s2n:
-  - 1.3.48
+  - 1.3.49
 sdl2:
   - '2'
 sdl2_image:
