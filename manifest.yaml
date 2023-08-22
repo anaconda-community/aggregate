@@ -193,7 +193,7 @@ feedstocks:
     commit: 37951db9a67c4f154c00ddc89edccc8431b41241
   botocore-feedstock:
     branch: main
-    commit: 5cd518246c3e812cfd7bd245b433e23040b1592e
+    commit: feddd5c1aba66a443a5490bd8de5e5bf183944dc
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -1213,7 +1213,7 @@ feedstocks:
     commit: 090b73792cd3a768f7451c387111d7ad929d9475
   poetry-feedstock:
     branch: main
-    commit: a5cbdec25231ccdb49dcb1295483a2db363f14ef
+    commit: 7962b66f13f174357b288b7a8241829b1bb69087
   poetry-plugin-export-feedstock:
     branch: main
     commit: be1863fe2b728b087f310ffaf2c98dfa5ad4c20a
