@@ -1544,6 +1544,9 @@ feedstocks:
   scikit-plot-feedstock:
     branch: main
     commit: e7ad857c107f0e047f7f0af3b1665b3d7e6ea96f
+  scikit-posthocs-feedstock:
+    branch: main
+    commit: 0d78f52ec8c658e67ef5711403c3c5ccc597b9eb
   scipy-feedstock:
     branch: main
     commit: 9145c021c69067ef545dbe59859d733c3b2bf10f
