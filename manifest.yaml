@@ -127,7 +127,7 @@ feedstocks:
     commit: 964c9cafdb99cadc37444fb501841545d59d671f
   awscli-feedstock:
     branch: main
-    commit: cbefd36065599e72f052402e66c5c7ef81564d58
+    commit: 6f06c7d402028a9fd44028fbda4631f57d7ae8f5
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -193,7 +193,7 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: acf1449ff05897c85a5a3b1065082a211f87fbf5
+    commit: 127969e23f471da3d21aa2b4be29b6b6daebb4ac
   botocore-feedstock:
     branch: main
     commit: 16622fe0f630283cb14939c49fe1539a9b7efbb4
@@ -1744,7 +1744,7 @@ feedstocks:
     commit: 3fc0324055783951de8353524dd288df19ec780d
   transformers-feedstock:
     branch: main
-    commit: 20c2bcb557bae55cb86e88e0df53a5255c558e1e
+    commit: 51c5c3ba8005190cf2c3df2c22bc33f09d78c5c7
   trove-classifiers-feedstock:
     branch: main
     commit: 12dfbede9e4f541e35b89434da87172ab962f0f2
