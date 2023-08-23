@@ -1528,7 +1528,7 @@ feedstocks:
     commit: 77a06efbb5f1e707bee7f5c5eeecd2330532e6cc
   safetensors-feedstock:
     branch: main
-    commit: 178783610a167fcc3486512404d7197a24f0d7a7
+    commit: a2ffa04c4f5e96545233cc6983c20f2d5c2a488b
   scikit-build-core-feedstock:
     branch: main
     commit: ace22cd28956346c7dd0e2a03a781b7b98862081
