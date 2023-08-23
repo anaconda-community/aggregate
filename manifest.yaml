@@ -1582,7 +1582,7 @@ feedstocks:
     commit: 13477ed25385752547d19a595d1afac9c5284aa8
   setuptools-rust-feedstock:
     branch: main
-    commit: a0b45b8eff30a6cee0d0f54f6f4ccf484c8a6401
+    commit: 9b10b6e92c5013d8498fc2ac46e9b3350a950652
   setuptools_scm-feedstock:
     branch: main
     commit: d870dcba7f9faef9642515be773bb98840254876
