@@ -133,7 +133,7 @@ feedstocks:
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
   azure-core-feedstock:
     branch: main
-    commit: ab7e6c21ad57be3196645c9b826d2a49c9e80b3e
+    commit: e2383c46efa5436d21e9803dc60a174c0e30ef17
   azure-storage-blob-feedstock:
     branch: main
     commit: a2d2b83529bd395182470ad9fcc67eb8e11ae004
@@ -196,7 +196,7 @@ feedstocks:
     commit: acf1449ff05897c85a5a3b1065082a211f87fbf5
   botocore-feedstock:
     branch: main
-    commit: feddd5c1aba66a443a5490bd8de5e5bf183944dc
+    commit: 16622fe0f630283cb14939c49fe1539a9b7efbb4
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -340,7 +340,7 @@ feedstocks:
     commit: baea183c65beac3e32e68fa2499c5fcc6a736a63
   cuda-version-feedstock:
     branch: main
-    commit: 3ce1bae701079226f982b173667edc5d0a64c01f
+    commit: 286f34f62fe01701fdd5c38ed51da1341853b5b9
   cudnn-feedstock:
     branch: main
     commit: 7779d9726927b6e45e44431ea847921d67542f29
@@ -1111,7 +1111,7 @@ feedstocks:
     commit: 3e818e786e6514b3c9d6bdacdf50b8d037994793
   openai-feedstock:
     branch: main
-    commit: 4695edbb686a527074fd3ac764d4baa34f4c9d6c
+    commit: 8bc52b545ecdf97577febaf2585f5a6b5da54ab4
   openmp-feedstock:
     branch: main
     commit: 2e3d1be71c92b2a586ef4c1e3100b1c23587558d
@@ -1441,7 +1441,7 @@ feedstocks:
     commit: 385ff1a538cf89b1484c2446cbbd8141ffd8b335
   pyyaml-feedstock:
     branch: main
-    commit: b39fdf325bfc1fac172a4974c7f3a8fb878b1e29
+    commit: c367cae48deeb15ea0e793d29245c92e783f4de9
   pyzmq-feedstock:
     branch: main
     commit: 430a287b2141f60ac5d7f52118a03f754891cfeb
@@ -1663,7 +1663,7 @@ feedstocks:
     commit: 248eb936da8966436adf77a1d6ac423da8ede31a
   streamlit-feedstock:
     branch: main
-    commit: bb7e71d8d008551e997d1f832964bf2f7c732bcc
+    commit: 413f72b7fcf09dd98c4de80ffa7e4b6f9e3a12da
   systemd-feedstock:
     branch: main
     commit: 8649ec40380a215e2052e1b5ffa96a5f98255e1d
@@ -1750,7 +1750,7 @@ feedstocks:
     commit: 12dfbede9e4f541e35b89434da87172ab962f0f2
   typeguard-feedstock:
     branch: main
-    commit: 12f76892cf58b55b947c22ae055c804d77f5f086
+    commit: 6cbaf26bb9848d29533b3418e7f104cd6b00ccfe
   typer-feedstock:
     branch: main
     commit: 7d5852239ca2b531a30c7c378404e3d5c210483d
@@ -1846,7 +1846,7 @@ feedstocks:
     commit: 045d9b752ad89b777f0bd6b2a6dfb46924a0a449
   websocket-client-feedstock:
     branch: main
-    commit: a0cb098959027b66b1d6885b861079f7fe571d16
+    commit: b5e295f404ea24fc4d8bbdf51186c74b048a0734
   werkzeug-feedstock:
     branch: main
     commit: a650b622ae5b3703ef864e068825445b34d81d1a
