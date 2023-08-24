@@ -46,7 +46,7 @@ feedstocks:
     commit: 46687a062ec98d286358b8aea83da4e657bc598f
   argon2_cffi-feedstock:
     branch: main
-    commit: fedede16477488ee597786e35088b9e3a01a9862
+    commit: 493423a4cab9ffb5320ca87eaf4e38ebe7e2b9ae
   arm-variant-feedstock:
     branch: main
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
@@ -193,10 +193,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 127969e23f471da3d21aa2b4be29b6b6daebb4ac
+    commit: 7472ed962b41015d9ed2d14362c38c616b16d70e
   botocore-feedstock:
     branch: main
-    commit: 16622fe0f630283cb14939c49fe1539a9b7efbb4
+    commit: 37049d7a39ef8a1be818a77b0c24cea1b184dd8e
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
@@ -283,7 +283,7 @@ feedstocks:
     commit: 70e07324f0ab7f075c5c325a55e31ddc9b68d985
   cmake-no-system-feedstock:
     branch: main
-    commit: 025d417724043b26d17bb9f4a13d7b34d72b6b80
+    commit: 3756963b6dd924352e6bf1726022818ce18851a9
   colorama-feedstock:
     branch: main
     commit: 220ddab258ee802a2420457746e1557e196881bd
@@ -1312,10 +1312,10 @@ feedstocks:
     commit: e9c215fef924408033d7130a875247c7b460d682
   pydantic-core-feedstock:
     branch: main
-    commit: b7da46883a46e8b788689ba7f2adca64744f0842
+    commit: 638c751c53b5c230c54aa763e7d54683d4d00b59
   pydantic-feedstock:
     branch: main
-    commit: a9195e86e71252ec895282d7e577d633ddec6738
+    commit: cba6f37239b6df3fba38dd2b97d859c65965226e
   pydeck-feedstock:
     branch: main
     commit: 37438ddb22e9896c4a823b4f26dea90fd9071611
@@ -1783,7 +1783,7 @@ feedstocks:
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
   ucx-split-feedstock:
     branch: main
-    commit: 0cf6eabee7753f9c526b6c679ca59492ce756e24
+    commit: 35a3ada2fa1a9f1086562e6f21997cf021ec96b7
   umap-learn-feedstock:
     branch: main
     commit: 8a7b7634cb4f72a7966ba454119944de420b7479
