@@ -91,7 +91,7 @@ feedstocks:
     commit: 5f9f199c715e317b1ae90302d90b40a6b716ac8b
   aws-c-cal-feedstock:
     branch: main
-    commit: 7edb5d92d4aca32bc604fb741a23aabe08fd3d74
+    commit: 75492bfb8f87f8c33e0715488233a2edc74802d1
   aws-c-common-feedstock:
     branch: main
     commit: da1e87bfc4614358174d01afb55feda5a798e3f3
@@ -100,16 +100,16 @@ feedstocks:
     commit: 021c8f2506560e759eea1398322380b7618a7ebc
   aws-c-event-stream-feedstock:
     branch: main
-    commit: 59b94b68007e7536de6b11d03222d8a30e184caf
+    commit: 0f5e733b8f39af512641df3714c73f4f18cbdeb9
   aws-c-http-feedstock:
     branch: main
-    commit: 376fec95121038437b155d9b8d4b84a6aa225ede
+    commit: 5c304e78e59ab3aced5b551d6bda30618546ec0a
   aws-c-io-feedstock:
     branch: main
     commit: 77cd43ba980f00eef3817f8427ccd3ac495ed633
   aws-c-mqtt-feedstock:
     branch: main
-    commit: ad471809c475bb00e206fc5bed5b69fbcb2c8549
+    commit: f6c227afecb33fcb34cb2cf86274d575bf3a1b27
   aws-c-s3-feedstock:
     branch: main
     commit: 8fce3299d41bcc6294b50ba11529a24c495c80e6
@@ -127,7 +127,7 @@ feedstocks:
     commit: 964c9cafdb99cadc37444fb501841545d59d671f
   awscli-feedstock:
     branch: main
-    commit: 6f06c7d402028a9fd44028fbda4631f57d7ae8f5
+    commit: e9f822f5dc1ae8a7be1cebad9905a27a7f7ca312
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
@@ -343,7 +343,7 @@ feedstocks:
     commit: 286f34f62fe01701fdd5c38ed51da1341853b5b9
   cudnn-feedstock:
     branch: main
-    commit: 7779d9726927b6e45e44431ea847921d67542f29
+    commit: 90fa679a0cc3bb59261ab07416e343c6c8a320ac
   curl-feedstock:
     branch: main
     commit: 7c0b6a0a15947efab2e5f4bf9d699ede5fc94e36
@@ -1783,7 +1783,7 @@ feedstocks:
     commit: 9017aa988beb5c9503657a56b223bd05691d0047
   ucx-split-feedstock:
     branch: main
-    commit: 35a3ada2fa1a9f1086562e6f21997cf021ec96b7
+    commit: 21bce52e0943bee53cba1735ed56203ac33ad5d1
   umap-learn-feedstock:
     branch: main
     commit: 8a7b7634cb4f72a7966ba454119944de420b7479
