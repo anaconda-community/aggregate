@@ -52,7 +52,7 @@ feedstocks:
     commit: 15423b21ecad89f936ee15a64f57215f438cf6ae
   arrow-cpp-feedstock:
     branch: main
-    commit: b6e8ad3184044e9cdec82cf9fea0219005954d73
+    commit: fd4e1f12d658ba88df27b20a00209250e34dac0f
   asn1crypto-feedstock:
     branch: main
     commit: 34c74de7c6061d08939090d01b06f8d846f486ef
