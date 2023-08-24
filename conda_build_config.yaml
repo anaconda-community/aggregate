@@ -171,7 +171,7 @@ aws_c_io:
   - 0.13.32
 # the builds got coupled because 0.2.4 landed before the io migrator
 aws_c_mqtt:
-  - 0.9.3
+  - 0.9.4
 aws_c_s3:
   - 0.3.14
 aws_c_sdkutils:
@@ -179,7 +179,7 @@ aws_c_sdkutils:
 aws_checksums:
   - 0.1.17
 aws_crt_cpp:
-  - 0.21.0
+  - 0.23.0
 aws_sdk_cpp:
   - 1.10.57
 boost:
@@ -687,7 +687,7 @@ volk:
 vtk:
   - 9.2.5
 wcslib:
-  - '7'
+  - '8'
 wxwidgets:
   - '3.2'
 x264:
