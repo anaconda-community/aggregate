@@ -88,7 +88,7 @@ feedstocks:
     commit: 0b3ccf9bdd9010a73966ef80db9049677f510fc8
   aws-c-auth-feedstock:
     branch: main
-    commit: 5f9f199c715e317b1ae90302d90b40a6b716ac8b
+    commit: eddbf5b95967fa3e56fa2857bdf0fd850d9de357
   aws-c-cal-feedstock:
     branch: main
     commit: 75492bfb8f87f8c33e0715488233a2edc74802d1
@@ -103,7 +103,7 @@ feedstocks:
     commit: 0f5e733b8f39af512641df3714c73f4f18cbdeb9
   aws-c-http-feedstock:
     branch: main
-    commit: 5c304e78e59ab3aced5b551d6bda30618546ec0a
+    commit: 7191cab9be9cf71c198f62d5359048260d7761e2
   aws-c-io-feedstock:
     branch: main
     commit: c19e7c30e49e16879ae8a7d9fb4caafc2d389ec6
@@ -124,7 +124,7 @@ feedstocks:
     commit: 3ffb855bc350ef79f8b62f771dc20972ce98f221
   aws-sdk-cpp-feedstock:
     branch: main
-    commit: 964c9cafdb99cadc37444fb501841545d59d671f
+    commit: 16859cd894f65fa147758033b9fd2eb99d0623f7
   awscli-feedstock:
     branch: main
     commit: e9f822f5dc1ae8a7be1cebad9905a27a7f7ca312
@@ -193,10 +193,10 @@ feedstocks:
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
   boto3-feedstock:
     branch: main
-    commit: 7472ed962b41015d9ed2d14362c38c616b16d70e
+    commit: 869eeb5d07028069ea12a6b8b3505839622c0c1a
   botocore-feedstock:
     branch: main
-    commit: 37049d7a39ef8a1be818a77b0c24cea1b184dd8e
+    commit: ee522fb31b8272813ac5480c6fb80fdd0b6d36b2
   branca-feedstock:
     branch: main
     commit: 80accf6fe2eef790d0aa071c7512ef9743b346fa
