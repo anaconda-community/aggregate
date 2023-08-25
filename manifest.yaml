@@ -121,10 +121,10 @@ feedstocks:
     commit: 4ccee164609b75c8461c479550938924568ad404
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 8587427eacac59b7b402b94b7a743353cba15dda
+    commit: c8e0c16b1188f7ba80c367373bf64c8d0df1a827
   aws-sdk-cpp-feedstock:
     branch: main
-    commit: 16859cd894f65fa147758033b9fd2eb99d0623f7
+    commit: a965f981e1467d62b1b58568966ee120c60dc649
   awscli-feedstock:
     branch: main
     commit: 5eddb9304b82015dd9f980091dd962a9677ef498
@@ -187,7 +187,7 @@ feedstocks:
     commit: 8642a18750c7ab1bfe0f16e2ea3536e18230538e
   boost-cpp-feedstock:
     branch: main
-    commit: 699cfb6ec3488da8586833b1500b69133f052b6f
+    commit: 7192d260b4f5ccacbb54e330b5656adb257fafeb
   boruta_py-feedstock:
     branch: main
     commit: 5766144fc02fdf0f73ea3d190991d147e9006528
@@ -1663,7 +1663,7 @@ feedstocks:
     commit: 248eb936da8966436adf77a1d6ac423da8ede31a
   streamlit-feedstock:
     branch: main
-    commit: 413f72b7fcf09dd98c4de80ffa7e4b6f9e3a12da
+    commit: 5443d05d1bc5a95fd88cf46fdfeffdc8d96ab228
   systemd-feedstock:
     branch: main
     commit: 8649ec40380a215e2052e1b5ffa96a5f98255e1d
