@@ -112,7 +112,7 @@ feedstocks:
     commit: 5d801431cb5e0ccb2a6eb62a91dbc2742d146de3
   aws-c-s3-feedstock:
     branch: main
-    commit: adce915e7823ac0141a586af6b32430216b59366
+    commit: d7fe86504702c19ae10246bba40023202d69537a
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 328bc936c5dc10ab6569ec6c62df3cd2f952b05b
@@ -358,7 +358,7 @@ feedstocks:
     commit: 6edc42296412560f86102bad13214812effbd3d8
   cython-feedstock:
     branch: main
-    commit: 89b7b7e6b5b28fa2badb17cbe0afe52e3e52d139
+    commit: e9a0a74a72d9646666547ab4dab7ae3f31928d47
   cytoolz-feedstock:
     branch: main
     commit: 9519076d340da8a301db59579b096ab416f9d077
