@@ -88,7 +88,7 @@ feedstocks:
     commit: 0b3ccf9bdd9010a73966ef80db9049677f510fc8
   aws-c-auth-feedstock:
     branch: main
-    commit: eddbf5b95967fa3e56fa2857bdf0fd850d9de357
+    commit: 740a665dfdf441c3b8dd269d0d3e37ddece7cb88
   aws-c-cal-feedstock:
     branch: main
     commit: 75492bfb8f87f8c33e0715488233a2edc74802d1
@@ -112,7 +112,7 @@ feedstocks:
     commit: 5d801431cb5e0ccb2a6eb62a91dbc2742d146de3
   aws-c-s3-feedstock:
     branch: main
-    commit: 8fce3299d41bcc6294b50ba11529a24c495c80e6
+    commit: adce915e7823ac0141a586af6b32430216b59366
   aws-c-sdkutils-feedstock:
     branch: main
     commit: 328bc936c5dc10ab6569ec6c62df3cd2f952b05b
@@ -121,13 +121,13 @@ feedstocks:
     commit: 4ccee164609b75c8461c479550938924568ad404
   aws-crt-cpp-feedstock:
     branch: main
-    commit: 3ffb855bc350ef79f8b62f771dc20972ce98f221
+    commit: 8587427eacac59b7b402b94b7a743353cba15dda
   aws-sdk-cpp-feedstock:
     branch: main
     commit: 16859cd894f65fa147758033b9fd2eb99d0623f7
   awscli-feedstock:
     branch: main
-    commit: e9f822f5dc1ae8a7be1cebad9905a27a7f7ca312
+    commit: 5eddb9304b82015dd9f980091dd962a9677ef498
   azure-common-feedstock:
     branch: main
     commit: 665975ed12e10cef59af184d8e503bd7f7a66b42
