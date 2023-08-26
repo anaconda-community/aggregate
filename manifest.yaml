@@ -1087,7 +1087,7 @@ feedstocks:
     commit: c7e6148db52f30c63954ab9438e2a97edd4c0a68
   nodejs-feedstock:
     branch: main
-    commit: 5b632ecc26e242578e271a07da2c5dff3585b65b
+    commit: aa0f63194242eb876e110126104e634dcde4c5eb
   nomkl-feedstock:
     branch: main
     commit: e76f888f2eea80add43b22dc00bb1fb1869f8126
