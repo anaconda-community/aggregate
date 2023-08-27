@@ -1750,7 +1750,7 @@ feedstocks:
     commit: 12dfbede9e4f541e35b89434da87172ab962f0f2
   typeguard-feedstock:
     branch: main
-    commit: 6cbaf26bb9848d29533b3418e7f104cd6b00ccfe
+    commit: 73ba569bd9213c54f35cbd06cd112838d1f5b0d9
   typer-feedstock:
     branch: main
     commit: 7d5852239ca2b531a30c7c378404e3d5c210483d
