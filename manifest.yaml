@@ -931,7 +931,7 @@ feedstocks:
     commit: 51e4451b226aae2832ef6b3975308094667d7032
   libxcb-feedstock:
     branch: main
-    commit: 2ee845e795260839f3b44afefae0ca4ef5850523
+    commit: e234a435dd019e7d67f3b56b1cc68beef3407ecd
   libxkbcommon-feedstock:
     branch: main
     commit: 281415ac487ca06941a19ad5ed7c16db93bf9e66
@@ -1210,7 +1210,7 @@ feedstocks:
     commit: 0453e95a7cf15ef4fbd1ec3c736182e645234b3c
   pluggy-feedstock:
     branch: main
-    commit: 232b5b81f6a1d2a6481ec0d57b60088ef22d30dd
+    commit: 11402039b4663025ead9eec114779275da1e1d3b
   ply-feedstock:
     branch: main
     commit: f7dd26a2707378a72c13d42cbd5738fbca833b6b
