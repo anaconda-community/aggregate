@@ -358,7 +358,7 @@ feedstocks:
     commit: 6edc42296412560f86102bad13214812effbd3d8
   cython-feedstock:
     branch: main
-    commit: e9a0a74a72d9646666547ab4dab7ae3f31928d47
+    commit: 0543fd150c65bb8522a6b40559ed1512e6140279
   cytoolz-feedstock:
     branch: main
     commit: 9519076d340da8a301db59579b096ab416f9d077
