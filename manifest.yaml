@@ -445,7 +445,7 @@ feedstocks:
     commit: 4c5155ef6591685aaddfc6e807224bb1476bd99c
   fastapi-feedstock:
     branch: main
-    commit: 9ef260d008e743f0e9388d8720e1cf73999d6b12
+    commit: c65a94e10867cad6b5a3cff8d576b0c558a45dd9
   fastavro-feedstock:
     branch: main
     commit: d985de3c9b278960e555e97f6ea6b9c02228d580
