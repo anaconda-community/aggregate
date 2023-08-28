@@ -454,7 +454,7 @@ feedstocks:
     commit: 1c421ffcd4dc371acb580ec2e5051bd1dd54fa4f
   filelock-feedstock:
     branch: main
-    commit: 8336c4de32ea6b81a56b9b08d0002c4a52a195ce
+    commit: 8b4e3c1dae740806cfed8f843f8b1a5c674a29c0
   filesystem-spec-feedstock:
     branch: main
     commit: 663c7326db59964d79d0a24918ee6a2c0a66390f
@@ -1657,7 +1657,7 @@ feedstocks:
     commit: fdf71c03a399fcc1714b720b698d5df97421d8a7
   starlette-feedstock:
     branch: main
-    commit: f1295e12e22d16e6319c41b2de174bffd92233ba
+    commit: a50499e8ab9202a2291913e9227a3f1b5edfced1
   statsmodels-feedstock:
     branch: main
     commit: 248eb936da8966436adf77a1d6ac423da8ede31a
@@ -1750,7 +1750,7 @@ feedstocks:
     commit: 12dfbede9e4f541e35b89434da87172ab962f0f2
   typeguard-feedstock:
     branch: main
-    commit: 73ba569bd9213c54f35cbd06cd112838d1f5b0d9
+    commit: 87a1f706297cf9816ccb0d0a2d61bdb2fcc1e2c3
   typer-feedstock:
     branch: main
     commit: 7d5852239ca2b531a30c7c378404e3d5c210483d
