@@ -1,4 +1,7 @@
 feedstocks:
+  community-integration-test-feedstock:
+    branch: main
+    commit: f547fdaf76ea973332a8f093c1282fa77040787e
   watchgod-feedstock:
     branch: main
     commit: 8b44c1eebd1fca1b49bc7add92f8bc006f0de5b6
