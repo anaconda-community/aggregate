@@ -1,1 +1,4 @@
-feedstocks: []
+feedstocks:
+  community-integration-test-feedstock:
+    branch: main
+    commit: f547fdaf76ea973332a8f093c1282fa77040787e
