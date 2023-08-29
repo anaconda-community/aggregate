@@ -1,43 +1,4 @@
 feedstocks:
-  anyio-feedstock:
-    branch: main
-    commit: 4204c3f90b747bcf6673f61a77f40aa16239612c
-  community-integration-test-feedstock:
-    branch: main
-    commit: f547fdaf76ea973332a8f093c1282fa77040787e
-  exceptiongroup-feedstock:
-    branch: main
-    commit: dd1af19f92a116fb7ad27bfb3c35647debab1dbc
-  flit-scm-feedstock:
-    branch: main
-    commit: 7a03a4851cbbe305cfedc10b4ff09201171d842f
-  idna-feedstock:
-    branch: main
-    commit: 66cb8b468f7f847b6c1c7f2412600c75bd3b54ec
-  pip-feedstock:
-    branch: main
-    commit: 9378e63c0e324642f5e3f14d6536cb6171358dc7
-  python-installer-feedstock:
-    branch: main
-    commit: bc1acbbe1847950f3b01da2fd7fe278cf8e267e1
-  setuptools-feedstock:
-    branch: main
-    commit: 13477ed25385752547d19a595d1afac9c5284aa8
-  setuptools_scm-feedstock:
-    branch: main
-    commit: d870dcba7f9faef9642515be773bb98840254876
-  sniffio-feedstock:
-    branch: main
-    commit: afeb1e0bc5239e4dc8ac5d3f9b384b7d56133bb7
-  tomli-feedstock:
-    branch: main
-    commit: cdeec439c066d8620f6ec14cbdb0863de76b9f7b
-  typing_extensions-feedstock:
-    branch: main
-    commit: 1bf2656a505b51eba77e9318b082342e71dc96f9
   watchgod-feedstock:
     branch: main
     commit: 8b44c1eebd1fca1b49bc7add92f8bc006f0de5b6
-  wheel-feedstock:
-    branch: main
-    commit: a851dfb6614fe3b6b34d392df016539ba09ac706
