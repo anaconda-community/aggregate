@@ -1,3 +1,4 @@
+url_base: https://github.com/conda-forge
 feedstocks:
   21cmfast-feedstock:
     branch:   main
