@@ -1,2 +1,146 @@
-url_base: https://github.com/conda-forge
-feedstocks: {}
+feedstocks:
+  4ti2-feedstock:
+    branch:   main
+    commit:   236e23a2238afc532c4490f6ccf50b85330ceb03
+    url_base: https://github.com/conda-forge
+    ETag:     W/"6742015bbfded19226092c226b3f975d3ce4d89c7039d80189c44720d8bd9f43"
+  abess-feedstock:
+    branch:   main
+    commit:   d63e6210a6eab965657b13b3be202c642d9b81bb
+    url_base: https://github.com/conda-forge
+    ETag:     W/"ee44569929e6485c6209ccee96882992ad5c06a770f97efa2c3ae466deff0fe7"
+  acctaudem-feedstock:
+    branch:   main
+    commit:   2b1239c1d0fc5931c9a115fd5bf5c89a8e60560f
+    url_base: https://github.com/conda-forge
+    ETag:     W/"000124fa56a973d5cb2dd8ea3031253480a35fe8491f336dcbf861838942b501"
+  acor-feedstock:
+    branch:   main
+    commit:   1ef8abf7c09c2d6d7ae38a11b936c51983d8983c
+    url_base: https://github.com/conda-forge
+    ETag:     W/"575f89bc06b26938bd9b98db7fe5d54ab646c398fb9c7baadc5cf3ef8a6c7765"
+  ad3-cpp-feedstock:
+    branch:   main
+    commit:   2d346ef964c3475d18f5dbca4da7166581a4f2fd
+    url_base: https://github.com/conda-forge
+    ETag:     W/"03009986b2d2645321b80b7263b22e7d3e84b31e0faa5011ba3fe277828eb9e1"
+  adios-feedstock:
+    branch:   main
+    commit:   e790dbc553d4f95196572edfcc099b5297a76e1a
+    url_base: https://github.com/conda-forge
+    ETag:     W/"e8d6c76a38a7ce9d8ba605c1ae570072e729f4d3abdf8f8c1a29c8c681d8dcd8"
+  aedat-feedstock:
+    branch:   main
+    commit:   6af8ede84a7009d84b61d16019491b1ed989a470
+    url_base: https://github.com/conda-forge
+    ETag:     W/"ce228dc7fb649814e2772d479e2e4a634f79a9a23cfaa73d966200808e257561"
+  aerobulk-python-feedstock:
+    branch:   main
+    commit:   371f17a22b3b4ee967048d39a90a7af5f37fcad5
+    url_base: https://github.com/conda-forge
+    ETag:     W/"8ff6a61118d76e356e8cd1f55edad92dfb5b024f5ac3c27296584042b6f536ef"
+  affinegap-feedstock:
+    branch:   main
+    commit:   13a4ae892637d62db0bbd145da60149185a2bfab
+    url_base: https://github.com/conda-forge
+    ETag:     W/"5c7fb7c7ce2e570ed754dd3894a240615a7f9df01444846b2b2ca9848d53cd70"
+  agate-lookup-feedstock:
+    branch:   main
+    commit:   8ee1a9854b708d399b5a95d29d2d15d7a55df0f0
+    url_base: https://github.com/conda-forge
+    ETag:     W/"5b5a1c500787f08435090538ccc5cee558be49718529343cf34e66b14b4761b8"
+  agate-stats-feedstock:
+    branch:   main
+    commit:   c35bd5220c1f7f6fd2d48d1388dc8e4eed905426
+    url_base: https://github.com/conda-forge
+    ETag:     W/"df2e4b198d4149dffae7883f930a79c96fa3e8917e57fa831f497e8924a7cfd3"
+  aggdraw-feedstock:
+    branch:   main
+    commit:   1dd971e30ebde44ba7452a4502fe6088d29ada44
+    url_base: https://github.com/conda-forge
+    ETag:     W/"e99132bd60debeb8f434d1b2f942c0ac00c1325389326738b939054d23d25ed7"
+  aha-feedstock:
+    branch:   main
+    commit:   1590d8c2b85f53b448989e66e755cd9890e8202e
+    url_base: https://github.com/conda-forge
+    ETag:     W/"4711d6932990c862336468fe7f92f5c8876d303eef701e96a37b9ad85bae4068"
+  aiochclient-feedstock:
+    branch:   main
+    commit:   bcf0a0d7f6c9adcb1966f3662232180a244a4c34
+    url_base: https://github.com/conda-forge
+    ETag:     W/"c1e21f5816eca89cc81e0977f913c92883b4684604a6387792ab8f5b8d73d811"
+  aionotify-feedstock:
+    branch:   main
+    commit:   bab7c48217719425cf10b6b1fee58288a9e5a9e4
+    url_base: https://github.com/conda-forge
+    ETag:     W/"b9d06853f88da77007800b3874ac6eb64c288565e36cf332e5879e8339e14f6d"
+  aliyun-python-sdk-core-feedstock:
+    branch:   main
+    commit:   859212abcac12cc8d479a321d7667920a4dc2637
+    url_base: https://github.com/conda-forge
+    ETag:     W/"9ba292bfe070b092e846dabbca0bf34bd8421893b82f741b5d15ae9cca89cdf8"
+  aliyun-python-sdk-core-v3-feedstock:
+    branch:   main
+    commit:   3622605561bc4e9fefdc9fc314921ef9fadf67c0
+    url_base: https://github.com/conda-forge
+    ETag:     W/"0e97e852e04c60c67a99b24cbd04a410ac99f8e7ae5466ac2289e204820292c3"
+  almosthere-feedstock:
+    branch:   main
+    commit:   5d787426608fa62d76742f35a408e37198fc7815
+    url_base: https://github.com/conda-forge
+    ETag:     W/"92ef5555d9c08f2e640c3c04f9d38625d137cac7742a3fe271bd5bb86369d3d5"
+  alpenglow-feedstock:
+    branch:   main
+    commit:   48e902d2bc5e7d90ad8d6e7810ab2746b5932d37
+    url_base: https://github.com/conda-forge
+    ETag:     W/"5665de7852c18bb85581fccdd3970972a81854097c71ca49f9f2a14fb9c10931"
+  alsa-lib-feedstock:
+    branch:   main
+    commit:   166261e964dc2bba957bc7667fe7c07df1e35169
+    url_base: https://github.com/conda-forge
+    ETag:     W/"e4b6443b1ab4514aafb5207b594ff1dc5ac497ee6edaf9ed4bcddca43a645137"
+  altair-transform-feedstock:
+    branch:   main
+    commit:   3538bc42f2b991227b16da801cd4ba6551e59a96
+    url_base: https://github.com/conda-forge
+    ETag:     W/"4563dda55cdf7a24a3e61d8c83d46cdd1d4258d2956acc35cf1cb05b51b6b0e9"
+  amplpy-feedstock:
+    branch:   main
+    commit:   3b13730f4a895c6997bf14208c0603a88ad78291
+    url_base: https://github.com/conda-forge
+    ETag:     W/"565a6ae774e2e7aae411171d62585363ba6755f80ec0269081b734f80fc5c2f4"
+  ann-feedstock:
+    branch:   main
+    commit:   85b1bba96706f417402bb5bc2c8e339045fcb237
+    url_base: https://github.com/conda-forge
+    ETag:     W/"4916f7cbb16aeba8bed0641e8c1b008c785f9d5b116cc6eed01c25c030656162"
+  ansible-bundler-feedstock:
+    branch:   main
+    commit:   4a7616927da7b3c8e1a5a1f726598a88bbbc442c
+    url_base: https://github.com/conda-forge
+    ETag:     W/"cdba854a22065c4033553fa64e2d1cbd1a8b5d135deaaf77775bc6898bff2463"
+  ansifilter-feedstock:
+    branch:   main
+    commit:   2445e1e86264ca5f952d926dfc269cca214d2a80
+    url_base: https://github.com/conda-forge
+    ETag:     W/"f4fe001ea3665317e17bb4c16a65843f92f49fc32637a3c99deda011ed1532c7"
+  antlr-feedstock:
+    branch:   main
+    commit:   d410674e001efa2c9b89683a4d612b1c9cfd595a
+    url_base: https://github.com/conda-forge
+    ETag:     W/"6cfd3d0e3a14a300e0906a58c538442fe2ef07147ea78632fbc45d20347bc244"
+  apbs-feedstock:
+    branch:   main
+    commit:   08e831445a294cc11bb70cf6577b5b1a597ad5fd
+    url_base: https://github.com/conda-forge
+    ETag:     W/"23c05c324e7ba42cbfa37d09fe7743954c09018bf62df2e39040c10b7171709d"
+  appimage-updater-bridge-feedstock:
+    branch:   main
+    commit:   31d3912dc532a8c563a23561204758ebefcb88fe
+    url_base: https://github.com/conda-forge
+    ETag:     W/"6453365f46401ad896c3da51b789a434b37cc2ce688449c97fbb1e744532d0c6"
+  argp-standalone-feedstock:
+    branch:   main
+    commit:   d83c1f298ab4c861fd82c062475de97ce3ae18c7
+    url_base: https://github.com/conda-forge
+    ETag:     W/"d36aa9b849935d219d0f5ce848e9321edfdd998968535dff77f46dcb76330e76"
