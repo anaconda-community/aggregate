@@ -1,2 +1,2 @@
 url_base: https://github.com/conda-forge
-feedstocks: []
+feedstocks: {}
