@@ -13,7 +13,7 @@ cxx_compiler_version: # [linux or osx]
   - 11.2.0 # [linux]
   - 14 # [osx]
 llvm_openmp: # [osx]
-  - 15 # [osx]
+  - 16 # [osx]
 fortran_compiler: # [unix or win64]
   - gfortran # [linux or osx]
   - intel-fortran # [win]
@@ -70,7 +70,6 @@ target_gobin:
 # Rust Compiler Options
 rust_compiler:
   - rust
-  - rust-gnu # [win]
 macos_machine: # [osx]
   - x86_64-apple-darwin13.4.0 # [osx and x86_64]
   - arm64-apple-darwin20.0.0 # [osx and arm64]
@@ -137,55 +136,55 @@ alsa_lib:
 antic:
   - 0.2
 aom:
-  - 3.5
+  - '3.6'
 arb:
   - '2.23'
 arpack:
   - 3.7
 # keep in sync with libarrow
 arrow_cpp:
+  - 13
   - 12
   - 11.0.0
   - 10.0.1
-  - 9.0.0
 assimp:
   - 5.2.5
 attr:
   - 2.5
 aws_c_auth:
-  - 0.7.3
+  - 0.7.4
 aws_c_cal:
-  - 0.6.1
+  - 0.6.2
 aws_c_common:
-  - 0.9.0
+  - 0.9.3
 aws_c_compression:
   - 0.2.17
 # coupled to aws_c_common version bump, see
 # https://github.com/conda-forge/aws-c-http-feedstock/pull/109
 aws_c_event_stream:
-  - 0.3.1
+  - 0.3.2
 aws_c_http:
-  - 0.7.11
+  - 0.7.13
 # the builds got coupled because 0.2.4 landed before the this migrator finished
 aws_c_io:
   - 0.13.32
 # the builds got coupled because 0.2.4 landed before the io migrator
 aws_c_mqtt:
-  - 0.9.5
+  - 0.9.6
 aws_c_s3:
-  - 0.3.14
+  - 0.3.17
 aws_c_sdkutils:
   - 0.1.12
 aws_checksums:
   - 0.1.17
 aws_crt_cpp:
-  - 0.23.0
+  - 0.23.1
 aws_sdk_cpp:
-  - 1.10.57
+  - 1.11.156
 boost:
-  - 1.73
+  - 1.82
 boost_cpp:
-  - 1.73
+  - 1.82
 bzip2:
   - 1.0
 c_ares:
@@ -269,7 +268,7 @@ gst_plugins_base:
   - 1.14 # [not win]
   - 1.18 # [win]
 gdal:
-  - '3.6'
+  - '3.7'
 geos:
   - 3.8.0 # [not (osx and arm64)]
   - 3.9.1 # [osx and arm64]
@@ -310,11 +309,9 @@ harfbuzz:
 hdf4:
   - 4.2
 hdf5:
-  - 1.10.6 # [not (osx and arm64)]
-  - 1.12.1 # [osx and arm64]
+  - 1.12.1
 icu:
-  - 58 # [not (s390x or aarch64 or (osx and arm64))]
-  - 68 # [s390x or aarch64 or (osx and arm64)]
+  - 73
 imath:
   - 3.1.9
 ipopt:
@@ -330,17 +327,17 @@ lcms:
 lerc:
   - '4'
 libjpeg_turbo:
-  - 2
+  - 2.1.5
 libev:
   - 4.33
 json_c:
-  - '0.16'
+  - '0.17'
 jsoncpp:
   - 1.9.5
 kealib:
   - '1.5'
 krb5:
-  - '1.19'
+  - '1.20'
 libabseil:
   - '20230125'
 libabseil_static:
@@ -348,20 +345,20 @@ libabseil_static:
 libaec:
   - '1'
 libarchive:
-  - '3.6'
+  - '3.7'
 # keep in sync with arrow_cpp (libarrow exists only from 10.x,
 # but make sure we have same length for zip as arrow_cpp)
 libarrow:
+  - 13
   - 12
   - 11.0.0
   - 10.0.1
-  - 9.0.0
 libavif:
-  - 0.11.1
+  - '1.0.1'
 libblitz:
   - 1.0.2
 libcint:
-  - '5.2'
+  - '5.5'
 libcurl:
   - 8
 libcrc32c:
@@ -369,7 +366,7 @@ libcrc32c:
 libdap4:
   - 3.19
 libdeflate:
-  - '1.18'
+  - '1.19'
 libeantic:
   - 1
 libevent:
@@ -385,7 +382,7 @@ libflint:
 libgdal:
   - 3.0
 libgit2:
-  - '1.6'
+  - '1.7'
 # Keep in sync with google_cloud_cpp
 libgoogle_cloud:
   - '2.12'
@@ -412,7 +409,7 @@ libmicrohttpd:
 libnetcdf:
   - 4.8
 libopencv:
-  - 4.7.0
+  - 4.8.0
 libosqp:
   - 0.6.3
 libpcap:
@@ -426,7 +423,7 @@ libpq:
 libraw:
   - '0.21'
 librdkafka:
-  - '1.9'
+  - '2.2'
 librsvg:
   - 2
 libsecret:
@@ -442,7 +439,7 @@ libssh:
 libssh2:
   - 1
 libsvm:
-  - '325'
+  - '332'
 # keep libsqlite in sync with sqlite
 libsqlite:
   - 3
@@ -469,6 +466,8 @@ libuuid:
   - 2
 libzip:
   - 1
+lmdb:
+  - 0.9.29
 log4cxx:
   - 0.11.0
 lz4_c:
@@ -478,17 +477,21 @@ lzo:
 metis:
   - 5.1
 mimalloc:
-  - 2.1.1
+  - 2.1.2
 mkl:
   - 2023.*
 mkl_devel:
   - 2022
 mpg123:
-  - '1.31'
+  - '1.32'
 mpich:
   - 4
 mpfr:
   - 4
+msgpack_c:
+  - 6
+msgpack_cxx:
+  - 6
 mumps_mpi:
   - 5.2.1
 mumps_seq:
@@ -529,7 +532,7 @@ occt:
 openblas:
   - 0.3.21
 openexr:
-  - '3.1'
+  - '3.2'
 openh264:
   - '2.3.1'
 openjpeg:
@@ -537,7 +540,6 @@ openjpeg:
 openmpi:
   - 4
 openssl:
-  - 1.1.1
   - 3.0
 openturns:
   - '1.20'
@@ -561,7 +563,7 @@ slepc:
 slepc4py:
   - '3.18'
 svt_av1:
-  - 1.6.0
+  - 1.7.0
 p11_kit:
   - '0.24'
 pcre:
@@ -582,6 +584,10 @@ proj:
   - 6.2.1 # [not (osx and arm64)]
   - 7.2.0 # [osx and arm64]
 pulseaudio:
+  - '16.1'
+pulseaudio_client:
+  - '16.1'
+pulseaudio_daemon:
   - '16.1'
 pybind11_abi:
   - 4
@@ -616,7 +622,7 @@ readline:
 rocksdb:
   - '7.9'
 root_base:
-  - 6.28.0
+  - 6.28.4
 ruby:
   - 2.5
   - 2.6
@@ -628,7 +634,7 @@ scotch:
 ptscotch:
   - 6.0.9
 s2n:
-  - 1.3.49
+  - 1.3.52
 sdl2:
   - '2'
 sdl2_image:
@@ -673,9 +679,9 @@ tk:
 tiledb:
   - '2.16'
 ucx:
-  - 1.14.0
+  - '1.15.0'
 uhd:
-  - 4.4.0
+  - 4.5.0
 urdfdom:
   - 3.1
 vc: # [win]
@@ -715,6 +721,11 @@ apr:
   - 1.7.0 # [osx and arm64]
 rust_compiler_version:
   - 1.71.1
+# use {{ compiler('rust-gnu') }} when requiring a build using the m2w64-toolchain
+rust_gnu_compiler: # [win]
+  - rust-gnu # [win]
+rust_gnu_compiler_version: # [win]
+  - 1.71.1 # [win]
 CONDA_BUILD_SYSROOT:
   - /opt/MacOSX10.10.sdk # [osx and x86_64]
   - /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk # [osx and arm64]
@@ -724,8 +735,7 @@ cran_mirror:
 clang_variant:
   - clang
 cyrus_sasl:
-  - 2.1.26 # [not ((osx and arm64) or (linux and aarch64))]
-  - 2.1.27 # [(osx and arm64) or (linux and aarch64)]
+  - 2.1.28
 g2clib:
   - 1.6
 # glibc used in ctng compiler builds
@@ -738,7 +748,7 @@ hdfeos5:
 libgd:
   - 2.3.3
 libgsasl:
-  - 1.8
+  - 1.10
 libxslt:
   - 1.1
 llvm_variant:
