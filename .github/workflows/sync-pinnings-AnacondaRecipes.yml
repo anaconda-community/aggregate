@@ -1,0 +1,36 @@
+name: "Sync pinnings with AnacondaRecipes"
+on:
+  workflow_dispatch: {}
+
+jobs:
+  sync-pinnings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+
+      - name: Checkout AnacondaRecipes
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3
+        with:
+          repository: AnacondaRecipes/aggregate
+          path: anacondarecipes
+
+      - name: Check if conda_build_config.yaml has changed
+        id: check-changes
+        run: echo "::set-output name=changed::$(cmp -s conda_build_config.yaml anacondarecipes/conda_build_config.yaml || echo true)"
+
+      - name: Copy conda_build_config.yaml if changed
+        if: steps.check-changes.outputs.changed == 'true'
+        run: cp anacondarecipes/conda_build_config.yaml conda_build_config.yaml
+
+      - name: Check-in change if required
+        if: steps.check-changes.outputs.changed == 'true'
+        run: |
+            branch=$(date +pinnings%Y%m%d%H%M%S)
+            git config user.name "GitHub Actions Bot"
+            git config user.email "<>"
+            git checkout -b $branch
+            git add conda_build_config.yaml
+            git commit -m "Update conda_build_config.yaml" && git push --set-upstream origin $branch && gh pr create --fill --label pinnings || echo "No changes"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
