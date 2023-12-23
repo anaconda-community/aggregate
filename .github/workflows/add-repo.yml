@@ -41,7 +41,8 @@ jobs:
       - name: Get dependencies
         id: deps
         run: |          
-          python tools/crawl_deptree.py -f ${{ github.event.inputs.feedstocks }} > output.log
+          # python tools/crawl_deptree.py -f ${{ github.event.inputs.feedstocks }} > output.log
+          touch output.log
           feedstocks+=$(tail -n 1 output.log)
           echo "feedstocks=$feedstocks" >> $GITHUB_OUTPUT
         env:
