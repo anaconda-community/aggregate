@@ -1,4 +1,5 @@
 packages:
-  lazyasd:
+  lazyasd_v0.1.4_b1:
+    name: lazyasd
     version: 0.1.4
     build: 1
