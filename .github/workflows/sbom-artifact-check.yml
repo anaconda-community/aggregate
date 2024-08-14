@@ -39,12 +39,12 @@ jobs:
               - conda-forge
           create-args: >-
             python=3.9
-            yq                  
+            yq
 
       - name: Get repodata packages
         id: repodata_packages
-        run: |          
-          repodata=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/${{ matrix.architecture }}/repodata.json)          
+        run: |
+          repodata=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/${{ matrix.architecture }}/repodata.json)
           repodata_packages=$(echo "$repodata" | yq '.packages | keys | join(",")')
           echo "repodata_packages=$repodata_packages" >> $GITHUB_OUTPUT
           echo "repodata_packages_count=$(echo "$repodata" | yq '.packages | keys | length')" >> $GITHUB_OUTPUT
@@ -53,9 +53,9 @@ jobs:
 
       - name: Get sbom index paths
         id: sbom_index_paths
-        run: |          
+        run: |
           sbom_data=$(curl -s https://repo.anaconda.cloud/repo/t/$ANACONDA_BUSINESS_TOKEN/community_testing/sboms/index.json)
-          sbom_index_paths=$(echo "$sbom_data" | yq '.paths | keys | join(",")') 
+          sbom_index_paths=$(echo "$sbom_data" | yq '.paths | keys | join(",")')
           echo "sbom_index_paths=$sbom_index_paths" >> $GITHUB_OUTPUT
           echo "sbom_index_paths_count=$(echo "$sbom_data" | yq '.paths | keys | length')" >> $GITHUB_OUTPUT
         env:
@@ -66,27 +66,27 @@ jobs:
         run: |
           not_found_packages=()
           for repo_package in ${REPODATA_PACKAGES//,/ }; do
-            
+
             # remove double quote characters from package name
             repo_package=${repo_package//\"/}
-          
+
             not_found=1
-                      
+
             for sbom_index_path in ${SBOM_INDEX_PATHS//,/ }; do
-          
+
               # check whether the package name is in the index path
-              if [[ $sbom_index_path == *$repo_package* ]]; then                
+              if [[ $sbom_index_path == *$repo_package* ]]; then
                 not_found=0
                 break;
-              fi 
+              fi
             done
-          
+
             if [[ $not_found == 1 ]]; then
               echo "Adding $repo_package to not found"
               not_found_packages+=("$repo_package")
             fi
-          done                  
-          
+          done
+
           not_found_packages_str=$(IFS=,; echo "${not_found_packages[*]}")
           echo "not_found_packages=$not_found_packages_str" | tr -d '"' >> $GITHUB_OUTPUT
           echo "not_found_packages_count=${#not_found_packages[@]}" >> $GITHUB_OUTPUT
@@ -114,64 +114,3 @@ jobs:
 #        env:
 #          SBOM_INDEX_PATHS: ${{ steps.sbom_index_paths.outputs.sbom_index_paths }}
 #          ANACONDA_BUSINESS_TOKEN: ${{ secrets.ANACONDA_BUSINESS_TOKEN }}
-
-      - name: Send SBOM Not Found Event
-        uses: masci/datadog@v1
-        if: steps.match_packages.outputs.not_found_packages != ''
-        with:
-          api-key: ${{ secrets.DATADOG_API_KEY }}
-          events: |
-            - title: "Community Repo SBOM Not Found"
-              aggregation_key: "community-repo/sbom-not-found"
-              text: "The SBOM path was not found for repodata packages: ${{ steps.match_packages.outputs.not_found_packages }} with architecture: ${{ matrix.architecture }}"
-              alert_type: "error"
-              host: ${{ github.repository_owner }}
-              tags:
-                - "@github.org:anaconda-community"
-                - "architecture:${{ matrix.architecture }}"
-                - "service:community-repo/post-process/sbom-check"        
-
-#      - name: Send SBOM Index Name Mistmatch Event
-#        uses: masci/datadog@v1
-#        if: ${{ steps.index_path_check.outputs.no_name_sboms }} != ""
-#        with:
-#          api-key: ${{ secrets.DATADOG_API_KEY }}
-#          events: |
-#            - title: "Community Repo SBOM Index Name Mismatch"
-#              aggregation_key: "community-repo/sbom-index-name-mismatch"
-#              text: "The SBOM name was not found at the sbom path location: ${{ steps.index_path_check.outputs.no_name_sboms }} with architecture: ${{ matrix.architecture }}"
-#              alert_type: "error"
-#              host: ${{ github.repository_owner }}
-#              tags:
-#                - "@github.org:anaconda-community"
-#                - architecture: ${{ matrix.architecture }}
-#                - "service:community-repo/post-process/sbom-name-check"
-
-      - name: Send SBOM Metrics
-        uses: masci/datadog@v1
-        with:
-          api-key: ${{ secrets.DATADOG_API_KEY }}
-          metrics: |
-            - type: "count"
-              name: "community.repo.packages.count"
-              value: ${{ steps.repodata_packages.outputs.repodata_packages_count }}
-              tags:          
-                - "@github.org:anaconda-community"
-                - "architecture:${{ matrix.architecture }}"
-                - "service:community-repo/post-process/sbom-check"        
-            
-            - type: "count"
-              name: "community.repo.sbom.paths.count"
-              value: ${{ steps.sbom_index_paths.outputs.sbom_index_paths_count }}
-              tags:          
-                - "@github.org:anaconda-community"
-                - "architecture:${{ matrix.architecture }}"
-                - "service:community-repo/post-process/sbom-check"        
-            
-            - type: "count"
-              name: "community.repo.packages_missing_sbom.count"
-              value: ${{ steps.match_packages.outputs.not_found_packages_count }}
-              tags:          
-                - "@github.org:anaconda-community"
-                - "architecture:${{ matrix.architecture }}"
-                - "service:community-repo/post-process/sbom-check"        
