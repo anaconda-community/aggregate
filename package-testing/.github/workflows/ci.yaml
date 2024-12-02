@@ -1,0 +1,91 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+
+env:
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+jobs:
+  pre-commit:
+    runs-on: self-hosted-eks
+    steps:
+      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3
+      - uses: actions/setup-python@5ccb29d8773c3f3f653e1705f474dfaa8a06a912 # v4
+        with:
+          python-version: '3.9'
+      - uses: pre-commit/action@646c83fcd040023954eafda54b4db0192ce70507 # tag=v3.0.0
+  ci:
+    runs-on: self-hosted-eks
+    steps:
+      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3
+        with:
+          # required for versioneer
+          fetch-depth: 0
+      - name: Setup Environment
+        run: |
+          source $CONDA/etc/profile.d/conda.sh
+          make environment
+      - name: Test
+        run: |
+          source $CONDA/etc/profile.d/conda.sh
+          conda activate package-testing
+          make test
+        env:
+          S3_BUCKET: "packages-testing"
+          S3_UPLOADER_ACCESS_KEY: ${{ secrets.AWS_S3_ACCESS_KEY }}
+          S3_UPLOADER_SECRET_KEY: ${{ secrets.AWS_S3_SECRET_KEY }}
+      - name: Get Allure history
+        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@7a1185d9dfa74609d48959a23989ad1dd1285fdf
+        if: always()
+        id: allure-report
+        with:
+          allure_results: allure-results
+          allure_history: allure-history/allure-history
+      - name: Deploy report to Github Pages
+        id: PublishToGitHubPages
+        if: always()
+        uses: peaceiris/actions-gh-pages@de7ea6f8efb354206b205ef54722213d99067935 # tag=v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-history/allure-history
+      - name: Build the package
+        run: |
+          source $CONDA/etc/profile.d/conda.sh
+          conda activate package-testing
+          mkdir -p artifacts/conda-bld
+          conda-build --output-folder artifacts/conda-bld recipe
+      - name: upload to anaconda.org
+        if: ${{ github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags') }}
+        env:
+          ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
+          GITHUB_REF: ${{ github.ref }}
+        run: |
+          source $CONDA/etc/profile.d/conda.sh
+          conda activate package-testing
+          [[ "$GITHUB_REF" =~ ^refs/tags/ ]] || export LABEL="--label dev"
+          anaconda --verbose --token $ANACONDA_TOKEN upload --user distro-tooling $LABEL artifacts/conda-bld/*/*.tar.bz2 --force
+      - name: Archive CI Artefacts
+        if: always()
+        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3
+        with:
+          name: ci-artefacts
+          path: artifacts/**
+          retention-days: 5
+      - uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f # tag=v2.0.0
+        continue-on-error: true
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#test-notifications'
+        if: always()
